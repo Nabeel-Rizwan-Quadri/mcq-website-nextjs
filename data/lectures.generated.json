@@ -76,6 +76,174 @@
         ],
         "correctOptionId": "b",
         "explanation": "A standard formulation uses behavioral manipulation and physiological dependent measures."
+      },
+      {
+        "id": "psychophys-1-intro-q4",
+        "question": "Which statement best describes Dualism?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Mind and body are treated as separate entities."
+          },
+          {
+            "id": "b",
+            "text": "Mental and physical events are aspects of one reality."
+          },
+          {
+            "id": "c",
+            "text": "Emotion is interpreted from bodily responses."
+          },
+          {
+            "id": "d",
+            "text": "Emotion and physiological response arise in parallel."
+          }
+        ],
+        "correctOptionId": "a",
+        "explanation": "Mind and body are treated as separate entities."
+      },
+      {
+        "id": "psychophys-1-intro-q5",
+        "question": "Which statement best describes Monism?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Mind and body are treated as separate entities."
+          },
+          {
+            "id": "b",
+            "text": "Emotion is interpreted from bodily responses."
+          },
+          {
+            "id": "c",
+            "text": "Emotion and physiological response arise in parallel."
+          },
+          {
+            "id": "d",
+            "text": "Mental and physical events are aspects of one reality."
+          }
+        ],
+        "correctOptionId": "d",
+        "explanation": "Mental and physical events are aspects of one reality."
+      },
+      {
+        "id": "psychophys-1-intro-q6",
+        "question": "Which statement best describes James-Lange theory?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Mental and physical events are aspects of one reality."
+          },
+          {
+            "id": "b",
+            "text": "Emotion and physiological response arise in parallel."
+          },
+          {
+            "id": "c",
+            "text": "Emotion is interpreted from bodily responses."
+          },
+          {
+            "id": "d",
+            "text": "Mind and body are treated as separate entities."
+          }
+        ],
+        "correctOptionId": "c",
+        "explanation": "Emotion is interpreted from bodily responses."
+      },
+      {
+        "id": "psychophys-1-intro-q7",
+        "question": "Which statement best describes Cannon-Bard theory?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Emotion is interpreted from bodily responses."
+          },
+          {
+            "id": "b",
+            "text": "Emotion and physiological response arise in parallel."
+          },
+          {
+            "id": "c",
+            "text": "Mind and body are treated as separate entities."
+          },
+          {
+            "id": "d",
+            "text": "Mental and physical events are aspects of one reality."
+          }
+        ],
+        "correctOptionId": "b",
+        "explanation": "Emotion and physiological response arise in parallel."
+      },
+      {
+        "id": "psychophys-1-intro-q8",
+        "question": "Which statement best describes Psychophysiology scope?",
+        "options": [
+          {
+            "id": "a",
+            "text": "It studies links between psychological and physiological events."
+          },
+          {
+            "id": "b",
+            "text": "Mind and body are treated as separate entities."
+          },
+          {
+            "id": "c",
+            "text": "Mental and physical events are aspects of one reality."
+          },
+          {
+            "id": "d",
+            "text": "Emotion is interpreted from bodily responses."
+          }
+        ],
+        "correctOptionId": "a",
+        "explanation": "It studies links between psychological and physiological events."
+      },
+      {
+        "id": "psychophys-1-intro-q9",
+        "question": "Which statement best describes Measurement rationale?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Mind and body are treated as separate entities."
+          },
+          {
+            "id": "b",
+            "text": "Mental and physical events are aspects of one reality."
+          },
+          {
+            "id": "c",
+            "text": "Emotion is interpreted from bodily responses."
+          },
+          {
+            "id": "d",
+            "text": "Physiological signals can reveal covert processes."
+          }
+        ],
+        "correctOptionId": "d",
+        "explanation": "Physiological signals can reveal covert processes."
+      },
+      {
+        "id": "psychophys-1-intro-q10",
+        "question": "Which statement best describes Causal inference?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Mental and physical events are aspects of one reality."
+          },
+          {
+            "id": "b",
+            "text": "Emotion is interpreted from bodily responses."
+          },
+          {
+            "id": "c",
+            "text": "Strong causal claims require controlled manipulation."
+          },
+          {
+            "id": "d",
+            "text": "Mind and body are treated as separate entities."
+          }
+        ],
+        "correctOptionId": "c",
+        "explanation": "Strong causal claims require controlled manipulation."
       }
     ]
   },
@@ -156,6 +324,174 @@
         ],
         "correctOptionId": "b",
         "explanation": "Sympathetic and parasympathetic branches have opposite dominant functions."
+      },
+      {
+        "id": "psychophys-2-1-nervous-system-q4",
+        "question": "Which statement best describes Central nervous system?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The CNS consists of the brain and spinal cord."
+          },
+          {
+            "id": "b",
+            "text": "The PNS includes neural structures outside CNS."
+          },
+          {
+            "id": "c",
+            "text": "It supports voluntary striated muscle control."
+          },
+          {
+            "id": "d",
+            "text": "It regulates involuntary organs, glands, and cardiac/smooth muscle."
+          }
+        ],
+        "correctOptionId": "a",
+        "explanation": "The CNS consists of the brain and spinal cord."
+      },
+      {
+        "id": "psychophys-2-1-nervous-system-q5",
+        "question": "Which statement best describes Peripheral nervous system?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The CNS consists of the brain and spinal cord."
+          },
+          {
+            "id": "b",
+            "text": "It supports voluntary striated muscle control."
+          },
+          {
+            "id": "c",
+            "text": "It regulates involuntary organs, glands, and cardiac/smooth muscle."
+          },
+          {
+            "id": "d",
+            "text": "The PNS includes neural structures outside CNS."
+          }
+        ],
+        "correctOptionId": "d",
+        "explanation": "The PNS includes neural structures outside CNS."
+      },
+      {
+        "id": "psychophys-2-1-nervous-system-q6",
+        "question": "Which statement best describes Somatic nervous system?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The PNS includes neural structures outside CNS."
+          },
+          {
+            "id": "b",
+            "text": "It regulates involuntary organs, glands, and cardiac/smooth muscle."
+          },
+          {
+            "id": "c",
+            "text": "It supports voluntary striated muscle control."
+          },
+          {
+            "id": "d",
+            "text": "The CNS consists of the brain and spinal cord."
+          }
+        ],
+        "correctOptionId": "c",
+        "explanation": "It supports voluntary striated muscle control."
+      },
+      {
+        "id": "psychophys-2-1-nervous-system-q7",
+        "question": "Which statement best describes Autonomic nervous system?",
+        "options": [
+          {
+            "id": "a",
+            "text": "It supports voluntary striated muscle control."
+          },
+          {
+            "id": "b",
+            "text": "It regulates involuntary organs, glands, and cardiac/smooth muscle."
+          },
+          {
+            "id": "c",
+            "text": "The CNS consists of the brain and spinal cord."
+          },
+          {
+            "id": "d",
+            "text": "The PNS includes neural structures outside CNS."
+          }
+        ],
+        "correctOptionId": "b",
+        "explanation": "It regulates involuntary organs, glands, and cardiac/smooth muscle."
+      },
+      {
+        "id": "psychophys-2-1-nervous-system-q8",
+        "question": "Which statement best describes Sympathetic branch?",
+        "options": [
+          {
+            "id": "a",
+            "text": "It is typically dominant in fight-or-flight contexts."
+          },
+          {
+            "id": "b",
+            "text": "The CNS consists of the brain and spinal cord."
+          },
+          {
+            "id": "c",
+            "text": "The PNS includes neural structures outside CNS."
+          },
+          {
+            "id": "d",
+            "text": "It supports voluntary striated muscle control."
+          }
+        ],
+        "correctOptionId": "a",
+        "explanation": "It is typically dominant in fight-or-flight contexts."
+      },
+      {
+        "id": "psychophys-2-1-nervous-system-q9",
+        "question": "Which statement best describes Parasympathetic branch?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The CNS consists of the brain and spinal cord."
+          },
+          {
+            "id": "b",
+            "text": "The PNS includes neural structures outside CNS."
+          },
+          {
+            "id": "c",
+            "text": "It supports voluntary striated muscle control."
+          },
+          {
+            "id": "d",
+            "text": "It is typically dominant in rest-and-digest states."
+          }
+        ],
+        "correctOptionId": "d",
+        "explanation": "It is typically dominant in rest-and-digest states."
+      },
+      {
+        "id": "psychophys-2-1-nervous-system-q10",
+        "question": "Which statement best describes Endocrine communication?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The PNS includes neural structures outside CNS."
+          },
+          {
+            "id": "b",
+            "text": "It supports voluntary striated muscle control."
+          },
+          {
+            "id": "c",
+            "text": "It uses hormones and is slower than neural signaling."
+          },
+          {
+            "id": "d",
+            "text": "The CNS consists of the brain and spinal cord."
+          }
+        ],
+        "correctOptionId": "c",
+        "explanation": "It uses hormones and is slower than neural signaling."
       }
     ]
   },
@@ -236,6 +572,174 @@
         ],
         "correctOptionId": "c",
         "explanation": "Myelin enables saltatory propagation, increasing conduction velocity."
+      },
+      {
+        "id": "psychophys-2-2-neurons-q4",
+        "question": "Which statement best describes Sensory neurons?",
+        "options": [
+          {
+            "id": "a",
+            "text": "They detect stimulation and relay activity onward."
+          },
+          {
+            "id": "b",
+            "text": "They integrate and relay signals between neurons."
+          },
+          {
+            "id": "c",
+            "text": "They transmit neural output to effector organs."
+          },
+          {
+            "id": "d",
+            "text": "Typical neuronal resting potential is around -70 mV."
+          }
+        ],
+        "correctOptionId": "a",
+        "explanation": "They detect stimulation and relay activity onward."
+      },
+      {
+        "id": "psychophys-2-2-neurons-q5",
+        "question": "Which statement best describes Interneurons?",
+        "options": [
+          {
+            "id": "a",
+            "text": "They detect stimulation and relay activity onward."
+          },
+          {
+            "id": "b",
+            "text": "They transmit neural output to effector organs."
+          },
+          {
+            "id": "c",
+            "text": "Typical neuronal resting potential is around -70 mV."
+          },
+          {
+            "id": "d",
+            "text": "They integrate and relay signals between neurons."
+          }
+        ],
+        "correctOptionId": "d",
+        "explanation": "They integrate and relay signals between neurons."
+      },
+      {
+        "id": "psychophys-2-2-neurons-q6",
+        "question": "Which statement best describes Motor neurons?",
+        "options": [
+          {
+            "id": "a",
+            "text": "They integrate and relay signals between neurons."
+          },
+          {
+            "id": "b",
+            "text": "Typical neuronal resting potential is around -70 mV."
+          },
+          {
+            "id": "c",
+            "text": "They transmit neural output to effector organs."
+          },
+          {
+            "id": "d",
+            "text": "They detect stimulation and relay activity onward."
+          }
+        ],
+        "correctOptionId": "c",
+        "explanation": "They transmit neural output to effector organs."
+      },
+      {
+        "id": "psychophys-2-2-neurons-q7",
+        "question": "Which statement best describes Resting potential?",
+        "options": [
+          {
+            "id": "a",
+            "text": "They transmit neural output to effector organs."
+          },
+          {
+            "id": "b",
+            "text": "Typical neuronal resting potential is around -70 mV."
+          },
+          {
+            "id": "c",
+            "text": "They detect stimulation and relay activity onward."
+          },
+          {
+            "id": "d",
+            "text": "They integrate and relay signals between neurons."
+          }
+        ],
+        "correctOptionId": "b",
+        "explanation": "Typical neuronal resting potential is around -70 mV."
+      },
+      {
+        "id": "psychophys-2-2-neurons-q8",
+        "question": "Which statement best describes Na+/K+ pump?",
+        "options": [
+          {
+            "id": "a",
+            "text": "It transports sodium out and potassium in."
+          },
+          {
+            "id": "b",
+            "text": "They detect stimulation and relay activity onward."
+          },
+          {
+            "id": "c",
+            "text": "They integrate and relay signals between neurons."
+          },
+          {
+            "id": "d",
+            "text": "They transmit neural output to effector organs."
+          }
+        ],
+        "correctOptionId": "a",
+        "explanation": "It transports sodium out and potassium in."
+      },
+      {
+        "id": "psychophys-2-2-neurons-q9",
+        "question": "Which statement best describes EPSP?",
+        "options": [
+          {
+            "id": "a",
+            "text": "They detect stimulation and relay activity onward."
+          },
+          {
+            "id": "b",
+            "text": "They integrate and relay signals between neurons."
+          },
+          {
+            "id": "c",
+            "text": "They transmit neural output to effector organs."
+          },
+          {
+            "id": "d",
+            "text": "It increases the likelihood of action potential firing."
+          }
+        ],
+        "correctOptionId": "d",
+        "explanation": "It increases the likelihood of action potential firing."
+      },
+      {
+        "id": "psychophys-2-2-neurons-q10",
+        "question": "Which statement best describes IPSP?",
+        "options": [
+          {
+            "id": "a",
+            "text": "They integrate and relay signals between neurons."
+          },
+          {
+            "id": "b",
+            "text": "They transmit neural output to effector organs."
+          },
+          {
+            "id": "c",
+            "text": "It decreases the likelihood of action potential firing."
+          },
+          {
+            "id": "d",
+            "text": "They detect stimulation and relay activity onward."
+          }
+        ],
+        "correctOptionId": "c",
+        "explanation": "It decreases the likelihood of action potential firing."
       }
     ]
   },
@@ -316,6 +820,174 @@
         ],
         "correctOptionId": "b",
         "explanation": "The spinal cord is a key bidirectional pathway for sensory and motor signaling."
+      },
+      {
+        "id": "psychophys-2-3-cns-q4",
+        "question": "Which statement best describes CNS tract?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A bundle of axons in the CNS is called a tract."
+          },
+          {
+            "id": "b",
+            "text": "A group of neuronal cell bodies in CNS is a nucleus."
+          },
+          {
+            "id": "c",
+            "text": "Afferent fibers conduct signals toward the CNS."
+          },
+          {
+            "id": "d",
+            "text": "Efferent fibers conduct signals away from the CNS."
+          }
+        ],
+        "correctOptionId": "a",
+        "explanation": "A bundle of axons in the CNS is called a tract."
+      },
+      {
+        "id": "psychophys-2-3-cns-q5",
+        "question": "Which statement best describes CNS nucleus?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A bundle of axons in the CNS is called a tract."
+          },
+          {
+            "id": "b",
+            "text": "Afferent fibers conduct signals toward the CNS."
+          },
+          {
+            "id": "c",
+            "text": "Efferent fibers conduct signals away from the CNS."
+          },
+          {
+            "id": "d",
+            "text": "A group of neuronal cell bodies in CNS is a nucleus."
+          }
+        ],
+        "correctOptionId": "d",
+        "explanation": "A group of neuronal cell bodies in CNS is a nucleus."
+      },
+      {
+        "id": "psychophys-2-3-cns-q6",
+        "question": "Which statement best describes Afferent pathway?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A group of neuronal cell bodies in CNS is a nucleus."
+          },
+          {
+            "id": "b",
+            "text": "Efferent fibers conduct signals away from the CNS."
+          },
+          {
+            "id": "c",
+            "text": "Afferent fibers conduct signals toward the CNS."
+          },
+          {
+            "id": "d",
+            "text": "A bundle of axons in the CNS is called a tract."
+          }
+        ],
+        "correctOptionId": "c",
+        "explanation": "Afferent fibers conduct signals toward the CNS."
+      },
+      {
+        "id": "psychophys-2-3-cns-q7",
+        "question": "Which statement best describes Efferent pathway?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Afferent fibers conduct signals toward the CNS."
+          },
+          {
+            "id": "b",
+            "text": "Efferent fibers conduct signals away from the CNS."
+          },
+          {
+            "id": "c",
+            "text": "A bundle of axons in the CNS is called a tract."
+          },
+          {
+            "id": "d",
+            "text": "A group of neuronal cell bodies in CNS is a nucleus."
+          }
+        ],
+        "correctOptionId": "b",
+        "explanation": "Efferent fibers conduct signals away from the CNS."
+      },
+      {
+        "id": "psychophys-2-3-cns-q8",
+        "question": "Which statement best describes Sagittal plane?",
+        "options": [
+          {
+            "id": "a",
+            "text": "It divides the body into left and right portions."
+          },
+          {
+            "id": "b",
+            "text": "A bundle of axons in the CNS is called a tract."
+          },
+          {
+            "id": "c",
+            "text": "A group of neuronal cell bodies in CNS is a nucleus."
+          },
+          {
+            "id": "d",
+            "text": "Afferent fibers conduct signals toward the CNS."
+          }
+        ],
+        "correctOptionId": "a",
+        "explanation": "It divides the body into left and right portions."
+      },
+      {
+        "id": "psychophys-2-3-cns-q9",
+        "question": "Which statement best describes Coronal plane?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A bundle of axons in the CNS is called a tract."
+          },
+          {
+            "id": "b",
+            "text": "A group of neuronal cell bodies in CNS is a nucleus."
+          },
+          {
+            "id": "c",
+            "text": "Afferent fibers conduct signals toward the CNS."
+          },
+          {
+            "id": "d",
+            "text": "It divides the body into anterior and posterior portions."
+          }
+        ],
+        "correctOptionId": "d",
+        "explanation": "It divides the body into anterior and posterior portions."
+      },
+      {
+        "id": "psychophys-2-3-cns-q10",
+        "question": "Which statement best describes Visual cortex map?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A group of neuronal cell bodies in CNS is a nucleus."
+          },
+          {
+            "id": "b",
+            "text": "Afferent fibers conduct signals toward the CNS."
+          },
+          {
+            "id": "c",
+            "text": "Visual cortex is organized retinotopically."
+          },
+          {
+            "id": "d",
+            "text": "A bundle of axons in the CNS is called a tract."
+          }
+        ],
+        "correctOptionId": "c",
+        "explanation": "Visual cortex is organized retinotopically."
       }
     ]
   },
@@ -396,6 +1068,174 @@
         ],
         "correctOptionId": "d",
         "explanation": "Nyquist requires at least twice the highest frequency component."
+      },
+      {
+        "id": "psychophys-3-measurement-q4",
+        "question": "Which statement best describes Biosignal?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A biosignal is a directly measurable time-varying physiological parameter."
+          },
+          {
+            "id": "b",
+            "text": "Impedance is resistance under alternating-current conditions."
+          },
+          {
+            "id": "c",
+            "text": "All channels share a common reference electrode."
+          },
+          {
+            "id": "d",
+            "text": "A perfectly neutral body reference site does not exist."
+          }
+        ],
+        "correctOptionId": "a",
+        "explanation": "A biosignal is a directly measurable time-varying physiological parameter."
+      },
+      {
+        "id": "psychophys-3-measurement-q5",
+        "question": "Which statement best describes Impedance?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A biosignal is a directly measurable time-varying physiological parameter."
+          },
+          {
+            "id": "b",
+            "text": "All channels share a common reference electrode."
+          },
+          {
+            "id": "c",
+            "text": "A perfectly neutral body reference site does not exist."
+          },
+          {
+            "id": "d",
+            "text": "Impedance is resistance under alternating-current conditions."
+          }
+        ],
+        "correctOptionId": "d",
+        "explanation": "Impedance is resistance under alternating-current conditions."
+      },
+      {
+        "id": "psychophys-3-measurement-q6",
+        "question": "Which statement best describes Unipolar recording?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Impedance is resistance under alternating-current conditions."
+          },
+          {
+            "id": "b",
+            "text": "A perfectly neutral body reference site does not exist."
+          },
+          {
+            "id": "c",
+            "text": "All channels share a common reference electrode."
+          },
+          {
+            "id": "d",
+            "text": "A biosignal is a directly measurable time-varying physiological parameter."
+          }
+        ],
+        "correctOptionId": "c",
+        "explanation": "All channels share a common reference electrode."
+      },
+      {
+        "id": "psychophys-3-measurement-q7",
+        "question": "Which statement best describes Reference limitation?",
+        "options": [
+          {
+            "id": "a",
+            "text": "All channels share a common reference electrode."
+          },
+          {
+            "id": "b",
+            "text": "A perfectly neutral body reference site does not exist."
+          },
+          {
+            "id": "c",
+            "text": "A biosignal is a directly measurable time-varying physiological parameter."
+          },
+          {
+            "id": "d",
+            "text": "Impedance is resistance under alternating-current conditions."
+          }
+        ],
+        "correctOptionId": "b",
+        "explanation": "A perfectly neutral body reference site does not exist."
+      },
+      {
+        "id": "psychophys-3-measurement-q8",
+        "question": "Which statement best describes Nyquist rule?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Sampling rate should be at least twice the highest target frequency."
+          },
+          {
+            "id": "b",
+            "text": "A biosignal is a directly measurable time-varying physiological parameter."
+          },
+          {
+            "id": "c",
+            "text": "Impedance is resistance under alternating-current conditions."
+          },
+          {
+            "id": "d",
+            "text": "All channels share a common reference electrode."
+          }
+        ],
+        "correctOptionId": "a",
+        "explanation": "Sampling rate should be at least twice the highest target frequency."
+      },
+      {
+        "id": "psychophys-3-measurement-q9",
+        "question": "Which statement best describes Notch filter?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A biosignal is a directly measurable time-varying physiological parameter."
+          },
+          {
+            "id": "b",
+            "text": "Impedance is resistance under alternating-current conditions."
+          },
+          {
+            "id": "c",
+            "text": "All channels share a common reference electrode."
+          },
+          {
+            "id": "d",
+            "text": "It attenuates a narrow band around one interference frequency."
+          }
+        ],
+        "correctOptionId": "d",
+        "explanation": "It attenuates a narrow band around one interference frequency."
+      },
+      {
+        "id": "psychophys-3-measurement-q10",
+        "question": "Which statement best describes High-pass filter?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Impedance is resistance under alternating-current conditions."
+          },
+          {
+            "id": "b",
+            "text": "All channels share a common reference electrode."
+          },
+          {
+            "id": "c",
+            "text": "It attenuates slower drift while preserving faster components."
+          },
+          {
+            "id": "d",
+            "text": "A biosignal is a directly measurable time-varying physiological parameter."
+          }
+        ],
+        "correctOptionId": "c",
+        "explanation": "It attenuates slower drift while preserving faster components."
       }
     ]
   },
@@ -476,6 +1316,174 @@
         ],
         "correctOptionId": "a",
         "explanation": "Counterbalancing mitigates temporal and sequence confounds."
+      },
+      {
+        "id": "psychophys-4-experimental-design-q4",
+        "question": "Which statement best describes Operationalization?",
+        "options": [
+          {
+            "id": "a",
+            "text": "It defines constructs in specific measurable terms."
+          },
+          {
+            "id": "b",
+            "text": "The IV is manipulated to induce an effect."
+          },
+          {
+            "id": "c",
+            "text": "The DV is measured to reveal the effect."
+          },
+          {
+            "id": "d",
+            "text": "It often has lower variability than between-subject designs."
+          }
+        ],
+        "correctOptionId": "a",
+        "explanation": "It defines constructs in specific measurable terms."
+      },
+      {
+        "id": "psychophys-4-experimental-design-q5",
+        "question": "Which statement best describes Independent variable?",
+        "options": [
+          {
+            "id": "a",
+            "text": "It defines constructs in specific measurable terms."
+          },
+          {
+            "id": "b",
+            "text": "The DV is measured to reveal the effect."
+          },
+          {
+            "id": "c",
+            "text": "It often has lower variability than between-subject designs."
+          },
+          {
+            "id": "d",
+            "text": "The IV is manipulated to induce an effect."
+          }
+        ],
+        "correctOptionId": "d",
+        "explanation": "The IV is manipulated to induce an effect."
+      },
+      {
+        "id": "psychophys-4-experimental-design-q6",
+        "question": "Which statement best describes Dependent variable?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The IV is manipulated to induce an effect."
+          },
+          {
+            "id": "b",
+            "text": "It often has lower variability than between-subject designs."
+          },
+          {
+            "id": "c",
+            "text": "The DV is measured to reveal the effect."
+          },
+          {
+            "id": "d",
+            "text": "It defines constructs in specific measurable terms."
+          }
+        ],
+        "correctOptionId": "c",
+        "explanation": "The DV is measured to reveal the effect."
+      },
+      {
+        "id": "psychophys-4-experimental-design-q7",
+        "question": "Which statement best describes Within-subject design?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The DV is measured to reveal the effect."
+          },
+          {
+            "id": "b",
+            "text": "It often has lower variability than between-subject designs."
+          },
+          {
+            "id": "c",
+            "text": "It defines constructs in specific measurable terms."
+          },
+          {
+            "id": "d",
+            "text": "The IV is manipulated to induce an effect."
+          }
+        ],
+        "correctOptionId": "b",
+        "explanation": "It often has lower variability than between-subject designs."
+      },
+      {
+        "id": "psychophys-4-experimental-design-q8",
+        "question": "Which statement best describes Counterbalancing?",
+        "options": [
+          {
+            "id": "a",
+            "text": "It controls order, learning, and fatigue confounds."
+          },
+          {
+            "id": "b",
+            "text": "It defines constructs in specific measurable terms."
+          },
+          {
+            "id": "c",
+            "text": "The IV is manipulated to induce an effect."
+          },
+          {
+            "id": "d",
+            "text": "The DV is measured to reveal the effect."
+          }
+        ],
+        "correctOptionId": "a",
+        "explanation": "It controls order, learning, and fatigue confounds."
+      },
+      {
+        "id": "psychophys-4-experimental-design-q9",
+        "question": "Which statement best describes Mediating variable?",
+        "options": [
+          {
+            "id": "a",
+            "text": "It defines constructs in specific measurable terms."
+          },
+          {
+            "id": "b",
+            "text": "The IV is manipulated to induce an effect."
+          },
+          {
+            "id": "c",
+            "text": "The DV is measured to reveal the effect."
+          },
+          {
+            "id": "d",
+            "text": "It explains mechanisms linking IV and DV."
+          }
+        ],
+        "correctOptionId": "d",
+        "explanation": "It explains mechanisms linking IV and DV."
+      },
+      {
+        "id": "psychophys-4-experimental-design-q10",
+        "question": "Which statement best describes Event-related analysis?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The IV is manipulated to induce an effect."
+          },
+          {
+            "id": "b",
+            "text": "The DV is measured to reveal the effect."
+          },
+          {
+            "id": "c",
+            "text": "It analyzes windows relative to specific events."
+          },
+          {
+            "id": "d",
+            "text": "It defines constructs in specific measurable terms."
+          }
+        ],
+        "correctOptionId": "c",
+        "explanation": "It analyzes windows relative to specific events."
       }
     ]
   },
@@ -556,6 +1564,174 @@
         ],
         "correctOptionId": "b",
         "explanation": "A common flow is rectify, smooth, then integrate for robust output measures."
+      },
+      {
+        "id": "psychophys-5-emg-q4",
+        "question": "Which statement best describes Motor unit?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A motor unit is one motor neuron plus its innervated fibers."
+          },
+          {
+            "id": "b",
+            "text": "Activation follows an all-or-none principle."
+          },
+          {
+            "id": "c",
+            "text": "Surface EMG reflects summed muscle-fiber action potentials."
+          },
+          {
+            "id": "d",
+            "text": "EMG is often broadband with substantial power in tens-of-Hz ranges."
+          }
+        ],
+        "correctOptionId": "a",
+        "explanation": "A motor unit is one motor neuron plus its innervated fibers."
+      },
+      {
+        "id": "psychophys-5-emg-q5",
+        "question": "Which statement best describes Motor-unit activation?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A motor unit is one motor neuron plus its innervated fibers."
+          },
+          {
+            "id": "b",
+            "text": "Surface EMG reflects summed muscle-fiber action potentials."
+          },
+          {
+            "id": "c",
+            "text": "EMG is often broadband with substantial power in tens-of-Hz ranges."
+          },
+          {
+            "id": "d",
+            "text": "Activation follows an all-or-none principle."
+          }
+        ],
+        "correctOptionId": "d",
+        "explanation": "Activation follows an all-or-none principle."
+      },
+      {
+        "id": "psychophys-5-emg-q6",
+        "question": "Which statement best describes Surface EMG origin?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Activation follows an all-or-none principle."
+          },
+          {
+            "id": "b",
+            "text": "EMG is often broadband with substantial power in tens-of-Hz ranges."
+          },
+          {
+            "id": "c",
+            "text": "Surface EMG reflects summed muscle-fiber action potentials."
+          },
+          {
+            "id": "d",
+            "text": "A motor unit is one motor neuron plus its innervated fibers."
+          }
+        ],
+        "correctOptionId": "c",
+        "explanation": "Surface EMG reflects summed muscle-fiber action potentials."
+      },
+      {
+        "id": "psychophys-5-emg-q7",
+        "question": "Which statement best describes EMG spectrum?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Surface EMG reflects summed muscle-fiber action potentials."
+          },
+          {
+            "id": "b",
+            "text": "EMG is often broadband with substantial power in tens-of-Hz ranges."
+          },
+          {
+            "id": "c",
+            "text": "A motor unit is one motor neuron plus its innervated fibers."
+          },
+          {
+            "id": "d",
+            "text": "Activation follows an all-or-none principle."
+          }
+        ],
+        "correctOptionId": "b",
+        "explanation": "EMG is often broadband with substantial power in tens-of-Hz ranges."
+      },
+      {
+        "id": "psychophys-5-emg-q8",
+        "question": "Which statement best describes Bipolar EMG setup?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Surface EMG is commonly recorded with bipolar placement on muscle."
+          },
+          {
+            "id": "b",
+            "text": "A motor unit is one motor neuron plus its innervated fibers."
+          },
+          {
+            "id": "c",
+            "text": "Activation follows an all-or-none principle."
+          },
+          {
+            "id": "d",
+            "text": "Surface EMG reflects summed muscle-fiber action potentials."
+          }
+        ],
+        "correctOptionId": "a",
+        "explanation": "Surface EMG is commonly recorded with bipolar placement on muscle."
+      },
+      {
+        "id": "psychophys-5-emg-q9",
+        "question": "Which statement best describes Skin preparation?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A motor unit is one motor neuron plus its innervated fibers."
+          },
+          {
+            "id": "b",
+            "text": "Activation follows an all-or-none principle."
+          },
+          {
+            "id": "c",
+            "text": "Surface EMG reflects summed muscle-fiber action potentials."
+          },
+          {
+            "id": "d",
+            "text": "Mild abrasion lowers impedance and improves electrode contact."
+          }
+        ],
+        "correctOptionId": "d",
+        "explanation": "Mild abrasion lowers impedance and improves electrode contact."
+      },
+      {
+        "id": "psychophys-5-emg-q10",
+        "question": "Which statement best describes EMG integration?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Activation follows an all-or-none principle."
+          },
+          {
+            "id": "b",
+            "text": "Surface EMG reflects summed muscle-fiber action potentials."
+          },
+          {
+            "id": "c",
+            "text": "Integration estimates total EMG output over a period."
+          },
+          {
+            "id": "d",
+            "text": "A motor unit is one motor neuron plus its innervated fibers."
+          }
+        ],
+        "correctOptionId": "c",
+        "explanation": "Integration estimates total EMG output over a period."
       }
     ]
   },
@@ -636,6 +1812,174 @@
         ],
         "correctOptionId": "b",
         "explanation": "SA node usually dominates pacing; AV delay supports coordinated pumping."
+      },
+      {
+        "id": "psychophys-6-1-cardiovascular-system-q4",
+        "question": "Which statement best describes Arteries?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Arteries carry blood away from the heart."
+          },
+          {
+            "id": "b",
+            "text": "Veins carry blood toward the heart."
+          },
+          {
+            "id": "c",
+            "text": "Capillaries are primary exchange sites for gases and nutrients."
+          },
+          {
+            "id": "d",
+            "text": "Pacemaker cells depolarize spontaneously without external stimulation."
+          }
+        ],
+        "correctOptionId": "a",
+        "explanation": "Arteries carry blood away from the heart."
+      },
+      {
+        "id": "psychophys-6-1-cardiovascular-system-q5",
+        "question": "Which statement best describes Veins?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Arteries carry blood away from the heart."
+          },
+          {
+            "id": "b",
+            "text": "Capillaries are primary exchange sites for gases and nutrients."
+          },
+          {
+            "id": "c",
+            "text": "Pacemaker cells depolarize spontaneously without external stimulation."
+          },
+          {
+            "id": "d",
+            "text": "Veins carry blood toward the heart."
+          }
+        ],
+        "correctOptionId": "d",
+        "explanation": "Veins carry blood toward the heart."
+      },
+      {
+        "id": "psychophys-6-1-cardiovascular-system-q6",
+        "question": "Which statement best describes Capillaries?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Veins carry blood toward the heart."
+          },
+          {
+            "id": "b",
+            "text": "Pacemaker cells depolarize spontaneously without external stimulation."
+          },
+          {
+            "id": "c",
+            "text": "Capillaries are primary exchange sites for gases and nutrients."
+          },
+          {
+            "id": "d",
+            "text": "Arteries carry blood away from the heart."
+          }
+        ],
+        "correctOptionId": "c",
+        "explanation": "Capillaries are primary exchange sites for gases and nutrients."
+      },
+      {
+        "id": "psychophys-6-1-cardiovascular-system-q7",
+        "question": "Which statement best describes Autorhythmicity?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Capillaries are primary exchange sites for gases and nutrients."
+          },
+          {
+            "id": "b",
+            "text": "Pacemaker cells depolarize spontaneously without external stimulation."
+          },
+          {
+            "id": "c",
+            "text": "Arteries carry blood away from the heart."
+          },
+          {
+            "id": "d",
+            "text": "Veins carry blood toward the heart."
+          }
+        ],
+        "correctOptionId": "b",
+        "explanation": "Pacemaker cells depolarize spontaneously without external stimulation."
+      },
+      {
+        "id": "psychophys-6-1-cardiovascular-system-q8",
+        "question": "Which statement best describes SA node rhythm?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The SA node typically has higher intrinsic rhythmicity than the AV node."
+          },
+          {
+            "id": "b",
+            "text": "Arteries carry blood away from the heart."
+          },
+          {
+            "id": "c",
+            "text": "Veins carry blood toward the heart."
+          },
+          {
+            "id": "d",
+            "text": "Capillaries are primary exchange sites for gases and nutrients."
+          }
+        ],
+        "correctOptionId": "a",
+        "explanation": "The SA node typically has higher intrinsic rhythmicity than the AV node."
+      },
+      {
+        "id": "psychophys-6-1-cardiovascular-system-q9",
+        "question": "Which statement best describes AV delay?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Arteries carry blood away from the heart."
+          },
+          {
+            "id": "b",
+            "text": "Veins carry blood toward the heart."
+          },
+          {
+            "id": "c",
+            "text": "Capillaries are primary exchange sites for gases and nutrients."
+          },
+          {
+            "id": "d",
+            "text": "AV delay allows atrial contraction before ventricular contraction."
+          }
+        ],
+        "correctOptionId": "d",
+        "explanation": "AV delay allows atrial contraction before ventricular contraction."
+      },
+      {
+        "id": "psychophys-6-1-cardiovascular-system-q10",
+        "question": "Which statement best describes Autonomic cardiac control?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Veins carry blood toward the heart."
+          },
+          {
+            "id": "b",
+            "text": "Capillaries are primary exchange sites for gases and nutrients."
+          },
+          {
+            "id": "c",
+            "text": "Sympathetic input tends to speed heart rate; parasympathetic tends to slow it."
+          },
+          {
+            "id": "d",
+            "text": "Arteries carry blood away from the heart."
+          }
+        ],
+        "correctOptionId": "c",
+        "explanation": "Sympathetic input tends to speed heart rate; parasympathetic tends to slow it."
       }
     ]
   },
@@ -716,6 +2060,174 @@
         ],
         "correctOptionId": "b",
         "explanation": "HRV analysis can reveal autonomic modulation patterns in cardiac timing."
+      },
+      {
+        "id": "psychophys-6-2-cardiovascular-measures-q4",
+        "question": "Which statement best describes Blood-pressure unit?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Blood pressure is commonly reported in mmHg."
+          },
+          {
+            "id": "b",
+            "text": "Increased sensed pressure triggers compensatory reduction in cardiac output."
+          },
+          {
+            "id": "c",
+            "text": "Cuff-based sphygmomanometry is not ideal for continuous monitoring."
+          },
+          {
+            "id": "d",
+            "text": "It enables continuous measurement of peripheral blood-volume changes."
+          }
+        ],
+        "correctOptionId": "a",
+        "explanation": "Blood pressure is commonly reported in mmHg."
+      },
+      {
+        "id": "psychophys-6-2-cardiovascular-measures-q5",
+        "question": "Which statement best describes Baroreflex?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Blood pressure is commonly reported in mmHg."
+          },
+          {
+            "id": "b",
+            "text": "Cuff-based sphygmomanometry is not ideal for continuous monitoring."
+          },
+          {
+            "id": "c",
+            "text": "It enables continuous measurement of peripheral blood-volume changes."
+          },
+          {
+            "id": "d",
+            "text": "Increased sensed pressure triggers compensatory reduction in cardiac output."
+          }
+        ],
+        "correctOptionId": "d",
+        "explanation": "Increased sensed pressure triggers compensatory reduction in cardiac output."
+      },
+      {
+        "id": "psychophys-6-2-cardiovascular-measures-q6",
+        "question": "Which statement best describes Cuff limitation?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Increased sensed pressure triggers compensatory reduction in cardiac output."
+          },
+          {
+            "id": "b",
+            "text": "It enables continuous measurement of peripheral blood-volume changes."
+          },
+          {
+            "id": "c",
+            "text": "Cuff-based sphygmomanometry is not ideal for continuous monitoring."
+          },
+          {
+            "id": "d",
+            "text": "Blood pressure is commonly reported in mmHg."
+          }
+        ],
+        "correctOptionId": "c",
+        "explanation": "Cuff-based sphygmomanometry is not ideal for continuous monitoring."
+      },
+      {
+        "id": "psychophys-6-2-cardiovascular-measures-q7",
+        "question": "Which statement best describes Plethysmography?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Cuff-based sphygmomanometry is not ideal for continuous monitoring."
+          },
+          {
+            "id": "b",
+            "text": "It enables continuous measurement of peripheral blood-volume changes."
+          },
+          {
+            "id": "c",
+            "text": "Blood pressure is commonly reported in mmHg."
+          },
+          {
+            "id": "d",
+            "text": "Increased sensed pressure triggers compensatory reduction in cardiac output."
+          }
+        ],
+        "correctOptionId": "b",
+        "explanation": "It enables continuous measurement of peripheral blood-volume changes."
+      },
+      {
+        "id": "psychophys-6-2-cardiovascular-measures-q8",
+        "question": "Which statement best describes Peripheral signal caveat?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Local vascular signals may not perfectly represent whole-body state."
+          },
+          {
+            "id": "b",
+            "text": "Blood pressure is commonly reported in mmHg."
+          },
+          {
+            "id": "c",
+            "text": "Increased sensed pressure triggers compensatory reduction in cardiac output."
+          },
+          {
+            "id": "d",
+            "text": "Cuff-based sphygmomanometry is not ideal for continuous monitoring."
+          }
+        ],
+        "correctOptionId": "a",
+        "explanation": "Local vascular signals may not perfectly represent whole-body state."
+      },
+      {
+        "id": "psychophys-6-2-cardiovascular-measures-q9",
+        "question": "Which statement best describes ECG origin?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Blood pressure is commonly reported in mmHg."
+          },
+          {
+            "id": "b",
+            "text": "Increased sensed pressure triggers compensatory reduction in cardiac output."
+          },
+          {
+            "id": "c",
+            "text": "Cuff-based sphygmomanometry is not ideal for continuous monitoring."
+          },
+          {
+            "id": "d",
+            "text": "ECG reflects summed cardiac muscle electrical activity."
+          }
+        ],
+        "correctOptionId": "d",
+        "explanation": "ECG reflects summed cardiac muscle electrical activity."
+      },
+      {
+        "id": "psychophys-6-2-cardiovascular-measures-q10",
+        "question": "Which statement best describes HRV utility?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Increased sensed pressure triggers compensatory reduction in cardiac output."
+          },
+          {
+            "id": "b",
+            "text": "Cuff-based sphygmomanometry is not ideal for continuous monitoring."
+          },
+          {
+            "id": "c",
+            "text": "HRV spectral analysis can reflect sympathetic and parasympathetic modulation."
+          },
+          {
+            "id": "d",
+            "text": "Blood pressure is commonly reported in mmHg."
+          }
+        ],
+        "correctOptionId": "c",
+        "explanation": "HRV spectral analysis can reflect sympathetic and parasympathetic modulation."
       }
     ]
   },
@@ -796,6 +2308,174 @@
         ],
         "correctOptionId": "b",
         "explanation": "SCL tracks slower baseline-like level; SCR captures transient event-related responses."
+      },
+      {
+        "id": "psychophys-7-eda-q4",
+        "question": "Which statement best describes Eccrine source?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Eccrine sweat-gland activity is the main source of skin-conductance changes."
+          },
+          {
+            "id": "b",
+            "text": "Eccrine glands relevant to EDA are under sympathetic control."
+          },
+          {
+            "id": "c",
+            "text": "Apocrine glands secrete relatively more oily/viscous fluid."
+          },
+          {
+            "id": "d",
+            "text": "Conductance responses are strongest in regions with dense eccrine glands."
+          }
+        ],
+        "correctOptionId": "a",
+        "explanation": "Eccrine sweat-gland activity is the main source of skin-conductance changes."
+      },
+      {
+        "id": "psychophys-7-eda-q5",
+        "question": "Which statement best describes Autonomic control?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Eccrine sweat-gland activity is the main source of skin-conductance changes."
+          },
+          {
+            "id": "b",
+            "text": "Apocrine glands secrete relatively more oily/viscous fluid."
+          },
+          {
+            "id": "c",
+            "text": "Conductance responses are strongest in regions with dense eccrine glands."
+          },
+          {
+            "id": "d",
+            "text": "Eccrine glands relevant to EDA are under sympathetic control."
+          }
+        ],
+        "correctOptionId": "d",
+        "explanation": "Eccrine glands relevant to EDA are under sympathetic control."
+      },
+      {
+        "id": "psychophys-7-eda-q6",
+        "question": "Which statement best describes Apocrine secretion?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Eccrine glands relevant to EDA are under sympathetic control."
+          },
+          {
+            "id": "b",
+            "text": "Conductance responses are strongest in regions with dense eccrine glands."
+          },
+          {
+            "id": "c",
+            "text": "Apocrine glands secrete relatively more oily/viscous fluid."
+          },
+          {
+            "id": "d",
+            "text": "Eccrine sweat-gland activity is the main source of skin-conductance changes."
+          }
+        ],
+        "correctOptionId": "c",
+        "explanation": "Apocrine glands secrete relatively more oily/viscous fluid."
+      },
+      {
+        "id": "psychophys-7-eda-q7",
+        "question": "Which statement best describes High-response sites?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Apocrine glands secrete relatively more oily/viscous fluid."
+          },
+          {
+            "id": "b",
+            "text": "Conductance responses are strongest in regions with dense eccrine glands."
+          },
+          {
+            "id": "c",
+            "text": "Eccrine sweat-gland activity is the main source of skin-conductance changes."
+          },
+          {
+            "id": "d",
+            "text": "Eccrine glands relevant to EDA are under sympathetic control."
+          }
+        ],
+        "correctOptionId": "b",
+        "explanation": "Conductance responses are strongest in regions with dense eccrine glands."
+      },
+      {
+        "id": "psychophys-7-eda-q8",
+        "question": "Which statement best describes EDA units?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Skin conductance is commonly expressed in microSiemens."
+          },
+          {
+            "id": "b",
+            "text": "Eccrine sweat-gland activity is the main source of skin-conductance changes."
+          },
+          {
+            "id": "c",
+            "text": "Eccrine glands relevant to EDA are under sympathetic control."
+          },
+          {
+            "id": "d",
+            "text": "Apocrine glands secrete relatively more oily/viscous fluid."
+          }
+        ],
+        "correctOptionId": "a",
+        "explanation": "Skin conductance is commonly expressed in microSiemens."
+      },
+      {
+        "id": "psychophys-7-eda-q9",
+        "question": "Which statement best describes SCL?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Eccrine sweat-gland activity is the main source of skin-conductance changes."
+          },
+          {
+            "id": "b",
+            "text": "Eccrine glands relevant to EDA are under sympathetic control."
+          },
+          {
+            "id": "c",
+            "text": "Apocrine glands secrete relatively more oily/viscous fluid."
+          },
+          {
+            "id": "d",
+            "text": "SCL is the slower tonic level component of EDA."
+          }
+        ],
+        "correctOptionId": "d",
+        "explanation": "SCL is the slower tonic level component of EDA."
+      },
+      {
+        "id": "psychophys-7-eda-q10",
+        "question": "Which statement best describes SCR?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Eccrine glands relevant to EDA are under sympathetic control."
+          },
+          {
+            "id": "b",
+            "text": "Apocrine glands secrete relatively more oily/viscous fluid."
+          },
+          {
+            "id": "c",
+            "text": "SCR is the faster phasic event-related EDA component."
+          },
+          {
+            "id": "d",
+            "text": "Eccrine sweat-gland activity is the main source of skin-conductance changes."
+          }
+        ],
+        "correctOptionId": "c",
+        "explanation": "SCR is the faster phasic event-related EDA component."
       }
     ]
   },
@@ -876,6 +2556,174 @@
         ],
         "correctOptionId": "a",
         "explanation": "Volume conduction spreads electrical fields and complicates direct source attribution."
+      },
+      {
+        "id": "psychophys-8-1-electrocortical-activity-q4",
+        "question": "Which statement best describes EEG term?",
+        "options": [
+          {
+            "id": "a",
+            "text": "EEG can refer to the recording method or the recorded signal."
+          },
+          {
+            "id": "b",
+            "text": "Scalp EEG mainly reflects summed postsynaptic potentials in large cortical populations."
+          },
+          {
+            "id": "c",
+            "text": "Single action potentials are often too brief and unsynchronized for scalp dominance."
+          },
+          {
+            "id": "d",
+            "text": "Large synchronous neural populations are needed for clear scalp signals."
+          }
+        ],
+        "correctOptionId": "a",
+        "explanation": "EEG can refer to the recording method or the recorded signal."
+      },
+      {
+        "id": "psychophys-8-1-electrocortical-activity-q5",
+        "question": "Which statement best describes Dominant source?",
+        "options": [
+          {
+            "id": "a",
+            "text": "EEG can refer to the recording method or the recorded signal."
+          },
+          {
+            "id": "b",
+            "text": "Single action potentials are often too brief and unsynchronized for scalp dominance."
+          },
+          {
+            "id": "c",
+            "text": "Large synchronous neural populations are needed for clear scalp signals."
+          },
+          {
+            "id": "d",
+            "text": "Scalp EEG mainly reflects summed postsynaptic potentials in large cortical populations."
+          }
+        ],
+        "correctOptionId": "d",
+        "explanation": "Scalp EEG mainly reflects summed postsynaptic potentials in large cortical populations."
+      },
+      {
+        "id": "psychophys-8-1-electrocortical-activity-q6",
+        "question": "Which statement best describes Action-potential limitation?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Scalp EEG mainly reflects summed postsynaptic potentials in large cortical populations."
+          },
+          {
+            "id": "b",
+            "text": "Large synchronous neural populations are needed for clear scalp signals."
+          },
+          {
+            "id": "c",
+            "text": "Single action potentials are often too brief and unsynchronized for scalp dominance."
+          },
+          {
+            "id": "d",
+            "text": "EEG can refer to the recording method or the recorded signal."
+          }
+        ],
+        "correctOptionId": "c",
+        "explanation": "Single action potentials are often too brief and unsynchronized for scalp dominance."
+      },
+      {
+        "id": "psychophys-8-1-electrocortical-activity-q7",
+        "question": "Which statement best describes Population synchrony?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Single action potentials are often too brief and unsynchronized for scalp dominance."
+          },
+          {
+            "id": "b",
+            "text": "Large synchronous neural populations are needed for clear scalp signals."
+          },
+          {
+            "id": "c",
+            "text": "EEG can refer to the recording method or the recorded signal."
+          },
+          {
+            "id": "d",
+            "text": "Scalp EEG mainly reflects summed postsynaptic potentials in large cortical populations."
+          }
+        ],
+        "correctOptionId": "b",
+        "explanation": "Large synchronous neural populations are needed for clear scalp signals."
+      },
+      {
+        "id": "psychophys-8-1-electrocortical-activity-q8",
+        "question": "Which statement best describes Volume conduction?",
+        "options": [
+          {
+            "id": "a",
+            "text": "One source can appear at multiple scalp electrodes due to field spread."
+          },
+          {
+            "id": "b",
+            "text": "EEG can refer to the recording method or the recorded signal."
+          },
+          {
+            "id": "c",
+            "text": "Scalp EEG mainly reflects summed postsynaptic potentials in large cortical populations."
+          },
+          {
+            "id": "d",
+            "text": "Single action potentials are often too brief and unsynchronized for scalp dominance."
+          }
+        ],
+        "correctOptionId": "a",
+        "explanation": "One source can appear at multiple scalp electrodes due to field spread."
+      },
+      {
+        "id": "psychophys-8-1-electrocortical-activity-q9",
+        "question": "Which statement best describes Temporal resolution?",
+        "options": [
+          {
+            "id": "a",
+            "text": "EEG can refer to the recording method or the recorded signal."
+          },
+          {
+            "id": "b",
+            "text": "Scalp EEG mainly reflects summed postsynaptic potentials in large cortical populations."
+          },
+          {
+            "id": "c",
+            "text": "Single action potentials are often too brief and unsynchronized for scalp dominance."
+          },
+          {
+            "id": "d",
+            "text": "EEG has high millisecond-level temporal resolution."
+          }
+        ],
+        "correctOptionId": "d",
+        "explanation": "EEG has high millisecond-level temporal resolution."
+      },
+      {
+        "id": "psychophys-8-1-electrocortical-activity-q10",
+        "question": "Which statement best describes Spatial limitation?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Scalp EEG mainly reflects summed postsynaptic potentials in large cortical populations."
+          },
+          {
+            "id": "b",
+            "text": "Single action potentials are often too brief and unsynchronized for scalp dominance."
+          },
+          {
+            "id": "c",
+            "text": "EEG spatial localization is limited, especially for deeper sources."
+          },
+          {
+            "id": "d",
+            "text": "EEG can refer to the recording method or the recorded signal."
+          }
+        ],
+        "correctOptionId": "c",
+        "explanation": "EEG spatial localization is limited, especially for deeper sources."
       }
     ]
   },
@@ -956,6 +2804,174 @@
         ],
         "correctOptionId": "a",
         "explanation": "Averaging time-locked epochs emphasizes consistent event-related components."
+      },
+      {
+        "id": "psychophys-8-2-electrocortical-measures-q4",
+        "question": "Which statement best describes 10-20 fiducials?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The 10-20 system uses nasion, inion, and pre-auricular landmarks."
+          },
+          {
+            "id": "b",
+            "text": "Skin preparation and conductive gel help reduce electrode impedance."
+          },
+          {
+            "id": "c",
+            "text": "Sampling should be at least twice the highest frequency of interest."
+          },
+          {
+            "id": "d",
+            "text": "Eye movements and muscle activity are prominent EEG artifacts."
+          }
+        ],
+        "correctOptionId": "a",
+        "explanation": "The 10-20 system uses nasion, inion, and pre-auricular landmarks."
+      },
+      {
+        "id": "psychophys-8-2-electrocortical-measures-q5",
+        "question": "Which statement best describes Impedance reduction?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The 10-20 system uses nasion, inion, and pre-auricular landmarks."
+          },
+          {
+            "id": "b",
+            "text": "Sampling should be at least twice the highest frequency of interest."
+          },
+          {
+            "id": "c",
+            "text": "Eye movements and muscle activity are prominent EEG artifacts."
+          },
+          {
+            "id": "d",
+            "text": "Skin preparation and conductive gel help reduce electrode impedance."
+          }
+        ],
+        "correctOptionId": "d",
+        "explanation": "Skin preparation and conductive gel help reduce electrode impedance."
+      },
+      {
+        "id": "psychophys-8-2-electrocortical-measures-q6",
+        "question": "Which statement best describes Sampling setup?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Skin preparation and conductive gel help reduce electrode impedance."
+          },
+          {
+            "id": "b",
+            "text": "Eye movements and muscle activity are prominent EEG artifacts."
+          },
+          {
+            "id": "c",
+            "text": "Sampling should be at least twice the highest frequency of interest."
+          },
+          {
+            "id": "d",
+            "text": "The 10-20 system uses nasion, inion, and pre-auricular landmarks."
+          }
+        ],
+        "correctOptionId": "c",
+        "explanation": "Sampling should be at least twice the highest frequency of interest."
+      },
+      {
+        "id": "psychophys-8-2-electrocortical-measures-q7",
+        "question": "Which statement best describes Common artifacts?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Sampling should be at least twice the highest frequency of interest."
+          },
+          {
+            "id": "b",
+            "text": "Eye movements and muscle activity are prominent EEG artifacts."
+          },
+          {
+            "id": "c",
+            "text": "The 10-20 system uses nasion, inion, and pre-auricular landmarks."
+          },
+          {
+            "id": "d",
+            "text": "Skin preparation and conductive gel help reduce electrode impedance."
+          }
+        ],
+        "correctOptionId": "b",
+        "explanation": "Eye movements and muscle activity are prominent EEG artifacts."
+      },
+      {
+        "id": "psychophys-8-2-electrocortical-measures-q8",
+        "question": "Which statement best describes Mu rhythm?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Mu rhythm is sensorimotor and often desynchronizes during movement or imagery."
+          },
+          {
+            "id": "b",
+            "text": "The 10-20 system uses nasion, inion, and pre-auricular landmarks."
+          },
+          {
+            "id": "c",
+            "text": "Skin preparation and conductive gel help reduce electrode impedance."
+          },
+          {
+            "id": "d",
+            "text": "Sampling should be at least twice the highest frequency of interest."
+          }
+        ],
+        "correctOptionId": "a",
+        "explanation": "Mu rhythm is sensorimotor and often desynchronizes during movement or imagery."
+      },
+      {
+        "id": "psychophys-8-2-electrocortical-measures-q9",
+        "question": "Which statement best describes ERP method?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The 10-20 system uses nasion, inion, and pre-auricular landmarks."
+          },
+          {
+            "id": "b",
+            "text": "Skin preparation and conductive gel help reduce electrode impedance."
+          },
+          {
+            "id": "c",
+            "text": "Sampling should be at least twice the highest frequency of interest."
+          },
+          {
+            "id": "d",
+            "text": "ERPs are derived by epoching and averaging event-locked segments."
+          }
+        ],
+        "correctOptionId": "d",
+        "explanation": "ERPs are derived by epoching and averaging event-locked segments."
+      },
+      {
+        "id": "psychophys-8-2-electrocortical-measures-q10",
+        "question": "Which statement best describes Time-frequency analysis?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Skin preparation and conductive gel help reduce electrode impedance."
+          },
+          {
+            "id": "b",
+            "text": "Sampling should be at least twice the highest frequency of interest."
+          },
+          {
+            "id": "c",
+            "text": "It tracks how spectral power changes across time."
+          },
+          {
+            "id": "d",
+            "text": "The 10-20 system uses nasion, inion, and pre-auricular landmarks."
+          }
+        ],
+        "correctOptionId": "c",
+        "explanation": "It tracks how spectral power changes across time."
       }
     ]
   }
