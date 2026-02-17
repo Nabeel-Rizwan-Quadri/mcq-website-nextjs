@@ -1,0 +1,16 @@
+/node_modules
+/.next
+/out
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment files
+.env*
+
+# Python
+__pycache__/
+*.pyc

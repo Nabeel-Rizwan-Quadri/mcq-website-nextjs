@@ -1,0 +1,138 @@
+[
+  {
+    "id": "os-basics",
+    "title": "Lecture 1: Operating System Basics",
+    "topic": "Processes, scheduling, and synchronization fundamentals.",
+    "durationSeconds": 540,
+    "questions": [
+      {
+        "id": "os-q1",
+        "question": "What is the main role of an operating system?",
+        "options": [
+          { "id": "a", "text": "To compile high-level code into machine code" },
+          { "id": "b", "text": "To manage hardware resources and provide services to applications" },
+          { "id": "c", "text": "To replace all user applications" },
+          { "id": "d", "text": "To encrypt internet traffic by default" }
+        ],
+        "correctOptionId": "b",
+        "explanation": "The OS acts as a resource manager and service layer between hardware and applications."
+      },
+      {
+        "id": "os-q2",
+        "question": "In preemptive scheduling, what can happen to a running process?",
+        "options": [
+          { "id": "a", "text": "It cannot be interrupted until it exits" },
+          { "id": "b", "text": "It can be paused to let another process run" },
+          { "id": "c", "text": "It immediately gets highest priority permanently" },
+          { "id": "d", "text": "It skips the ready queue forever" }
+        ],
+        "correctOptionId": "b",
+        "explanation": "Preemptive scheduling allows the OS to interrupt a process and reschedule CPU time."
+      },
+      {
+        "id": "os-q3",
+        "question": "A race condition most commonly occurs when:",
+        "options": [
+          { "id": "a", "text": "Multiple threads access shared data without proper synchronization" },
+          { "id": "b", "text": "A hard disk has no free sectors" },
+          { "id": "c", "text": "A process has high priority" },
+          { "id": "d", "text": "A system uses only one user account" }
+        ],
+        "correctOptionId": "a",
+        "explanation": "Without synchronization primitives, interleaving can produce inconsistent shared-state results."
+      },
+      {
+        "id": "os-q4",
+        "question": "Which scheduling algorithm is most likely to favor short CPU burst jobs?",
+        "options": [
+          { "id": "a", "text": "First-Come, First-Served (FCFS)" },
+          { "id": "b", "text": "Round Robin with very large quantum" },
+          { "id": "c", "text": "Shortest Job First (SJF)" },
+          { "id": "d", "text": "Random scheduling" }
+        ],
+        "correctOptionId": "c",
+        "explanation": "SJF prioritizes processes with smaller burst times."
+      },
+      {
+        "id": "os-q5",
+        "question": "Why are semaphores used in operating systems?",
+        "options": [
+          { "id": "a", "text": "To increase monitor resolution" },
+          { "id": "b", "text": "To coordinate access to shared resources" },
+          { "id": "c", "text": "To compress file systems" },
+          { "id": "d", "text": "To rename system calls" }
+        ],
+        "correctOptionId": "b",
+        "explanation": "Semaphores provide signaling and mutual exclusion for concurrent tasks."
+      }
+    ]
+  },
+  {
+    "id": "dbms-normalization",
+    "title": "Lecture 2: DBMS and Normalization",
+    "topic": "Keys, normal forms, and anomaly reduction in relational design.",
+    "durationSeconds": 600,
+    "questions": [
+      {
+        "id": "db-q1",
+        "question": "What is a primary key in a relational table?",
+        "options": [
+          { "id": "a", "text": "An attribute that can contain duplicate values" },
+          { "id": "b", "text": "A field used only for sorting records visually" },
+          { "id": "c", "text": "A unique and non-null identifier for each row" },
+          { "id": "d", "text": "A key that references itself in another table" }
+        ],
+        "correctOptionId": "c",
+        "explanation": "A primary key uniquely identifies every tuple and cannot be null."
+      },
+      {
+        "id": "db-q2",
+        "question": "Which issue is normalization primarily trying to reduce?",
+        "options": [
+          { "id": "a", "text": "Rendering speed in frontend applications" },
+          { "id": "b", "text": "Data redundancy and update anomalies" },
+          { "id": "c", "text": "Database user authentication" },
+          { "id": "d", "text": "Network packet loss" }
+        ],
+        "correctOptionId": "b",
+        "explanation": "Normalization organizes attributes to minimize redundancy and inconsistency."
+      },
+      {
+        "id": "db-q3",
+        "question": "A table is in 2NF if it is already in 1NF and:",
+        "options": [
+          { "id": "a", "text": "Has no partial dependency on a composite key" },
+          { "id": "b", "text": "Contains no foreign keys" },
+          { "id": "c", "text": "Has exactly two columns" },
+          { "id": "d", "text": "Stores all attributes as numeric values" }
+        ],
+        "correctOptionId": "a",
+        "explanation": "2NF removes partial dependency of non-prime attributes on composite keys."
+      },
+      {
+        "id": "db-q4",
+        "question": "A foreign key is used to:",
+        "options": [
+          { "id": "a", "text": "Uniquely identify rows in the same table only" },
+          { "id": "b", "text": "Link records between related tables" },
+          { "id": "c", "text": "Encrypt a relation schema" },
+          { "id": "d", "text": "Replace the need for indexes" }
+        ],
+        "correctOptionId": "b",
+        "explanation": "Foreign keys enforce referential integrity across table relationships."
+      },
+      {
+        "id": "db-q5",
+        "question": "Which normal form removes transitive dependency of non-key attributes?",
+        "options": [
+          { "id": "a", "text": "1NF" },
+          { "id": "b", "text": "2NF" },
+          { "id": "c", "text": "3NF" },
+          { "id": "d", "text": "BCNF is the only form that handles this" }
+        ],
+        "correctOptionId": "c",
+        "explanation": "3NF addresses transitive dependencies where non-key attributes depend on other non-key attributes."
+      }
+    ]
+  }
+]
