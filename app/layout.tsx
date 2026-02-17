@@ -23,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${headingFont.variable} ${bodyFont.variable}`}>
+    <html lang="en" data-theme="dark" className={`${headingFont.variable} ${bodyFont.variable}`}>
       <body>{children}</body>
     </html>
   );

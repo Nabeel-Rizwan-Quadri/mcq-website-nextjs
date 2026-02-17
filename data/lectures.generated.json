@@ -1,2977 +1,961 @@
 [
   {
-    "id": "psychophysiology-1-introduction",
-    "title": "Psychophysiology 1 Introduction",
-    "topic": "Auto-generated from Psychophysiology 1 Introduction.pdf",
+    "id": "psychophys-1-intro",
+    "title": "Psychophysiology 1: Introduction",
+    "topic": "History, scope, and mind-body foundations of psychophysiology.",
     "durationSeconds": 600,
     "questions": [
       {
-        "id": "psychophysiology-1-introduction-q1",
-        "question": "In Psychophysiology 1 Introduction, which statement is correct?",
+        "id": "psychophys-1-intro-q1",
+        "question": "What does the mind-body problem mainly address?",
         "options": [
           {
             "id": "a",
-            "text": "\u00dcber das Elektrenkephalogramm des Menschen."
+            "text": "How sleep changes memory performance."
           },
           {
             "id": "b",
-            "text": "The handbook of psychophysiology(Third ed., p."
+            "text": "How conscious experiences relate to the physical body."
           },
           {
             "id": "c",
-            "text": "were found to be \u2026 influenced by stimulation of the ..."
+            "text": "How the spinal cord controls reflexes."
           },
           {
             "id": "d",
-            "text": "Foundations of Psychophysiology Part 1: Introduction Dr."
-          }
-        ],
-        "correctOptionId": "d",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-1-introduction-q2",
-        "question": "In Psychophysiology 1 Introduction, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "\u2022 Psychophysics studies the sensation and perception of physical stimuli."
-          },
-          {
-            "id": "b",
-            "text": "Psychophysiology: History Physiological measurement Richard Caton used a galvanometer to observe electrical impulses from the surface of living rabbit and monkey brains."
-          },
-          {
-            "id": "c",
-            "text": "Psychophysiology Introduction History Definition and scope Sample study 2"
-          },
-          {
-            "id": "d",
-            "text": "Foundations of Psychophysiology Part 1: Introduction Dr."
-          }
-        ],
-        "correctOptionId": "c",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-1-introduction-q3",
-        "question": "In Psychophysiology 1 Introduction, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "New York, NY, USA: Cambridge University Press."
-          },
-          {
-            "id": "b",
-            "text": "The nature of the cure is this: let several names be pronounced, repeating them many times, and place your finger on the patient's pulse."
-          },
-          {
-            "id": "c",
-            "text": "International Journal of Neuroscience, 34(1-2), 125\u2013129."
-          },
-          {
-            "id": "d",
-            "text": "Psychophysiology: History Mind-body problem Descartes, R."
-          }
-        ],
-        "correctOptionId": "d",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-1-introduction-q4",
-        "question": "In Psychophysiology 1 Introduction, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Psychophysiology Definition and scope 15"
-          },
-          {
-            "id": "b",
-            "text": "Psychophysiology: Definition and scope Psychophysiological inference 20"
-          },
-          {
-            "id": "c",
-            "text": "* Psychophysiology Part 1: Introduction Dr."
-          },
-          {
-            "id": "d",
-            "text": "Les traitez de l'homme et de la formation du foetus."
-          }
-        ],
-        "correctOptionId": "d",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-1-introduction-q5",
-        "question": "In Psychophysiology 1 Introduction, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "T., Whalen, R., Cantwell, B., & Mazzeri, L."
-          },
-          {
-            "id": "b",
-            "text": "Psychophysiology can reveal things that otherwise cannot, or would not, be revealed."
-          },
-          {
-            "id": "c",
-            "text": "Amsterdam, the Netherlands: Chez Guillaume le Je\u00fbne."
-          },
-          {
-            "id": "d",
-            "text": "Psychophysiology Introduction Psychophysiology studies the relations between psychological phenomena and physiological processes."
-          }
-        ],
-        "correctOptionId": "c",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-1-introduction-q6",
-        "question": "In Psychophysiology 1 Introduction, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Psychophysiology Introduction History Definition and scope Sample study 2"
-          },
-          {
-            "id": "b",
-            "text": "Psychophysiology: History Four humours, four temperaments Illustration: Thurneysser zum Thurn, L."
-          },
-          {
-            "id": "c",
-            "text": "British Medical Journal, 2(765), 278."
-          },
-          {
-            "id": "d",
-            "text": "Psychophysiology: Definition and scope Related fields \u2022 Psychology \u2022 Physiology \u2022 Anatomy \u2022 Biological psychology \u2022 Physiological psychology \u2022 Psychophysics \u2022 Psychophysiology 16"
+            "text": "How to place EEG electrodes."
           }
         ],
         "correctOptionId": "b",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
+        "explanation": "The mind-body problem concerns the relationship between mental and physical phenomena."
       },
       {
-        "id": "psychophysiology-1-introduction-q7",
-        "question": "In Psychophysiology 1 Introduction, which statement is correct?",
+        "id": "psychophys-1-intro-q2",
+        "question": "Which statement best reflects a monist position?",
         "options": [
           {
             "id": "a",
-            "text": "Phlegm \u2013 relaxation Blood \u2013 enthusiasm Yellow bile \u2013 anger Black bile \u2013 sadness Attempt to systematically link (mental) health to physical factors"
+            "text": "Mind and body are fully separate substances."
           },
           {
             "id": "b",
-            "text": "Elements of experimental and natural philosophy(p."
+            "text": "Only behavior can be studied scientifically."
           },
           {
             "id": "c",
-            "text": "\u2022 Cognitive psychophysiology \u2022 Social psychophysiology \u2022 Developmental psychophysiology \u2022 Clinical psychophysiology \u2022 Environmental psychophysiology \u2022 Applied psychophysiology \u2022 \u2026"
+            "text": "Mental and physical events are aspects of one underlying reality."
           },
           {
             "id": "d",
-            "text": "Psychophysiology: Definition and scope Psychophysiological inference Cacioppo, J., Tassinary, L."
-          }
-        ],
-        "correctOptionId": "a",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-1-introduction-q8",
-        "question": "In Psychophysiology 1 Introduction, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Psychophysiology: History Psychology and emotions Cannon-Bard theory: Emotions are experienced in the brain first, and subsequently result in physiological changes."
-          },
-          {
-            "id": "b",
-            "text": "These relations are generally non-causal and not one-to-one."
-          },
-          {
-            "id": "c",
-            "text": "Psychophysiology: History Focus on the brain Illustration: Seymour, W."
-          },
-          {
-            "id": "d",
-            "text": "Amsterdam, the Netherlands: Chez Guillaume le Je\u00fbne."
+            "text": "Physiology and psychology cannot be integrated."
           }
         ],
         "correctOptionId": "c",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
+        "explanation": "Monism proposes one underlying basis for both mind and body."
       },
       {
-        "id": "psychophysiology-1-introduction-q9",
-        "question": "In Psychophysiology 1 Introduction, which statement is correct?",
+        "id": "psychophys-1-intro-q3",
+        "question": "In psychophysiology, a common design is:",
         "options": [
           {
             "id": "a",
-            "text": "Amsterdam, the Netherlands: Chez Guillaume le Je\u00fbne."
+            "text": "physiological IV and behavioral DV."
           },
           {
             "id": "b",
-            "text": "Psychophysiology: History Physiological measurement Richard Caton used a galvanometer to observe electrical impulses from the surface of living rabbit and monkey brains."
+            "text": "behavioral IV and physiological DV."
           },
           {
             "id": "c",
-            "text": "Psychophysiology: History Emotions and physiology ,, Moreover, the patient\u2019s pulse and disposition are altered when mention is made of the person he loves, and especially when this occurs suddenly."
+            "text": "physiological IV and physiological DV only."
           },
           {
             "id": "d",
-            "text": "Psychophysiology: History Psychology and emotions Cannon-Bard theory: Emotions are experienced in the brain first, and subsequently result in physiological changes."
+            "text": "clinical diagnosis as the only IV."
           }
         ],
-        "correctOptionId": "d",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-1-introduction-q10",
-        "question": "In Psychophysiology 1 Introduction, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Toward a definition of psychophysiology."
-          },
-          {
-            "id": "b",
-            "text": "Amsterdam, the Netherlands: Chez Guillaume le Je\u00fbne."
-          },
-          {
-            "id": "c",
-            "text": "\u201cWe feel afraid, therefore we start sweating.\u201d James-Lange theory: Emotion is the result of physiological experiences."
-          },
-          {
-            "id": "d",
-            "text": "Archiv f\u00fcr Psychiatrie und Nervenkrankheiten, 87, 527\u2013570."
-          }
-        ],
-        "correctOptionId": "c",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
+        "correctOptionId": "b",
+        "explanation": "A standard formulation uses behavioral manipulation and physiological dependent measures."
       }
     ]
   },
   {
-    "id": "psychophysiology-2-1-nervous-system",
-    "title": "Psychophysiology 2.1 Nervous System",
-    "topic": "Auto-generated from Psychophysiology 2.1 Nervous system.pdf",
+    "id": "psychophys-2-1-nervous-system",
+    "title": "Psychophysiology 2.1: Nervous System",
+    "topic": "Structural and functional organization of the human nervous system.",
     "durationSeconds": 600,
     "questions": [
       {
-        "id": "psychophysiology-2-1-nervous-system-q1",
-        "question": "In Psychophysiology 2.1 Nervous System, which statement is correct?",
+        "id": "psychophys-2-1-nervous-system-q1",
+        "question": "Which structures form the central nervous system (CNS)?",
         "options": [
           {
             "id": "a",
-            "text": "Neural activity is not the only communication system in the body: the endocrine system uses hormones for communication."
+            "text": "Brain and peripheral nerves."
           },
           {
             "id": "b",
-            "text": "The peripheral nervous system (PNS) refers to (parts of) neurons outside of the brain and spinal cord."
+            "text": "Cranial nerves and spinal nerves."
           },
           {
             "id": "c",
-            "text": "The autonomic nervous system furthermore consists of the sympathetic and parasympathetic nervous systems which behave antagonistically between \u201cfight or flight\u201d and \u201crest and digest\u201d."
+            "text": "Brain and spinal cord."
           },
           {
             "id": "d",
-            "text": "Foundations of Psychophysiology Part 2.1: Overview of the human nervous system Dr."
-          }
-        ],
-        "correctOptionId": "d",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-2-1-nervous-system-q2",
-        "question": "In Psychophysiology 2.1 Nervous System, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Psychophysiology: Nervous system Sympathetic and parasympathetic innervation Figures from OpenStax are licensed under CC BY 4.0 5"
-          },
-          {
-            "id": "b",
-            "text": "\u2022 Sympathetic nervous system Dominant in \u201cfight or flight\u201d situations \u2022 Parasympathetic nervous system Dominant in \u201crest and digest\u201d situations"
-          },
-          {
-            "id": "c",
-            "text": "Psychophysiology: Nervous system Structural definition The nervous system refers to the collection of neurons and supportive glial cells in the body."
-          },
-          {
-            "id": "d",
-            "text": "Psychophysiology Nervous system The human nervous system can be divided into structurally and functionally separate systems."
+            "text": "Somatic and autonomic divisions."
           }
         ],
         "correctOptionId": "c",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
+        "explanation": "The CNS is defined as the brain plus spinal cord."
       },
       {
-        "id": "psychophysiology-2-1-nervous-system-q3",
-        "question": "In Psychophysiology 2.1 Nervous System, which statement is correct?",
+        "id": "psychophys-2-1-nervous-system-q2",
+        "question": "The peripheral nervous system (PNS) includes:",
         "options": [
           {
             "id": "a",
-            "text": "Psychophysiology: Nervous system Functional definition 4 The autonomic nervous system can be divided into two separate systems."
+            "text": "Only neurons in the cortex."
           },
           {
             "id": "b",
-            "text": "The autonomic nervous system furthermore consists of the sympathetic and parasympathetic nervous systems which behave antagonistically between \u201cfight or flight\u201d and \u201crest and digest\u201d."
+            "text": "Only neurons in the spinal cord."
           },
           {
             "id": "c",
-            "text": "Foundations of Psychophysiology Part 2.1: Overview of the human nervous system Dr."
+            "text": "Neural structures outside brain and spinal cord."
           },
           {
             "id": "d",
-            "text": "The central nervous system (CNS) refers to the brain and spinal cord, contained within the dorsal body cavity."
+            "text": "Only sympathetic neurons."
           }
         ],
-        "correctOptionId": "d",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
+        "correctOptionId": "c",
+        "explanation": "The PNS covers neural structures outside CNS boundaries."
       },
       {
-        "id": "psychophysiology-2-1-nervous-system-q4",
-        "question": "In Psychophysiology 2.1 Nervous System, which statement is correct?",
+        "id": "psychophys-2-1-nervous-system-q3",
+        "question": "Which pairing is correct?",
         "options": [
           {
             "id": "a",
-            "text": "Psychophysiology: Nervous system Sympathetic and parasympathetic innervation Figures from OpenStax are licensed under CC BY 4.0 5"
+            "text": "Sympathetic: rest-digest; Parasympathetic: fight-flight."
           },
           {
             "id": "b",
-            "text": "The peripheral nervous system (PNS) refers to (parts of) neurons outside of the brain and spinal cord."
+            "text": "Sympathetic: fight-flight; Parasympathetic: rest-digest."
           },
           {
             "id": "c",
-            "text": "The autonomic nervous system furthermore consists of the sympathetic and parasympathetic nervous systems which behave antagonistically between \u201cfight or flight\u201d and \u201crest and digest\u201d."
+            "text": "Both are purely voluntary systems."
           },
           {
             "id": "d",
-            "text": "Figure: \u201cTE-Nervous system diagram\u201d by The Emirr is licensed under CC BY 3.0 / Changed colours, prolonged spinal cord 1"
+            "text": "Both only control skeletal muscle."
           }
         ],
         "correctOptionId": "b",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-2-1-nervous-system-q5",
-        "question": "In Psychophysiology 2.1 Nervous System, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Psychophysiology: Nervous system Structural definition The nervous system refers to the collection of neurons and supportive glial cells in the body."
-          },
-          {
-            "id": "b",
-            "text": "Psychophysiology: Nervous system Functional definition 4 The autonomic nervous system can be divided into two separate systems."
-          },
-          {
-            "id": "c",
-            "text": "Psychophysiology Nervous system The human nervous system can be divided into structurally and functionally separate systems."
-          },
-          {
-            "id": "d",
-            "text": "Figure: \u201cTE-Nervous system diagram\u201d by The Emirr is licensed under CC BY 3.0 / Changed colours, prolonged spinal cord 1"
-          }
-        ],
-        "correctOptionId": "d",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-2-1-nervous-system-q6",
-        "question": "In Psychophysiology 2.1 Nervous System, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "\u2022 Sympathetic nervous system Dominant in \u201cfight or flight\u201d situations \u2022 Parasympathetic nervous system Dominant in \u201crest and digest\u201d situations"
-          },
-          {
-            "id": "b",
-            "text": "Psychophysiology: Nervous system Sympathetic and parasympathetic innervation Figures from OpenStax are licensed under CC BY 4.0 5"
-          },
-          {
-            "id": "c",
-            "text": "Neural activity is not the only communication system in the body: the endocrine system uses hormones for communication."
-          },
-          {
-            "id": "d",
-            "text": "Psychophysiology: Nervous system Functional definition 2 The nervous system transmits signals between different parts of the body in order to coordinate physical action and process sensory information."
-          }
-        ],
-        "correctOptionId": "d",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-2-1-nervous-system-q7",
-        "question": "In Psychophysiology 2.1 Nervous System, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "The autonomic nervous system furthermore consists of the sympathetic and parasympathetic nervous systems which behave antagonistically between \u201cfight or flight\u201d and \u201crest and digest\u201d."
-          },
-          {
-            "id": "b",
-            "text": "Psychophysiology: Nervous system Sympathetic and parasympathetic innervation Figures from OpenStax are licensed under CC BY 4.0 5"
-          },
-          {
-            "id": "c",
-            "text": "Neural activity is not the only communication system in the body: the endocrine system uses hormones for communication."
-          },
-          {
-            "id": "d",
-            "text": "Psychophysiology: Nervous system Functional definition 4 The autonomic nervous system can be divided into two separate systems."
-          }
-        ],
-        "correctOptionId": "c",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-2-1-nervous-system-q8",
-        "question": "In Psychophysiology 2.1 Nervous System, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "The central nervous system (CNS) refers to the brain and spinal cord, contained within the dorsal body cavity."
-          },
-          {
-            "id": "b",
-            "text": "Psychophysiology: Nervous system Functional definition 4 The autonomic nervous system can be divided into two separate systems."
-          },
-          {
-            "id": "c",
-            "text": "But is largely controlled by the nervous system.)"
-          },
-          {
-            "id": "d",
-            "text": "Neural activity is not the only communication system in the body: the endocrine system uses hormones for communication."
-          }
-        ],
-        "correctOptionId": "c",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-2-1-nervous-system-q9",
-        "question": "In Psychophysiology 2.1 Nervous System, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Foundations of Psychophysiology Part 2.1: Overview of the human nervous system Dr."
-          },
-          {
-            "id": "b",
-            "text": "Psychophysiology Nervous system The human nervous system can be divided into structurally and functionally separate systems."
-          },
-          {
-            "id": "c",
-            "text": "Psychophysiology: Nervous system Functional definition 4 The autonomic nervous system can be divided into two separate systems."
-          },
-          {
-            "id": "d",
-            "text": "Neural activity is not the only communication system in the body: the endocrine system uses hormones for communication."
-          }
-        ],
-        "correctOptionId": "c",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-2-1-nervous-system-q10",
-        "question": "In Psychophysiology 2.1 Nervous System, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "We have the central, peripheral, somatic, and autonomic nervous systems."
-          },
-          {
-            "id": "b",
-            "text": "But is largely controlled by the nervous system.)"
-          },
-          {
-            "id": "c",
-            "text": "Psychophysiology: Nervous system Functional definition 2 The nervous system transmits signals between different parts of the body in order to coordinate physical action and process sensory information."
-          },
-          {
-            "id": "d",
-            "text": "\u2022 Sympathetic nervous system Dominant in \u201cfight or flight\u201d situations \u2022 Parasympathetic nervous system Dominant in \u201crest and digest\u201d situations"
-          }
-        ],
-        "correctOptionId": "d",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
+        "explanation": "Sympathetic and parasympathetic branches have opposite dominant functions."
       }
     ]
   },
   {
-    "id": "psychophysiology-2-2-neurons",
-    "title": "Psychophysiology 2.2 Neurons",
-    "topic": "Auto-generated from Psychophysiology 2.2 Neurons.pdf",
+    "id": "psychophys-2-2-neurons",
+    "title": "Psychophysiology 2.2: Neurons",
+    "topic": "Neuron types, membrane dynamics, and neuronal signaling principles.",
     "durationSeconds": 600,
     "questions": [
       {
-        "id": "psychophysiology-2-2-neurons-q1",
-        "question": "In Psychophysiology 2.2 Neurons, which statement is correct?",
+        "id": "psychophys-2-2-neurons-q1",
+        "question": "Which neuron type is activated by stimuli and relays information onward?",
         "options": [
           {
             "id": "a",
-            "text": "Psychophysiology: Neurons Action potential Figure by the author is in the public domain 24"
+            "text": "Sensory (afferent) neuron."
           },
           {
             "id": "b",
-            "text": "Psychophysiology: Neurons: Action potential Neuromuscular junction Figure by Doctor Jana is licensed under CC BY 4.0 33"
+            "text": "Motor (efferent) neuron."
           },
           {
             "id": "c",
-            "text": "Foundations of Psychophysiology Part 2.2: Neurons and neuronal signalling Dr."
+            "text": "Glial support cell."
           },
           {
             "id": "d",
-            "text": "Psychophysiology: Neurons The neuron at rest Figure from OpenStax is licensed under CC BY 4.0 7"
-          }
-        ],
-        "correctOptionId": "c",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-2-2-neurons-q2",
-        "question": "In Psychophysiology 2.2 Neurons, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "It is maintained by the Na\u207a/K\u207a pump (sodium-potassium pump), which actively transports Na\u207a ions outwards, and K\u207a ions inwards."
-          },
-          {
-            "id": "b",
-            "text": "Foundations of Psychophysiology Part 2.2: Neurons and neuronal signalling Dr."
-          },
-          {
-            "id": "c",
-            "text": "0 0.5 1 1.5 2 2.5 3 Total number of neurons 1011 Psychophysiology: Neurons The neuron The neuron is the main functional unit of the nervous system, capable of integrating and transmitting signals."
-          },
-          {
-            "id": "d",
-            "text": "Psychophysiology: Neurons: Postsynaptic potentials Temporal summation Figure by the author is in the public domain 15"
-          }
-        ],
-        "correctOptionId": "c",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-2-2-neurons-q3",
-        "question": "In Psychophysiology 2.2 Neurons, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "97.5% in the cerebellum; trunk-related?"
-          },
-          {
-            "id": "b",
-            "text": "This can change the potential across the membrane."
-          },
-          {
-            "id": "c",
-            "text": "Psychophysiology: Neurons: Postsynaptic potentials The synapse Figure from OpenStax is licensed under CC BY 4.0 11"
-          },
-          {
-            "id": "d",
-            "text": "* Psychophysiology Part 2.2: Neurons and neuronal transmission Dr."
+            "text": "Pacemaker cell."
           }
         ],
         "correctOptionId": "a",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
+        "explanation": "Sensory neurons are activated by stimuli and transmit signals to other neurons."
       },
       {
-        "id": "psychophysiology-2-2-neurons-q4",
-        "question": "In Psychophysiology 2.2 Neurons, which statement is correct?",
+        "id": "psychophys-2-2-neurons-q2",
+        "question": "What maintains the resting membrane potential near -70 mV?",
         "options": [
           {
             "id": "a",
-            "text": "\u2022 Interneurons receive signals from, and transmit signals to, other neurons."
+            "text": "Calcium-magnesium pump."
           },
           {
             "id": "b",
-            "text": "Psychophysiology: Neurons Types of neurons: Structural Figures by OpenStax are licensed under CC BY 4.0 2"
+            "text": "Sodium-potassium pump."
           },
           {
             "id": "c",
-            "text": "Psychophysiology: Neurons Action potential 20 Axon Action potential Axon hillock"
+            "text": "Myelin insulation only."
           },
           {
             "id": "d",
-            "text": "Psychophysiology: Neurons: Postsynaptic potentials Neurotransmitter Figure from OpenStax is licensed under CC BY 4.0 12"
+            "text": "Neurotransmitter release."
           }
         ],
         "correctOptionId": "b",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
+        "explanation": "The Na+/K+ pump supports ionic gradients that sustain resting potential."
       },
       {
-        "id": "psychophysiology-2-2-neurons-q5",
-        "question": "In Psychophysiology 2.2 Neurons, which statement is correct?",
+        "id": "psychophys-2-2-neurons-q3",
+        "question": "Why do myelinated axons often conduct faster?",
         "options": [
           {
             "id": "a",
-            "text": "Psychophysiology: Neurons Types of neurons: Functional \u2022 Sensory neurons (afferent neurons) are activated by various stimuli, and transmit activity to other neurons."
+            "text": "They produce higher voltage spikes."
           },
           {
             "id": "b",
-            "text": "0 0.5 1 1.5 2 2.5 3 Total number of neurons 1011 Psychophysiology: Neurons The neuron The neuron is the main functional unit of the nervous system, capable of integrating and transmitting signals."
+            "text": "They have larger somas."
           },
           {
             "id": "c",
-            "text": "Psychophysiology: Neurons Ion channels / \u201cgates\u201d Figure from OpenStax is licensed under CC BY 4.0 / Cropped; removed voltmeter, ions, and labels 9"
+            "text": "They use saltatory conduction between nodes."
           },
           {
             "id": "d",
-            "text": "Psychophysiology: Neurons Action potential Figure from OpenStax is licensed under CC BY 4.0 / Cropped from original 31"
+            "text": "They no longer require ion channels."
           }
         ],
-        "correctOptionId": "a",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-2-2-neurons-q6",
-        "question": "In Psychophysiology 2.2 Neurons, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Psychophysiology: Neurons: Postsynaptic potentials Temporal and spatial summation 14 Axon hillock Synapse"
-          },
-          {
-            "id": "b",
-            "text": "\u2022 Interneurons receive signals from, and transmit signals to, other neurons."
-          },
-          {
-            "id": "c",
-            "text": "Psychophysiology: Neurons: Postsynaptic potentials The synapse Figure from OpenStax is licensed under CC BY 4.0 11"
-          },
-          {
-            "id": "d",
-            "text": "Psychophysiology: Neurons Types of neurons: Structural Figures by OpenStax are licensed under CC BY 4.0 2"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-2-2-neurons-q7",
-        "question": "In Psychophysiology 2.2 Neurons, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Psychophysiology: Neurons: Action potential Propagation 23 Channels open Axon hillock above threshold"
-          },
-          {
-            "id": "b",
-            "text": "* Psychophysiology Part 2.2: Neurons and neuronal transmission Dr."
-          },
-          {
-            "id": "c",
-            "text": "Psychophysiology: Neurons: Action potential Saltatory conduction \u201cConduction velocity and myelination\u201d by WillowW is licensed under CC BY 3.0 29"
-          },
-          {
-            "id": "d",
-            "text": "\u2022 Motor neurons (efferent neurons) receive signals from other neurons, and transmit activity to effector organs."
-          }
-        ],
-        "correctOptionId": "d",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-2-2-neurons-q8",
-        "question": "In Psychophysiology 2.2 Neurons, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Psychophysiology: Neurons Basic neuron histology Neuron figure by Pearson Scott Foreman is in the public domain 5 Cell body (soma) Input zone Dendrite Output zone Axon Axon hillock"
-          },
-          {
-            "id": "b",
-            "text": "This can change the potential across the membrane."
-          },
-          {
-            "id": "c",
-            "text": "Psychophysiology: Neurons Types of neurons: Functional \u2022 Sensory neurons (afferent neurons) are activated by various stimuli, and transmit activity to other neurons."
-          },
-          {
-            "id": "d",
-            "text": "Psychophysiology: Neurons: Action potential Voltage-gated ion channels Voltage-gated ion channels are closed when the membrane potential is near its resting potential (-70 mV)."
-          }
-        ],
-        "correctOptionId": "a",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-2-2-neurons-q9",
-        "question": "In Psychophysiology 2.2 Neurons, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Psychophysiology: Neurons The neuron at rest Membrane figure by OpenStax is licensed under CC BY 4.0 / Removed voltmeter 6"
-          },
-          {
-            "id": "b",
-            "text": "Psychophysiology: Neurons Action potential 20 Axon Action potential Axon hillock"
-          },
-          {
-            "id": "c",
-            "text": "Psychophysiology: Neurons Types of neurons: Functional \u2022 Sensory neurons (afferent neurons) are activated by various stimuli, and transmit activity to other neurons."
-          },
-          {
-            "id": "d",
-            "text": "Psychophysiology: Neurons Types of neurons: Structural Figures by OpenStax are licensed under CC BY 4.0 2"
-          }
-        ],
-        "correctOptionId": "a",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-2-2-neurons-q10",
-        "question": "In Psychophysiology 2.2 Neurons, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Psychophysiology: Neurons Action potential Figure from OpenStax is licensed under CC BY 4.0 26"
-          },
-          {
-            "id": "b",
-            "text": "Psychophysiology: Neurons The neuron at rest 8 The resting potential of neurons is approximately -70 mV."
-          },
-          {
-            "id": "c",
-            "text": "\u2022 Interneurons receive signals from, and transmit signals to, other neurons."
-          },
-          {
-            "id": "d",
-            "text": "Psychophysiology: Neurons The neuron at rest Figure from OpenStax is licensed under CC BY 4.0 7"
-          }
-        ],
-        "correctOptionId": "d",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
+        "correctOptionId": "c",
+        "explanation": "Myelin enables saltatory propagation, increasing conduction velocity."
       }
     ]
   },
   {
-    "id": "psychophysiology-2-3-cns",
-    "title": "Psychophysiology 2.3 Cns",
-    "topic": "Auto-generated from Psychophysiology 2.3 CNS.pdf",
+    "id": "psychophys-2-3-cns",
+    "title": "Psychophysiology 2.3: CNS",
+    "topic": "CNS terminology, spinal pathways, and core brain organization concepts.",
     "durationSeconds": 600,
     "questions": [
       {
-        "id": "psychophysiology-2-3-cns-q1",
-        "question": "In Psychophysiology 2.3 Cns, which statement is correct?",
+        "id": "psychophys-2-3-cns-q1",
+        "question": "A bundle of axons is called a nerve in the PNS. In the CNS it is called a:",
         "options": [
           {
             "id": "a",
-            "text": "Each area is served by at least two spinal nerves."
+            "text": "Ganglion."
           },
           {
             "id": "b",
-            "text": "Foundations of Psychophysiology Part 2.3: The central nervous system Dr."
+            "text": "Tract."
           },
           {
             "id": "c",
-            "text": "Psychophysiology: CNS: Spinal cord Reflexes F \u201cImgnotra\u00e7at arc reflex eng\u201d y MartaAguayo is licensed under CC BY-SA 3.0 14"
+            "text": "Nucleus."
           },
           {
             "id": "d",
-            "text": "Psychophysiology: CNS: Brain: Forebrain Cerebral cortex Figure by OpenStax is licensed under CC BY 4.0 23 Frontal lobe Temporal lobe Parietal lobe Occipital lobe"
+            "text": "Root."
           }
         ],
         "correctOptionId": "b",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
+        "explanation": "Equivalent terminology is nerve in PNS and tract in CNS."
       },
       {
-        "id": "psychophysiology-2-3-cns-q2",
-        "question": "In Psychophysiology 2.3 Cns, which statement is correct?",
+        "id": "psychophys-2-3-cns-q2",
+        "question": "Afferent fibers are defined as fibers that:",
         "options": [
           {
             "id": "a",
-            "text": "\"Medical gallery of Blausen Medical 2014\"."
+            "text": "Carry signals away from the CNS."
           },
           {
             "id": "b",
-            "text": "Journal of neuroscience, 26(51), 13128- 13142."
+            "text": "Carry signals toward the CNS."
           },
           {
             "id": "c",
-            "text": "The cerebellum primarily coordinates (but does not initiate) motor control."
+            "text": "Only connect cortical areas."
           },
           {
             "id": "d",
-            "text": "Psychophysiology Central nervous system Anatomical terminology Spinal cord Brain 1"
-          }
-        ],
-        "correctOptionId": "d",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-2-3-cns-q3",
-        "question": "In Psychophysiology 2.3 Cns, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Psychophysiology: CNS: Terminology Some other terms A nerve is a bundle of axons in the PNS."
-          },
-          {
-            "id": "b",
-            "text": "doi: 10.1523/JNEUROSCI.1657-06.2006."
-          },
-          {
-            "id": "c",
-            "text": "Psychophysiology Anatomical terminology 2"
-          },
-          {
-            "id": "d",
-            "text": "This somatotopic organisation is contralateral."
-          }
-        ],
-        "correctOptionId": "c",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-2-3-cns-q4",
-        "question": "In Psychophysiology 2.3 Cns, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Lynch, and Fvasconcellos is licensed under CC BY-SA 4.0 20 y y y y y y"
-          },
-          {
-            "id": "b",
-            "text": "Psychophysiology: CNS: Terminology Different neuroaxis requires different terms Figure by Pixelsquid is licensed under CC BY 4.0 4"
-          },
-          {
-            "id": "c",
-            "text": "This somatotopic organisation is contralateral."
-          },
-          {
-            "id": "d",
-            "text": "Afferent nerves conduct signals towards the CNS."
+            "text": "Only innervate smooth muscle."
           }
         ],
         "correctOptionId": "b",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
+        "explanation": "Afferent means signal flow toward the CNS; efferent means away."
       },
       {
-        "id": "psychophysiology-2-3-cns-q5",
-        "question": "In Psychophysiology 2.3 Cns, which statement is correct?",
+        "id": "psychophys-2-3-cns-q3",
+        "question": "Which statement is correct about spinal cord function?",
         "options": [
           {
             "id": "a",
-            "text": "Psychophysiology: CNS: Brain: Forebrain: Cerebral cortex White and grey matter Figure: Lakhan, S.E., Kirchgessner, A."
+            "text": "It only handles endocrine signaling."
           },
           {
             "id": "b",
-            "text": "In the CNS, this is called a nucleus."
+            "text": "It transports afferent and efferent signals between CNS and PNS."
           },
           {
             "id": "c",
-            "text": "Similarly, a ganglion is a group of neuron cell bodies in the PNS."
+            "text": "It only controls facial expression muscles."
           },
           {
             "id": "d",
-            "text": "Psychophysiology: CNS: Terminology Some other terms A nerve is a bundle of axons in the PNS."
-          }
-        ],
-        "correctOptionId": "d",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-2-3-cns-q6",
-        "question": "In Psychophysiology 2.3 Cns, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Psychophysiology: CNS: Brain Forebrain The thalamus \u201c y \u201d y (except olfactory) information."
-          },
-          {
-            "id": "b",
-            "text": "The limbic system is associated with emotion and memory, primarily through the amygdala and the hippocampus, respectively."
-          },
-          {
-            "id": "c",
-            "text": "Journal of neuroscience, 26(51), 13128- 13142."
-          },
-          {
-            "id": "d",
-            "text": "In the CNS, this is called a tract."
-          }
-        ],
-        "correctOptionId": "d",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-2-3-cns-q7",
-        "question": "In Psychophysiology 2.3 Cns, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Figure by OpenStax is licensed under CC BY 4.0 18 Cerebellum Medulla Pons"
-          },
-          {
-            "id": "b",
-            "text": "Psychophysiology: CNS: Terminology Some other terms A nerve is a bundle of axons in the PNS."
-          },
-          {
-            "id": "c",
-            "text": "Chronic traumatic encephalopathy: the dangers of getting \"dinged\"."
-          },
-          {
-            "id": "d",
-            "text": "Similarly, a ganglion is a group of neuron cell bodies in the PNS."
-          }
-        ],
-        "correctOptionId": "d",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-2-3-cns-q8",
-        "question": "In Psychophysiology 2.3 Cns, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Psychophysiology: CNS: Spinal cord Reflexes F \u201cImgnotra\u00e7at arc reflex eng\u201d y MartaAguayo is licensed under CC BY-SA 3.0 14"
-          },
-          {
-            "id": "b",
-            "text": "Psychophysiology: CNS: Terminology Some other terms A nerve is a bundle of axons in the PNS."
-          },
-          {
-            "id": "c",
-            "text": "The pons also controls some autonomic functions, and interfaces the hindbrain with the midbrain."
-          },
-          {
-            "id": "d",
-            "text": "In the CNS, this is called a nucleus."
-          }
-        ],
-        "correctOptionId": "d",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-2-3-cns-q9",
-        "question": "In Psychophysiology 2.3 Cns, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Chronic traumatic encephalopathy: the dangers of getting \"dinged\"."
-          },
-          {
-            "id": "b",
-            "text": "Afferent nerves conduct signals towards the CNS."
-          },
-          {
-            "id": "c",
-            "text": "Figure by OpenStax is licensed under CC BY 4.0 19 Substantia nigra VTA"
-          },
-          {
-            "id": "d",
-            "text": "Figure by OpenStax is licensed under CC BY 4.0 / Combined thalamus and limbic system 21 Thalamus Hypothalamus Amygdala Hippocampus"
+            "text": "It replaces forebrain processing in cognition."
           }
         ],
         "correctOptionId": "b",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-2-3-cns-q10",
-        "question": "In Psychophysiology 2.3 Cns, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Psychophysiology: CNS: Spinal cord Functional description The spinal cord transports afferent and efferent signals between the CNS and the PNS."
-          },
-          {
-            "id": "b",
-            "text": "\"Medical gallery of Blausen Medical 2014\"."
-          },
-          {
-            "id": "c",
-            "text": "Psychophysiology: CNS: Spinal cord Sympathetic and parasympathetic innervation Figures from OpenStax are licensed under CC BY 4.0 11"
-          },
-          {
-            "id": "d",
-            "text": "Psychophysiology Anatomical terminology 2"
-          }
-        ],
-        "correctOptionId": "c",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
+        "explanation": "The spinal cord is a key bidirectional pathway for sensory and motor signaling."
       }
     ]
   },
   {
-    "id": "psychophysiology-3-measurement",
-    "title": "Psychophysiology 3 Measurement",
-    "topic": "Auto-generated from Psychophysiology 3 Measurement.pdf",
+    "id": "psychophys-3-measurement",
+    "title": "Psychophysiology 3: Measurement",
+    "topic": "Biosignals, electrodes, digitization, and filtering.",
     "durationSeconds": 600,
     "questions": [
       {
-        "id": "psychophysiology-3-measurement-q1",
-        "question": "In Psychophysiology 3 Measurement, which statement is correct?",
+        "id": "psychophys-3-measurement-q1",
+        "question": "Biosignals are best defined as:",
         "options": [
           {
             "id": "a",
-            "text": "Impedance is resistance for alternating currents."
+            "text": "Indirect estimates with no time dimension."
           },
           {
             "id": "b",
-            "text": "Psychophysiology: Measurement: Signal Separating frequencies As an example, this recorded signal appears to be a mixture of one lower-frequency and one higher-frequency component."
+            "text": "Directly measurable time-varying physiological parameters."
           },
           {
             "id": "c",
-            "text": "Foundations of Psychophysiology Part 3: Foundations of psychophysiological measurement Dr."
+            "text": "Questionnaire outcomes only."
           },
           {
             "id": "d",
-            "text": "Further physiological parameters can be derived from them."
+            "text": "Signals observable only after filtering."
+          }
+        ],
+        "correctOptionId": "b",
+        "explanation": "Biosignals are direct, time-varying physiological measurements."
+      },
+      {
+        "id": "psychophys-3-measurement-q2",
+        "question": "In unipolar recording, what is true about the reference?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Each channel must have a different reference."
+          },
+          {
+            "id": "b",
+            "text": "Reference is only for post-processing."
+          },
+          {
+            "id": "c",
+            "text": "All channels are measured against a shared reference."
+          },
+          {
+            "id": "d",
+            "text": "A truly neutral site always exists on the body."
           }
         ],
         "correctOptionId": "c",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
+        "explanation": "Unipolar recordings use a common reference despite no perfectly neutral body site."
       },
       {
-        "id": "psychophysiology-3-measurement-q2",
-        "question": "In Psychophysiology 3 Measurement, which statement is correct?",
+        "id": "psychophys-3-measurement-q3",
+        "question": "If the highest frequency of interest is 100 Hz, Nyquist implies at least:",
         "options": [
           {
             "id": "a",
-            "text": "Psychophysiology Measuring (electro)physiological parameters Figure \u201cEEG\u201d by Bryan Jones is licensed under CC BY-NC-ND 2.0 1"
+            "text": "50 Hz sampling."
           },
           {
             "id": "b",
-            "text": "Psychophysiology: Measurement: Signal Spectral signal properties Time-varying signals can be very complex."
+            "text": "100 Hz sampling."
           },
           {
             "id": "c",
-            "text": "It is sometimes easier to look at them as frequencies."
+            "text": "150 Hz sampling."
           },
           {
             "id": "d",
-            "text": "Psychophysiology Measurement Biosignals are directly measurable, time- varying parameters that reflect physiological activity."
-          }
-        ],
-        "correctOptionId": "a",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-3-measurement-q3",
-        "question": "In Psychophysiology 3 Measurement, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Psychophysiology: Measurement Biosignals Directly measurable, time-varying parameters that reflect physiological activity in living beings are referred to as biosignals."
-          },
-          {
-            "id": "b",
-            "text": "Filters can be used to isolate or attenuate different frequencies."
-          },
-          {
-            "id": "c",
-            "text": "Frequencies higher than this are affected by aliasing."
-          },
-          {
-            "id": "d",
-            "text": "Psychophysiological measurement Contents Electricity Electrodes Digital signals 3"
-          }
-        ],
-        "correctOptionId": "a",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-3-measurement-q4",
-        "question": "In Psychophysiology 3 Measurement, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Biosignals Physiological parameters Derivation"
-          },
-          {
-            "id": "b",
-            "text": "\u2022 Resistance A substance\u2019s ability to resist the flow of current, measured in ohm (\u03a9)."
-          },
-          {
-            "id": "c",
-            "text": "Psychophysiology: Measurement: Signal Nyquist frequency The Nyquist frequency is one half of the sampling rate."
-          },
-          {
-            "id": "d",
-            "text": "In general, there is: \u2022 Bipolar measurement: Each recorded channel reflects the difference between two (different) electrodes."
-          }
-        ],
-        "correctOptionId": "a",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-3-measurement-q5",
-        "question": "In Psychophysiology 3 Measurement, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Biosignals of an electric nature are measured using various kinds of electrodes placed at various locations."
-          },
-          {
-            "id": "b",
-            "text": "Psychophysiology: Measurement: Signal Nyquist frequency The Nyquist frequency is one half of the sampling rate."
-          },
-          {
-            "id": "c",
-            "text": "What is needed to record one channel of such biopotentials?"
-          },
-          {
-            "id": "d",
-            "text": "Psychophysiological measurement Contents Electricity Electrodes Digital signals 3"
+            "text": "200 Hz sampling."
           }
         ],
         "correctOptionId": "d",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-3-measurement-q6",
-        "question": "In Psychophysiology 3 Measurement, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "However, there is no \u201celectrically neutral\u201d reference location on the human body."
-          },
-          {
-            "id": "b",
-            "text": "Psychophysiological measurement Electricity 4"
-          },
-          {
-            "id": "c",
-            "text": "Time-varying signals can also be described using spectral features."
-          },
-          {
-            "id": "d",
-            "text": "Frequencies higher than this are affected by aliasing."
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-3-measurement-q7",
-        "question": "In Psychophysiology 3 Measurement, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Recorded signal High-pass filtered Low-pass filtered Hz Amp"
-          },
-          {
-            "id": "b",
-            "text": "Psychophysiology: Measurement Electricity \u2022 Current The flow of charged particles through a conductor, measured in ampere (A)."
-          },
-          {
-            "id": "c",
-            "text": "Foundations of Psychophysiology Part 3: Foundations of psychophysiological measurement Dr."
-          },
-          {
-            "id": "d",
-            "text": "Psychophysiology: Measurement: Signal: Filter Digital filters: High-pass example 29 Recorded signal 3 1 3 1 4 2 4 2 5 3 5 3 1.25 -1 1 -1.25 1.25 -1 1 -1.25 1.25 -1 1Filtered signal \u2026 \u2026 Only the higher-frequency component remains!"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-3-measurement-q8",
-        "question": "In Psychophysiology 3 Measurement, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": ".5 -.25 -1.25 -0.25(3) + 0.5(1) + -0.25(3) ="
-          },
-          {
-            "id": "b",
-            "text": "It is sometimes easier to look at them as frequencies."
-          },
-          {
-            "id": "c",
-            "text": "\u2022 Voltage The potential for current to flow from one place to another, measured in volt (V)."
-          },
-          {
-            "id": "d",
-            "text": "Psychophysiology Measuring (electro)physiological parameters Figure \u201cEEG\u201d by Bryan Jones is licensed under CC BY-NC-ND 2.0 1"
-          }
-        ],
-        "correctOptionId": "c",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-3-measurement-q9",
-        "question": "In Psychophysiology 3 Measurement, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Psychophysiology: Measurement: Electrodes Bipolar and unipolar recording techniques 14 Placement specifics will be discussed for the different psychophysiological modalities."
-          },
-          {
-            "id": "b",
-            "text": "\u2022 Resistance A substance\u2019s ability to resist the flow of current, measured in ohm (\u03a9)."
-          },
-          {
-            "id": "c",
-            "text": "Ohm\u2019s law: Psychophysiology: Measurement: Electricity Electricity: Water analogy 6 \ud835\udc45 = \ud835\udc49 \ud835\udc3c"
-          },
-          {
-            "id": "d",
-            "text": "A new high-density (25 electrodes/mm2) penetrating microelectrode array for recording and stimulating sub-millimeter neuroanatomical structures."
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-3-measurement-q10",
-        "question": "In Psychophysiology 3 Measurement, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Impedance is resistance for alternating currents."
-          },
-          {
-            "id": "b",
-            "text": "Psychophysiology Measurement Biosignals are directly measurable, time- varying parameters that reflect physiological activity."
-          },
-          {
-            "id": "c",
-            "text": "Psychophysiological measurement Electrodes 9"
-          },
-          {
-            "id": "d",
-            "text": "Psychophysiology: Measurement: Signal: Spectral properties Frequency spectrum One way to analyse data is to look at its power spectrum, representing the power (amplitude) in all the different frequencies contributing to the recorded signal."
-          }
-        ],
-        "correctOptionId": "a",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
+        "explanation": "Nyquist requires at least twice the highest frequency component."
       }
     ]
   },
   {
-    "id": "psychophysiology-4-experimental-design",
-    "title": "Psychophysiology 4 Experimental Design",
-    "topic": "Auto-generated from Psychophysiology 4 Experimental design.pdf",
+    "id": "psychophys-4-experimental-design",
+    "title": "Psychophysiology 4: Experimental Design",
+    "topic": "Operationalization, variables, and design/analysis tradeoffs.",
     "durationSeconds": 600,
     "questions": [
       {
-        "id": "psychophysiology-4-experimental-design-q1",
-        "question": "In Psychophysiology 4 Experimental Design, which statement is correct?",
+        "id": "psychophys-4-experimental-design-q1",
+        "question": "Operationalization means:",
         "options": [
           {
             "id": "a",
-            "text": "Psychophysiology: Experimentation: Specifics: Artefacts: Internal Muscle activity in EEG Stern, J."
+            "text": "Replacing constructs with intuition."
           },
           {
             "id": "b",
-            "text": "Figure by OpenStax, Tom\u00e1\u0161 Kebert and umimeto.org is licensed under CC BY-SA 4.0 / Cropped two halves together 45"
+            "text": "Defining constructs in specific measurable terms."
           },
           {
             "id": "c",
-            "text": "Most commonly, this is utility-frequency (50 Hz) \u201cline noise\u201d coming from e.g."
+            "text": "Removing all control variables."
           },
           {
             "id": "d",
-            "text": "Foundations of Psychophysiology Part 4: Psychophysiological experimentation Dr."
-          }
-        ],
-        "correctOptionId": "d",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-4-experimental-design-q2",
-        "question": "In Psychophysiology 4 Experimental Design, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Psychophysiology: Experimentation: Specifics Continuous or event-related?"
-          },
-          {
-            "id": "b",
-            "text": "Psychophysiology: Experimentation Psychophysiology-specific design issues 21"
-          },
-          {
-            "id": "c",
-            "text": "In psychophysiological research \u2026 \u201c\u2026 the dependent variable is a physiological measure and the independent variable a \u2018behavioral\u2019 one \u2026\u201d Stern (1964) Stern, J."
-          },
-          {
-            "id": "d",
-            "text": "Physiological measurements usually clear\u2014psychological phenomena in particular require careful operationalisation!"
-          }
-        ],
-        "correctOptionId": "c",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-4-experimental-design-q3",
-        "question": "In Psychophysiology 4 Experimental Design, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "The experimenter is responsible for the well- being of their participants."
-          },
-          {
-            "id": "b",
-            "text": "\u2022 Continuous techniques consider a period of time as a whole, extracting parameters as DV that describe this period."
-          },
-          {
-            "id": "c",
-            "text": "Therefore, psychophysiology usually uses within-subjects designs."
-          },
-          {
-            "id": "d",
-            "text": "Toward a definition of psychophysiology."
-          }
-        ],
-        "correctOptionId": "d",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-4-experimental-design-q4",
-        "question": "In Psychophysiology 4 Experimental Design, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "The handbook of psychophysiology (Third ed., p."
-          },
-          {
-            "id": "b",
-            "text": "Special care must be taken that external and internal artefacts are controlled for."
-          },
-          {
-            "id": "c",
-            "text": "Psychophysiology: Experimentation: Specifics: Artefacts: External Mechanical artefacts Mechanical artefacts are caused by movement of the equipment."
-          },
-          {
-            "id": "d",
-            "text": "Independent variable Dependent variable"
-          }
-        ],
-        "correctOptionId": "a",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-4-experimental-design-q5",
-        "question": "In Psychophysiology 4 Experimental Design, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Psychophysiology: Experimentation: Specifics: Within-subjects Serial dependency Serial dependency between conditions may exist: participants may behave differently depending on the condition they perceived first (or previously)."
-          },
-          {
-            "id": "b",
-            "text": "second s s s s s s s s 1 second s s s s s s s s"
-          },
-          {
-            "id": "c",
-            "text": "New York, NY, USA: Cambridge University Press."
-          },
-          {
-            "id": "d",
-            "text": "Declaration of Helsinki (1964; current revision 2013) agreed, among other things, on participant\u2019s right to - make informed decisions (e.g."
-          }
-        ],
-        "correctOptionId": "c",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-4-experimental-design-q6",
-        "question": "In Psychophysiology 4 Experimental Design, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Psychophysiology: Experimentation: Basics Variables The CfV is often defined as influencing both the IV and the DV, causing a spurious relationship."
-          },
-          {
-            "id": "b",
-            "text": "Psychophysiology: Experimentation Basics of experimental design https://hpmor.com/chapter/8 3"
-          },
-          {
-            "id": "c",
-            "text": "Psychophysiology Psychophysiological experimentation Basics of experimental design Psychophysiology-specific design issues Additional issues to consider 2"
-          },
-          {
-            "id": "d",
-            "text": "Ice cream sales People drowning Good weather"
-          }
-        ],
-        "correctOptionId": "c",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-4-experimental-design-q7",
-        "question": "In Psychophysiology 4 Experimental Design, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "e.g.: Mean signal increase 200 ms after stimulus onset."
-          },
-          {
-            "id": "b",
-            "text": "Psychophysiology: Experimentation Basics of experimental design https://hpmor.com/chapter/8 3"
-          },
-          {
-            "id": "c",
-            "text": "Moderating variable: influences a relationship."
-          },
-          {
-            "id": "d",
-            "text": "Atlas of EEG Patterns (second ed.)."
+            "text": "Fitting a statistical model before data collection."
           }
         ],
         "correctOptionId": "b",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
+        "explanation": "Operationalization turns abstract constructs into measurable criteria."
       },
       {
-        "id": "psychophysiology-4-experimental-design-q8",
-        "question": "In Psychophysiology 4 Experimental Design, which statement is correct?",
+        "id": "psychophys-4-experimental-design-q2",
+        "question": "Why are within-subject designs often preferred in psychophysiology?",
         "options": [
           {
             "id": "a",
-            "text": "time 10 min HighLow HighLow HighLow HighLow 10 min 10 min 10 min 10 min 10 min 10 min 10 min"
+            "text": "They remove all artifacts automatically."
           },
           {
             "id": "b",
-            "text": "Ice cream sales People drowning Good weather"
+            "text": "Within-person variability is often lower than between-person variability."
           },
           {
             "id": "c",
-            "text": "Independent variable Dependent variable Mediating variable"
+            "text": "They require no counterbalancing."
           },
           {
             "id": "d",
-            "text": "Psychophysiology: Experimentation: Basics The scientific method \u201cScience\u201d is a method that uses observation and experimentation to find and explain regularities in nature."
+            "text": "They avoid physiological recording."
           }
         ],
-        "correctOptionId": "d",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
+        "correctOptionId": "b",
+        "explanation": "Lower within-person variance can improve sensitivity."
       },
       {
-        "id": "psychophysiology-4-experimental-design-q9",
-        "question": "In Psychophysiology 4 Experimental Design, which statement is correct?",
+        "id": "psychophys-4-experimental-design-q3",
+        "question": "Counterbalancing in block designs mainly helps control:",
         "options": [
           {
             "id": "a",
-            "text": "Internal artefacts in particular can be systematically related to the experimental manipulation."
+            "text": "Order, learning, and fatigue effects."
           },
           {
             "id": "b",
-            "text": "Precisely-timed events may also systematically coincide with a particular phase of biosignal oscillations, creating a confound."
+            "text": "Electrode impedance drift only."
           },
           {
             "id": "c",
-            "text": "We need to \u2022 formulate precise questions, \u2022 employ appropriate measurement modalities, \u2022 identify factors that could confuse the answer, and \u2022 draw valid conclusions from the data."
+            "text": "Artifact rejection thresholds."
           },
           {
             "id": "d",
-            "text": "related to epilepsy (EEG), cysts (fMRI), or cardiac arrhythmia (ECG)."
-          }
-        ],
-        "correctOptionId": "c",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-4-experimental-design-q10",
-        "question": "In Psychophysiology 4 Experimental Design, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Psychophysiology: Experimentation: Basics Concepts and constructs A concept is a generally accepted understanding of objects, situations, events, etc., in terms of associated characteristics or meanings."
-          },
-          {
-            "id": "b",
-            "text": "More sweating in one condition - Frowning when something goes wrong - Eye blinks after stimulus onset - Personal thoughts specific to one condition 48"
-          },
-          {
-            "id": "c",
-            "text": "related to epilepsy (EEG), cysts (fMRI), or cardiac arrhythmia (ECG)."
-          },
-          {
-            "id": "d",
-            "text": "They do not help explain the relationship of interest, but do play a role in our experiment investigating that relationship."
+            "text": "Sampling frequency errors."
           }
         ],
         "correctOptionId": "a",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
+        "explanation": "Counterbalancing mitigates temporal and sequence confounds."
       }
     ]
   },
   {
-    "id": "psychophysiology-5-electromyography",
-    "title": "Psychophysiology 5 Electromyography",
-    "topic": "Auto-generated from Psychophysiology 5 Electromyography.pdf",
+    "id": "psychophys-5-emg",
+    "title": "Psychophysiology 5: Electromyography",
+    "topic": "EMG physiology, recording practice, and signal processing.",
     "durationSeconds": 600,
     "questions": [
       {
-        "id": "psychophysiology-5-electromyography-q1",
-        "question": "In Psychophysiology 5 Electromyography, which statement is correct?",
+        "id": "psychophys-5-emg-q1",
+        "question": "A motor unit consists of:",
         "options": [
           {
             "id": "a",
-            "text": "Elements of experimental and natural philosophy (p."
+            "text": "One sensory neuron and surrounding glia."
           },
           {
             "id": "b",
-            "text": "Foundations of Psychophysiology Part 5: Electromyography Dr."
+            "text": "One motor neuron, its axon, and all innervated muscle fibers."
           },
           {
             "id": "c",
-            "text": "Psychophysiology: Electromyography: Analysis The EMG signal: Raw Figure by StruskaM is licensed under CC BY-SA 4.0 30"
+            "text": "All muscles used in a movement."
           },
           {
             "id": "d",
-            "text": "Psychophysiology: Human behaviour & physiological response."
+            "text": "One muscle fiber and all cortical inputs."
           }
         ],
         "correctOptionId": "b",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
+        "explanation": "A motor unit is defined by one motor neuron and the fibers it innervates."
       },
       {
-        "id": "psychophysiology-5-electromyography-q2",
-        "question": "In Psychophysiology 5 Electromyography, which statement is correct?",
+        "id": "psychophys-5-emg-q2",
+        "question": "Surface EMG most directly reflects:",
         "options": [
           {
             "id": "a",
-            "text": "Principles of psychophysiology: Physical, social, and inferential elements."
+            "text": "Summed muscle fiber action potentials from active motor units."
           },
           {
             "id": "b",
-            "text": "Psychophysiology: Electromyography History 2"
+            "text": "Only cortical postsynaptic potentials."
           },
           {
             "id": "c",
-            "text": "Psychophysiology: Electromyography: Measurement Body muscle relevance Splenius (neck): aversive stimuli Trapezius: stress Tibialis (leg): stress Figure: Cacioppo, J."
+            "text": "Blood pressure changes."
           },
           {
             "id": "d",
-            "text": "Psychophysiology Electromyography (EMG) History Physiological origins Measuring EMG Analysis of EMG 1"
-          }
-        ],
-        "correctOptionId": "d",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-5-electromyography-q3",
-        "question": "In Psychophysiology 5 Electromyography, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Psychophysiology: Electromyography History 2"
-          },
-          {
-            "id": "b",
-            "text": "Ultimately, Emil du Bois-Reymond (1849) used a galvanometer to demonstrate increased electric activity during muscle contractions."
-          },
-          {
-            "id": "c",
-            "text": "Also because no sparks were visible during movement, shock and muscle activity was assumed to be mechanical in nature."
-          },
-          {
-            "id": "d",
-            "text": "Manual of surface electromyography (WADC Tech."
+            "text": "EDA fluctuations."
           }
         ],
         "correctOptionId": "a",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
+        "explanation": "Surface EMG captures peripheral muscle electrical activity."
       },
       {
-        "id": "psychophysiology-5-electromyography-q4",
-        "question": "In Psychophysiology 5 Electromyography, which statement is correct?",
+        "id": "psychophys-5-emg-q3",
+        "question": "A common EMG processing sequence is:",
         "options": [
           {
             "id": "a",
-            "text": "Foundations of Psychophysiology Part 5: Electromyography Dr."
+            "text": "Integration -> smoothing -> rectification."
           },
           {
             "id": "b",
-            "text": "Abrade the skin before applying surface electrodes."
+            "text": "Rectification -> smoothing -> integration."
           },
           {
             "id": "c",
-            "text": "Psychophysiology: Electromyography: Physiology Neuromuscular junction Figure by Doctor Jana is licensed under CC BY 4.0 14"
+            "text": "Smoothing -> integration -> rectification."
           },
           {
             "id": "d",
-            "text": "Psychophysiology: Electromyography History The electric organ in fish was discovered to consist of specialized muscle cells by Francesco Redi and Stefano Lorenzini in the 17th century."
+            "text": "Rectification -> inversion -> downsampling."
           }
         ],
-        "correctOptionId": "d",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-5-electromyography-q5",
-        "question": "In Psychophysiology 5 Electromyography, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "* Psychophysiology Part 5: Electromyography Dr."
-          },
-          {
-            "id": "b",
-            "text": "The ratio ranges from 1:3 to 1:3000, allowing fine or gross motor activity."
-          },
-          {
-            "id": "c",
-            "text": "Also because no sparks were visible during movement, shock and muscle activity was assumed to be mechanical in nature."
-          },
-          {
-            "id": "d",
-            "text": "Elements of experimental and natural philosophy (p."
-          }
-        ],
-        "correctOptionId": "c",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-5-electromyography-q6",
-        "question": "In Psychophysiology 5 Electromyography, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "* Psychophysiology Part 5: Electromyography Dr."
-          },
-          {
-            "id": "b",
-            "text": "Psychophysiology: Electromyography: Analysis EMG processing: Integration Quote: Andreassi, J."
-          },
-          {
-            "id": "c",
-            "text": "Psychophysiology: Electromyography History The electric organ in fish was discovered to consist of specialized muscle cells by Francesco Redi and Stefano Lorenzini in the 17th century."
-          },
-          {
-            "id": "d",
-            "text": "In 1773, sparks from an eel\u2019s shock were finally demonstrated by John Walsh."
-          }
-        ],
-        "correctOptionId": "d",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-5-electromyography-q7",
-        "question": "In Psychophysiology 5 Electromyography, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Psychophysiology: Electromyography: Measurement Electrode placement Usually a bipolar recording with one electrode placed in the middle, the other at the end of the muscle of interest A few mm can make a big difference."
-          },
-          {
-            "id": "b",
-            "text": "Psychophysiology: Electromyography: Measurement Electrode placement: Face 24 Left: Cacioppo, J."
-          },
-          {
-            "id": "c",
-            "text": "Principles of psychophysiology: Physical, social, and inferential elements."
-          },
-          {
-            "id": "d",
-            "text": "Psychophysiology: Electromyography: Measurement The EMG signal: Raw Figure by StruskaM is licensed under CC BY-SA 4.0 20"
-          }
-        ],
-        "correctOptionId": "c",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-5-electromyography-q8",
-        "question": "In Psychophysiology 5 Electromyography, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Psychophysiology: Electromyography: Measurement The EMG signal: Spectrum Cacioppo, J."
-          },
-          {
-            "id": "b",
-            "text": "Empathy, emotional contagion, and rapid facial reactions to angry and happy facial expressions."
-          },
-          {
-            "id": "c",
-            "text": "Cambridge, UK: Cambridge University Press."
-          },
-          {
-            "id": "d",
-            "text": "Psychophysiology: Electromyography: Analysis EMG processing: Integration Quote: Andreassi, J."
-          }
-        ],
-        "correctOptionId": "c",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-5-electromyography-q9",
-        "question": "In Psychophysiology 5 Electromyography, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Smaller sizes can be used for face recordings."
-          },
-          {
-            "id": "b",
-            "text": "Multiple motor units each firing at around a maximum of 50 Hz, but not all firing at the same time, can add up to much higher frequencies."
-          },
-          {
-            "id": "c",
-            "text": "Psychophysiology: Electromyography: Physiology Sarcomere contraction Figure by OpenStax is licensed under CC BY 4.0 13"
-          },
-          {
-            "id": "d",
-            "text": "Psychophysiology: Electromyography History Walsh, J."
-          }
-        ],
-        "correctOptionId": "d",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-5-electromyography-q10",
-        "question": "In Psychophysiology 5 Electromyography, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Smaller sizes can be used for face recordings."
-          },
-          {
-            "id": "b",
-            "text": "to Benjamin Franklin, Esq; LL.D., F."
-          },
-          {
-            "id": "c",
-            "text": "Psychophysiology: Electromyography: Physiology Sarcomere Figure by OpenStax is licensed under CC BY 4.0 12"
-          },
-          {
-            "id": "d",
-            "text": "Of the Electric Property of the Torpedo."
-          }
-        ],
-        "correctOptionId": "d",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
+        "correctOptionId": "b",
+        "explanation": "A common flow is rectify, smooth, then integrate for robust output measures."
       }
     ]
   },
   {
-    "id": "psychophysiology-6-1-cardiovascular-system",
-    "title": "Psychophysiology 6.1 Cardiovascular System",
-    "topic": "Auto-generated from Psychophysiology 6.1 Cardiovascular system.pdf",
+    "id": "psychophys-6-1-cardiovascular-system",
+    "title": "Psychophysiology 6.1: Cardiovascular System",
+    "topic": "Cardiovascular structure, cardiac conduction, and autonomic modulation.",
     "durationSeconds": 600,
     "questions": [
       {
-        "id": "psychophysiology-6-1-cardiovascular-system-q1",
-        "question": "In Psychophysiology 6.1 Cardiovascular System, which statement is correct?",
+        "id": "psychophys-6-1-cardiovascular-system-q1",
+        "question": "The cardiovascular system primarily serves to:",
         "options": [
           {
             "id": "a",
-            "text": "Artery Vein Capillaries Psychophysiology: Cardiovascular system Blood vessels Arteries carry blood away from the heart."
+            "text": "Store long-term memory."
           },
           {
             "id": "b",
-            "text": "Psychophysiology: Cardiovascular system Function The cardiovascular system, with the heart as its main \u201cpump\u201d, serves to transport blood to and from the organs."
+            "text": "Transport blood for oxygen/nutrient delivery and waste removal."
           },
           {
             "id": "c",
-            "text": "Psychophysiology: Cardiovascular system: Heart Myocardium The myocardium, or the heart muscles, comprises the thickest of the multiple layers of the heart."
+            "text": "Generate EEG rhythms."
           },
           {
             "id": "d",
-            "text": "Foundations of Psychophysiology Part 6.1: The cardiovascular system Dr."
-          }
-        ],
-        "correctOptionId": "d",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-6-1-cardiovascular-system-q2",
-        "question": "In Psychophysiology 6.1 Cardiovascular System, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Psychophysiology: Cardiovascular system Introduction Illustration: Royal Collection Trust / \u00a9 Her Majesty Queen Elizabeth II 2021 Photo: \u00a9 2020 Longines Watch Co."
-          },
-          {
-            "id": "b",
-            "text": "Psychophysiology: Cardiovascular system: Heart Heart rate The SA node is the primary pacemaker, with the AV node yoked to its sinus rhythm."
-          },
-          {
-            "id": "c",
-            "text": "This - brings necessary oxygen and nutrients to the organs; - transports waste products; - regulates the bodily temperature; and - aids endocrine communication."
-          },
-          {
-            "id": "d",
-            "text": "Psychophysiology: Cardiovascular system: Heart Interactive Wiggers diagram HyperHeart by Quentin Roper is licensed under CC BY-NC 4.0 10 https://library.med.utah.edu/kw/pharm/hyperheart"
-          }
-        ],
-        "correctOptionId": "a",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-6-1-cardiovascular-system-q3",
-        "question": "In Psychophysiology 6.1 Cardiovascular System, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Psychophysiology: Cardiovascular system Introduction Illustration: Royal Collection Trust / \u00a9 Her Majesty Queen Elizabeth II 2021 Photo: \u00a9 2020 Longines Watch Co."
-          },
-          {
-            "id": "b",
-            "text": "Psychophysiology: Cardiovascular system: Heart Interactive Wiggers diagram HyperHeart by Quentin Roper is licensed under CC BY-NC 4.0 10 https://library.med.utah.edu/kw/pharm/hyperheart"
-          },
-          {
-            "id": "c",
-            "text": "The myocardium contains pacemaker cells with an instable resting potential, producing autorhythmicity."
-          },
-          {
-            "id": "d",
-            "text": "Psychophysiology: Cardiovascular system Function The cardiovascular system, with the heart as its main \u201cpump\u201d, serves to transport blood to and from the organs."
-          }
-        ],
-        "correctOptionId": "d",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-6-1-cardiovascular-system-q4",
-        "question": "In Psychophysiology 6.1 Cardiovascular System, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "This - brings necessary oxygen and nutrients to the organs; - transports waste products; - regulates the bodily temperature; and - aids endocrine communication."
-          },
-          {
-            "id": "b",
-            "text": "The autonomous nervous system can modulate the cardiac autorhytmicity, both to slow it down (parasympathetic) and to speed it up (sympathetic) as needed."
-          },
-          {
-            "id": "c",
-            "text": "Psychophysiology: Cardiovascular system: Heart Neural conduction and the ECG Figure \u201cECG principle slow\u201d by Kalumet is licensed under CC BY-SA 3.0 19"
-          },
-          {
-            "id": "d",
-            "text": "Psychophysiology: Cardiovascular system: Heart Cardiac anatomy Figure by OpenStax is licensed under CC BY 4.0 / Cropped out heart 7"
-          }
-        ],
-        "correctOptionId": "a",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-6-1-cardiovascular-system-q5",
-        "question": "In Psychophysiology 6.1 Cardiovascular System, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Cardiovascular activity varies as the energy requirements of the body vary."
-          },
-          {
-            "id": "b",
-            "text": "Psychophysiology: Cardiovascular system: Heart Cardiac anatomy Figure by OpenStax is licensed under CC BY 4.0 / Cropped out heart 7"
-          },
-          {
-            "id": "c",
-            "text": "The SA node has an intrinsic rhythmicity of about 100 bpm; the AV node of about 40-60 bpm, the Bundle of His 20-40."
-          },
-          {
-            "id": "d",
-            "text": "This node slightly delays the signal, allowing the atria to fully contract, before conducting the signal through the Bundle of Hiss and the Purkinje fibers into the ventricular walls, which then contract."
-          }
-        ],
-        "correctOptionId": "a",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-6-1-cardiovascular-system-q6",
-        "question": "In Psychophysiology 6.1 Cardiovascular System, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Psychophysiology: Cardiovascular system: Heart Contractive cells Figure by OpenStax is licensed under CC BY 4.0 / cropped 14"
-          },
-          {
-            "id": "b",
-            "text": "Psychophysiology: Cardiovascular system Cardiovascular system Figure by OpenStax is licensed under CC BY 4.0 / Cropped head, resized heart cutout 3"
-          },
-          {
-            "id": "c",
-            "text": "The myocardium contains pacemaker cells with an instable resting potential, producing autorhythmicity."
-          },
-          {
-            "id": "d",
-            "text": "Psychophysiology: Cardiovascular system: Heart Neural conduction Figure by OpenStax is licensed under CC BY 4.0 16"
+            "text": "Replace endocrine communication."
           }
         ],
         "correctOptionId": "b",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
+        "explanation": "Its core function is transport to support tissue metabolism and homeostasis."
       },
       {
-        "id": "psychophysiology-6-1-cardiovascular-system-q7",
-        "question": "In Psychophysiology 6.1 Cardiovascular System, which statement is correct?",
+        "id": "psychophys-6-1-cardiovascular-system-q2",
+        "question": "Autorhythmicity means some cardiac cells can:",
         "options": [
           {
             "id": "a",
-            "text": "Artery Vein Capillaries Psychophysiology: Cardiovascular system Blood vessels Arteries carry blood away from the heart."
+            "text": "Depolarize spontaneously without external stimulation."
           },
           {
             "id": "b",
-            "text": "Psychophysiology: Cardiovascular system: Heart Neural conduction and the ECG Figure \u201cECG principle slow\u201d by Kalumet is licensed under CC BY-SA 3.0 19"
+            "text": "Contract only after cortical commands."
           },
           {
             "id": "c",
-            "text": "Psychophysiology: Cardiovascular system Cardiovascular system Figure by OpenStax is licensed under CC BY 4.0 / Cropped head, resized heart cutout 3"
+            "text": "Completely ignore autonomic input."
           },
           {
             "id": "d",
-            "text": "Figure \u201dCirculatory system\u201d by Mariana Ruiz Villarreal is in the public domain."
+            "text": "Only activate during exercise."
           }
         ],
         "correctOptionId": "a",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
+        "explanation": "Pacemaker cells self-depolarize, providing intrinsic rhythm generation."
       },
       {
-        "id": "psychophysiology-6-1-cardiovascular-system-q8",
-        "question": "In Psychophysiology 6.1 Cardiovascular System, which statement is correct?",
+        "id": "psychophys-6-1-cardiovascular-system-q3",
+        "question": "Which statement about SA and AV nodes is correct?",
         "options": [
           {
             "id": "a",
-            "text": "Psychophysiology: Cardiovascular system Function The cardiovascular system, with the heart as its main \u201cpump\u201d, serves to transport blood to and from the organs."
+            "text": "AV node sets the fastest intrinsic rhythm."
           },
           {
             "id": "b",
-            "text": "The fastest available rhythm dominates the others."
+            "text": "SA node initiates rhythm; AV node provides a brief conduction delay."
           },
           {
             "id": "c",
-            "text": "Capillaries are microvessels; oxygen, nutrients, and waste products can pass through their walls."
+            "text": "Both nodes are mechanical valves."
           },
           {
             "id": "d",
-            "text": "Neural conduction, also enabled by the gap junctions between the cardiomyocites, spreads throughout the heart and causes sequential contractions."
-          }
-        ],
-        "correctOptionId": "c",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-6-1-cardiovascular-system-q9",
-        "question": "In Psychophysiology 6.1 Cardiovascular System, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Figure \u201cCapillary system\u201d is in the public domain."
-          },
-          {
-            "id": "b",
-            "text": "Veins carry blood towards the heart."
-          },
-          {
-            "id": "c",
-            "text": "Psychophysiology: Cardiovascular system: Heart Myocardium The myocardium, or the heart muscles, comprises the thickest of the multiple layers of the heart."
-          },
-          {
-            "id": "d",
-            "text": "Figure \u201dCirculatory system\u201d by Mariana Ruiz Villarreal is in the public domain."
+            "text": "Both nodes only act under parasympathetic drive."
           }
         ],
         "correctOptionId": "b",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-6-1-cardiovascular-system-q10",
-        "question": "In Psychophysiology 6.1 Cardiovascular System, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Figure \u201dCirculatory system\u201d by Mariana Ruiz Villarreal is in the public domain."
-          },
-          {
-            "id": "b",
-            "text": "Psychophysiology: Cardiovascular system Cardiovascular system Figure by OpenStax is licensed under CC BY 4.0 / Cropped head, resized heart cutout 3"
-          },
-          {
-            "id": "c",
-            "text": "Psychophysiology: Cardiovascular system: Heart Cardiac activity Animation \u201cCG heart 2\u201d by DrJanaOfficial is licensed under CC BY-SA 4.0 Audio by EmilyHopeS is licensed under CC BY-SA 4.0 / Trimmed, adjusted speed 8"
-          },
-          {
-            "id": "d",
-            "text": "A denervated heart would beat on its own at around 100 bpm."
-          }
-        ],
-        "correctOptionId": "a",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
+        "explanation": "SA node usually dominates pacing; AV delay supports coordinated pumping."
       }
     ]
   },
   {
-    "id": "psychophysiology-6-2-cardiovascular-measures",
-    "title": "Psychophysiology 6.2 Cardiovascular Measures",
-    "topic": "Auto-generated from Psychophysiology 6.2 Cardiovascular measures.pdf",
+    "id": "psychophys-6-2-cardiovascular-measures",
+    "title": "Psychophysiology 6.2: Cardiovascular Measures",
+    "topic": "Blood pressure, plethysmography, ECG, and HRV in psychophysiology.",
     "durationSeconds": 600,
     "questions": [
       {
-        "id": "psychophysiology-6-2-cardiovascular-measures-q1",
-        "question": "In Psychophysiology 6.2 Cardiovascular Measures, which statement is correct?",
+        "id": "psychophys-6-2-cardiovascular-measures-q1",
+        "question": "Systemic blood pressure is mainly determined by:",
         "options": [
           {
             "id": "a",
-            "text": "Psychophysiology: Cardiovascular: Pressure Blood pressure in the systemic circulation Figure by OpenStax is licensed under CC BY-SA 4.0 4"
+            "text": "Cardiac output and vascular resistance."
           },
           {
             "id": "b",
-            "text": "Accurate measures can also detect minimal changes, some of which have psychological relevance."
+            "text": "Only vessel diameter."
           },
           {
             "id": "c",
-            "text": "Psychophysiology: Cardiovascular: ECG Electrode (lead) placement 21"
+            "text": "Only respiratory rate."
           },
           {
             "id": "d",
-            "text": "Foundations of Psychophysiology Part 6.2: Cardiovascular measures Dr."
-          }
-        ],
-        "correctOptionId": "d",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-6-2-cardiovascular-measures-q2",
-        "question": "In Psychophysiology 6.2 Cardiovascular Measures, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Psychophysiology: Cardiovascular: Pressure: Measurement Sphygmomanometry Photo by ML5 is in the public domain Diagram \u201cKorotkow English\u201d by PhilippN is licensed under CC BY-SA 3.0 7"
-          },
-          {
-            "id": "b",
-            "text": "Psychophysiology Cardiovascular measures Blood pressure Peripheral blood volume The electrocardiogram 2021-10-20 1"
-          },
-          {
-            "id": "c",
-            "text": "Peripheral blood volume measures thus indirectly describe sympathetic ANS activity."
-          },
-          {
-            "id": "d",
-            "text": "Accurate measures can also detect minimal changes, some of which have psychological relevance."
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-6-2-cardiovascular-measures-q3",
-        "question": "In Psychophysiology 6.2 Cardiovascular Measures, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Psychophysiology Blood pressure 2021-10-20 2"
-          },
-          {
-            "id": "b",
-            "text": "Figure \u00a9 Maryanne Mariyaselvam / KLIPS 9"
-          },
-          {
-            "id": "c",
-            "text": "It detects changes in light absorption and refraction, which depend on blood perfusion."
-          },
-          {
-            "id": "d",
-            "text": "Psychophysiology: Cardiovascular: ECG: Parameters: HRV Spectral analysis Lombardi, F."
+            "text": "Only endocrine activity."
           }
         ],
         "correctOptionId": "a",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
+        "explanation": "A core hemodynamic model combines cardiac output with vascular resistance."
       },
       {
-        "id": "psychophysiology-6-2-cardiovascular-measures-q4",
-        "question": "In Psychophysiology 6.2 Cardiovascular Measures, which statement is correct?",
+        "id": "psychophys-6-2-cardiovascular-measures-q2",
+        "question": "In baroreflex control, increased sensed blood pressure tends to cause:",
         "options": [
           {
             "id": "a",
-            "text": "Sensors, 20(11), 3127, are licensed under CC BY 4.0 15 1 second"
+            "text": "Further increase in cardiac output."
           },
           {
             "id": "b",
-            "text": "Psychophysiology: Cardiovascular: ECG: Parameters: HRV Spectral analysis: Actual time 32 1100 ms 900 ms 1050 ms 800 ms Time (ms) 1500 500 0 1100 2000 3050 3850 Actual time (ms)"
+            "text": "A compensatory decrease in cardiac output."
           },
           {
             "id": "c",
-            "text": "Psychophysiology: Cardiovascular Blood pressure Pressure refers to a force acting upon a surface."
+            "text": "Complete autonomic shutdown."
           },
           {
             "id": "d",
-            "text": "arithmetic means, standard deviations, RMSSD = \u03c3\ud835\udc56=1 \ud835\udc41\u22121 (\ud835\udc3c\ud835\udc35\ud835\udc3c\ud835\udc56+1\u2212\ud835\udc3c\ud835\udc35\ud835\udc3c\ud835\udc56)2 \ud835\udc41\u22121 , proportion of successive intervals above a threshold, \u2026 RMSSD (root mean square of successive differences) is often preferred for statistical reasons."
-          }
-        ],
-        "correctOptionId": "c",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-6-2-cardiovascular-measures-q5",
-        "question": "In Psychophysiology 6.2 Cardiovascular Measures, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "In the cardiovascular circulations, blood presses against the vessel walls."
-          },
-          {
-            "id": "b",
-            "text": "Easily operationalised from an ECG as the number of R peaks per minute."
-          },
-          {
-            "id": "c",
-            "text": "Psychophysiology: Cardiovascular: Volume \u201cWebcam photoplethysmography\u201d Wu, H."
-          },
-          {
-            "id": "d",
-            "text": "Many metrics can be constructed from this, e.g."
-          }
-        ],
-        "correctOptionId": "a",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-6-2-cardiovascular-measures-q6",
-        "question": "In Psychophysiology 6.2 Cardiovascular Measures, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "The high amplitude of the ECG biosignal makes it detectable even with generic hardware."
-          },
-          {
-            "id": "b",
-            "text": "Psychophysiology: Cardiovascular Peripheral blood volume Vasomotor activity of peripheral blood vessels allows more or less blood to enter specific regions."
-          },
-          {
-            "id": "c",
-            "text": "Psychophysiology: Cardiovascular: Pressure Blood pressure and the baroreflex Pressure depends on the cardiac output (heart rate \u00d7 stroke volume), and on vascular resistance (vessel elasticity and diameter)."
-          },
-          {
-            "id": "d",
-            "text": "In medicine, the unit millimetres of Mercury (mmHg) is generally used instead of the SI unit Pascal (N/m\u00b2)."
-          }
-        ],
-        "correctOptionId": "d",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-6-2-cardiovascular-measures-q7",
-        "question": "In Psychophysiology 6.2 Cardiovascular Measures, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Psychophysiology: Cardiovascular: ECG Peaks and intervals Figure by Agateller (Anthony Atkielski)/atom is in the public domain 25 P: Atrial depolarization QRS: Ventricular depolarization T: Ventricular repolarisation"
-          },
-          {
-            "id": "b",
-            "text": "Psychophysiology: Cardiovascular: ECG: Placement Modern developments Diagram and upper photo by OpenStax are licensed under CC BY-SA 4.0 Lower photo \u00a9 VivaLNK, Inc."
-          },
-          {
-            "id": "c",
-            "text": "Psychophysiology: Cardiovascular: Pressure Blood pressure in the systemic circulation Figure by OpenStax is licensed under CC BY-SA 4.0 4"
-          },
-          {
-            "id": "d",
-            "text": "L\u2019Atmosph\u00e8re: Descriptions des Grands Ph\u00e9nom\u00e8nes de la Nature (pp."
-          }
-        ],
-        "correctOptionId": "d",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-6-2-cardiovascular-measures-q8",
-        "question": "In Psychophysiology 6.2 Cardiovascular Measures, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "* Psychophysiology Part 6.2: Cardiovascular measures Dr."
-          },
-          {
-            "id": "b",
-            "text": "Psychophysiology: Cardiovascular: Pressure Blood pressure in the systemic circulation Figure by OpenStax is licensed under CC BY-SA 4.0 4"
-          },
-          {
-            "id": "c",
-            "text": "Psychophysiology: Cardiovascular Blood pressure Pressure refers to a force acting upon a surface."
-          },
-          {
-            "id": "d",
-            "text": "L\u2019Atmosph\u00e8re: Descriptions des Grands Ph\u00e9nom\u00e8nes de la Nature (pp."
+            "text": "No response until pressure doubles."
           }
         ],
         "correctOptionId": "b",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
+        "explanation": "Baroreflex uses negative feedback to counter pressure increases."
       },
       {
-        "id": "psychophysiology-6-2-cardiovascular-measures-q9",
-        "question": "In Psychophysiology 6.2 Cardiovascular Measures, which statement is correct?",
+        "id": "psychophys-6-2-cardiovascular-measures-q3",
+        "question": "Why is HRV useful in psychophysiology?",
         "options": [
           {
             "id": "a",
-            "text": "Psychophysiology Blood pressure 2021-10-20 2"
+            "text": "It directly replaces blood pressure measurement."
           },
           {
             "id": "b",
-            "text": "Sensors, 20(11), 3127, are licensed under CC BY 4.0 15 1 second"
+            "text": "It helps separate parasympathetic and sympathetic influences on heart dynamics."
           },
           {
             "id": "c",
-            "text": "Psychophysiology: Cardiovascular: Pressure Blood pressure and the baroreflex Pressure depends on the cardiac output (heart rate \u00d7 stroke volume), and on vascular resistance (vessel elasticity and diameter)."
+            "text": "It removes all recording artifacts."
           },
           {
             "id": "d",
-            "text": "ACM Transactions on Graphics (TOG), 31(4), 1-8."
+            "text": "It only indexes skeletal muscle fatigue."
           }
         ],
-        "correctOptionId": "c",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-6-2-cardiovascular-measures-q10",
-        "question": "In Psychophysiology 6.2 Cardiovascular Measures, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "A photoplethysmograph uses infrared light to measure changes in blood volume indirectly."
-          },
-          {
-            "id": "b",
-            "text": "Furthermore, measurements at the finger are not complicated by the presence of skeletal muscles."
-          },
-          {
-            "id": "c",
-            "text": "Psychophysiology: Cardiovascular Blood pressure Pressure refers to a force acting upon a surface."
-          },
-          {
-            "id": "d",
-            "text": "The baroreflex and other feedback loops regulate these parameters."
-          }
-        ],
-        "correctOptionId": "d",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
+        "correctOptionId": "b",
+        "explanation": "HRV analysis can reveal autonomic modulation patterns in cardiac timing."
       }
     ]
   },
   {
-    "id": "psychophysiology-7-electrodermal-activity",
-    "title": "Psychophysiology 7 Electrodermal Activity",
-    "topic": "Auto-generated from Psychophysiology 7 Electrodermal activity.pdf",
+    "id": "psychophys-7-eda",
+    "title": "Psychophysiology 7: Electrodermal Activity",
+    "topic": "Skin physiology, sweat gland activity, and EDA interpretation.",
     "durationSeconds": 600,
     "questions": [
       {
-        "id": "psychophysiology-7-electrodermal-activity-q1",
-        "question": "In Psychophysiology 7 Electrodermal Activity, which statement is correct?",
+        "id": "psychophys-7-eda-q1",
+        "question": "The main physiological origin of skin conductance changes is:",
         "options": [
           {
             "id": "a",
-            "text": "A non-specific fluctuation is defined as occurring e.g."
+            "text": "Eccrine sweat gland activity."
           },
           {
             "id": "b",
-            "text": "An estimated 2 \u2013 5 million glands are found at different densities, with ~2000/cm2 at the palms and soles, down to ~100/cm2 elsewhere."
+            "text": "Cortical action potentials at the scalp."
           },
           {
             "id": "c",
-            "text": "Care needs to be taken of the differences in magnitude."
+            "text": "Cardiac valve motion."
           },
           {
             "id": "d",
-            "text": "Foundations of Psychophysiology Part 7: Electrodermal activity Dr."
-          }
-        ],
-        "correctOptionId": "d",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-7-electrodermal-activity-q2",
-        "question": "In Psychophysiology 7 Electrodermal Activity, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "This layer also contains Langerhans cells, parts of the immune system that protect against bacteria and other foreign particles."
-          },
-          {
-            "id": "b",
-            "text": "Figure by MrAnmol is licensed under CC BY-SA 4.0 39"
-          },
-          {
-            "id": "c",
-            "text": "Psychophysiology Electrodermal activity (EDA) History The human skin Measuring EDA Analysis of EDA 1"
-          },
-          {
-            "id": "d",
-            "text": "Electrodermal activity (EDA) appears to be a complex reaction, involving, aside from local skin processes, CNS systems related to (loco)motion, arousal, emotion, and motivation."
-          }
-        ],
-        "correctOptionId": "c",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-7-electrodermal-activity-q3",
-        "question": "In Psychophysiology 7 Electrodermal Activity, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Psychophysiology: Electrodermal activity History Woodworth, R."
-          },
-          {
-            "id": "b",
-            "text": "The stratum basale is connected to the lower dermis."
-          },
-          {
-            "id": "c",
-            "text": "Psychophysiology: Electrodermal activity: Analysis Tonic vs phasic changes In signal analysis, two types of activity are distinguished: \u2022 slow, tonic changes of ~2 \u2013 100 \u00b5S/cm\u00b2, and \u2022 faster, phasic changes of ~0.01 \u2013 5 \u00b5S/cm\u00b2."
-          },
-          {
-            "id": "d",
-            "text": "chemically blocking the signals responsible for gland activation."
+            "text": "Parasympathetic apocrine discharge."
           }
         ],
         "correctOptionId": "a",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
+        "explanation": "EDA conductance changes are primarily linked to eccrine sweat gland activity."
       },
       {
-        "id": "psychophysiology-7-electrodermal-activity-q4",
-        "question": "In Psychophysiology 7 Electrodermal Activity, which statement is correct?",
+        "id": "psychophys-7-eda-q2",
+        "question": "Eccrine glands relevant to EDA are mainly under:",
         "options": [
           {
             "id": "a",
-            "text": "Eccrine sweat glands in the dermis are exclusively under sympathetic control, and respond to psychological stimuli."
+            "text": "Somatic control."
           },
           {
             "id": "b",
-            "text": "Possible evolutionary advantages: sweat aids grasping, protects against injury, and lowers body temperature."
+            "text": "Parasympathetic control."
           },
           {
             "id": "c",
-            "text": "Psychophysiology: Electrodermal activity History Andreassi, J."
+            "text": "Sympathetic control."
           },
           {
             "id": "d",
-            "text": "\u2022 Motor cortex, some basal ganglia \u2192 (loco)motion \u2022 Reticular formation \u2192 arousal \u2022 Limbic system \u2192 emotion (and thermoregulation) \u2022 (Frontotemporal) cortex \u2192 motivation Gramann, K., & Schandry, R."
+            "text": "Enteric control."
           }
         ],
         "correctOptionId": "c",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
+        "explanation": "EDA is commonly interpreted as a sympathetic-linked measure."
       },
       {
-        "id": "psychophysiology-7-electrodermal-activity-q5",
-        "question": "In Psychophysiology 7 Electrodermal Activity, which statement is correct?",
+        "id": "psychophys-7-eda-q3",
+        "question": "How are SCL and SCR typically distinguished?",
         "options": [
           {
             "id": "a",
-            "text": "Figure by MrAnmol is licensed under CC BY-SA 4.0 39"
+            "text": "SCL is phasic and SCR is tonic."
           },
           {
             "id": "b",
-            "text": "Psychophysiology: Human behaviour & physiological response."
+            "text": "SCL is tonic/slow and SCR is phasic/event-related."
           },
           {
             "id": "c",
-            "text": "Psychophysiology: Electrodermal activity: Skin: Histology Layers of the dermis 10 The papillary layer connects to the epidermal basal layer and is named for the dermal papillae."
+            "text": "They are identical metrics with different names."
           },
           {
             "id": "d",
-            "text": "They are only found in specific regions (e.g."
+            "text": "SCR exists only in ECG."
           }
         ],
         "correctOptionId": "b",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-7-electrodermal-activity-q6",
-        "question": "In Psychophysiology 7 Electrodermal Activity, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Psychophysiology: Electrodermal activity: Measurement Recording conductance The non-dominant hand is often used as the corneum tends to be thinner."
-          },
-          {
-            "id": "b",
-            "text": "A possibly more reliable measure of general arousal is the rate of non-specific fluctuations, e.g."
-          },
-          {
-            "id": "c",
-            "text": "Photo of Carl Jung from the ETH Library is in the public domain 3 Both methods immediately generated interest, and were applied i.a."
-          },
-          {
-            "id": "d",
-            "text": "For EDA, the scale is usually in \u00b5S."
-          }
-        ],
-        "correctOptionId": "c",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-7-electrodermal-activity-q7",
-        "question": "In Psychophysiology 7 Electrodermal Activity, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Tarkhanov had detected skin potentials."
-          },
-          {
-            "id": "b",
-            "text": "chemically blocking the signals responsible for gland activation."
-          },
-          {
-            "id": "c",
-            "text": "Psychophysiology: Electrodermal activity: Skin: Histology Layers of the dermis Figure from the National Cancer Institute is in the public domain 8 Reticular layer Papillary layer"
-          },
-          {
-            "id": "d",
-            "text": "by Carl Jung in the early 1900s \u201cto study emotional reactions of his patients to word associations\u201d."
-          }
-        ],
-        "correctOptionId": "d",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-7-electrodermal-activity-q8",
-        "question": "In Psychophysiology 7 Electrodermal Activity, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "A traditional, non-SI unit that is otherwise equivalent to siemens is mho."
-          },
-          {
-            "id": "b",
-            "text": "Psychophysiology: Electrodermal activity: Measurement Conductance We will focus on conductance, as potential recordings are less common, and the mechanism still not fully explained."
-          },
-          {
-            "id": "c",
-            "text": "EDA positive change: A simple algorithm for electrodermal activity to measure general audience arousal during media exposure."
-          },
-          {
-            "id": "d",
-            "text": "F\u00e9r\u00e9 had measured a sweat-induced change in skin conductance."
-          }
-        ],
-        "correctOptionId": "d",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-7-electrodermal-activity-q9",
-        "question": "In Psychophysiology 7 Electrodermal Activity, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Psychophysiology: Electrodermal activity: Analysis Tonic versus phasic changes Leiner, D., Fahr, A., & Fr\u00fch, H."
-          },
-          {
-            "id": "b",
-            "text": "Figure is licensed under CC BY 4.0."
-          },
-          {
-            "id": "c",
-            "text": "The eccrine glands in the hands and feet respond weakly to temperature, and more strongly to psychological stimuli."
-          },
-          {
-            "id": "d",
-            "text": "Tarkhanov had detected skin potentials."
-          }
-        ],
-        "correctOptionId": "d",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-7-electrodermal-activity-q10",
-        "question": "In Psychophysiology 7 Electrodermal Activity, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "The outer stratum corneum consists of these dead cells, plus their secretions."
-          },
-          {
-            "id": "b",
-            "text": "Psychophysiology: Electrodermal activity History Other names for the same or similar effects: \u2022 Galvanic skin response \u2022 Electrodermal response \u2022 Psychogalvanic reflex \u2022 Sympathetic skin response \u2022 \u2026 4"
-          },
-          {
-            "id": "c",
-            "text": "Psychophysiology: Electrodermal activity: Skin: Histology Layers of the epidermis Figure \u201cEpidermal layers\u201d by Mikael H\u00e4ggstr\u00f6m / Wbensmith is licensed under CC BY-SA 3.0 18"
-          },
-          {
-            "id": "d",
-            "text": "F\u00e9r\u00e9 had measured a sweat-induced change in skin conductance."
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
+        "explanation": "SCL tracks slower baseline-like level; SCR captures transient event-related responses."
       }
     ]
   },
   {
-    "id": "psychophysiology-8-1-electrocortical-activity",
-    "title": "Psychophysiology 8.1 Electrocortical Activity",
-    "topic": "Auto-generated from Psychophysiology 8.1 Electrocortical activity.pdf",
+    "id": "psychophys-8-1-electrocortical-activity",
+    "title": "Psychophysiology 8.1: Electrocortical Activity",
+    "topic": "EEG physiological origin, volume conduction, and modality limits.",
     "durationSeconds": 600,
     "questions": [
       {
-        "id": "psychophysiology-8-1-electrocortical-activity-q1",
-        "question": "In Psychophysiology 8.1 Electrocortical Activity, which statement is correct?",
+        "id": "psychophys-8-1-electrocortical-activity-q1",
+        "question": "Scalp EEG primarily measures:",
         "options": [
           {
             "id": "a",
-            "text": "Psychophysiology: Electrocortical activity: Physiology The electroencephalogram 26"
+            "text": "Skin temperature."
           },
           {
             "id": "b",
-            "text": "Foundations of Psychophysiology Part 8.1: Electrocortical activity Dr."
+            "text": "Voltage changes related to neural activity."
           },
           {
             "id": "c",
-            "text": "Psychophysiology: Electrocortical activity: History The electroencephalogram 7 = the \u201cgraphical\u201d representation of the electrical activity of the brain (Greek: encephalon) Electroencephalography refers to the method."
+            "text": "Direct neurotransmitter concentrations."
           },
           {
             "id": "d",
-            "text": "\u2022 Resistance A substance\u2019s ability to resist the flow of current, measured in ohm (\u03a9)."
+            "text": "Only eye movement signals."
           }
         ],
         "correctOptionId": "b",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
+        "explanation": "EEG is an electrical voltage measurement linked to neural processes."
       },
       {
-        "id": "psychophysiology-8-1-electrocortical-activity-q2",
-        "question": "In Psychophysiology 8.1 Electrocortical Activity, which statement is correct?",
+        "id": "psychophys-8-1-electrocortical-activity-q2",
+        "question": "The strongest contributors to scalp EEG are usually:",
         "options": [
           {
             "id": "a",
-            "text": "Psychophysiology: Electrocortical activity: Physiology Barriers between brain and scalp electrodes 15 Not only are there barriers between the electrical activity of the neuron and the scalp electrode, they are also just far away."
+            "text": "Single-neuron action potentials only."
           },
           {
             "id": "b",
-            "text": "This is the case for the pyramidal cells in the cerebral cortex."
+            "text": "Summed synchronous postsynaptic potentials in large cortical populations."
           },
           {
             "id": "c",
-            "text": "Figure: \u201cVFPt charges plus minus thumb\u201d and \u201cVFPt charges plus minus\u201d by Geek3 are licensed under CC BY-SA 3.0 16 + \u2248"
+            "text": "Hormonal pulses in blood."
           },
           {
             "id": "d",
-            "text": "Psychophysiology: Electrocortical activity The electroencephalogram Figure by lrkrol is in the public domain 1"
-          }
-        ],
-        "correctOptionId": "d",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-8-1-electrocortical-activity-q3",
-        "question": "In Psychophysiology 8.1 Electrocortical Activity, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "This is due to the previous requirements, as well as volume conduction."
-          },
-          {
-            "id": "b",
-            "text": "Later measurements, which Berger conducted on his own son, revealed first indications that different intensities of mental activity led to visible changes in the recorded curves."
-          },
-          {
-            "id": "c",
-            "text": "Using EEG, brain activity is usually recorded at the scalp."
-          },
-          {
-            "id": "d",
-            "text": "Psychophysiology Electrocortical activity Brief history of EEG Physiological origins EEG versus other modalities 2021-10-20 2"
-          }
-        ],
-        "correctOptionId": "d",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-8-1-electrocortical-activity-q4",
-        "question": "In Psychophysiology 8.1 Electrocortical Activity, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Psychophysiology: Electrocortical activity: History Physiological measurement On July 6th, 1924, Hans Berger performed the first measures on a living human brain."
-          },
-          {
-            "id": "b",
-            "text": "Psychophysiology Electrocortical activity Brief history of EEG Physiological origins EEG versus other modalities 2021-10-20 2"
-          },
-          {
-            "id": "c",
-            "text": "Psychophysiology: Electrocortical activity: Physiology Electrical interference Differently oriented currents may cancel out."
-          },
-          {
-            "id": "d",
-            "text": "Psychophysiology: Electrocortical activity Brief history of EEG 2021-10-20 3"
-          }
-        ],
-        "correctOptionId": "d",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-8-1-electrocortical-activity-q5",
-        "question": "In Psychophysiology 8.1 Electrocortical Activity, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Psychophysiology: Electrocortical activity: History Physiological measurement Richard Caton used a galvanometer to observe electrical impulses from the surface of living rabbit and monkey brains."
-          },
-          {
-            "id": "b",
-            "text": "Psychophysiology: Electrocortical activity: History Electrocerebrogram?"
-          },
-          {
-            "id": "c",
-            "text": "Psychophysiology: Electrocortical activity Brief history of EEG 2021-10-20 3"
-          },
-          {
-            "id": "d",
-            "text": "* Psychophysiology Part 8.1: Electrocortical activity Dr."
-          }
-        ],
-        "correctOptionId": "a",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-8-1-electrocortical-activity-q6",
-        "question": "In Psychophysiology 8.1 Electrocortical Activity, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "\u201cMRI-Philips\u201d by Jan Ainali is licensed under CC BY 3.0 / Cropped from original 31"
-          },
-          {
-            "id": "b",
-            "text": "Psychophysiology: Electrocortical activity: Physiology Cortical pyramidal cells 20 + + + + + \u2013"
-          },
-          {
-            "id": "c",
-            "text": "Psychophysiology: Electrocortical activity: Physiology Neuronal electrical activity in the EEG 18 In almost all cases, action potentials are too fast (1-2 ms) to be synchronous over large populations."
-          },
-          {
-            "id": "d",
-            "text": "were found to be \u2026 influenced by stimulation of the ..."
-          }
-        ],
-        "correctOptionId": "d",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-8-1-electrocortical-activity-q7",
-        "question": "In Psychophysiology 8.1 Electrocortical Activity, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Psychophysiology: Electrocortical activity: Comparison Magnetoencephalography (MEG) MEG records brain activity by measuring the magnetic fields produced by electrical currents in the brain."
-          },
-          {
-            "id": "b",
-            "text": "The electric currents of the brain."
-          },
-          {
-            "id": "c",
-            "text": "\u2022 Voltage The potential for current to flow from one place to another, measured in volt (V)."
-          },
-          {
-            "id": "d",
-            "text": "Psychophysiology: Electrocortical activity: History Physiological measurement On July 6th, 1924, Hans Berger performed the first measures on a living human brain."
+            "text": "Arterial pressure oscillations."
           }
         ],
         "correctOptionId": "b",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
+        "explanation": "Large-scale synchronous postsynaptic activity is most detectable at the scalp."
       },
       {
-        "id": "psychophysiology-8-1-electrocortical-activity-q8",
-        "question": "In Psychophysiology 8.1 Electrocortical Activity, which statement is correct?",
+        "id": "psychophys-8-1-electrocortical-activity-q3",
+        "question": "A key implication of volume conduction is that:",
         "options": [
           {
             "id": "a",
-            "text": "Figure: \u201cVFPt charges plus minus thumb\u201d and \u201cVFPt charges plus minus\u201d by Geek3 are licensed under CC BY-SA 3.0 16 + \u2248"
+            "text": "Signals from one source can appear across multiple scalp regions."
           },
           {
             "id": "b",
-            "text": "British Medical Journal, 2(765), 278."
+            "text": "It provides exact source localization by itself."
           },
           {
             "id": "c",
-            "text": "\"Medical gallery of Blausen Medical 2014\"."
+            "text": "It only affects magnetic recordings."
           },
           {
             "id": "d",
-            "text": "The electric currents of the brain."
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-8-1-electrocortical-activity-q9",
-        "question": "In Psychophysiology 8.1 Electrocortical Activity, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Photo: \u201cA moving coil galvanometer\u201d by Wellcome Collection is licensed under CC BY 4.0 / Removed background from original 4"
-          },
-          {
-            "id": "b",
-            "text": "MEG signals originate from the same physiological processes as EEG signals."
-          },
-          {
-            "id": "c",
-            "text": "\u2022 Voltage The potential for current to flow from one place to another, measured in volt (V)."
-          },
-          {
-            "id": "d",
-            "text": "\u2022 Resistance A substance\u2019s ability to resist the flow of current, measured in ohm (\u03a9)."
+            "text": "It prevents any timing analysis."
           }
         ],
         "correctOptionId": "a",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-8-1-electrocortical-activity-q10",
-        "question": "In Psychophysiology 8.1 Electrocortical Activity, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Psychophysiology: Electrocortical activity: History Physiological measurement On July 6th, 1924, Hans Berger performed the first measures on a living human brain."
-          },
-          {
-            "id": "b",
-            "text": "\u201cIntracranial electrode grid for electrocorticography\u201d by Bruce Blaus is licensed under CC BY 3.0 Blausen.com staff (2014)."
-          },
-          {
-            "id": "c",
-            "text": "Psychophysiology: Electrocortical activity: Physiology Recap: Action potential Figure by OpenStax is licensed under CC BY 4.0 12"
-          },
-          {
-            "id": "d",
-            "text": "Psychophysiology: Electrocortical activity: Physiology Barriers between brain and scalp electrodes \u201cBlausen 0110 BrainLayers\u201d by Bruce Blaus is licensed under CC BY 3.0 / Some colour adjustments Blausen.com staff (2014)."
-          }
-        ],
-        "correctOptionId": "a",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
+        "explanation": "Volume conduction spreads electrical fields and complicates direct source attribution."
       }
     ]
   },
   {
-    "id": "psychophysiology-8-2-electrocortical-measures",
-    "title": "Psychophysiology 8.2 Electrocortical Measures",
-    "topic": "Auto-generated from Psychophysiology 8.2 Electrocortical measures.pdf",
+    "id": "psychophys-8-2-electrocortical-measures",
+    "title": "Psychophysiology 8.2: Electrocortical Measures",
+    "topic": "EEG setup, oscillatory measures, ERP methods, and analysis families.",
     "durationSeconds": 600,
     "questions": [
       {
-        "id": "psychophysiology-8-2-electrocortical-measures-q1",
-        "question": "In Psychophysiology 8.2 Electrocortical Measures, which statement is correct?",
+        "id": "psychophys-8-2-electrocortical-measures-q1",
+        "question": "Which statement about EEG reference electrodes is most accurate?",
         "options": [
           {
             "id": "a",
-            "text": "Use the correct cap size, and place Cz on the centre of the head."
+            "text": "A perfectly neutral reference location always exists."
           },
           {
             "id": "b",
-            "text": "Use a reference location that has a good connection."
+            "text": "All channels should have unrelated references."
           },
           {
             "id": "c",
-            "text": "Foundations of Psychophysiology Part 8.2: Electrocortical measures Dr."
+            "text": "No reference is needed with active electrodes."
           },
           {
             "id": "d",
-            "text": "Psychophysiology: Electrocortical measures: Recording Artefacts Aside from the general artefacts already discussed, e.g."
+            "text": "A practical common reference is used even though no site is truly neutral."
           }
         ],
-        "correctOptionId": "c",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
+        "correctOptionId": "d",
+        "explanation": "EEG uses practical reference choices because perfectly neutral sites do not exist."
       },
       {
-        "id": "psychophysiology-8-2-electrocortical-measures-q2",
-        "question": "In Psychophysiology 8.2 Electrocortical Measures, which statement is correct?",
+        "id": "psychophys-8-2-electrocortical-measures-q2",
+        "question": "For EEG content up to 100 Hz, a valid setup is:",
         "options": [
           {
             "id": "a",
-            "text": "Psychophysiology: Electrocortical measures The electroencephalogram Figure by lrkrol is in the public domain 1"
+            "text": "80 Hz sampling with 40 Hz low-pass."
           },
           {
             "id": "b",
-            "text": "For a highest frequency of interest at 100 Hz, we may thus sample at 1000 Hz with a low-pass filter at 500 Hz."
+            "text": "At least 200 Hz sampling with appropriate anti-alias low-pass filtering."
           },
           {
             "id": "c",
-            "text": "Kappenman (Eds.), The Oxford handbook of event-related potential components (pp."
+            "text": "100 Hz sampling with no anti-alias filter."
           },
           {
             "id": "d",
-            "text": "By topographically mapping each channel\u2019s ERP amplitude, it can also be analysed spatially."
+            "text": "20 Hz sampling because EEG is slow."
+          }
+        ],
+        "correctOptionId": "b",
+        "explanation": "Nyquist and anti-aliasing require at least double-rate sampling and suitable filtering."
+      },
+      {
+        "id": "psychophys-8-2-electrocortical-measures-q3",
+        "question": "Epoching and averaging in ERP analysis are used to:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Isolate event-locked activity while reducing unrelated noise."
+          },
+          {
+            "id": "b",
+            "text": "Eliminate the need for event markers."
+          },
+          {
+            "id": "c",
+            "text": "Force all frequency bands to equal power."
+          },
+          {
+            "id": "d",
+            "text": "Convert EEG into blood pressure estimates."
           }
         ],
         "correctOptionId": "a",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-8-2-electrocortical-measures-q3",
-        "question": "In Psychophysiology 8.2 Electrocortical Measures, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "However, there is no \u201celectrically neutral\u201d reference location on the human body."
-          },
-          {
-            "id": "b",
-            "text": "Psychophysiology: Electrocortical measures: Spectrotemporal Example experiment: Go/NoGo button press Participants attended to one coloured square out of five."
-          },
-          {
-            "id": "c",
-            "text": "Psychophysiology: Electrocortical measures: Temporotemporal Time-time analysis By vertically re-sorting the trials, here by reaction time, different ERP effects become clearly visible."
-          },
-          {
-            "id": "d",
-            "text": "Psychophysiology Electrocortical measures Recording an EEG Spontaneous EEG activity Frequency domain analysis Time domain analysis Time-frequency analysis Time-time analysis 2021-10-20 2"
-          }
-        ],
-        "correctOptionId": "d",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-8-2-electrocortical-measures-q4",
-        "question": "In Psychophysiology 8.2 Electrocortical Measures, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Psychophysiology: Electrocortical measures: Spectral Example experiment: Mu-band desynchronisation The mu rhythm responded to both observed and executed movements."
-          },
-          {
-            "id": "b",
-            "text": "Cognitive Brain Research, 19(2), 195\u2013201."
-          },
-          {
-            "id": "c",
-            "text": "Psychophysiology: Electrocortical measures Spontaneous EEG activity \u201cSpontaneous\u201d brain activity refers to continuous ongoing brain activity that is present even in the absence of any discrete stimuli."
-          },
-          {
-            "id": "d",
-            "text": "Psychophysiology: Electrocortical measures Recording an EEG 2021-10-20 3"
-          }
-        ],
-        "correctOptionId": "d",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-8-2-electrocortical-measures-q5",
-        "question": "In Psychophysiology 8.2 Electrocortical Measures, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Psychophysiology: Electrocortical measures: Recording Eye movements Original eye figure by ZStardust is in the public domain 14 + ++ ++\u2013 \u2013 \u2013\u2013 \u2013 + \u2013 \u2192 t mV \u2191 + \u2013 \u2192 t mV \u2191 + \u2013 \u2192 t mV \u2191"
-          },
-          {
-            "id": "b",
-            "text": "It also provides stability against mechanical movement."
-          },
-          {
-            "id": "c",
-            "text": "Psychophysiology Electrocortical measures Recording an EEG Spontaneous EEG activity Frequency domain analysis Time domain analysis Time-frequency analysis Time-time analysis 2021-10-20 2"
-          },
-          {
-            "id": "d",
-            "text": "Psychophysiology: Electrocortical measures: Recording Electrodes 4 Active electrode Reference electrode Voltage"
-          }
-        ],
-        "correctOptionId": "d",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-8-2-electrocortical-measures-q6",
-        "question": "In Psychophysiology 8.2 Electrocortical Measures, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Psychophysiology: Electrocortical measures: Recording The reference electrode \u201cActive\u201d electrodes are placed near \u201celectrically active\u201d regions to measure voltage relative to an \u201celectrically neutral\u201d reference (or ground) electrode."
-          },
-          {
-            "id": "b",
-            "text": "Psychophysiology: Electrocortical measures: Recording Eye movements Original eye figure by ZStardust is in the public domain 14 + ++ ++\u2013 \u2013 \u2013\u2013 \u2013 + \u2013 \u2192 t mV \u2191 + \u2013 \u2192 t mV \u2191 + \u2013 \u2192 t mV \u2191"
-          },
-          {
-            "id": "c",
-            "text": "More generally, in fact, any signal can be decomposed into mixtures of different frequencies."
-          },
-          {
-            "id": "d",
-            "text": "Also, - a conducing electrolyte gel is used."
-          }
-        ],
-        "correctOptionId": "a",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-8-2-electrocortical-measures-q7",
-        "question": "In Psychophysiology 8.2 Electrocortical Measures, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Makeig, S., Delorme, A., Westerfield, M., Jung, T.-P., Townsend, J., Courchesne, E., & Sejnowski, T."
-          },
-          {
-            "id": "b",
-            "text": "As such, we can for example differentiate between different types of imagined movement, and phases of high and low mental load."
-          },
-          {
-            "id": "c",
-            "text": "However, there is no \u201celectrically neutral\u201d reference location on the human body."
-          },
-          {
-            "id": "d",
-            "text": "Psychophysiology: Electrocortical measures Spontaneous EEG activity 16"
-          }
-        ],
-        "correctOptionId": "c",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-8-2-electrocortical-measures-q8",
-        "question": "In Psychophysiology 8.2 Electrocortical Measures, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "First, the single-trial ERP amplitudes are colour- coded."
-          },
-          {
-            "id": "b",
-            "text": "Neurophysiological measures of cognitive workload during human-computer interaction."
-          },
-          {
-            "id": "c",
-            "text": "Psychophysiology: Electrocortical measures: Spectral Example experiment: Mu-band desynchronisation In different conditions, participants are asked to a) rest, or b) grasp an object and repeat this multiple times with pauses in between."
-          },
-          {
-            "id": "d",
-            "text": "Use a reference location that has a good connection."
-          }
-        ],
-        "correctOptionId": "d",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-8-2-electrocortical-measures-q9",
-        "question": "In Psychophysiology 8.2 Electrocortical Measures, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Use a single reference for all electrodes."
-          },
-          {
-            "id": "b",
-            "text": "L., Sannelli, C., Haufe, S., & Blankertz, B."
-          },
-          {
-            "id": "c",
-            "text": "Psychophysiology: Electrocortical measures Spontaneous EEG activity \u201cSpontaneous\u201d brain activity refers to continuous ongoing brain activity that is present even in the absence of any discrete stimuli."
-          },
-          {
-            "id": "d",
-            "text": "Cognitive Brain Research, 19(2), 195\u2013201."
-          }
-        ],
-        "correctOptionId": "a",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
-      },
-      {
-        "id": "psychophysiology-8-2-electrocortical-measures-q10",
-        "question": "In Psychophysiology 8.2 Electrocortical Measures, which statement is correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Analysis can be performed between conditions, or relative to specific events."
-          },
-          {
-            "id": "b",
-            "text": "Psychophysiology: Electrocortical measures The electroencephalogram 17"
-          },
-          {
-            "id": "c",
-            "text": "Use a reference location that is common practice for the experiment you\u2019re conducting."
-          },
-          {
-            "id": "d",
-            "text": "Psychophysiology: Electrocortical measures Frequency domain analysis Comparing EEG activity between different conditions, we can find differences in the spectral power of different frequency bands."
-          }
-        ],
-        "correctOptionId": "c",
-        "explanation": "This question was generated from extracted lecture text and may need manual review."
+        "explanation": "Averaging time-locked epochs emphasizes consistent event-related components."
       }
     ]
   }

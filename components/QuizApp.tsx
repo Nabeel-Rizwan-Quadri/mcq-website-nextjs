@@ -6,6 +6,7 @@ import type { LectureQuiz, MCQQuestion } from "@/lib/types";
 type QuizAppProps = {
   lectures: LectureQuiz[];
 };
+type ThemeMode = "dark" | "light";
 
 function formatTime(totalSeconds: number): string {
   const safeSeconds = Math.max(totalSeconds, 0);
@@ -24,12 +25,14 @@ function findOptionText(question: MCQQuestion, optionId: string | undefined): st
 }
 
 export default function QuizApp({ lectures }: QuizAppProps) {
+  const [hasMounted, setHasMounted] = useState(false);
   const [selectedLectureId, setSelectedLectureId] = useState(lectures[0]?.id ?? "");
   const [activeQuestionIndex, setActiveQuestionIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [submitted, setSubmitted] = useState(false);
   const [autoSubmitted, setAutoSubmitted] = useState(false);
   const [timeLeft, setTimeLeft] = useState(lectures[0]?.durationSeconds ?? 0);
+  const [themeMode, setThemeMode] = useState<ThemeMode>("dark");
 
   const selectedLecture = useMemo(
     () => lectures.find((lecture) => lecture.id === selectedLectureId),
@@ -39,6 +42,32 @@ export default function QuizApp({ lectures }: QuizAppProps) {
   const selectedLectureIndex = lectures.findIndex((lecture) => lecture.id === selectedLectureId);
 
   const currentQuestion = selectedLecture?.questions[activeQuestionIndex];
+
+  useEffect(() => {
+    const frameId = window.requestAnimationFrame(() => {
+      setHasMounted(true);
+    });
+
+    return () => window.cancelAnimationFrame(frameId);
+  }, []);
+
+  useEffect(() => {
+    const storedTheme = window.localStorage.getItem("theme-mode");
+    if (storedTheme !== "light" && storedTheme !== "dark") {
+      return;
+    }
+
+    const frameId = window.requestAnimationFrame(() => {
+      setThemeMode(storedTheme);
+    });
+
+    return () => window.cancelAnimationFrame(frameId);
+  }, []);
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", themeMode);
+    window.localStorage.setItem("theme-mode", themeMode);
+  }, [themeMode]);
 
   function switchLecture(lectureId: string): void {
     const lecture = lectures.find((item) => item.id === lectureId);
@@ -140,11 +169,33 @@ export default function QuizApp({ lectures }: QuizAppProps) {
     setTimeLeft(selectedLecture.durationSeconds);
   }
 
+  function toggleThemeMode(): void {
+    setThemeMode((previous) => (previous === "dark" ? "light" : "dark"));
+  }
+
+  if (!hasMounted) {
+    return null;
+  }
+
   if (!selectedLecture) {
     return (
       <main className="page-shell">
         <section className="panel">
-          <h1 className="hero-title">Lecture MCQ Hub</h1>
+          <div className="hero-header">
+            <h1 className="hero-title">Lecture MCQ Hub</h1>
+            <button
+              className="theme-switch"
+              role="switch"
+              aria-checked={themeMode === "dark"}
+              aria-label={`Switch to ${themeMode === "dark" ? "light" : "dark"} mode`}
+              onClick={toggleThemeMode}
+            >
+              <span className="theme-switch-label">{themeMode === "dark" ? "Dark" : "Light"}</span>
+              <span className={`theme-switch-track ${themeMode === "dark" ? "on" : ""}`}>
+                <span className="theme-switch-thumb" />
+              </span>
+            </button>
+          </div>
           <p className="hero-subtitle">No lecture data is available yet.</p>
         </section>
       </main>
@@ -154,7 +205,21 @@ export default function QuizApp({ lectures }: QuizAppProps) {
   return (
     <main className="page-shell">
       <section className="panel">
-        <h1 className="hero-title">Lecture MCQ Hub</h1>
+        <div className="hero-header">
+          <h1 className="hero-title">Lecture MCQ Hub</h1>
+          <button
+            className="theme-switch"
+            role="switch"
+            aria-checked={themeMode === "dark"}
+            aria-label={`Switch to ${themeMode === "dark" ? "light" : "dark"} mode`}
+            onClick={toggleThemeMode}
+          >
+            <span className="theme-switch-label">{themeMode === "dark" ? "Dark" : "Light"}</span>
+            <span className={`theme-switch-track ${themeMode === "dark" ? "on" : ""}`}>
+              <span className="theme-switch-thumb" />
+            </span>
+          </button>
+        </div>
         <p className="hero-subtitle">Pick a lecture, answer all MCQs, and review exactly where you went right or wrong.</p>
 
         <div className="control-grid">

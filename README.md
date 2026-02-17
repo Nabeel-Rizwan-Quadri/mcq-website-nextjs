@@ -1,9 +1,6 @@
 # Lecture MCQ Hub (Next.js)
 
-Simple MCQ website with two clearly separated tracks:
-
-1. Website track: show and evaluate pre-made MCQs.
-2. Pipeline track: extract lecture text and generate MCQ JSON from files in `lectures/`.
+Simple MCQ website for showing and evaluating pre-made lecture MCQs.
 
 ## Website Features
 
@@ -26,66 +23,12 @@ npm run dev
 
 Then open `http://localhost:3000`.
 
-Data loading order:
-- `data/lectures.generated.json` (if present and non-empty)
+## Provide MCQ Data (External Workflow)
+
+This project does not convert lecture files to MCQs.
+Prepare MCQ JSON externally, then place it in:
+
+- `data/lectures.generated.json` (preferred by the app)
 - fallback: `data/lectures.json`
 
-## Lecture -> MCQ Pipeline (Separate)
-
-Put lecture files into `lectures/`.
-
-Supported input formats:
-- `.pptx`
-- `.pdf`
-- `.txt`
-- `.md`
-
-Install Python dependencies:
-
-```bash
-pip install -r scripts/requirements.txt
-```
-
-Extract lecture text:
-
-```bash
-npm run extract
-```
-
-This writes `data/lecture_texts.json`.
-
-Generate MCQs:
-
-```bash
-npm run generate
-```
-
-This writes `data/lectures.generated.json` (same schema expected by the website).
-The website automatically uses this file when available.
-
-## Data Schema Used by the App
-
-Each lecture entry:
-
-```json
-{
-  "id": "lecture-id",
-  "title": "Lecture Title",
-  "topic": "Short description",
-  "durationSeconds": 600,
-  "questions": [
-    {
-      "id": "lecture-id-q1",
-      "question": "Question text",
-      "options": [
-        { "id": "a", "text": "Option A" },
-        { "id": "b", "text": "Option B" },
-        { "id": "c", "text": "Option C" },
-        { "id": "d", "text": "Option D" }
-      ],
-      "correctOptionId": "b",
-      "explanation": "Reason the answer is correct"
-    }
-  ]
-}
-```
+For required schema and validation rules, see `data structure.md`.

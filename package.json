@@ -1,14 +1,12 @@
 {
   "name": "mcq-website-nextjs",
   "version": "1.0.0",
-  "description": "Simple lecture-wise MCQ website with a separate lecture-to-MCQ pipeline.",
+  "description": "Simple lecture-wise MCQ website that consumes externally prepared MCQ JSON.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint .",
-    "extract": "python scripts/extract_lectures.py",
-    "generate": "python scripts/generate_mcqs.py"
+    "lint": "eslint ."
   },
   "keywords": [],
   "author": "",
