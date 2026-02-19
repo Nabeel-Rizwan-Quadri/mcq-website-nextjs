@@ -37,6 +37,10 @@
   --btn-check-bg: #d2a44f;
   --btn-check-hover: #bd9141;
   --btn-check-ink: #ffffff;
+  --btn-danger-border: #c96161;
+  --btn-danger-bg: #b94747;
+  --btn-danger-hover: #a43d3d;
+  --btn-danger-ink: #ffffff;
 }
 
 [data-theme="light"] {
@@ -78,6 +82,10 @@
   --btn-check-bg: #f6d27d;
   --btn-check-hover: #edc15f;
   --btn-check-ink: #ffffff;
+  --btn-danger-border: #dc7a70;
+  --btn-danger-bg: #cb5648;
+  --btn-danger-hover: #b7483b;
+  --btn-danger-ink: #ffffff;
 }
 
 * {
@@ -327,6 +335,10 @@ p {
   border-color: var(--option-hover-border);
 }
 
+.option-btn:disabled {
+  cursor: not-allowed;
+}
+
 .option-btn.selected {
   border-color: var(--option-selected-border);
   background: var(--option-selected-bg);
@@ -395,6 +407,17 @@ button {
 .btn-check:hover {
   border-color: var(--btn-check-hover);
   background: var(--btn-check-hover);
+}
+
+.btn-danger {
+  border-color: var(--btn-danger-border);
+  background: var(--btn-danger-bg);
+  color: var(--btn-danger-ink);
+}
+
+.btn-danger:hover {
+  border-color: var(--btn-danger-hover);
+  background: var(--btn-danger-hover);
 }
 
 .btn:disabled {

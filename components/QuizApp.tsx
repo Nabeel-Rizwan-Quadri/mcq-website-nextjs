@@ -250,15 +250,10 @@ export default function QuizApp({ lectures }: QuizAppProps) {
 
   function hasProgressInLecture(lecture: LectureQuiz): boolean {
     const hasAnswers = lecture.questions.some((question) => Boolean(answers[question.id]));
-    const hasChecked = lecture.questions.some((question) => Boolean(checkedAnswers[question.id]));
-    return (
-      hasAnswers ||
-      hasChecked ||
-      activeQuestionIndex > 0 ||
-      submitted ||
-      autoSubmitted ||
-      timeLeft < lecture.durationSeconds
+    const hasChecked = lecture.questions.some(
+      (question) => Boolean(checkedAnswers[question.id]) && Boolean(answers[question.id]),
     );
+    return hasAnswers || hasChecked;
   }
 
   function switchLecture(lectureId: string): void {
@@ -344,7 +339,7 @@ export default function QuizApp({ lectures }: QuizAppProps) {
   }
 
   function selectAnswer(questionId: string, optionId: string): void {
-    if (submitted) {
+    if (submitted || checkedAnswers[questionId]) {
       return;
     }
 
@@ -352,19 +347,10 @@ export default function QuizApp({ lectures }: QuizAppProps) {
       ...previous,
       [questionId]: optionId,
     }));
-    setCheckedAnswers((previous) => {
-      if (!previous[questionId]) {
-        return previous;
-      }
-
-      const next = { ...previous };
-      delete next[questionId];
-      return next;
-    });
   }
 
   function checkCurrentAnswer(): void {
-    if (!currentQuestion || submitted) {
+    if (!currentQuestion || submitted || currentAnswerChecked) {
       return;
     }
 
@@ -379,6 +365,20 @@ export default function QuizApp({ lectures }: QuizAppProps) {
   }
 
   function submitQuiz(): void {
+    if (!selectedLecture) {
+      return;
+    }
+
+    const unansweredCount = selectedLecture.questions.length - answeredCount;
+    if (unansweredCount > 0) {
+      const shouldSubmit = window.confirm(
+        `You still have ${unansweredCount} unanswered question${unansweredCount === 1 ? "" : "s"}. Submit anyway?`,
+      );
+      if (!shouldSubmit) {
+        return;
+      }
+    }
+
     setSubmitted(true);
     setAutoSubmitted(false);
   }
@@ -472,6 +472,9 @@ export default function QuizApp({ lectures }: QuizAppProps) {
             <button className="btn" onClick={() => moveLecture(1)} disabled={selectedLectureIndex >= lectures.length - 1}>
               Next Set
             </button>
+            <button className="btn btn-danger" onClick={restartCurrentLecture}>
+              Restart This Set
+            </button>
           </div>
         </div>
 
@@ -538,7 +541,12 @@ export default function QuizApp({ lectures }: QuizAppProps) {
                     .join(" ");
 
                   return (
-                    <button key={option.id} className={optionClassName} onClick={() => selectAnswer(currentQuestion.id, option.id)}>
+                    <button
+                      key={option.id}
+                      className={optionClassName}
+                      onClick={() => selectAnswer(currentQuestion.id, option.id)}
+                      disabled={submitted || currentAnswerChecked}
+                    >
                       <strong>{option.id.toUpperCase()}.</strong>
                       {option.text}
                     </button>
@@ -580,12 +588,9 @@ export default function QuizApp({ lectures }: QuizAppProps) {
             <button
               className="btn btn-check"
               onClick={checkCurrentAnswer}
-              disabled={!currentQuestion || !currentSelectedOptionId}
+              disabled={!currentQuestion || !currentSelectedOptionId || currentAnswerChecked}
             >
               Check Answer
-            </button>
-            <button className="btn" onClick={restartCurrentLecture}>
-              Restart This Set
             </button>
             <button className="btn btn-primary" onClick={submitQuiz}>
               Submit Quiz
@@ -606,7 +611,7 @@ export default function QuizApp({ lectures }: QuizAppProps) {
               <p className="autoflag">Time is up. The quiz was auto-submitted.</p>
             ) : null}
           </div>
-          <button className="btn btn-primary" onClick={restartCurrentLecture}>
+          <button className="btn btn-danger" onClick={restartCurrentLecture}>
             Retake This Set
           </button>
 

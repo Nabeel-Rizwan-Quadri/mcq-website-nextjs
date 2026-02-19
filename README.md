@@ -4,15 +4,32 @@ Simple MCQ website for showing and evaluating pre-made lecture MCQs.
 
 ## Website Features
 
-- Lecture dropdown selector
-- Previous/next lecture navigation
+- Lecture set dropdown selector
+- Previous/next set navigation
 - Question navigator and option selection
+- Per-question "Check Answer" feedback during attempt
 - Quiz timer with auto-submit when time ends
 - Submit and score view
 - Detailed review:
   - your answer
   - correct answer
   - explanation
+- Restart current set (with confirmation)
+- Confirmation before switching sets when progress exists
+- Theme toggle (dark/light), persisted in localStorage
+- Quiz progress auto-save and resume across refreshes/reopens:
+  - selected set
+  - active question
+  - selected answers
+  - checked answers
+  - submitted/auto-submitted status
+  - remaining time
+
+## Local Persistence Notes
+
+- Quiz snapshot key: `mcq-hub-quiz-state-v1`
+- Persisted values are sanitized against the current lecture/question/option structure before use.
+- If quiz data changes significantly, stale persisted progress may be ignored and reset safely.
 
 ## Run the Website
 

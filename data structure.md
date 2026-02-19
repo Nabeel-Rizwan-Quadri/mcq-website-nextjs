@@ -42,6 +42,7 @@ Rules:
 1. `id` should be unique across all lectures.
 2. `durationSeconds` should be a positive integer.
 3. `questions` can be empty, but non-empty is expected for actual quizzes.
+4. Keep lecture `id` stable across dataset updates to preserve resumed quiz state.
 
 ## Question Object
 
@@ -79,6 +80,7 @@ Rules:
 2. Every option `id` must be unique within the question.
 3. `correctOptionId` must match one existing option id.
 4. `question` and option texts should be non-empty strings.
+5. Keep question `id` stable across dataset updates to preserve resumed quiz state.
 
 ## Option Object
 
@@ -86,6 +88,17 @@ Each option must be:
 
 - `id` (string): short identifier (commonly `a`, `b`, `c`, `d`).
 - `text` (string): option content shown to users.
+
+For resume behavior, keep option `id` values stable for a given question when possible.
+
+## Persistence and ID Stability
+
+- The app stores quiz progress in browser localStorage using lecture/question/option IDs as references.
+- On load, persisted progress is sanitized:
+  - unknown question IDs are ignored
+  - unknown option IDs are ignored
+  - out-of-range indexes and timer values are clamped
+- If IDs are renamed intentionally, expect saved progress for affected entries to reset.
 
 ## Complete Example
 
