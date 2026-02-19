@@ -108,6 +108,26 @@ body {
     linear-gradient(160deg, var(--bg-ivory), var(--bg-mint));
 }
 
+.site-disclaimer-banner {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  width: 100%;
+  padding: 10px 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.28);
+  background: linear-gradient(90deg, #a81e1e, #cf3a27 55%, #a81e1e);
+  color: #fff8f6;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.35;
+  box-shadow: 0 6px 22px -16px rgba(43, 0, 0, 0.85);
+}
+
+.site-disclaimer-banner strong {
+  color: #ffffff;
+}
+
 .page-shell {
   width: min(1100px, 92vw);
   margin: 24px auto 48px;
@@ -490,6 +510,11 @@ button {
 }
 
 @media (max-width: 760px) {
+  .site-disclaimer-banner {
+    padding: 8px 10px;
+    font-size: 0.82rem;
+  }
+
   .page-shell {
     width: min(100%, 95vw);
     margin-top: 14px;

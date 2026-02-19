@@ -24,7 +24,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-theme="dark" className={`${headingFont.variable} ${bodyFont.variable}`}>
-      <body>{children}</body>
+      <body>
+        <div className="site-disclaimer-banner" role="note">
+          <strong>Disclaimer:</strong> Questions and answers may contain mistakes. After you press{" "}
+          <strong>Check Answer</strong>, review the <strong>Why</strong> reference and verify it with your lecture
+          material.
+        </div>
+        {children}
+      </body>
     </html>
   );
 }
