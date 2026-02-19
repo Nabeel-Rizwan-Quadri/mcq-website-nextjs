@@ -803,7 +803,7 @@ export default function QuizApp({ lectures, appVersion }: QuizAppProps) {
       </section>
 
       {!submitted ? (
-        <section className="panel panel-quiz">
+        <section className={`panel panel-quiz ${showHeaderDetails ? "header-expanded" : "header-compact"}`}>
           <div className="quiz-main">
             <div className="question-head">
               <h2>

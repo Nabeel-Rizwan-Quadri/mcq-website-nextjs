@@ -4,32 +4,41 @@ Simple MCQ website for showing and evaluating pre-made lecture MCQs.
 
 ## Website Features
 
-- Lecture set dropdown selector
-- Previous/next set navigation
-- Question navigator and option selection
-- Per-question "Check Answer" feedback during attempt
-- Quiz timer with auto-submit when time ends
-- Submit and score view
-- Detailed review:
-  - your answer
-  - correct answer
-  - explanation
-- Restart current set (with confirmation)
-- Confirmation before switching sets when progress exists
-- Theme toggle (dark/light), persisted in localStorage
-- Quiz progress auto-save and resume across refreshes/reopens:
-  - selected set
-  - active question
-  - selected answers
-  - checked answers
-  - submitted/auto-submitted status
-  - remaining time
+- Collapsible top controls (`Show Controls` / `Hide Controls`) for reduced distraction while solving.
+- Lecture set selector with previous/next set navigation.
+- Per-set timer with auto-submit when time runs out.
+- One-time time boosts per set: `Add 5 More Minutes` and `Add 10 More Minutes`.
+- Question number navigator with attempted/correct/wrong/flag indicators.
+- Option selection, flag-for-review, and per-question `Check Answer` feedback during attempt.
+- Keyboard navigation with left/right arrow keys for previous/next question.
+- Submit flow with unanswered-question warning.
+- Results view with score summary, per-question detailed review, and optional stats panel (`See Stats`).
+- Stats panel includes:
+  - answer-key distribution by option (how many questions have each option as correct)
+  - your selected-option distribution
+  - most-chosen option(s)
+- Modern in-app confirmation dialogs for:
+  - switching set with unsaved progress
+  - submitting with unanswered questions
+  - restarting a set
+- Theme toggle (dark/light), persisted in localStorage.
+- App version display pulled directly from `package.json`.
 
 ## Local Persistence Notes
 
 - Quiz snapshot key: `mcq-hub-quiz-state-v1`
+- Theme preference key: `theme-mode`
+- Persisted quiz values include:
+  - selected set
+  - active question index
+  - selected answers
+  - checked answers
+  - flagged questions
+  - submitted / auto-submitted status
+  - remaining time
+  - one-time boost usage flags (`+5`, `+10`)
 - Persisted values are sanitized against the current lecture/question/option structure before use.
-- If quiz data changes significantly, stale persisted progress may be ignored and reset safely.
+- If quiz data changes significantly, stale persisted progress may be ignored/reset safely.
 
 ## Run the Website
 

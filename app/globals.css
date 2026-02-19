@@ -140,10 +140,24 @@ html,
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+html {
+  height: 100%;
   min-height: 100%;
+  overflow-x: hidden;
+  background:
+    radial-gradient(1100px 500px at 0% 0%, var(--bg-glow-top) 0%, transparent 60%),
+    radial-gradient(900px 450px at 100% 100%, var(--bg-glow-bottom) 0%, transparent 64%),
+    linear-gradient(160deg, var(--bg-ivory), var(--bg-mint));
 }
 
 body {
+  min-height: 100%;
+  min-height: 100dvh;
+  overflow-x: hidden;
   font-family: var(--font-body), "Segoe UI", sans-serif;
   color: var(--ink);
   background:
@@ -355,14 +369,14 @@ p {
   justify-content: space-between;
   align-items: center;
   gap: 8px;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .question-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(44px, 1fr));
   gap: 8px;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
 }
 
 .question-dot {
@@ -411,27 +425,29 @@ p {
 }
 
 .question-title {
-  font-size: clamp(1.2rem, 2vw, 1.45rem);
+  font-size: clamp(1.12rem, 1.8vw, 1.35rem);
   line-height: 1.3;
   margin: 0;
+  min-width: 0;
 }
 
 .question-title-row {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  margin-bottom: 12px;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+  margin-bottom: 8px;
 }
 
 .btn-question-flag {
   flex-shrink: 0;
+  align-self: flex-start;
 }
 
 .options {
   display: grid;
-  gap: 10px;
+  gap: 8px;
 }
 
 .option-btn {
@@ -439,7 +455,7 @@ p {
   border: 1px solid var(--line);
   border-radius: 12px;
   background: var(--surface);
-  padding: 12px;
+  padding: 10px;
   cursor: pointer;
   color: var(--ink);
 }
@@ -472,10 +488,10 @@ p {
 }
 
 .answer-feedback {
-  margin-top: 12px;
+  margin-top: 10px;
   border: 1px solid var(--line);
   border-radius: 12px;
-  padding: 12px;
+  padding: 10px;
   background: var(--surface-soft);
   display: grid;
   gap: 6px;
@@ -492,25 +508,28 @@ p {
 }
 
 .row-actions {
-  margin-top: 14px;
+  margin-top: 10px;
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
 }
 
 .panel-quiz {
-  min-height: clamp(640px, 78vh, 920px);
+  min-height: clamp(640px, 78vh, 620px);
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .quiz-main {
   min-height: clamp(430px, 56vh, 680px);
+  overflow: auto;
+  padding-right: 2px;
 }
 
 .panel-quiz .row-actions {
   margin-top: auto;
-  padding-top: 14px;
+  padding-top: 10px;
 }
 
 button {
@@ -848,6 +867,7 @@ button {
 
   .quiz-main {
     min-height: 360px;
+    padding-right: 0;
   }
 
   .confirm-content {

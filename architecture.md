@@ -6,7 +6,8 @@ The project has one runtime responsibility:
 
 1. Web App (Next.js)
 - Loads MCQ JSON data from local files in `data/`.
-- Renders quiz UI, timer, scoring, and answer review.
+- Renders quiz UI, timer/boosts, scoring, answer review, and option-level stats.
+- Uses in-app confirmation dialogs for destructive actions (switch/submit/restart).
 - Persists quiz snapshot and theme preference in browser localStorage.
 
 MCQ generation is out of scope for this repository.
@@ -15,7 +16,7 @@ Data is expected to be prepared by an external process and dropped into the expe
 ## 2. Directory-Level Architecture
 
 - `app/`
-  - `app/page.tsx`: server component that reads quiz data JSON.
+  - `app/page.tsx`: server component that reads quiz data JSON and app version from `package.json`.
   - `app/layout.tsx`: root layout, metadata, and font setup.
   - `app/globals.css`: global styles.
 - `components/`
@@ -25,6 +26,8 @@ Data is expected to be prepared by an external process and dropped into the expe
 - `data/`
   - `data/lectures.generated.json`: preferred dataset.
   - `data/lectures.json`: fallback dataset.
+- `.githooks/`
+  - `.githooks/pre-commit`: local pre-commit hook for automatic patch-version bumping.
 - Root typing artifact:
   - `next-env.d.ts`: Next type references (including route types from `.next/types/routes.d.ts`).
 
@@ -33,14 +36,15 @@ Data is expected to be prepared by an external process and dropped into the expe
 1. `app/page.tsx` checks JSON files in order:
    - `data/lectures.generated.json`
    - `data/lectures.json`
-2. It uses the first non-empty valid array.
-3. Data is passed into `components/QuizApp.tsx`.
+2. It uses the first non-empty valid array and also reads `version` from `package.json`.
+3. Data and version are passed into `components/QuizApp.tsx`.
 4. On mount, `QuizApp` hydrates:
    - theme mode from `theme-mode`
    - quiz snapshot from `mcq-hub-quiz-state-v1`
 5. Hydrated quiz snapshot is sanitized against the current lecture/question/option graph and numeric values are clamped.
 6. After hydration, quiz state changes are re-persisted continuously.
-7. Timer, submission, scoring, navigation, and review run on top of hydrated in-memory state.
+7. Timer, submission, keyboard navigation (left/right), scoring, stats view, and review run on top of hydrated in-memory state.
+8. Confirmation actions are mediated through a client-side modal (not native browser confirm).
 
 ## 4. Data Contract
 
@@ -62,6 +66,8 @@ Stable IDs are important for smooth resume behavior.
 - Current build pre-renders `/` as static.
 - If quiz content changes in production, deployment should include refreshing JSON and rebuilding/redeploying.
 - Next route type references are expected at `.next/types/routes.d.ts` in `next-env.d.ts`.
+- Version is sourced from `package.json` and shown in-app.
+- Local repo supports auto patch-version bump on commit when `core.hooksPath` is set to `.githooks`.
 
 ## 7. Current Constraints
 

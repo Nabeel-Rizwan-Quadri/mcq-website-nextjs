@@ -9,15 +9,23 @@ Maintain a simple Next.js MCQ website that consumes externally prepared MCQ JSON
 
 1. Next.js app with TypeScript and App Router.
 2. Typed lecture/MCQ schema in `lib/types.ts`.
-3. Quiz UI with lecture selection, navigation, timer, scoring, and review.
-4. Theme mode toggle (dark/light) with localStorage persistence.
-5. Quiz state persistence in localStorage (`mcq-hub-quiz-state-v1`) with safe hydration on mount.
-6. Persisted state sanitization and numeric clamping to protect against stale/invalid snapshots.
-7. Progress-loss guards:
+3. Quiz UI with lecture selection, collapsible top controls, question navigation, timer, scoring, and review.
+4. Per-question `Check Answer` feedback and flag-for-review flow.
+5. Keyboard shortcuts (`ArrowLeft`/`ArrowRight`) for previous/next question navigation.
+6. Time management UX: auto-submit at timeout, plus one-time `+5 min` and `+10 min` boosts.
+7. Results statistics panel with answer-key distribution and user-choice distribution.
+8. Custom in-app confirmation modal (replacing native browser confirm).
+9. Progress-loss guards:
    - confirmation before switching sets when current set has progress
+   - confirmation before submitting with unanswered questions
    - confirmation before restarting a set
-8. Responsive styling and working build/lint setup.
-9. Next route types reference aligned in `next-env.d.ts` (`.next/types/routes.d.ts`).
+10. Theme mode toggle (dark/light) with localStorage persistence.
+11. App version display sourced from `package.json`.
+12. Quiz state persistence in localStorage (`mcq-hub-quiz-state-v1`) with safe hydration on mount.
+13. Persisted state sanitization and numeric clamping to protect against stale/invalid snapshots.
+14. Local git hook support for automatic patch-version bump on commit (`.githooks/pre-commit`).
+15. Responsive styling and working build/lint setup.
+16. Next route types reference aligned in `next-env.d.ts` (`.next/types/routes.d.ts`).
 
 ### Data Input Model (Completed)
 
@@ -35,6 +43,6 @@ Maintain a simple Next.js MCQ website that consumes externally prepared MCQ JSON
 ## Next Improvements (Recommended)
 
 1. Add runtime schema validation for loaded JSON before app usage.
-2. Add automated tests for persistence/hydration, timer auto-submit, and confirmation flows.
+2. Add automated tests for persistence/hydration, timer/boost behavior, keyboard shortcuts, and confirmation flows.
 3. Add a lightweight data lint command to validate external MCQ files against the required schema.
 4. Add an in-app "clear saved progress" action for troubleshooting or manual reset.

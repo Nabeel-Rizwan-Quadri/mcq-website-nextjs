@@ -72,7 +72,7 @@ Required fields:
 
 Optional fields:
 
-- `explanation` (string): shown in review mode.
+- `explanation` (string): shown after `Check Answer` and in post-submit review.
 
 Rules:
 
@@ -98,6 +98,7 @@ For resume behavior, keep option `id` values stable for a given question when po
   - unknown question IDs are ignored
   - unknown option IDs are ignored
   - out-of-range indexes and timer values are clamped
+- Persisted quiz progress also includes checked-answer state, flagged-question state, and one-time time-boost usage flags.
 - If IDs are renamed intentionally, expect saved progress for affected entries to reset.
 
 ## Complete Example
