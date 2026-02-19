@@ -8,7 +8,8 @@ type QuizAppProps = {
 };
 type ThemeMode = "dark" | "light";
 const QUIZ_STATE_STORAGE_KEY = "mcq-hub-quiz-state-v1";
-const EXTRA_TIME_SECONDS = 5 * 60;
+const EXTRA_TIME_SECONDS_FIVE = 5 * 60;
+const EXTRA_TIME_SECONDS_TEN = 10 * 60;
 
 type PersistedQuizState = {
   selectedLectureId: string;
@@ -19,7 +20,9 @@ type PersistedQuizState = {
   submitted: boolean;
   autoSubmitted: boolean;
   timeLeft: number;
-  timeBoostUsed: boolean;
+  timeBoostFiveUsed: boolean;
+  timeBoostTenUsed: boolean;
+  timeBoostUsed?: boolean;
 };
 
 function formatTime(totalSeconds: number): string {
@@ -110,7 +113,8 @@ export default function QuizApp({ lectures }: QuizAppProps) {
   const [submitted, setSubmitted] = useState(false);
   const [autoSubmitted, setAutoSubmitted] = useState(false);
   const [timeLeft, setTimeLeft] = useState(lectures[0]?.durationSeconds ?? 0);
-  const [timeBoostUsed, setTimeBoostUsed] = useState(false);
+  const [timeBoostFiveUsed, setTimeBoostFiveUsed] = useState(false);
+  const [timeBoostTenUsed, setTimeBoostTenUsed] = useState(false);
   const [themeMode, setThemeMode] = useState<ThemeMode>("dark");
 
   const selectedLecture = useMemo(
@@ -165,7 +169,8 @@ export default function QuizApp({ lectures }: QuizAppProps) {
       submitted: false,
       autoSubmitted: false,
       timeLeft: 0,
-      timeBoostUsed: false,
+      timeBoostFiveUsed: false,
+      timeBoostTenUsed: false,
     };
 
     if (lectures.length > 0) {
@@ -179,7 +184,8 @@ export default function QuizApp({ lectures }: QuizAppProps) {
         submitted: false,
         autoSubmitted: false,
         timeLeft: defaultLecture.durationSeconds,
-        timeBoostUsed: false,
+        timeBoostFiveUsed: false,
+        timeBoostTenUsed: false,
       };
 
       const persistedState = window.localStorage.getItem(QUIZ_STATE_STORAGE_KEY);
@@ -199,8 +205,13 @@ export default function QuizApp({ lectures }: QuizAppProps) {
 
           const submitted = parsedState.submitted === true;
           const autoSubmitted = submitted && parsedState.autoSubmitted === true;
-          const timeBoostUsed = parsedState.timeBoostUsed === true;
-          const maxTimeLeft = lectureFromStorage.durationSeconds + (timeBoostUsed ? EXTRA_TIME_SECONDS : 0);
+          const legacyTimeBoostUsed = parsedState.timeBoostUsed === true;
+          const timeBoostFiveUsed = parsedState.timeBoostFiveUsed === true || legacyTimeBoostUsed;
+          const timeBoostTenUsed = parsedState.timeBoostTenUsed === true;
+          const maxTimeLeft =
+            lectureFromStorage.durationSeconds +
+            (timeBoostFiveUsed ? EXTRA_TIME_SECONDS_FIVE : 0) +
+            (timeBoostTenUsed ? EXTRA_TIME_SECONDS_TEN : 0);
           const timeLeft =
             typeof parsedState.timeLeft === "number"
               ? clamp(Math.floor(parsedState.timeLeft), 0, maxTimeLeft)
@@ -215,7 +226,8 @@ export default function QuizApp({ lectures }: QuizAppProps) {
             submitted,
             autoSubmitted,
             timeLeft,
-            timeBoostUsed,
+            timeBoostFiveUsed,
+            timeBoostTenUsed,
           };
         } catch {
           window.localStorage.removeItem(QUIZ_STATE_STORAGE_KEY);
@@ -232,7 +244,8 @@ export default function QuizApp({ lectures }: QuizAppProps) {
       setSubmitted(nextState.submitted);
       setAutoSubmitted(nextState.autoSubmitted);
       setTimeLeft(nextState.timeLeft);
-      setTimeBoostUsed(nextState.timeBoostUsed);
+      setTimeBoostFiveUsed(nextState.timeBoostFiveUsed);
+      setTimeBoostTenUsed(nextState.timeBoostTenUsed);
       setHasHydratedQuizState(true);
     });
 
@@ -258,7 +271,8 @@ export default function QuizApp({ lectures }: QuizAppProps) {
       submitted,
       autoSubmitted,
       timeLeft,
-      timeBoostUsed,
+      timeBoostFiveUsed,
+      timeBoostTenUsed,
     };
 
     window.localStorage.setItem(QUIZ_STATE_STORAGE_KEY, JSON.stringify(snapshot));
@@ -273,7 +287,8 @@ export default function QuizApp({ lectures }: QuizAppProps) {
     submitted,
     autoSubmitted,
     timeLeft,
-    timeBoostUsed,
+    timeBoostFiveUsed,
+    timeBoostTenUsed,
   ]);
 
   function resetQuizForLecture(lecture: LectureQuiz): void {
@@ -284,7 +299,8 @@ export default function QuizApp({ lectures }: QuizAppProps) {
     setSubmitted(false);
     setAutoSubmitted(false);
     setTimeLeft(lecture.durationSeconds);
-    setTimeBoostUsed(false);
+    setTimeBoostFiveUsed(false);
+    setTimeBoostTenUsed(false);
   }
 
   function hasProgressInLecture(lecture: LectureQuiz): boolean {
@@ -451,12 +467,21 @@ export default function QuizApp({ lectures }: QuizAppProps) {
   }
 
   function addFiveMoreMinutes(): void {
-    if (submitted || timeBoostUsed) {
+    if (submitted || timeBoostFiveUsed) {
       return;
     }
 
-    setTimeLeft((previous) => previous + EXTRA_TIME_SECONDS);
-    setTimeBoostUsed(true);
+    setTimeLeft((previous) => previous + EXTRA_TIME_SECONDS_FIVE);
+    setTimeBoostFiveUsed(true);
+  }
+
+  function addTenMoreMinutes(): void {
+    if (submitted || timeBoostTenUsed) {
+      return;
+    }
+
+    setTimeLeft((previous) => previous + EXTRA_TIME_SECONDS_TEN);
+    setTimeBoostTenUsed(true);
   }
 
   function restartCurrentLecture(): void {
@@ -563,8 +588,11 @@ export default function QuizApp({ lectures }: QuizAppProps) {
           </span>
           <span className="chip chip-flag">Flagged: {flaggedCount}</span>
           <span className="chip">{submitted ? "Submitted" : "In Progress"}</span>
-          <button className="btn" onClick={addFiveMoreMinutes} disabled={submitted || timeBoostUsed}>
-            {timeBoostUsed ? "Extra 5 Minutes Used" : "Add 5 More Minutes"}
+          <button className="btn" onClick={addFiveMoreMinutes} disabled={submitted || timeBoostFiveUsed}>
+            {timeBoostFiveUsed ? "Extra 5 Minutes Used" : "Add 5 More Minutes"}
+          </button>
+          <button className="btn" onClick={addTenMoreMinutes} disabled={submitted || timeBoostTenUsed}>
+            {timeBoostTenUsed ? "Extra 10 Minutes Used" : "Add 10 More Minutes"}
           </button>
         </div>
       </section>
@@ -687,7 +715,7 @@ export default function QuizApp({ lectures }: QuizAppProps) {
             >
               {currentQuestionFlagged ? "Unflag Question" : "Flag for Review"}
             </button>
-            <button className="btn btn-primary" onClick={submitQuiz}>
+            <button className="btn btn-primary btn-submit" onClick={submitQuiz}>
               Submit Quiz
             </button>
           </div>

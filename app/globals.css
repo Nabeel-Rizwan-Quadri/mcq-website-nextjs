@@ -30,8 +30,8 @@
   --question-flag-dot: #d0b1ff;
   --current-border: #e3bb62;
   --option-hover-border: #61798b;
-  --option-selected-border: #54a985;
-  --option-selected-bg: #17332b;
+  --option-selected-border: #e3bb62;
+  --option-selected-bg: #3a2e1e;
   --review-correct-border: #3f916f;
   --review-correct-bg: #112920;
   --review-wrong-border: #b56d5f;
@@ -89,8 +89,8 @@
   --question-flag-dot: #8b69c2;
   --current-border: #e4ba5f;
   --option-hover-border: #95afaa;
-  --option-selected-border: #74a58f;
-  --option-selected-bg: #eaf7f1;
+  --option-selected-border: #d8a85a;
+  --option-selected-bg: #fff5df;
   --review-correct-border: #99d0b7;
   --review-correct-bg: #f2fbf6;
   --review-wrong-border: #e6b6aa;
@@ -524,6 +524,10 @@ button {
 .btn-primary:hover {
   border-color: var(--accent-strong);
   background: var(--accent-strong);
+}
+
+.btn-submit {
+  margin-left: auto;
 }
 
 .result-summary {
