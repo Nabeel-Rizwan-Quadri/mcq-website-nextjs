@@ -215,7 +215,7 @@ export default function QuizApp({ lectures }: QuizAppProps) {
       <main className="page-shell">
         <section className="panel">
           <div className="hero-header">
-            <h1 className="hero-title">Lecture MCQ Hub</h1>
+            <h1 className="hero-title">MCQ Hub</h1>
             <button
               className="theme-switch"
               role="switch"
@@ -229,7 +229,7 @@ export default function QuizApp({ lectures }: QuizAppProps) {
               </span>
             </button>
           </div>
-          <p className="hero-subtitle">No lecture data is available yet.</p>
+          <p className="hero-subtitle">No quiz data is available yet.</p>
         </section>
       </main>
     );
@@ -239,7 +239,7 @@ export default function QuizApp({ lectures }: QuizAppProps) {
     <main className="page-shell">
       <section className="panel">
         <div className="hero-header">
-          <h1 className="hero-title">Lecture MCQ Hub</h1>
+          <h1 className="hero-title">MCQ Hub</h1>
           <button
             className="theme-switch"
             role="switch"
@@ -253,11 +253,11 @@ export default function QuizApp({ lectures }: QuizAppProps) {
             </span>
           </button>
         </div>
-        <p className="hero-subtitle">Pick a lecture, answer all MCQs, and review exactly where you went right or wrong.</p>
+        <p className="hero-subtitle">Pick a set, answer all MCQs, and review exactly where you went right or wrong.</p>
 
         <div className="control-grid">
           <label className="control-label">
-            <span>Choose Lecture</span>
+            <span>Choose Set</span>
             <select
               className="lecture-select"
               value={selectedLectureId}
@@ -273,10 +273,10 @@ export default function QuizApp({ lectures }: QuizAppProps) {
 
           <div className="lecture-switch">
             <button className="btn" onClick={() => moveLecture(-1)} disabled={selectedLectureIndex <= 0}>
-              Previous Lecture
+              Previous Set
             </button>
             <button className="btn" onClick={() => moveLecture(1)} disabled={selectedLectureIndex >= lectures.length - 1}>
-              Next Lecture
+              Next Set
             </button>
           </div>
         </div>
@@ -301,15 +301,30 @@ export default function QuizApp({ lectures }: QuizAppProps) {
           </div>
 
           <div className="question-grid">
-            {selectedLecture.questions.map((question, index) => (
-              <button
-                key={question.id}
-                className={`question-dot ${index === activeQuestionIndex ? "current" : ""} ${answers[question.id] ? "answered" : ""}`}
-                onClick={() => setActiveQuestionIndex(index)}
-              >
-                {index + 1}
-              </button>
-            ))}
+            {selectedLecture.questions.map((question, index) => {
+              const selectedOptionId = answers[question.id];
+              const answerChecked = Boolean(checkedAnswers[question.id]);
+              const answerIsCorrect = selectedOptionId === question.correctOptionId;
+              const questionDotClassName = [
+                "question-dot",
+                index === activeQuestionIndex ? "current" : "",
+                selectedOptionId
+                  ? answerChecked
+                    ? answerIsCorrect
+                      ? "checked-correct"
+                      : "checked-wrong"
+                    : "attempted"
+                  : "",
+              ]
+                .filter(Boolean)
+                .join(" ");
+
+              return (
+                <button key={question.id} className={questionDotClassName} onClick={() => setActiveQuestionIndex(index)}>
+                  {index + 1}
+                </button>
+              );
+            })}
           </div>
 
           {currentQuestion && (
@@ -369,7 +384,7 @@ export default function QuizApp({ lectures }: QuizAppProps) {
               Next Question
             </button>
             <button
-              className="btn"
+              className="btn btn-check"
               onClick={checkCurrentAnswer}
               disabled={!currentQuestion || !currentSelectedOptionId}
             >
@@ -395,7 +410,7 @@ export default function QuizApp({ lectures }: QuizAppProps) {
             ) : null}
           </div>
           <button className="btn btn-primary" onClick={retakeLecture}>
-            Retake This Lecture
+            Retake This Set
           </button>
 
           <div className="review-list">
@@ -407,13 +422,12 @@ export default function QuizApp({ lectures }: QuizAppProps) {
                   <h3>
                     Q{index + 1}. {question.question}
                   </h3>
-                  <div className="options review-options">
+                  <div className="options">
                     {question.options.map((option) => {
                       const isSelected = selectedOptionId === option.id;
                       const isCorrectOption = option.id === question.correctOptionId;
                       const optionClassName = [
                         "option-btn",
-                        "option-btn-static",
                         isSelected ? "selected" : "",
                         isCorrectOption ? "correct" : "",
                         isSelected && !isCorrectOption ? "wrong" : "",
@@ -429,17 +443,20 @@ export default function QuizApp({ lectures }: QuizAppProps) {
                       );
                     })}
                   </div>
-                  <p>
-                    <strong>Your answer:</strong> {findOptionText(question, selectedOptionId)}
-                  </p>
-                  <p>
-                    <strong>Correct answer:</strong> {findOptionText(question, question.correctOptionId)}
-                  </p>
-                  {question.explanation ? (
+                  <div className={`answer-feedback ${isCorrect ? "correct" : "wrong"}`}>
                     <p>
-                      <strong>Why:</strong> {question.explanation}
+                      <strong>{isCorrect ? "Correct." : "Incorrect."}</strong> Your answer:{" "}
+                      {findOptionText(question, selectedOptionId)}
                     </p>
-                  ) : null}
+                    <p>
+                      <strong>Correct answer:</strong> {findOptionText(question, question.correctOptionId)}
+                    </p>
+                    {question.explanation ? (
+                      <p>
+                        <strong>Why:</strong> {question.explanation}
+                      </p>
+                    ) : null}
+                  </div>
                 </article>
               );
             })}

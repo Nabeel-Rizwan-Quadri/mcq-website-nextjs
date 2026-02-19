@@ -13,8 +13,8 @@ const bodyFont = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Lecture MCQ Hub",
-  description: "Practice lecture-wise MCQs with timer, scoring, and answer review.",
+  title: "MCQ Hub",
+  description: "Practice MCQs with timer, scoring, and answer review.",
 };
 
 export default function RootLayout({

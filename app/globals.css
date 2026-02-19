@@ -19,10 +19,13 @@
   --chip-warn-bg: #3a2e1e;
   --chip-danger-border: #c47463;
   --chip-danger-bg: #3d2320;
-  --answered-border: #4f9878;
-  --answered-bg: #162f2a;
-  --current-border: #68b592;
-  --current-bg: #1b3b33;
+  --question-attempted-border: #bf934f;
+  --question-attempted-bg: #3a2e1e;
+  --question-correct-border: #4f9878;
+  --question-correct-bg: #162f2a;
+  --question-wrong-border: #b56d5f;
+  --question-wrong-bg: #2d1c1b;
+  --current-border: #e3bb62;
   --option-hover-border: #61798b;
   --option-selected-border: #54a985;
   --option-selected-bg: #17332b;
@@ -30,6 +33,10 @@
   --review-correct-bg: #112920;
   --review-wrong-border: #b56d5f;
   --review-wrong-bg: #2d1c1b;
+  --btn-check-border: #e3bb62;
+  --btn-check-bg: #d2a44f;
+  --btn-check-hover: #bd9141;
+  --btn-check-ink: #ffffff;
 }
 
 [data-theme="light"] {
@@ -53,10 +60,13 @@
   --chip-warn-bg: #fff3e6;
   --chip-danger-border: #e29b8a;
   --chip-danger-bg: #ffeae5;
-  --answered-border: #8cc5ad;
-  --answered-bg: #f0f9f4;
-  --current-border: #5f937d;
-  --current-bg: #dff0e8;
+  --question-attempted-border: #d89a68;
+  --question-attempted-bg: #fff3e6;
+  --question-correct-border: #8cc5ad;
+  --question-correct-bg: #f0f9f4;
+  --question-wrong-border: #e6b6aa;
+  --question-wrong-bg: #fff4f1;
+  --current-border: #e4ba5f;
   --option-hover-border: #95afaa;
   --option-selected-border: #74a58f;
   --option-selected-bg: #eaf7f1;
@@ -64,6 +74,10 @@
   --review-correct-bg: #f2fbf6;
   --review-wrong-border: #e6b6aa;
   --review-wrong-bg: #fff4f1;
+  --btn-check-border: #e4ba5f;
+  --btn-check-bg: #f6d27d;
+  --btn-check-hover: #edc15f;
+  --btn-check-ink: #ffffff;
 }
 
 * {
@@ -264,14 +278,24 @@ p {
   color: var(--ink);
 }
 
-.question-dot.answered {
-  border-color: var(--answered-border);
-  background: var(--answered-bg);
+.question-dot.attempted {
+  border-color: var(--question-attempted-border);
+  background: var(--question-attempted-bg);
+}
+
+.question-dot.checked-correct {
+  border-color: var(--question-correct-border);
+  background: var(--question-correct-bg);
+}
+
+.question-dot.checked-wrong {
+  border-color: var(--question-wrong-border);
+  background: var(--question-wrong-bg);
 }
 
 .question-dot.current {
-  border-color: var(--current-border);
-  background: var(--current-bg);
+  outline: 2px solid var(--current-border);
+  outline-offset: 1px;
 }
 
 .question-title {
@@ -318,10 +342,6 @@ p {
   background: var(--review-wrong-bg);
 }
 
-.option-btn.option-btn-static {
-  cursor: default;
-}
-
 .answer-feedback {
   margin-top: 12px;
   border: 1px solid var(--line);
@@ -364,6 +384,17 @@ button {
 
 .btn:hover {
   border-color: var(--option-hover-border);
+}
+
+.btn-check {
+  border-color: var(--btn-check-border);
+  background: var(--btn-check-bg);
+  color: var(--btn-check-ink);
+}
+
+.btn-check:hover {
+  border-color: var(--btn-check-hover);
+  background: var(--btn-check-hover);
 }
 
 .btn:disabled {
@@ -423,10 +454,6 @@ button {
 
 .review-card h3 {
   font-size: 1rem;
-  margin-bottom: 8px;
-}
-
-.review-options {
   margin-bottom: 8px;
 }
 
