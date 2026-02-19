@@ -1,2977 +1,2913 @@
 [
   {
-    "id": "psy-01-intro",
-    "title": "Part 1: Introduction",
-    "topic": "History, definition, and scope of psychophysiology.",
-    "durationSeconds": 600,
+    "id": "ns-paper-1",
+    "title": "ns_paper_1.pdf",
+    "topic": "MCQ set generated from ns_paper_1.pdf",
+    "durationSeconds": 900,
     "questions": [
       {
-        "id": "psy-01-intro-q1",
-        "question": "In psychophysiological research, what is typically the dependent variable (DV)?",
+        "id": "ns-paper-1-q1",
+        "question": "Which phase of the action potential is primarily characterized by the rapid influx of sodium ions, leading to membrane depolarization?",
         "options": [
           {
             "id": "a",
-            "text": "A behavioral manipulation (e.g., task difficulty)"
+            "text": "Threshold"
           },
           {
             "id": "b",
-            "text": "A physiological measure (e.g., heart rate)"
+            "text": "Rising phase"
           },
           {
             "id": "c",
-            "text": "A statistical model parameter"
+            "text": "Overshoot"
           },
           {
             "id": "d",
-            "text": "A questionnaire score only"
+            "text": "Falling phase"
           }
         ],
         "correctOptionId": "b",
-        "explanation": "Psychophysiology commonly treats physiology as the DV and a behavioral/psychological manipulation as the IV. Ref: Part 1 Introduction, slide 19."
+        "explanation": "Lecture reference: Chapter 1 – Action potential Review (Rising phase) (p.18) (page 1)"
       },
       {
-        "id": "psy-01-intro-q2",
-        "question": "Which statement best captures the psychophysiological inference?",
+        "id": "ns-paper-1-q2",
+        "question": "What is the primary mechanism by which an excitatory postsynaptic potential (EPSP) leads to membrane depolarization?",
         "options": [
           {
             "id": "a",
-            "text": "Physiological changes always cause psychological states"
+            "text": "Activation of voltage-gated potassium channels"
           },
           {
             "id": "b",
-            "text": "A psychological state (Ψ) is assumed to be expressed as a physiological state (Φ)"
+            "text": "Activation of voltage-gated sodium channels"
           },
           {
             "id": "c",
-            "text": "Physiological and psychological states are independent"
+            "text": "Inhibition of voltage-gated calcium channels"
           },
           {
             "id": "d",
-            "text": "Only hormones can reveal psychological states"
+            "text": "Inhibition of ligand-gated ion channels"
           }
         ],
         "correctOptionId": "b",
-        "explanation": "The inference is Ψ → Φ (psychological state expressed in physiology). Ref: Part 1 Introduction, slide 20; Part 4 Experimentation, slide 22."
+        "explanation": "Lecture reference: Chapter 1 – Excitatory Post Synaptic Potential (EPSP generation) (p.32) (page 1)"
       },
       {
-        "id": "psy-01-intro-q3",
-        "question": "Which theory claims that emotion is the result of interpreting physiological changes?",
+        "id": "ns-paper-1-q3",
+        "question": "According to the figure, two microelectrodes are inserted into a neuron; one for stimulation and another for recording. Which statement accurately describes the relationship between injected current and action potential generation?",
         "options": [
           {
             "id": "a",
-            "text": "Cannon–Bard theory"
+            "text": "Injected current below threshold leads to decreased action potential firing rate."
           },
           {
             "id": "b",
-            "text": "James–Lange theory"
+            "text": "Injected current above threshold results in decreased action potential firing rate."
           },
           {
             "id": "c",
-            "text": "Phrenology"
+            "text": "Injected current at threshold leads to no action potential generation."
           },
           {
             "id": "d",
-            "text": "Dualism"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "James–Lange proposes we feel emotion because we perceive bodily changes. Ref: Part 1 Introduction, slide 8."
-      },
-      {
-        "id": "psy-01-intro-q4",
-        "question": "What did Hans Berger’s 1924 work primarily contribute to psychophysiology?",
-        "options": [
-          {
-            "id": "a",
-            "text": "First invasive blood pressure line"
-          },
-          {
-            "id": "b",
-            "text": "First recording of EEG from a living human"
-          },
-          {
-            "id": "c",
-            "text": "Discovery of neurotransmitters"
-          },
-          {
-            "id": "d",
-            "text": "First use of fMRI"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "Berger performed first measures on a living human brain (EEG). Ref: Part 1 Introduction, slide 12."
-      },
-      {
-        "id": "psy-01-intro-q5",
-        "question": "Which list contains only examples of modalities within the scope of psychophysiology as presented?",
-        "options": [
-          {
-            "id": "a",
-            "text": "ECG, EDA, EEG"
-          },
-          {
-            "id": "b",
-            "text": "X-ray, CT, ultrasound"
-          },
-          {
-            "id": "c",
-            "text": "DNA sequencing, PCR, Western blot"
-          },
-          {
-            "id": "d",
-            "text": "Bacterial culture, staining, microscopy"
-          }
-        ],
-        "correctOptionId": "a",
-        "explanation": "The scope includes cardiac/hemodynamic measures (ECG), electrodermal activity (EDA), and EEG. Ref: Part 1 Introduction, slide 22."
-      },
-      {
-        "id": "psy-01-intro-q6",
-        "question": "Which pair is correctly matched to the 'mind–body problem' positions?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Monism: mind and body are separate; Dualism: one substance explains both"
-          },
-          {
-            "id": "b",
-            "text": "Monism: one thing explains mind and body; Dualism: separate things are needed"
-          },
-          {
-            "id": "c",
-            "text": "Monism: only the body exists; Dualism: only the mind exists"
-          },
-          {
-            "id": "d",
-            "text": "Monism: phrenology; Dualism: localization"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "Monists argue one substance explains both; dualists argue distinct substances. Ref: Part 1 Introduction, slide 4."
-      },
-      {
-        "id": "psy-01-intro-q7",
-        "question": "Why is psychophysiology often valuable compared with purely self-report methods?",
-        "options": [
-          {
-            "id": "a",
-            "text": "It guarantees one-to-one mapping of mind to body"
-          },
-          {
-            "id": "b",
-            "text": "It can reveal processes that would not otherwise be revealed (or would be biased in self-report)"
-          },
-          {
-            "id": "c",
-            "text": "It eliminates the need for experimental design"
-          },
-          {
-            "id": "d",
-            "text": "It only measures endocrine activity"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "The lecture notes emphasize psychophysiology can reveal things otherwise not revealed; mappings are not one-to-one. Ref: Part 1 Introduction, slide 29."
-      },
-      {
-        "id": "psy-01-intro-q8",
-        "question": "Which example best illustrates early psychophysiological measurement of brain currents before EEG in humans?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Luigi Galvani’s frog galvanoscope"
-          },
-          {
-            "id": "b",
-            "text": "Richard Caton’s galvanometer recordings from rabbit/monkey brain surface"
-          },
-          {
-            "id": "c",
-            "text": "Ibn Sina’s pulse diagnosis"
-          },
-          {
-            "id": "d",
-            "text": "Cannon–Bard theory"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "Caton observed electrical impulses from animal brain surfaces using a galvanometer. Ref: Part 1 Introduction, slide 11."
-      },
-      {
-        "id": "psy-01-intro-q9",
-        "question": "Psychophysiological relations between psychological phenomena and physiology are generally described as:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Causal and one-to-one"
-          },
-          {
-            "id": "b",
-            "text": "Non-causal and not one-to-one"
-          },
-          {
-            "id": "c",
-            "text": "Always mediated by the endocrine system"
-          },
-          {
-            "id": "d",
-            "text": "Identical across individuals"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "The introduction emphasizes non-causal, non one-to-one relations. Ref: Part 1 Introduction, slide 29."
-      },
-      {
-        "id": "psy-01-intro-q10",
-        "question": "The Society for Psychophysiological Research (SPR) was founded in:",
-        "options": [
-          {
-            "id": "a",
-            "text": "1574"
-          },
-          {
-            "id": "b",
-            "text": "1791"
-          },
-          {
-            "id": "c",
-            "text": "1924"
-          },
-          {
-            "id": "d",
-            "text": "1960"
+            "text": "Injected current beyond threshold leads to increased action potential firing rate."
           }
         ],
         "correctOptionId": "d",
-        "explanation": "The lecture states SPR was founded in 1960. Ref: Part 1 Introduction, slide 13."
-      }
-    ]
-  },
-  {
-    "id": "psy-02-1-nervous-system",
-    "title": "Part 2.1: Nervous system overview",
-    "topic": "Structural vs functional divisions; somatic vs autonomic; sympathetic vs parasympathetic.",
-    "durationSeconds": 600,
-    "questions": [
+        "explanation": "Lecture reference: Chapter 1 – Injected current vs firing rate (p.21-22) (page 1)"
+      },
       {
-        "id": "psy-02-1-nervous-system-q1",
-        "question": "Structurally, the central nervous system (CNS) refers to:",
+        "id": "ns-paper-1-q4",
+        "question": "Which ion transport mechanism requires metabolic energy to move ions against their concentration gradients?",
         "options": [
           {
             "id": "a",
-            "text": "All nerves outside the brain and spinal cord"
+            "text": "Leak channels"
           },
           {
             "id": "b",
-            "text": "Brain and spinal cord"
+            "text": "Ion pumps"
           },
           {
             "id": "c",
-            "text": "Only the brain"
+            "text": "Voltage-gated channels"
           },
           {
             "id": "d",
-            "text": "Only the spinal cord"
+            "text": "Ligand-gated channels"
           }
         ],
         "correctOptionId": "b",
-        "explanation": "CNS = brain and spinal cord (dorsal body cavity). Ref: Part 2.1 Nervous system, slide 1."
+        "explanation": "Lecture reference: Chapter 1 – Membrane channels / ion pumps (p.14) (page 1)"
       },
       {
-        "id": "psy-02-1-nervous-system-q2",
-        "question": "Functionally, which system controls voluntary striated muscles?",
+        "id": "ns-paper-1-q5",
+        "question": "Which of the following statements is TRUE about the generation of action potentials in neurons?",
         "options": [
           {
             "id": "a",
-            "text": "Autonomic nervous system"
+            "text": "Action potentials can be generated in any part of the neuron, including dendrites and"
           },
           {
             "id": "b",
-            "text": "Somatic nervous system"
+            "text": "Action potentials are typically generated at the axon hillock, where voltage-gated"
           },
           {
             "id": "c",
-            "text": "Endocrine system"
+            "text": "In most sensory neurons, action potentials are generated at the axon hillock in"
           },
           {
             "id": "d",
-            "text": "Parasympathetic nervous system"
+            "text": "The spike-initiation zone, where action potentials are typically generated, is located at"
           }
         ],
         "correctOptionId": "b",
-        "explanation": "Somatic NS controls interaction with external environment incl. voluntary striated muscle activity. Ref: Part 2.1, slide 3."
+        "explanation": "Lecture reference: Chapter 1 – Spike-initiation zone / axon hillock (p.26) (page 2)"
       },
       {
-        "id": "psy-02-1-nervous-system-q3",
-        "question": "The autonomic nervous system primarily controls:",
+        "id": "ns-paper-1-q6",
+        "question": "Which of the following brain regions is primarily responsible for the perception and analysis of sound characteristics such as pitch, frequency, and location?",
         "options": [
           {
             "id": "a",
-            "text": "Voluntary skeletal muscles"
+            "text": "Auditory Association cortex"
           },
           {
             "id": "b",
-            "text": "Internal environment: glands and organs, smooth and cardiac muscles"
+            "text": "Wernicke's Area"
           },
           {
             "id": "c",
-            "text": "Only sensory input"
+            "text": "Primary Olfactory cortex"
           },
           {
             "id": "d",
-            "text": "Only spinal reflexes"
+            "text": "Primary auditory cortex"
           }
         ],
-        "correctOptionId": "b",
-        "explanation": "ANS controls glands, organs, smooth and cardiac muscles (involuntary). Ref: Part 2.1, slide 3."
+        "correctOptionId": "d",
+        "explanation": "Lecture reference: Chapter 2 – Temporal lobe (Primary auditory cortex) (p.5) (page 2)"
       },
       {
-        "id": "psy-02-1-nervous-system-q4",
-        "question": "Which pairing is correct?",
+        "id": "ns-paper-1-q7",
+        "question": "Which of the following functions are primarily associated with the parietal lobe of the brain?",
         "options": [
           {
             "id": "a",
-            "text": "Sympathetic: rest and digest; Parasympathetic: fight or flight"
+            "text": "Language comprehension and production"
           },
           {
             "id": "b",
-            "text": "Sympathetic: fight or flight; Parasympathetic: rest and digest"
+            "text": "Perception and analysis of sound characteristics"
           },
           {
             "id": "c",
-            "text": "Both are dominant during rest"
+            "text": "Analysis and recognition of somatic sensations such as pressure and vibration, spatial"
           },
           {
             "id": "d",
-            "text": "Both are dominant during acute stress"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "Sympathetic dominates fight/flight; parasympathetic dominates rest/digest. Ref: Part 2.1, slide 4."
-      },
-      {
-        "id": "psy-02-1-nervous-system-q5",
-        "question": "The nervous system is defined structurally as:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Only neurons, no supporting cells"
-          },
-          {
-            "id": "b",
-            "text": "Neurons plus supportive glial cells"
-          },
-          {
-            "id": "c",
-            "text": "Only glial cells"
-          },
-          {
-            "id": "d",
-            "text": "Only endocrine glands"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "Lecture defines NS as collection of neurons and supportive glial cells. Ref: Part 2.1, slide 1."
-      },
-      {
-        "id": "psy-02-1-nervous-system-q6",
-        "question": "Which statement about endocrine communication is consistent with the lecture?",
-        "options": [
-          {
-            "id": "a",
-            "text": "The endocrine system is independent of the nervous system"
-          },
-          {
-            "id": "b",
-            "text": "The endocrine system uses hormones and is largely controlled by the nervous system"
-          },
-          {
-            "id": "c",
-            "text": "The nervous system uses hormones for communication"
-          },
-          {
-            "id": "d",
-            "text": "Endocrine signaling is faster than neural signaling"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "The endocrine system uses hormones, but is largely controlled by the nervous system. Ref: Part 2.1, slide 2."
-      },
-      {
-        "id": "psy-02-1-nervous-system-q7",
-        "question": "Which is the correct structural division of the nervous system?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Somatic vs autonomic"
-          },
-          {
-            "id": "b",
-            "text": "Sympathetic vs parasympathetic"
-          },
-          {
-            "id": "c",
-            "text": "Central vs peripheral"
-          },
-          {
-            "id": "d",
-            "text": "Afferent vs efferent"
+            "text": "Perception and recognition of olfactory sensations"
           }
         ],
         "correctOptionId": "c",
-        "explanation": "Structural division: CNS vs PNS. Ref: Part 2.1, slide 1 and 6."
+        "explanation": "Lecture reference: Chapter 2 – Parietal lobe functions (p.5) (page 2)"
       },
       {
-        "id": "psy-02-1-nervous-system-q8",
-        "question": "Which is an example of a measure that can reflect autonomic nervous system activity in psychophysiology (as shown in the overview slide)?",
+        "id": "ns-paper-1-q8",
+        "question": "Which statement is TRUE about electrical synapses?",
         "options": [
           {
             "id": "a",
-            "text": "Skin conductance"
+            "text": "Electrical synapses involve the release of neurotransmitters across a synaptic cleft."
           },
           {
             "id": "b",
-            "text": "School performance"
+            "text": "Electrical synapses occur at specialized sites called synaptic vesicles."
           },
           {
             "id": "c",
-            "text": "IQ score"
+            "text": "Transmission at electrical synapses is slow due to the involvement of neurotransmitter"
           },
           {
             "id": "d",
-            "text": "Reaction time only"
+            "text": "Electrical synapses allow for direct transfer of ionic current between cells through gap"
           }
         ],
-        "correctOptionId": "a",
-        "explanation": "Overview slide lists skin conductance, heart rate etc. as psychophysiological measures. Ref: Part 2.1, slide 6."
+        "correctOptionId": "d",
+        "explanation": "Lecture reference: Chapter 1 – Electrical synapse (gap junctions, connexins) (p.28-29) (page 2)"
       },
       {
-        "id": "psy-02-1-nervous-system-q9",
-        "question": "The peripheral nervous system (PNS) refers to:",
+        "id": "ns-paper-1-q9",
+        "question": "What is the role of pyramidal cells in generating the electrical field recorded by EEG?",
         "options": [
           {
             "id": "a",
-            "text": "The brain only"
+            "text": "Pyramidal cells primarily contribute inhibitory postsynaptic potentials (IPSPs) to the"
           },
           {
             "id": "b",
-            "text": "The spinal cord only"
+            "text": "Pyramidal cells are not involved in generating the electrical field recorded by EEG."
           },
           {
             "id": "c",
-            "text": "Parts of neurons outside brain and spinal cord"
+            "text": "Pyramidal cells primarily contribute excitatory postsynaptic potentials (EPSPs) to the"
           },
           {
             "id": "d",
-            "text": "Only cranial nerves"
+            "text": "Pyramidal cells are responsible for directly generating action potentials recorded by"
           }
         ],
         "correctOptionId": "c",
-        "explanation": "PNS includes neuronal parts outside brain/spinal cord. Ref: Part 2.1, slide 1."
+        "explanation": "Lecture reference: Chapter 2 – Origin of EEG (pyramidal cells, PSPs) (p.12) (page 3)"
       },
       {
-        "id": "psy-02-1-nervous-system-q10",
-        "question": "The sympathetic and parasympathetic nervous systems are best described as:",
+        "id": "ns-paper-1-q10",
+        "question": "Which statement describes the strengths of EEG?",
         "options": [
           {
             "id": "a",
-            "text": "Independent and non-interacting"
+            "text": "EEG provides a direct measure of neurotransmitter levels in the brain."
           },
           {
             "id": "b",
-            "text": "Antagonistic subsystems of the autonomic nervous system"
+            "text": "EEG has low temporal resolution, limiting its ability to capture rapid changes in brain"
           },
           {
             "id": "c",
-            "text": "Subsystems of the somatic nervous system"
+            "text": "EEG recordings require exposure to radiation or high magnetic fields."
           },
           {
             "id": "d",
-            "text": "Only present in the CNS"
+            "text": "EEG devices can be made small and portable, allowing for easy use in various"
           }
         ],
-        "correctOptionId": "b",
-        "explanation": "They are antagonistic ANS subsystems (fight/flight vs rest/digest). Ref: Part 2.1, slide 7."
-      }
-    ]
-  },
-  {
-    "id": "psy-02-2-neurons",
-    "title": "Part 2.2: Neurons and neuronal signalling",
-    "topic": "Neuron structure, resting potential, synapses, summation, action potentials.",
-    "durationSeconds": 600,
-    "questions": [
-      {
-        "id": "psy-02-2-neurons-q1",
-        "question": "The resting potential of neurons is approximately:",
-        "options": [
-          {
-            "id": "a",
-            "text": "+70 mV"
-          },
-          {
-            "id": "b",
-            "text": "-70 mV"
-          },
-          {
-            "id": "c",
-            "text": "-10 mV"
-          },
-          {
-            "id": "d",
-            "text": "-150 mV"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "Resting potential ~ -70 mV. Ref: Part 2.2 Neurons, slide 8."
+        "correctOptionId": "d",
+        "explanation": "Lecture reference: Chapter 2 – Why EEG (advantages) (p.17) (page 3)"
       },
       {
-        "id": "psy-02-2-neurons-q2",
-        "question": "Which mechanism actively maintains the resting potential by transporting ions?",
+        "id": "ns-paper-1-q11",
+        "question": "Which dipole orientation is most likely to contribute the strongest signal to EEG recordings, according to the provided information?",
         "options": [
           {
             "id": "a",
-            "text": "Voltage-gated calcium channels"
+            "text": "Dipole (a)"
           },
           {
             "id": "b",
-            "text": "Na⁺/K⁺ pump"
+            "text": "Dipole (b)"
           },
           {
             "id": "c",
-            "text": "Gap junctions"
+            "text": "Dipole (c)"
           },
           {
             "id": "d",
-            "text": "Myelin sheath"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "Na⁺/K⁺ pump transports Na⁺ out and K⁺ in. Ref: Part 2.2, slide 8."
-      },
-      {
-        "id": "psy-02-2-neurons-q3",
-        "question": "A motor unit consists of:",
-        "options": [
-          {
-            "id": "a",
-            "text": "One muscle fiber and one sensory neuron"
-          },
-          {
-            "id": "b",
-            "text": "A motor neuron, its axon, and all muscle fibers it innervates"
-          },
-          {
-            "id": "c",
-            "text": "A group of interneurons only"
-          },
-          {
-            "id": "d",
-            "text": "A ganglion and a nucleus"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "Definition given in EMG lecture, but concept aligns with neuronal signaling; motor unit defined as single motor neuron + fibers. Ref: Part 5 EMG, slide 15."
-      },
-      {
-        "id": "psy-02-2-neurons-q4",
-        "question": "Which type of neuron is also called an afferent neuron?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Motor neuron"
-          },
-          {
-            "id": "b",
-            "text": "Sensory neuron"
-          },
-          {
-            "id": "c",
-            "text": "Interneuron"
-          },
-          {
-            "id": "d",
-            "text": "Pacemaker cell"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "Sensory neurons are afferent. Ref: Part 2.2, slide 3."
-      },
-      {
-        "id": "psy-02-2-neurons-q5",
-        "question": "Temporal summation refers to:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Summing inputs from different synapses at the same time"
-          },
-          {
-            "id": "b",
-            "text": "Summing repeated inputs from the same synapse over time"
-          },
-          {
-            "id": "c",
-            "text": "Conduction jumping between nodes of Ranvier"
-          },
-          {
-            "id": "d",
-            "text": "Inhibition at the axon terminal"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "Temporal summation = repeated PSPs over time at a synapse. Ref: Part 2.2, slide 15."
-      },
-      {
-        "id": "psy-02-2-neurons-q6",
-        "question": "Spatial summation refers to:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Summing inputs from multiple synapses at different locations"
-          },
-          {
-            "id": "b",
-            "text": "Summing repeated inputs from one synapse"
-          },
-          {
-            "id": "c",
-            "text": "Amplification of signals by myelin"
-          },
-          {
-            "id": "d",
-            "text": "The refractory period"
+            "text": "Dipole (d)"
           }
         ],
         "correctOptionId": "a",
-        "explanation": "Spatial summation = PSPs from multiple synapses combine at axon hillock. Ref: Part 2.2, slide 16."
+        "explanation": "Lecture reference: Chapter 2 – Origin of EEG… (dipole orientation) (p.14) (page 3)"
       },
       {
-        "id": "psy-02-2-neurons-q7",
-        "question": "Voltage-gated ion channels that generate action potentials open when:",
+        "id": "ns-paper-1-q12",
+        "question": "What is the purpose of using silver electrodes with a silver chloride coating in bio-potential measurements?",
         "options": [
           {
             "id": "a",
-            "text": "Membrane potential becomes more negative than resting"
+            "text": "To increase electrode capacitance at the solution interface"
           },
           {
             "id": "b",
-            "text": "Membrane potential reaches a threshold above resting"
+            "text": "To facilitate the transition from electronic to ionic conduction"
           },
           {
             "id": "c",
-            "text": "Neurotransmitters bind at dendrites only"
+            "text": "To reduce electrode capacitance at the solution interface"
           },
           {
             "id": "d",
-            "text": "The neuron is myelinated"
+            "text": "To minimize the specificity of electrode potential"
           }
         ],
         "correctOptionId": "b",
-        "explanation": "They open when membrane potential increases to threshold. Ref: Part 2.2, slides 21–22."
+        "explanation": "Lecture reference: Chapter 3 – Electrodes (Ag/AgCl) (p.3) (page 3)"
       },
       {
-        "id": "psy-02-2-neurons-q8",
-        "question": "Saltatory conduction occurs in:",
+        "id": "ns-paper-1-q13",
+        "question": "According to the information provided, what is a crucial consideration when determining the sample rate for signal acquisition?",
         "options": [
           {
             "id": "a",
-            "text": "Unmyelinated axons only"
+            "text": "The amplitude resolution of the analog-to-digital converter (ADC)"
           },
           {
             "id": "b",
-            "text": "Myelinated axons, where the action potential 'jumps' between nodes of Ranvier"
+            "text": "The number of bits used in the digital representation of the signal"
           },
           {
             "id": "c",
-            "text": "Dendrites only"
+            "text": "The frequency content of the signal being sampled"
           },
           {
             "id": "d",
-            "text": "Synaptic clefts only"
+            "text": "The type of filter used to attenuate undesired frequency components"
           }
         ],
-        "correctOptionId": "b",
-        "explanation": "Saltatory conduction uses myelin sheath and nodes of Ranvier. Ref: Part 2.2, slide 27."
+        "correctOptionId": "c",
+        "explanation": "Lecture reference: Chapter 3 – Analogue to digital conversion (sampling rate vs frequency content) (p.7) (page 4)"
       },
       {
-        "id": "psy-02-2-neurons-q9",
-        "question": "The axon hillock is primarily important because it is:",
+        "id": "ns-paper-1-q14",
+        "question": "What term is used to refer to the minimum sampling rate required to accurately represent a signal, which is half of the sampling rate?",
         "options": [
           {
             "id": "a",
-            "text": "The site of neurotransmitter release"
+            "text": "Nyquist frequency"
           },
           {
             "id": "b",
-            "text": "The main integration zone where action potentials are initiated if threshold is reached"
+            "text": "Aliasing frequency"
           },
           {
             "id": "c",
-            "text": "The location of the Na⁺/K⁺ pump only"
+            "text": "Sampling frequency"
           },
           {
             "id": "d",
-            "text": "A type of glial cell"
+            "text": "Bandwidth frequency"
           }
         ],
-        "correctOptionId": "b",
-        "explanation": "PSPs sum at axon hillock; AP initiated if above threshold. Ref: Part 2.2, slides 14 and 20."
+        "correctOptionId": "a",
+        "explanation": "Lecture reference: Chapter 3 – Analogue to digital conversion (Nyquist) (p.7) (page 4)"
       },
       {
-        "id": "psy-02-2-neurons-q10",
-        "question": "Excitatory and inhibitory postsynaptic potentials are abbreviated as:",
+        "id": "ns-paper-1-q15",
+        "question": "What do the numbers \"10\" and \"20\" in the International 10-20 System refer to?",
         "options": [
           {
             "id": "a",
-            "text": "ERP and ERSP"
+            "text": "The distance between electrodes on the edges of the scalp and the horizontal line"
           },
           {
             "id": "b",
-            "text": "EPSP and IPSP"
+            "text": "The distance between each electrode and the vertex point on the scalp"
           },
           {
             "id": "c",
-            "text": "IBI and RMSSD"
+            "text": "Percentage distances (10% and 20%) used to space electrodes along head landmarks"
           },
           {
             "id": "d",
-            "text": "SCL and SCR"
+            "text": "The distance between adjacent electrodes on the scalp"
+          }
+        ],
+        "correctOptionId": "c",
+        "explanation": "Lecture reference: Chapter 3 – EEG Acquisition (International 10–20) (p.9) (page 4)"
+      },
+      {
+        "id": "ns-paper-1-q16",
+        "question": "Which statement accurately describes the role of the differential amplifier in EEG signal acquisition?",
+        "options": [
+          {
+            "id": "a",
+            "text": "It amplifies the voltage of one electrode relative to ground."
+          },
+          {
+            "id": "b",
+            "text": "It amplifies the voltage difference between active and reference electrodes and"
+          },
+          {
+            "id": "c",
+            "text": "It converts the analog EEG into a digital signal."
+          },
+          {
+            "id": "d",
+            "text": "It filters the EEG in the frequency domain to remove artifacts."
           }
         ],
         "correctOptionId": "b",
-        "explanation": "EPSP (excitatory) and IPSP (inhibitory). Ref: Part 2.2, slide 17."
+        "explanation": "Lecture reference: Chapter 3 – EEG Acquisition… (differential amplifier) (p.9-10) (page 4)"
+      },
+      {
+        "id": "ns-paper-1-q17",
+        "question": "What condition must be satisfied in the frequency domain to avoid overlap in the spectra of the sampled signal?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The maximum value of the spectrum must be greater than Fs/2."
+          },
+          {
+            "id": "b",
+            "text": "The maximum value of the spectrum must be less than Fs/2 (Nyquist frequency)."
+          },
+          {
+            "id": "c",
+            "text": "The minimum value of the spectrum must be equal to Fs."
+          },
+          {
+            "id": "d",
+            "text": "The spectrum must be centered at 0 Hz."
+          }
+        ],
+        "correctOptionId": "b",
+        "explanation": "Lecture reference: Chapter 3 – Analogue to digital conversion… (avoid spectral overlap) (p.7) (page 5)"
+      },
+      {
+        "id": "ns-paper-1-q18",
+        "question": "In a measurement that lasts 20 seconds and is sampled every 1 ms, which statement is true about the frequency domain representation of the time series?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The precision is 0.5 Hz, maximum frequency is 500 Hz."
+          },
+          {
+            "id": "b",
+            "text": "The precision is 0.05 Hz, maximum frequency is 1000 Hz."
+          },
+          {
+            "id": "c",
+            "text": "The precision is 0.05 Hz, maximum frequency is 500 Hz."
+          },
+          {
+            "id": "d",
+            "text": "The precision is 0.5 Hz, maximum frequency is 1000 Hz."
+          }
+        ],
+        "correctOptionId": "b",
+        "explanation": "Lecture reference: Chapter 5 – DFT basics: resolution 1/T and max frequency 1/Δt (p.3) (page 5)"
+      },
+      {
+        "id": "ns-paper-1-q19",
+        "question": "Which type of noise is considered \"the number one enemy\" because it is not truly random and interferes with signal averaging?",
+        "options": [
+          {
+            "id": "a",
+            "text": "White noise"
+          },
+          {
+            "id": "b",
+            "text": "Gaussian noise"
+          },
+          {
+            "id": "c",
+            "text": "Random thermal noise"
+          },
+          {
+            "id": "d",
+            "text": "Hum artifact (50/60 Hz power line noise)"
+          }
+        ],
+        "correctOptionId": "d",
+        "explanation": "Lecture reference: Chapter 8 – Signal averaging and nonrandom noise (hum artifact) (p.7) (page 5)"
+      },
+      {
+        "id": "ns-paper-1-q20",
+        "question": "According to the lecture, which set of assumptions is required for successful signal averaging?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Noise must be correlated with the signal; timing unknown."
+          },
+          {
+            "id": "b",
+            "text": "Signal must vary across trials; noise has nonzero mean."
+          },
+          {
+            "id": "c",
+            "text": "Noise must be deterministic; signal timing unknown."
+          },
+          {
+            "id": "d",
+            "text": "Signal and noise uncorrelated; timing known; signal consistent across trials; noise"
+          }
+        ],
+        "correctOptionId": "d",
+        "explanation": "Lecture reference: Chapter 8 – Signal averaging assumptions (random, zero-mean noise; time-locked signal) (page 5)"
+      },
+      {
+        "id": "ns-paper-1-q21",
+        "question": "What is the primary motivation for employing signal averaging in physiological measurements?",
+        "options": [
+          {
+            "id": "a",
+            "text": "To enhance the power of a time-locked signal component buried in noise."
+          },
+          {
+            "id": "b",
+            "text": "To increase the sampling rate of the measurement."
+          },
+          {
+            "id": "c",
+            "text": "To reduce the amplitude of the signal of interest."
+          },
+          {
+            "id": "d",
+            "text": "To transform a time-domain signal into the frequency domain."
+          }
+        ],
+        "correctOptionId": "a",
+        "explanation": "Lecture reference: Chapter 8 – Motivation for averaging (time-locked component small vs noise) (p.4) (page 5)"
+      },
+      {
+        "id": "ns-paper-1-q22",
+        "question": "When nonrandom periodic noise (e.g., 50 Hz) is present during averaging, what is a recommended way to reduce its impact?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Use a stimulus rate that is an integer divisor of 50 Hz."
+          },
+          {
+            "id": "b",
+            "text": "Increase the number of channels in the EEG montage."
+          },
+          {
+            "id": "c",
+            "text": "Randomize the stimulus interval or use a noninteger stimulus rate."
+          },
+          {
+            "id": "d",
+            "text": "Invert every other trial and average."
+          }
+        ],
+        "correctOptionId": "c",
+        "explanation": "Lecture reference: Chapter 8 – Nonrandom noise: randomize stimulus interval/noninteger rate (p.7) (page 5)"
+      },
+      {
+        "id": "ns-paper-1-q23",
+        "question": "Which statement best describes the stationarity of EEG signals?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Long-term EEG is stationary; short-term EEG is nonstationary."
+          },
+          {
+            "id": "b",
+            "text": "Short-term EEG can be approximately stationary; long-term EEG is nonstationary."
+          },
+          {
+            "id": "c",
+            "text": "EEG is always stationary."
+          },
+          {
+            "id": "d",
+            "text": "EEG is always nonstationary."
+          }
+        ],
+        "correctOptionId": "b",
+        "explanation": "Lecture reference: Chapter 8 – Characteristics of background EEG (short-term approx. stationary) (p.8) (page 6)"
+      },
+      {
+        "id": "ns-paper-1-q24",
+        "question": "Which method is described as removing line noise effectively without damaging background spectral components?",
+        "options": [
+          {
+            "id": "a",
+            "text": "High-pass filtering above 50 Hz"
+          },
+          {
+            "id": "b",
+            "text": "Notch filtering at 50 Hz with wide bandwidth"
+          },
+          {
+            "id": "c",
+            "text": "Multi-taper decomposition with regression modeling and significance testing"
+          },
+          {
+            "id": "d",
+            "text": "Low-pass filtering below 50 Hz"
+          }
+        ],
+        "correctOptionId": "c",
+        "explanation": "Lecture reference: Chapter 8 – Power line noise removal (multi-taper decomposition + regression) (p.12) (page 6)"
+      },
+      {
+        "id": "ns-paper-1-q25",
+        "question": "When using Common Average Reference (CAR), what should be done to avoid problems caused by outlier channels?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Increase the notch filter width."
+          },
+          {
+            "id": "b",
+            "text": "Use only mastoid channels as references."
+          },
+          {
+            "id": "c",
+            "text": "Detect and remove bad channels before applying CAR."
+          },
+          {
+            "id": "d",
+            "text": "Apply CAR before any artifact removal."
+          }
+        ],
+        "correctOptionId": "c",
+        "explanation": "Lecture reference: Chapter 8 – Referencing (CAR outliers; remove bad channels) (p.14) (page 7)"
+      },
+      {
+        "id": "ns-paper-1-q26",
+        "question": "Which noise-estimation technique uses the same epochs as the true average by inverting every other trial before averaging?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Prestimulus noise estimate"
+          },
+          {
+            "id": "b",
+            "text": "Bootstrapping"
+          },
+          {
+            "id": "c",
+            "text": "+/− average"
+          },
+          {
+            "id": "d",
+            "text": "Low-pass filtering"
+          }
+        ],
+        "correctOptionId": "c",
+        "explanation": "Lecture reference: Chapter 8 – Noise estimates (+/− average) (p.4) (page 7)"
+      },
+      {
+        "id": "ns-paper-1-q27",
+        "question": "In correlation-based bad channel detection, what property of normal EEG is used?",
+        "options": [
+          {
+            "id": "a",
+            "text": "High-frequency correlations across channels dominate."
+          },
+          {
+            "id": "b",
+            "text": "Low-frequency correlations across channels are expected."
+          },
+          {
+            "id": "c",
+            "text": "Only zero correlation is expected."
+          },
+          {
+            "id": "d",
+            "text": "Correlations are only due to power-line noise."
+          }
+        ],
+        "correctOptionId": "b",
+        "explanation": "Lecture reference: Chapter 8 – Bad Channel Detection (correlation-based; low-frequency correlations) (p.16) (page 7)"
+      },
+      {
+        "id": "ns-paper-1-q28",
+        "question": "Which interpolation method is highlighted as providing accurate scalp potential estimation with dense electrode mapping?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Nearest-neighbor averaging"
+          },
+          {
+            "id": "b",
+            "text": "Spherical splines"
+          },
+          {
+            "id": "c",
+            "text": "Radial basis function"
+          },
+          {
+            "id": "d",
+            "text": "Higher-order polynomials"
+          }
+        ],
+        "correctOptionId": "b",
+        "explanation": "Lecture reference: Chapter 8 – Interpolation schemes (spherical splines) (p.17) (page 7)"
+      },
+      {
+        "id": "ns-paper-1-q29",
+        "question": "According to the EEG plot, which artifact is more detectable?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Chewing artifact (temporalis muscles)"
+          },
+          {
+            "id": "b",
+            "text": "Hypoglossal artifact (tongue muscles)"
+          },
+          {
+            "id": "c",
+            "text": "Cardioballistic artifact"
+          },
+          {
+            "id": "d",
+            "text": "Bad channels"
+          }
+        ],
+        "correctOptionId": "a",
+        "explanation": "Lecture reference: Chapter 8 – Artifacts: muscular artifacts (p.8) (page 7)"
+      },
+      {
+        "id": "ns-paper-1-q30",
+        "question": "According to the EEG plot, which artifact is time-locked to the ECG and more prominent on the left side of the plot?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Chewing artifact (temporalis muscles)"
+          },
+          {
+            "id": "b",
+            "text": "Hypoglossal artifact (tongue muscles)"
+          },
+          {
+            "id": "c",
+            "text": "Bad channels"
+          },
+          {
+            "id": "d",
+            "text": "Cardioballistic artifact"
+          }
+        ],
+        "correctOptionId": "d",
+        "explanation": "Lecture reference: Chapter 8 – Artifacts: cardiac artifacts (p.8) (page 8)"
       }
     ]
   },
   {
-    "id": "psy-02-3-cns",
-    "title": "Part 2.3: Central nervous system",
-    "topic": "Anatomical terminology, spinal cord, brain divisions, key structures.",
-    "durationSeconds": 600,
+    "id": "ns-paper-2",
+    "title": "ns_paper_2.pdf",
+    "topic": "MCQ set generated from ns_paper_2.pdf",
+    "durationSeconds": 900,
     "questions": [
       {
-        "id": "psy-02-3-cns-q1",
-        "question": "In the CNS, a bundle of axons is called a:",
+        "id": "ns-paper-2-q1",
+        "question": "Which ions are primarily involved in generating the membrane potential across a cell membrane?",
         "options": [
           {
             "id": "a",
-            "text": "Nerve"
+            "text": "Calcium and magnesium"
           },
           {
             "id": "b",
-            "text": "Tract"
+            "text": "Potassium and sodium"
           },
           {
             "id": "c",
-            "text": "Ganglion"
+            "text": "Chlorine and fluoride"
           },
           {
             "id": "d",
-            "text": "Dermatome"
+            "text": "Oxygen and hydrogen"
           }
         ],
         "correctOptionId": "b",
-        "explanation": "In PNS it's a nerve; in CNS it's a tract. Ref: Part 2.3 CNS, slide 5."
+        "explanation": "Lecture: Chapter 1 (Introduction to neural signal analysis), p.8 (Distribution of ions across the membrane). (page 1)"
       },
       {
-        "id": "psy-02-3-cns-q2",
-        "question": "In the CNS, a group of neuron cell bodies is called a:",
+        "id": "ns-paper-2-q2",
+        "question": "What is the definition of equilibrium potential in the context of neural signaling?",
         "options": [
           {
             "id": "a",
-            "text": "Ganglion"
+            "text": "The potential difference that balances an ionic concentration gradient"
           },
           {
             "id": "b",
-            "text": "Nucleus"
+            "text": "The potential at which an action potential is generated"
           },
           {
             "id": "c",
-            "text": "Tract"
+            "text": "The membrane potential during resting state"
           },
           {
             "id": "d",
-            "text": "Fissure"
+            "text": "The energy required to move an ion against its concentration gradient"
           }
         ],
-        "correctOptionId": "b",
-        "explanation": "Ganglion (PNS) corresponds to nucleus (CNS). Ref: Part 2.3, slide 5."
+        "correctOptionId": "a",
+        "explanation": "Lecture: Chapter 1, p.11 (Equilibrium potential). (page 1)"
       },
       {
-        "id": "psy-02-3-cns-q3",
-        "question": "Afferent nerves conduct signals:",
+        "id": "ns-paper-2-q3",
+        "question": "During which phase of an action potential does the membrane potential become more positive than the resting potential?",
         "options": [
           {
             "id": "a",
-            "text": "Away from the CNS"
+            "text": "Rising phase"
           },
           {
             "id": "b",
-            "text": "Toward the CNS"
+            "text": "Falling phase"
           },
           {
             "id": "c",
-            "text": "Only within the spinal cord"
+            "text": "Refractory period"
           },
           {
             "id": "d",
-            "text": "Only within the brainstem"
+            "text": "Hyperpolarization"
           }
         ],
-        "correctOptionId": "b",
-        "explanation": "Afferent = toward CNS. Ref: Part 2.3, slide 5."
+        "correctOptionId": "a",
+        "explanation": "Lecture: Chapter 1, p.15 (Action potential: depolarization/overshoot). (page 1)"
       },
       {
-        "id": "psy-02-3-cns-q4",
-        "question": "Posterior (dorsal) roots of spinal nerves are primarily:",
+        "id": "ns-paper-2-q4",
+        "question": "Which of the following describes the 'all-or-none' principle in action potentials?",
         "options": [
           {
             "id": "a",
-            "text": "Efferent/motor fibers"
+            "text": "The strength of an action potential is proportional to the stimulus strength"
           },
           {
             "id": "b",
-            "text": "Afferent/sensory fibers"
+            "text": "An action potential is only triggered when the stimulus exceeds a threshold"
           },
           {
             "id": "c",
-            "text": "Sympathetic efferents only"
+            "text": "Action potentials can vary in size depending on the input"
           },
           {
             "id": "d",
-            "text": "Parasympathetic efferents only"
+            "text": "Only some neurons can generate action potentials"
           }
         ],
         "correctOptionId": "b",
-        "explanation": "Posterior root is afferent sensory; anterior is efferent motor. Ref: Part 2.3, slide 9."
+        "explanation": "Lecture: Chapter 1, p.16 (All-or-none law). (page 1)"
       },
       {
-        "id": "psy-02-3-cns-q5",
-        "question": "The spinal cord is responsible for transporting signals and also for:",
+        "id": "ns-paper-2-q5",
+        "question": "What is the primary function of the nodes of Ranvier in myelinated nerve fibers?",
         "options": [
           {
             "id": "a",
-            "text": "Hormone secretion"
+            "text": "To store calcium ions"
           },
           {
             "id": "b",
-            "text": "Reflex processing"
+            "text": "To insulate the axon"
           },
           {
             "id": "c",
-            "text": "Voluntary movement initiation"
+            "text": "To facilitate saltatory conduction"
           },
           {
             "id": "d",
-            "text": "Memory consolidation"
+            "text": "To release neurotransmitters"
           }
         ],
-        "correctOptionId": "b",
-        "explanation": "Spinal cord transports afferent/efferent signals and processes reflexes. Ref: Part 2.3, slide 13."
+        "correctOptionId": "c",
+        "explanation": "Lecture: Chapter 1, p.25 (Saltatory conduction: jumping node-to-node). (page 2)"
       },
       {
-        "id": "psy-02-3-cns-q6",
-        "question": "Which hindbrain structure controls autonomic functions like breathing and heartbeat?",
+        "id": "ns-paper-2-q6",
+        "question": "What did Otto Loewi demonstrate in his experiments related to synaptic transmission?",
         "options": [
           {
             "id": "a",
-            "text": "Thalamus"
+            "text": "The existence of electrical synapses"
           },
           {
             "id": "b",
-            "text": "Medulla (oblongata)"
+            "text": "The chemical nature of synaptic transmission"
           },
           {
             "id": "c",
-            "text": "Hippocampus"
+            "text": "The role of voltage-gated ion channels in neurons"
           },
           {
             "id": "d",
-            "text": "Occipital lobe"
+            "text": "The existence of synaptic vesicles"
           }
         ],
         "correctOptionId": "b",
-        "explanation": "Medulla controls autonomic functions. Ref: Part 2.3, slide 18."
+        "explanation": "Lecture: Chapter 1, p.27 (Otto Loewi and chemical synapses). (page 2)"
       },
       {
-        "id": "psy-02-3-cns-q7",
-        "question": "The limbic system is primarily associated with:",
+        "id": "ns-paper-2-q7",
+        "question": "What causes the generation of an inhibitory post-synaptic potential (IPSP)?",
         "options": [
           {
             "id": "a",
-            "text": "Thermoregulation only"
+            "text": "Influx of calcium ions"
           },
           {
             "id": "b",
-            "text": "Emotion and memory (amygdala and hippocampus)"
+            "text": "Efflux of potassium ions"
           },
           {
             "id": "c",
-            "text": "Primary vision"
+            "text": "Influx of chloride ions"
           },
           {
             "id": "d",
-            "text": "Spinal reflex arcs"
+            "text": "Efflux of sodium ions"
           }
         ],
-        "correctOptionId": "b",
-        "explanation": "Limbic system: emotion (amygdala) and memory (hippocampus). Ref: Part 2.3, slide 21."
+        "correctOptionId": "c",
+        "explanation": "Lecture: Chapter 1, p.33 (Inhibitory Post Synaptic Potential: ClI influx). (page 2)"
       },
       {
-        "id": "psy-02-3-cns-q8",
-        "question": "Cerebrospinal fluid (CSF) is described as:",
+        "id": "ns-paper-2-q8",
+        "question": "Which technique records the extracellular currents generated by synaptic activity in the cerebral cortex?",
         "options": [
           {
             "id": "a",
-            "text": "Produced only in the spinal cord; does not circulate"
+            "text": "Magnetoencephalography (MEG)"
           },
           {
             "id": "b",
-            "text": "Produced in ventricles; circulates and provides mechanical protection and transport"
+            "text": "Electrocorticography (ECoG)"
           },
           {
             "id": "c",
-            "text": "Produced in the liver; transported in blood"
+            "text": "Electroencephalography (EEG)"
           },
           {
             "id": "d",
-            "text": "A neurotransmitter in synapses"
+            "text": "Functional Magnetic Resonance Imaging (fMRI)"
           }
         ],
-        "correctOptionId": "b",
-        "explanation": "CSF produced in ventricles, circulates, provides protection and transport. Ref: Part 2.3, slide 27."
+        "correctOptionId": "c",
+        "explanation": "Lecture: Chapter 2 (Origin of EEG), p.12 (EEG records extracellular currents from synaptic activity). (page 2)"
       },
       {
-        "id": "psy-02-3-cns-q9",
-        "question": "Brodmann areas refer to:",
+        "id": "ns-paper-2-q9",
+        "question": "Which cells are primarily responsible for generating the extracellular electric field that contributes to EEG signals?",
         "options": [
           {
             "id": "a",
-            "text": "EEG electrode names"
+            "text": "Astrocytes"
           },
           {
             "id": "b",
-            "text": "52 cortical areas classified by cellular properties"
+            "text": "Oligodendrocytes"
           },
           {
             "id": "c",
-            "text": "Spinal nerve dermatomes"
+            "text": "Microglia"
           },
           {
             "id": "d",
-            "text": "Autonomic ganglia"
+            "text": "Pyramidal cells"
           }
         ],
-        "correctOptionId": "b",
-        "explanation": "Brodmann identified 52 areas based on cellular size/density/layering. Ref: Part 2.3, slide 30."
+        "correctOptionId": "d",
+        "explanation": "Lecture: Chapter 2, p.12 (Pyramidal cells are main contributors). (page 3)"
       },
       {
-        "id": "psy-02-3-cns-q10",
-        "question": "The motor cortex and primary somatosensory cortex are organized:",
+        "id": "ns-paper-2-q10",
+        "question": "What is the 'Nyquist sampling frequency' in signal processing?",
         "options": [
           {
             "id": "a",
-            "text": "Randomly, without body mapping"
+            "text": "The highest frequency that can be represented by a sampled signal"
           },
           {
             "id": "b",
-            "text": "Somatotopically and contralaterally"
+            "text": "The lowest frequency that can be represented by a sampled signal"
           },
           {
             "id": "c",
-            "text": "Only ipsilaterally"
+            "text": "The frequency at which a signal is amplified"
           },
           {
             "id": "d",
-            "text": "Only in the brainstem"
+            "text": "The duration of a signal sample"
+          }
+        ],
+        "correctOptionId": "a",
+        "explanation": "Lecture: Chapter 3 (EEG recording), p.7 (Nyquist limit and representable highest frequency). (page 3)"
+      },
+      {
+        "id": "ns-paper-2-q11",
+        "question": "What is the purpose of applying an antialiasing filter before digital sampling?",
+        "options": [
+          {
+            "id": "a",
+            "text": "To increase the signal amplitude"
+          },
+          {
+            "id": "b",
+            "text": "To reduce noise from the signal"
+          },
+          {
+            "id": "c",
+            "text": "To remove frequencies above the Nyquist frequency"
+          },
+          {
+            "id": "d",
+            "text": "To compress the signal"
+          }
+        ],
+        "correctOptionId": "c",
+        "explanation": "Lecture: Chapter 3, p.8 (Antialiasing filter attenuates frequencies above Nyquist). (page 3)"
+      },
+      {
+        "id": "ns-paper-2-q12",
+        "question": "What does the fast Fourier transform (FFT) algorithm optimize?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The time to perform digital-to-analog conversion"
+          },
+          {
+            "id": "b",
+            "text": "The computational effort required to compute the Fourier transform"
+          },
+          {
+            "id": "c",
+            "text": "The accuracy of the Fourier series"
+          },
+          {
+            "id": "d",
+            "text": "The amplitude of the sampled signal"
           }
         ],
         "correctOptionId": "b",
-        "explanation": "Somatotopic maps; organization is contralateral. Ref: Part 2.3, slide 32."
+        "explanation": "Lecture: Chapter 5 (Continuous, Discrete, and Fast Fourier Transform), p.7 (FFT reduces computations). (page 3)"
+      },
+      {
+        "id": "ns-paper-2-q13",
+        "question": "Which electrode setup is used in the 'International 10–20 System'?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Electrodes are placed in a hexagonal pattern"
+          },
+          {
+            "id": "b",
+            "text": "Electrodes are placed according to skull anatomy"
+          },
+          {
+            "id": "c",
+            "text": "Electrodes are positioned based on brain lobes"
+          },
+          {
+            "id": "d",
+            "text": "Electrodes are positioned based on a 10% and 20% distance rule"
+          }
+        ],
+        "correctOptionId": "d",
+        "explanation": "Lecture: Chapter 3, p.9 (International 10–20 System: 10%/20% rule). (page 3)"
+      },
+      {
+        "id": "ns-paper-2-q14",
+        "question": "Which parameter does the 'power spectrum' describe in signal processing?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The amplitude of the signal at different times"
+          },
+          {
+            "id": "b",
+            "text": "The energy distribution across various frequencies"
+          },
+          {
+            "id": "c",
+            "text": "The noise distribution in the signal"
+          },
+          {
+            "id": "d",
+            "text": "The phase shift between different components"
+          }
+        ],
+        "correctOptionId": "b",
+        "explanation": "Lecture: Chapter 6 (Fourier Transform Applications), p.2 (Power spectrum / amplitude spectrum concepts). (page 4)"
+      },
+      {
+        "id": "ns-paper-2-q15",
+        "question": "What does EEG primarily measure?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Intracellular potentials"
+          },
+          {
+            "id": "b",
+            "text": "Extracellular potentials"
+          },
+          {
+            "id": "c",
+            "text": "Blood flow"
+          },
+          {
+            "id": "d",
+            "text": "Neurotransmitter levels"
+          }
+        ],
+        "correctOptionId": "b",
+        "explanation": "Lecture: Chapter 2, p.12 (EEG records extracellular currents/potentials). (page 4)"
+      },
+      {
+        "id": "ns-paper-2-q16",
+        "question": "What is 'temporal summation' in synaptic transmission?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Addition of multiple action potentials arriving at the same time"
+          },
+          {
+            "id": "b",
+            "text": "Addition of postsynaptic potentials occurring at the same synapse in quick succession"
+          },
+          {
+            "id": "c",
+            "text": "Subtraction of inhibitory and excitatory postsynaptic potentials"
+          },
+          {
+            "id": "d",
+            "text": "Inhibition of neurotransmitter release"
+          }
+        ],
+        "correctOptionId": "b",
+        "explanation": "Lecture: Chapter 1, p.35 (Temporal summation of EPSPs). (page 4)"
+      },
+      {
+        "id": "ns-paper-2-q17",
+        "question": "What is 'saltatory conduction'?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Continuous signal transmission along an axon"
+          },
+          {
+            "id": "b",
+            "text": "Signal transmission in the absence of myelin"
+          },
+          {
+            "id": "c",
+            "text": "Signal jumping between nodes of Ranvier"
+          },
+          {
+            "id": "d",
+            "text": "Passive conduction in dendrites"
+          }
+        ],
+        "correctOptionId": "c",
+        "explanation": "Lecture: Chapter 1, p.25 (Saltatory conduction: current jumps between nodes). (page 4)"
+      },
+      {
+        "id": "ns-paper-2-q18",
+        "question": "What is a key characteristic of electrical synapses?",
+        "options": [
+          {
+            "id": "a",
+            "text": "They are bidirectional"
+          },
+          {
+            "id": "b",
+            "text": "They are unidirectional"
+          },
+          {
+            "id": "c",
+            "text": "They have a delay in transmission"
+          },
+          {
+            "id": "d",
+            "text": "They use neurotransmitters"
+          }
+        ],
+        "correctOptionId": "a",
+        "explanation": "Lecture: Chapter 1, p.29 (Electrical synapses via gap junctions are bidirectional). (page 4)"
+      },
+      {
+        "id": "ns-paper-2-q19",
+        "question": "What is the role of the refractory period in action potential propagation?",
+        "options": [
+          {
+            "id": "a",
+            "text": "To allow continuous firing of action potentials"
+          },
+          {
+            "id": "b",
+            "text": "To prevent backward propagation of action potentials"
+          },
+          {
+            "id": "c",
+            "text": "To increase signal speed"
+          },
+          {
+            "id": "d",
+            "text": "To increase the amplitude of action potentials"
+          }
+        ],
+        "correctOptionId": "b",
+        "explanation": "Lecture: Chapter 1, p.20 (Absolute/relative refractory periods). (page 5)"
+      },
+      {
+        "id": "ns-paper-2-q20",
+        "question": "What is the function of the primary motor cortex?",
+        "options": [
+          {
+            "id": "a",
+            "text": "To control voluntary movements"
+          },
+          {
+            "id": "b",
+            "text": "To interpret sensory information"
+          },
+          {
+            "id": "c",
+            "text": "To generate language"
+          },
+          {
+            "id": "d",
+            "text": "To regulate heart rate"
+          }
+        ],
+        "correctOptionId": "a",
+        "explanation": "Lecture: Chapter 2 (Brain anatomy), p.6 (Precentral gyrus / primary motor cortex controls voluntary movement). (page 5)"
+      },
+      {
+        "id": "ns-paper-2-q21",
+        "question": "What is the primary function of the cerebellum?",
+        "options": [
+          {
+            "id": "a",
+            "text": "To control heart rate"
+          },
+          {
+            "id": "b",
+            "text": "To coordinate movements and maintain balance"
+          },
+          {
+            "id": "c",
+            "text": "To process visual information"
+          },
+          {
+            "id": "d",
+            "text": "To generate emotions"
+          }
+        ],
+        "correctOptionId": "b",
+        "explanation": "Lecture: Chapter 2, p.3 (Cerebellum: coordination, precision, timing; balance). (page 5)"
+      },
+      {
+        "id": "ns-paper-2-q22",
+        "question": "What kind of artifact is more detectable in the following figure?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Chewing artifact, temporalis muscles"
+          },
+          {
+            "id": "b",
+            "text": "Hypoglossal artifact, tongue movement"
+          },
+          {
+            "id": "c",
+            "text": "Cardiac artifact"
+          },
+          {
+            "id": "d",
+            "text": "Bad channels artifact"
+          }
+        ],
+        "correctOptionId": "c",
+        "explanation": "Lecture: Chapter 8 (Signal Averaging), p.9 (Examples of ocular/muscular/cardiac artifacts). (page 5)"
+      },
+      {
+        "id": "ns-paper-2-q23",
+        "question": "Which of the following statements about ocular artifacts is correct?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Ocular artifacts originate from muscle contractions in various body parts."
+          },
+          {
+            "id": "b",
+            "text": "Ocular artifacts are marked by very high amplitude waveforms in occipital regions."
+          },
+          {
+            "id": "c",
+            "text": "Ocular artifacts are not strong enough to be visible in EEG waveforms."
+          },
+          {
+            "id": "d",
+            "text": "Ocular artifacts originate from eye movements or blinking and are marked by very high"
+          }
+        ],
+        "correctOptionId": "d",
+        "explanation": "Lecture: Chapter 8, p.9 (Ocular artifacts: frontal high-amplitude from blinks/eye movements). (page 6)"
+      },
+      {
+        "id": "ns-paper-2-q24",
+        "question": "Which method of interpolation provides accurate scalp potential estimation with dense electrode mapping?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Higher-order polynomials"
+          },
+          {
+            "id": "b",
+            "text": "Spherical splines"
+          },
+          {
+            "id": "c",
+            "text": "Nearest-neighbor averaging"
+          },
+          {
+            "id": "d",
+            "text": "Radial basis function"
+          }
+        ],
+        "correctOptionId": "b",
+        "explanation": "Lecture: Chapter 8, p.17 (Spherical splines: accurate with dense electrode mapping). (page 6)"
+      },
+      {
+        "id": "ns-paper-2-q25",
+        "question": "How are bad channels detected using frequency-based detection?",
+        "options": [
+          {
+            "id": "a",
+            "text": "By measuring the ratio of low-frequency power to high-frequency power."
+          },
+          {
+            "id": "b",
+            "text": "By measuring high-frequency power."
+          },
+          {
+            "id": "c",
+            "text": "By counting the number of peaks in the EEG signal."
+          },
+          {
+            "id": "d",
+            "text": "By comparing the EEG signal with a reference template."
+          }
+        ],
+        "correctOptionId": "a",
+        "explanation": "Lecture: Chapter 8, p.16 (Frequency-based detection uses a power-ratio criterion). (page 6)"
+      },
+      {
+        "id": "ns-paper-2-q26",
+        "question": "What caution should be exercised when selecting a reference signal?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Ensure the reference signal has a high amplitude."
+          },
+          {
+            "id": "b",
+            "text": "Ensure the reference signal has no correlation with task-induced brain activity."
+          },
+          {
+            "id": "c",
+            "text": "Choose a reference signal with a variable frequency range."
+          },
+          {
+            "id": "d",
+            "text": "Select a reference signal that changes over time."
+          }
+        ],
+        "correctOptionId": "b",
+        "explanation": "Lecture: Chapter 8, p.14 (Reference should have comparable amplitude and no task correlation). (page 6)"
+      },
+      {
+        "id": "ns-paper-2-q27",
+        "question": "Which method is suggested for removing line noise from recorded EEG signals without damaging background spectral components?",
+        "options": [
+          {
+            "id": "a",
+            "text": "High-pass filtering above 50 Hz"
+          },
+          {
+            "id": "b",
+            "text": "Notch filtering with a narrow frequency width"
+          },
+          {
+            "id": "c",
+            "text": "Multi-taper decomposition combined with regression modeling"
+          },
+          {
+            "id": "d",
+            "text": "Applying a low-pass filter below 50 Hz"
+          }
+        ],
+        "correctOptionId": "c",
+        "explanation": "Lecture: Chapter 8, p.12 (Multi-taper + regression for line-noise removal). (page 7)"
+      },
+      {
+        "id": "ns-paper-2-q28",
+        "question": "Which one of the following statements is true about the effects of notch filtering on EEG signals?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Notch filtering effectively removes line noise without any adverse effects on the EEG signal."
+          },
+          {
+            "id": "b",
+            "text": "Notch filtering can distort signal components within the frequency range targeted for noise"
+          },
+          {
+            "id": "c",
+            "text": "Notch filtering has no impact on baseline activity or data interpretation."
+          },
+          {
+            "id": "d",
+            "text": "Follow-up low-pass filtering above 50 Hz is typically required after notch filtering to address issues"
+          }
+        ],
+        "correctOptionId": "b",
+        "explanation": "Lecture: Chapter 8, p.10 (Notch filtering may distort components and affect interpretation). (page 7)"
+      },
+      {
+        "id": "ns-paper-2-q29",
+        "question": "Which method in noise estimation can be used to estimate residual noise by using the same epochs as those in the 'true' average?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Bootstrap method"
+          },
+          {
+            "id": "b",
+            "text": "Averaging of prestimulus epochs"
+          },
+          {
+            "id": "c",
+            "text": "Inverting every other trial"
+          },
+          {
+            "id": "d",
+            "text": "High-pass filtering"
+          }
+        ],
+        "correctOptionId": "c",
+        "explanation": "Lecture: Chapter 8, p.6 (+/− average by inverting every other trial). (page 7)"
+      },
+      {
+        "id": "ns-paper-2-q30",
+        "question": "What is identified as number 1 enemy in recordings of biopotentials due to its nonrandom nature and potential to interfere with signal averaging results?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Random noise"
+          },
+          {
+            "id": "b",
+            "text": "Systematic bias"
+          },
+          {
+            "id": "c",
+            "text": "Artifacts from switching instruments"
+          },
+          {
+            "id": "d",
+            "text": "Hum"
+          }
+        ],
+        "correctOptionId": "d",
+        "explanation": "Lecture: Chapter 7 (Noise), p.9 (Enemy #1 in biopotential recordings is hum). (page 7)"
       }
     ]
   },
   {
-    "id": "psy-03-measurement",
-    "title": "Part 3: Psychophysiological measurement",
-    "topic": "Electricity, electrodes, digitization, sampling, and filtering.",
-    "durationSeconds": 600,
+    "id": "ns-s25",
+    "title": "ns-s25.pdf",
+    "topic": "MCQ set generated from ns-s25.pdf",
+    "durationSeconds": 870,
     "questions": [
       {
-        "id": "psy-03-measurement-q1",
-        "question": "Biosignals are best defined as:",
+        "id": "ns-s25-q1",
+        "question": "What is the primary role of glial cells in neural tissue?",
         "options": [
           {
             "id": "a",
-            "text": "Any psychological test score"
+            "text": "Transmitting signals long-distance"
           },
           {
             "id": "b",
-            "text": "Directly measurable, time-varying parameters reflecting physiological activity"
+            "text": "Supporting and maintaining neural signaling"
           },
           {
             "id": "c",
-            "text": "Only chemical hormone concentrations"
+            "text": "Initiating synaptic transmission"
           },
           {
             "id": "d",
-            "text": "Only signals from the brain"
+            "text": "Generating action potentials"
           }
         ],
         "correctOptionId": "b",
-        "explanation": "Lecture definition: directly measurable, time-varying physiological parameters. Ref: Part 3 Measurement, slide 2."
+        "explanation": "Lecture: Chapter 1 – Introduction to neural signal analysis, Slide 5. (page 1)"
       },
       {
-        "id": "psy-03-measurement-q2",
-        "question": "According to Ohm’s law, resistance (R) equals:",
+        "id": "ns-s25-q2",
+        "question": "The electrical potential difference that balances an ionic concentration gradient is called:",
         "options": [
           {
             "id": "a",
-            "text": "I/V"
+            "text": "Resting potential"
           },
           {
             "id": "b",
-            "text": "V/I"
+            "text": "Threshold potential"
           },
           {
             "id": "c",
-            "text": "V×I"
+            "text": "Ionic equilibrium potential"
           },
           {
             "id": "d",
-            "text": "I+V"
+            "text": "Action potential"
           }
         ],
-        "correctOptionId": "b",
-        "explanation": "Ohm’s law: R = V / I. Ref: Part 3, slide 6."
+        "correctOptionId": "c",
+        "explanation": "Lecture: Chapter 1, Slide 11. (page 1)"
       },
       {
-        "id": "psy-03-measurement-q3",
-        "question": "Impedance is best described as:",
+        "id": "ns-s25-q3",
+        "question": "Which ion's permeability primarily determines the resting membrane potential?",
         "options": [
           {
             "id": "a",
-            "text": "Resistance for direct current only"
+            "text": "Ca2+"
           },
           {
             "id": "b",
-            "text": "Resistance for alternating currents"
+            "text": "K+"
           },
           {
             "id": "c",
-            "text": "Voltage divided by power"
+            "text": "Cl−"
           },
           {
             "id": "d",
-            "text": "A type of electrode"
+            "text": "Na+"
           }
         ],
         "correctOptionId": "b",
-        "explanation": "Impedance is resistance for alternating currents. Ref: Part 3, slide 5."
+        "explanation": "Lecture: Chapter 1, Slide 13. (page 1)"
       },
       {
-        "id": "psy-03-measurement-q4",
-        "question": "To record one channel of biopotentials, what electrode roles are typically required?",
+        "id": "ns-s25-q4",
+        "question": "Voltage-gated sodium channels during the action potential rapidly close due to:",
         "options": [
           {
             "id": "a",
-            "text": "Only one active electrode"
+            "text": "Hyperpolarization"
           },
           {
             "id": "b",
-            "text": "Recording electrode, reference electrode, and ground electrode"
+            "text": "Depletion of sodium ions"
           },
           {
             "id": "c",
-            "text": "Two grounds and no reference"
+            "text": "Inactivation gates"
           },
           {
             "id": "d",
-            "text": "Only a ground electrode"
+            "text": "Repolarization triggered by potassium channels"
           }
         ],
-        "correctOptionId": "b",
-        "explanation": "Most recordings use recording, reference, and ground electrodes. Ref: Part 3, slide 13."
+        "correctOptionId": "c",
+        "explanation": "Lecture: Chapter 1, Slide 15. (page 1)"
       },
       {
-        "id": "psy-03-measurement-q5",
-        "question": "In a bipolar measurement, each recorded channel reflects:",
+        "id": "ns-s25-q5",
+        "question": "Saltatory conduction occurs due to:",
         "options": [
           {
             "id": "a",
-            "text": "Voltage of one electrode relative to a shared reference"
+            "text": "High concentrations of sodium channels along the axon"
           },
           {
             "id": "b",
-            "text": "Difference between two different electrodes"
+            "text": "Myelinated segments separated by nodes of Ranvier"
           },
           {
             "id": "c",
-            "text": "Difference between two grounds"
+            "text": "Continuous depolarization along the entire axon"
           },
           {
             "id": "d",
-            "text": "A chemically neutral reference"
+            "text": "Calcium influx at synapses"
           }
         ],
         "correctOptionId": "b",
-        "explanation": "Bipolar = difference between two electrodes. Ref: Part 3, slide 14."
+        "explanation": "Lecture: Chapter 1, Slides 24–25. (page 1)"
       },
       {
-        "id": "psy-03-measurement-q6",
-        "question": "Why is there no truly 'electrically neutral' reference location on the body?",
+        "id": "ns-s25-q6",
+        "question": "The summation of inhibitory and excitatory postsynaptic potentials determines:",
         "options": [
           {
             "id": "a",
-            "text": "Because the body is always at 0 V"
+            "text": "Synaptic vesicle release rate"
           },
           {
             "id": "b",
-            "text": "Because electric fields spread and all sites pick up activity"
+            "text": "Axon myelination status"
           },
           {
             "id": "c",
-            "text": "Because electrodes block signals completely"
+            "text": "The generation of an action potential"
           },
           {
             "id": "d",
-            "text": "Because only skin is conductive"
+            "text": "Membrane lipid composition"
           }
         ],
-        "correctOptionId": "b",
-        "explanation": "Lecture notes: no electrically neutral reference on the human body. Ref: Part 3, slide 16."
+        "correctOptionId": "c",
+        "explanation": "Lecture: Chapter 1, Slide 34. (page 1)"
       },
       {
-        "id": "psy-03-measurement-q7",
-        "question": "The Nyquist frequency is:",
+        "id": "ns-s25-q7",
+        "question": "Electroencephalography (EEG) primarily records…… and are primarily generated by……:",
         "options": [
           {
             "id": "a",
-            "text": "Twice the sampling rate"
+            "text": "Intracellular currents, randomly oriented neurons"
           },
           {
             "id": "b",
-            "text": "Half the sampling rate"
+            "text": "Synaptic activity, randomly oriented neurons"
           },
           {
             "id": "c",
-            "text": "The lowest measurable frequency"
+            "text": "Synaptic activity, pyramidal neurons oriented perpendicularly to the cortex"
           },
           {
             "id": "d",
-            "text": "The same as the filter cutoff"
+            "text": "Neurotransmitter concentrations, peripheral sensory neurons"
+          }
+        ],
+        "correctOptionId": "c",
+        "explanation": "Lecture: Chapter 2 – Origin of EEG, Slide 12. (page 1)"
+      },
+      {
+        "id": "ns-s25-q8",
+        "question": "EEG signals are strongest when dipoles are oriented:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Parallel to the skull surface"
+          },
+          {
+            "id": "b",
+            "text": "Radially away from the skull"
+          },
+          {
+            "id": "c",
+            "text": "Perpendicular to the skull surface"
+          },
+          {
+            "id": "d",
+            "text": "Randomly"
+          }
+        ],
+        "correctOptionId": "c",
+        "explanation": "Lecture: Chapter 2, Slide 14. (page 2)"
+      },
+      {
+        "id": "ns-s25-q9",
+        "question": "Synchronous neuronal activation primarily leads to:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Increased amplitude of EEG signals"
+          },
+          {
+            "id": "b",
+            "text": "Decreased EEG resolution"
+          },
+          {
+            "id": "c",
+            "text": "Cancellation of EEG signals"
+          },
+          {
+            "id": "d",
+            "text": "Increased frequency of EEG oscillations"
+          }
+        ],
+        "correctOptionId": "a",
+        "explanation": "Lecture: Chapter 2, Slide 15. (page 2)"
+      },
+      {
+        "id": "ns-s25-q10",
+        "question": "EEG acquisition commonly uses a differential amplifier primarily to:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Increase voltage"
+          },
+          {
+            "id": "b",
+            "text": "Generate ion gradients"
+          },
+          {
+            "id": "c",
+            "text": "Reduce common noise"
+          },
+          {
+            "id": "d",
+            "text": "Generate action potentials"
+          }
+        ],
+        "correctOptionId": "c",
+        "explanation": "Lecture: Chapter 3 – EEG recording, Slide 62. (page 2)"
+      },
+      {
+        "id": "ns-s25-q11",
+        "question": "The minimum sampling rate to avoid aliasing in digitized EEG signals is known as:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Fourier limit"
+          },
+          {
+            "id": "b",
+            "text": "Nyquist frequency"
+          },
+          {
+            "id": "c",
+            "text": "Sampling threshold"
+          },
+          {
+            "id": "d",
+            "text": "Dirac frequency"
           }
         ],
         "correctOptionId": "b",
-        "explanation": "Nyquist frequency = half the sampling rate. Ref: Part 3, slide 26."
+        "explanation": "Lecture: Chapter 3, Slide 60. (page 2)"
       },
       {
-        "id": "psy-03-measurement-q8",
+        "id": "ns-s25-q12",
+        "question": "The International 10–20 system refers specifically to:",
+        "options": [
+          {
+            "id": "a",
+            "text": "EEG electrode materials"
+          },
+          {
+            "id": "b",
+            "text": "EEG electrode placement"
+          },
+          {
+            "id": "c",
+            "text": "EEG recording software"
+          },
+          {
+            "id": "d",
+            "text": "EEG amplifier type"
+          }
+        ],
+        "correctOptionId": "b",
+        "explanation": "Lecture: Chapter 3, Slide 61. (page 2)"
+      },
+      {
+        "id": "ns-s25-q13",
+        "question": "To prevent frequency aliasing in EEG digitization, the sample rate must be:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Equal to the highest frequency present"
+          },
+          {
+            "id": "b",
+            "text": "At least twice the lowest frequency present"
+          },
+          {
+            "id": "c",
+            "text": "Less than twice the highest frequency present"
+          },
+          {
+            "id": "d",
+            "text": "Exactly the mean frequency of the EEG signal"
+          }
+        ],
+        "correctOptionId": "c",
+        "explanation": "Lecture: Chapter 3, Slide 60 (Nyquist condition). (page 2)"
+      },
+      {
+        "id": "ns-s25-q14",
+        "question": "EEG artifacts from muscle activity primarily occur in which frequency range?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Delta (0.5–4 Hz)"
+          },
+          {
+            "id": "b",
+            "text": "Alpha (8–13 Hz)"
+          },
+          {
+            "id": "c",
+            "text": "Beta/Gamma (>13 Hz)"
+          },
+          {
+            "id": "d",
+            "text": "Theta (4–8 Hz)"
+          }
+        ],
+        "correctOptionId": "c",
+        "explanation": "Lecture: Chapter 9 – Time and Spectral Analysis, Slide 8 (bands). (page 2)"
+      },
+      {
+        "id": "ns-s25-q15",
+        "question": "Which statement is correct about electrical synapses?",
+        "options": [
+          {
+            "id": "a",
+            "text": "They are slower than chemical synapses."
+          },
+          {
+            "id": "b",
+            "text": "They use neurotransmitters for communication."
+          },
+          {
+            "id": "c",
+            "text": "They allow bidirectional current flow via gap junctions."
+          },
+          {
+            "id": "d",
+            "text": "They are only excitatory."
+          }
+        ],
+        "correctOptionId": "c",
+        "explanation": "Lecture: Chapter 1, Slide 29. (page 2)"
+      },
+      {
+        "id": "ns-s25-q16",
+        "question": "Which EEG rhythm is typically associated with a relaxed but awake state?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Beta (13–32 Hz)"
+          },
+          {
+            "id": "b",
+            "text": "Gamma (>32 Hz)"
+          },
+          {
+            "id": "c",
+            "text": "Alpha (8–13 Hz)"
+          },
+          {
+            "id": "d",
+            "text": "Delta (0.5–4 Hz)"
+          }
+        ],
+        "correctOptionId": "c",
+        "explanation": "Lecture: Chapter 9, Slide 8. (page 3)"
+      },
+      {
+        "id": "ns-s25-q17",
+        "question": "Which artifact primarily results from eye movements in EEG recordings?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Cardioballistic artifact"
+          },
+          {
+            "id": "b",
+            "text": "Muscle artifact"
+          },
+          {
+            "id": "c",
+            "text": "Ocular artifact"
+          },
+          {
+            "id": "d",
+            "text": "Sweat artifact"
+          }
+        ],
+        "correctOptionId": "c",
+        "explanation": "Lecture: Chapter 8 – Signal Averaging, Slide 8 (artifact types). (page 3)"
+      },
+      {
+        "id": "ns-s25-q18",
+        "question": "Common average referencing (CAR) in EEG signal processing is particularly vulnerable to:",
+        "options": [
+          {
+            "id": "a",
+            "text": "High-frequency noise"
+          },
+          {
+            "id": "b",
+            "text": "Low electrode impedance"
+          },
+          {
+            "id": "c",
+            "text": "Outlier channels"
+          },
+          {
+            "id": "d",
+            "text": "Environmental noise"
+          }
+        ],
+        "correctOptionId": "c",
+        "explanation": "Lecture: Chapter 8, Slide 14 (CAR + outliers). (page 3)"
+      },
+      {
+        "id": "ns-s25-q19",
+        "question": "Which electrode configuration in EEG recording involves using a single reference electrode for multiple channels?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Unipolar referencing"
+          },
+          {
+            "id": "b",
+            "text": "Bipolar referencing"
+          },
+          {
+            "id": "c",
+            "text": "Common average referencing"
+          },
+          {
+            "id": "d",
+            "text": "Laplacian referencing"
+          }
+        ],
+        "correctOptionId": "a",
+        "explanation": "Lecture: Chapter 3, Slide 63 (derivation methods incl. unipolar). (page 3)"
+      },
+      {
+        "id": "ns-s25-q20",
+        "question": "The relative refractory period during an action potential occurs because:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Potassium channels remain open longer than sodium channels"
+          },
+          {
+            "id": "b",
+            "text": "Sodium channels are completely inactivated"
+          },
+          {
+            "id": "c",
+            "text": "Calcium channels are activated late"
+          },
+          {
+            "id": "d",
+            "text": "Synaptic vesicles are depleted temporarily"
+          }
+        ],
+        "correctOptionId": "a",
+        "explanation": "Lecture: Chapter 1, Slide 16 (relative refractory). (page 3)"
+      },
+      {
+        "id": "ns-s25-q21",
         "question": "Aliasing occurs when:",
         "options": [
           {
             "id": "a",
-            "text": "Sampling rate is sufficiently high"
+            "text": "Sampling rate is less than twice the highest signal frequency"
           },
           {
             "id": "b",
-            "text": "Frequencies above the Nyquist frequency are present and get distorted"
+            "text": "Sampling rate equals Nyquist frequency"
           },
           {
             "id": "c",
-            "text": "A reference electrode is used"
+            "text": "Sampling rate is greater than Nyquist frequency"
           },
           {
             "id": "d",
-            "text": "Signal is amplified"
+            "text": "Signal amplitude is too low"
           }
         ],
-        "correctOptionId": "b",
-        "explanation": "Frequencies higher than Nyquist are affected by aliasing. Ref: Part 3, slide 26."
+        "correctOptionId": "a",
+        "explanation": "Lecture: Chapter 3, Slide 60 (aliasing/overlap). (page 3)"
       },
       {
-        "id": "psy-03-measurement-q9",
-        "question": "A notch filter is designed to:",
+        "id": "ns-s25-q22",
+        "question": "What is the main advantage of the FFT algorithm compared to standard DFT?",
         "options": [
           {
             "id": "a",
-            "text": "Attenuate all frequencies above a threshold"
+            "text": "Higher accuracy"
           },
           {
             "id": "b",
-            "text": "Attenuate all frequencies below a threshold"
+            "text": "Reduced aliasing"
           },
           {
             "id": "c",
-            "text": "Attenuate a single frequency"
+            "text": "Enhanced frequency resolution"
           },
           {
             "id": "d",
-            "text": "Amplify frequencies in a band"
+            "text": "Fewer multiplications required (computational efficiency)"
           }
         ],
-        "correctOptionId": "c",
-        "explanation": "Notch filters attenuate a single frequency (e.g., 50 Hz line noise). Ref: Part 3, slide 33."
+        "correctOptionId": "d",
+        "explanation": "Lecture: Chapter 5 – FFT, Slide 7. (page 3)"
       },
       {
-        "id": "psy-03-measurement-q10",
-        "question": "Why is choosing the sampling rate during recording especially important?",
+        "id": "ns-s25-q23",
+        "question": "The spectral ripples seen in frequency domain analyses are primarily caused by:",
         "options": [
           {
             "id": "a",
-            "text": "It can always be corrected later without loss"
+            "text": "EEG artifacts"
           },
           {
             "id": "b",
-            "text": "Sampling rate and some filters configured during recording cannot be undone"
-          },
-          {
-            "id": "c",
-            "text": "Sampling rate only affects file size"
-          },
-          {
-            "id": "d",
-            "text": "Sampling rate determines electrode placement"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "Sampling rate and some filters are set during recording; cannot be undone. Ref: Part 3, slide 34."
-      }
-    ]
-  },
-  {
-    "id": "psy-04-experimentation",
-    "title": "Part 4: Psychophysiological experimentation",
-    "topic": "Scientific method, variables, within/between designs, event-related analysis, artefacts.",
-    "durationSeconds": 600,
-    "questions": [
-      {
-        "id": "psy-04-experimentation-q1",
-        "question": "Operationalisation is best described as:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Choosing a statistical test"
-          },
-          {
-            "id": "b",
-            "text": "Defining a concept/construct in terms of measurable criteria"
-          },
-          {
-            "id": "c",
-            "text": "Recruiting participants"
-          },
-          {
-            "id": "d",
-            "text": "Removing artefacts from EEG"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "Operationalisation creates definitions in measurable/testable terms. Ref: Part 4 Experimentation, slide 5."
-      },
-      {
-        "id": "psy-04-experimentation-q2",
-        "question": "In an experiment, the independent variable (IV) is typically:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Measured to reveal an effect"
-          },
-          {
-            "id": "b",
-            "text": "Manipulated to induce an effect"
-          },
-          {
-            "id": "c",
-            "text": "Always a physiological measure"
-          },
-          {
-            "id": "d",
-            "text": "Always a confound"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "IV is manipulated to induce effect; DV measured to reveal it. Ref: Part 4, slide 8."
-      },
-      {
-        "id": "psy-04-experimentation-q3",
-        "question": "A mediating variable (MeV) is:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Manipulated directly to cause DV changes"
-          },
-          {
-            "id": "b",
-            "text": "Used to explain the mechanism of the IV–DV relationship"
-          },
-          {
-            "id": "c",
-            "text": "An irrelevant extraneous variable"
-          },
-          {
-            "id": "d",
-            "text": "Always a measurement artefact"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "MeV explains mechanism but is not manipulated directly. Ref: Part 4, slide 12."
-      },
-      {
-        "id": "psy-04-experimentation-q4",
-        "question": "A confounding variable (CfV) is best described as:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Any variable that can be ignored safely"
-          },
-          {
-            "id": "b",
-            "text": "An extraneous variable we cannot (or forgot to) control for, risking bias"
-          },
-          {
-            "id": "c",
-            "text": "A variable that is always part of the theoretical model"
-          },
-          {
-            "id": "d",
-            "text": "A variable that improves measurement precision"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "CfV is a relevant EV not controlled for, causing bias/spurious relations. Ref: Part 4, slides 17–18."
-      },
-      {
-        "id": "psy-04-experimentation-q5",
-        "question": "Why are within-subjects designs common in psychophysiology?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Between-subject variability is small"
-          },
-          {
-            "id": "b",
-            "text": "Between-subject variability is large; within-subject variability tends to be lower"
-          },
-          {
-            "id": "c",
-            "text": "They eliminate the need for randomization"
-          },
-          {
-            "id": "d",
-            "text": "They prevent all artefacts"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "Large individual differences; within-subject variability lower. Ref: Part 4, slide 25."
-      },
-      {
-        "id": "psy-04-experimentation-q6",
-        "question": "Balanced or randomized condition orders in within-subject designs primarily help control for:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Sampling rate"
-          },
-          {
-            "id": "b",
-            "text": "Temporal effects such as fatigue"
-          },
-          {
-            "id": "c",
             "text": "Electrode impedance"
           },
           {
+            "id": "c",
+            "text": "ADC precision"
+          },
+          {
             "id": "d",
-            "text": "All confounds"
+            "text": "Windowing effects"
           }
         ],
-        "correctOptionId": "b",
-        "explanation": "Balancing/randomizing helps control temporal effects like fatigue. Ref: Part 4, slides 26–27."
+        "correctOptionId": "d",
+        "explanation": "Lecture: Chapter 6 – Fourier Transform Applications, Slide 5. (page 3)"
       },
       {
-        "id": "psy-04-experimentation-q7",
-        "question": "Serial dependency refers to:",
+        "id": "ns-s25-q24",
+        "question": "The power spectrum of EEG signals typically follows:",
         "options": [
           {
             "id": "a",
-            "text": "Electrodes connected in series"
+            "text": "Gaussian distribution"
           },
           {
             "id": "b",
-            "text": "Order effects where prior conditions influence perception/behavior in later conditions"
+            "text": "Power law distribution"
           },
           {
             "id": "c",
-            "text": "A type of line noise"
+            "text": "Linear trend"
           },
           {
             "id": "d",
-            "text": "A spectral analysis method"
+            "text": "Uniform distribution"
           }
         ],
         "correctOptionId": "b",
-        "explanation": "Serial dependency: behavior depends on which condition came first. Ref: Part 4, slide 28."
+        "explanation": "Lecture: Chapter 8, Slide 8 (PSD follows a power law). (page 4)"
       },
       {
-        "id": "psy-04-experimentation-q8",
-        "question": "Event-related analysis focuses on:",
+        "id": "ns-s25-q25",
+        "question": "Ocular EEG artifacts typically present as:",
         "options": [
           {
             "id": "a",
-            "text": "A whole condition summarized as one DV parameter"
+            "text": "Low-amplitude, high-frequency noise"
           },
           {
             "id": "b",
-            "text": "Changes in physiology relative to specific events in small time windows"
+            "text": "High-amplitude frontal signals"
           },
           {
             "id": "c",
-            "text": "Only frequency-domain features"
+            "text": "Periodic, slow oscillations"
           },
           {
             "id": "d",
-            "text": "Only subjective reports"
+            "text": "Symmetric occipital signals"
           }
         ],
         "correctOptionId": "b",
-        "explanation": "Event-related = time windows relative to events. Ref: Part 4, slide 32."
+        "explanation": "Lecture: Chapter 8, Slide 8 (ocular artifacts). (page 4)"
       },
       {
-        "id": "psy-04-experimentation-q9",
-        "question": "Epoching in EEG analysis means:",
+        "id": "ns-s25-q26",
+        "question": "Cardioballistic EEG artifacts originate from:",
         "options": [
           {
             "id": "a",
-            "text": "Filtering out all frequencies above 50 Hz"
+            "text": "Brainstem cardiac rhythms"
           },
           {
             "id": "b",
-            "text": "Extracting time segments relative to events from a continuous recording"
+            "text": "Electrode movement due to arterial pulsations"
           },
           {
             "id": "c",
-            "text": "Placing electrodes on the scalp"
+            "text": "High-frequency muscle contractions"
           },
           {
             "id": "d",
-            "text": "Averaging across participants only"
+            "text": "Eye movements"
           }
         ],
         "correctOptionId": "b",
-        "explanation": "Epoching extracts time segments around events. Ref: Part 4, slide 34."
+        "explanation": "Lecture: Chapter 8, Slide 8 (cardiac artifacts). (page 4)"
       },
       {
-        "id": "psy-04-experimentation-q10",
-        "question": "Which is an example of an external artefact described in the lecture?",
+        "id": "ns-s25-q27",
+        "question": "EEG sweat artifacts typically occur at which frequency range?",
         "options": [
           {
             "id": "a",
-            "text": "Respiratory sinus arrhythmia"
+            "text": "Gamma range (>32 Hz)"
           },
           {
             "id": "b",
-            "text": "Utility-frequency (50 Hz) line noise"
+            "text": "Alpha range (8–13 Hz)"
           },
           {
             "id": "c",
-            "text": "Emotion-related sweating"
+            "text": "Beta range (13–32 Hz)"
           },
           {
             "id": "d",
-            "text": "Circadian rhythms"
+            "text": "<0.5 Hz (very slow)"
           }
         ],
-        "correctOptionId": "b",
-        "explanation": "External artefacts include electromagnetic 50 Hz line noise. Ref: Part 4, slide 40."
+        "correctOptionId": "d",
+        "explanation": "Lecture: Chapter 8, Slide 8 (sweat artifact; slow drift). (page 4)"
+      },
+      {
+        "id": "ns-s25-q28",
+        "question": "Chewing EEG artifacts predominantly appear as:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Sustained low-frequency waves"
+          },
+          {
+            "id": "b",
+            "text": "Uniform alpha oscillations"
+          },
+          {
+            "id": "c",
+            "text": "Periodic spikes"
+          },
+          {
+            "id": "d",
+            "text": "Intermittent bursts of generalized fast activity"
+          }
+        ],
+        "correctOptionId": "d",
+        "explanation": "Lecture: Chapter 8, Slide 8 (muscular) + Chapter 9, Slide 8 (beta/gamma). (page 4)"
+      },
+      {
+        "id": "ns-s25-q29",
+        "question": "Bootstrap averaging as a noise estimation technique works by:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Increasing the stimulus interval"
+          },
+          {
+            "id": "b",
+            "text": "Reversing electrode polarities"
+          },
+          {
+            "id": "c",
+            "text": "Filtering high-frequency artifacts"
+          },
+          {
+            "id": "d",
+            "text": "Randomizing epoch alignment"
+          }
+        ],
+        "correctOptionId": "d",
+        "explanation": "Lecture: Chapter 8, Slide 5 (bootstrap). (page 4)"
       }
     ]
   },
   {
-    "id": "psy-05-emg",
-    "title": "Part 5: Electromyography",
-    "topic": "Origins, recording, artefacts, and analysis of EMG including rectification/integration.",
-    "durationSeconds": 600,
+    "id": "ns-w25",
+    "title": "ns-w25.pdf",
+    "topic": "MCQ set generated from ns-w25.pdf",
+    "durationSeconds": 930,
     "questions": [
       {
-        "id": "psy-05-emg-q1",
-        "question": "Electromyography (EMG) primarily measures:",
+        "id": "ns-w25-q1",
+        "question": "Which of the following is NOT a function of glial cells in the nervous system?",
         "options": [
           {
             "id": "a",
-            "text": "Skin conductance changes"
+            "text": "Supporting the signaling functions of nerve cells"
           },
           {
             "id": "b",
-            "text": "Electrical activity from muscle fiber action potentials (summed as motor unit potentials)"
+            "text": "Repairing nervous system damage"
           },
           {
             "id": "c",
-            "text": "Blood oxygenation"
+            "text": "Generating action potentials"
           },
           {
             "id": "d",
-            "text": "Hormone concentrations"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "EMG measures summed muscle fiber APs of motor units (MUPs). Ref: Part 5 EMG, slide 18."
-      },
-      {
-        "id": "psy-05-emg-q2",
-        "question": "Which muscle type is voluntary and controlled by the somatic nervous system?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Smooth muscle"
-          },
-          {
-            "id": "b",
-            "text": "Cardiac muscle"
-          },
-          {
-            "id": "c",
-            "text": "Skeletal muscle"
-          },
-          {
-            "id": "d",
-            "text": "All are voluntary"
+            "text": "Preventing uncontrolled regeneration in certain brain regions"
           }
         ],
         "correctOptionId": "c",
-        "explanation": "Skeletal muscle is striated and voluntary, SNS-controlled. Ref: Part 5, slide 7."
+        "explanation": "Ref: Chapter1 — “Neuron” (p. 5) (page 1)"
       },
       {
-        "id": "psy-05-emg-q3",
-        "question": "A motor unit follows which activation principle?",
+        "id": "ns-w25-q2",
+        "question": "The primary difference between dendrites and axons is that:",
         "options": [
           {
             "id": "a",
-            "text": "Graded potential principle"
+            "text": "Dendrites transmit signals, whereas axons receive signals"
           },
           {
             "id": "b",
-            "text": "All-or-nothing principle"
+            "text": "Axons transmit signals over long distances, whereas dendrites receive signals from nearby neurons"
           },
           {
             "id": "c",
-            "text": "Only inhibitory activation"
+            "text": "Dendrites are responsible for neurotransmitter release, whereas axons are not"
           },
           {
             "id": "d",
-            "text": "Depends on electrode placement"
+            "text": "Both dendrites and axons carry action potentials"
           }
         ],
         "correctOptionId": "b",
-        "explanation": "Activation of a motor unit follows all-or-nothing. Ref: Part 5, slide 15."
+        "explanation": "Ref: Chapter1 — “spike-initiation zone” (p. 26) (page 1)"
       },
       {
-        "id": "psy-05-emg-q4",
-        "question": "Why is the raw EMG often described as broadband?",
+        "id": "ns-w25-q3",
+        "question": "Which of the following factors determines the ionic equilibrium potential (E_ion)?",
         "options": [
           {
             "id": "a",
-            "text": "Only one motor unit fires at exactly 10 Hz"
+            "text": "The number of neurotransmitters released at the synapse"
           },
           {
             "id": "b",
-            "text": "Multiple motor units fire up to ~50 Hz each, but combined activity yields higher frequencies"
+            "text": "The concentration gradient and electrical gradient of the ion across the membrane"
           },
           {
             "id": "c",
-            "text": "Because EMG is always filtered to 0–4 Hz"
+            "text": "The number of neurons firing in synchrony"
           },
           {
             "id": "d",
-            "text": "Because EMG measures DC potentials"
+            "text": "The speed of the action potential propagation"
           }
         ],
         "correctOptionId": "b",
-        "explanation": "Many motor units firing contribute to higher-frequency broadband signal. Ref: Part 5, slide 18."
+        "explanation": "Ref: Chapter1 — “Allan Fletcher, Action potential: generation and propagation, Anaesthesia & Inte” (p. 15) (page 1)"
       },
       {
-        "id": "psy-05-emg-q5",
-        "question": "For typical surface EMG, the amplifier should capture most power in approximately which range?",
+        "id": "ns-w25-q4",
+        "question": "What is the primary reason that a neuron's resting membrane potential is around -65 mV instead of -80 mV?",
         "options": [
           {
             "id": "a",
-            "text": "0–4 Hz"
+            "text": "The permeability of the membrane to Na+ ions"
           },
           {
             "id": "b",
-            "text": "8–12 Hz"
+            "text": "The low permeability of the membrane to Cl- ions"
           },
           {
             "id": "c",
-            "text": "40–100 Hz"
+            "text": "The dominance of voltage-gated calcium channels"
           },
           {
             "id": "d",
-            "text": "500–1000 Hz"
-          }
-        ],
-        "correctOptionId": "c",
-        "explanation": "Lecture notes most power in 40–100 Hz. Ref: Part 5, slide 22."
-      },
-      {
-        "id": "psy-05-emg-q6",
-        "question": "A common EMG preprocessing pipeline includes rectification followed by:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Adding line noise"
-          },
-          {
-            "id": "b",
-            "text": "Smoothing and/or integration"
-          },
-          {
-            "id": "c",
-            "text": "Epoch rejection only"
-          },
-          {
-            "id": "d",
-            "text": "Replacing the reference electrode"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "Processing: rectification, smoothing, integration. Ref: Part 5, slide 31."
-      },
-      {
-        "id": "psy-05-emg-q7",
-        "question": "Full-wave rectification means:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Keeping only negative samples"
-          },
-          {
-            "id": "b",
-            "text": "Taking absolute value of samples"
-          },
-          {
-            "id": "c",
-            "text": "Subtracting the mean"
-          },
-          {
-            "id": "d",
-            "text": "Band-stopping 50 Hz"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "Full-wave rectification = absolute values. Ref: Part 5, slide 31."
-      },
-      {
-        "id": "psy-05-emg-q8",
-        "question": "Why are absolute EMG values often considered meaningless across sessions or placements?",
-        "options": [
-          {
-            "id": "a",
-            "text": "EMG cannot be measured with electrodes"
-          },
-          {
-            "id": "b",
-            "text": "Small placement differences (mm) can change the signal substantially"
-          },
-          {
-            "id": "c",
-            "text": "EMG is always identical across people"
-          },
-          {
-            "id": "d",
-            "text": "Integration removes all differences"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "A few mm in placement can change EMG; repeated measures difficult. Ref: Part 5, slide 23."
-      },
-      {
-        "id": "psy-05-emg-q9",
-        "question": "Which facial muscle is associated with frowning (as listed)?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Zygomaticus"
-          },
-          {
-            "id": "b",
-            "text": "Corrugator"
-          },
-          {
-            "id": "c",
-            "text": "Mentalis"
-          },
-          {
-            "id": "d",
-            "text": "Levator"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "Corrugator = frown. Ref: Part 5, slide 25."
-      },
-      {
-        "id": "psy-05-emg-q10",
-        "question": "Integration of EMG output reflects:",
-        "options": [
-          {
-            "id": "a",
-            "text": "A single instantaneous spike only"
-          },
-          {
-            "id": "b",
-            "text": "Total EMG output over a chosen time period"
-          },
-          {
-            "id": "c",
-            "text": "Only frequency content of EMG"
-          },
-          {
-            "id": "d",
-            "text": "Electrode impedance"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "Integration reflects total EMG output over a period (free parameter). Ref: Part 5, slide 32."
-      }
-    ]
-  },
-  {
-    "id": "psy-06-1-cardiovascular-system",
-    "title": "Part 6.1: Cardiovascular system",
-    "topic": "Heart and vessels, conduction system, pacemaker cells, autonomic modulation.",
-    "durationSeconds": 600,
-    "questions": [
-      {
-        "id": "psy-06-1-cardiovascular-system-q1",
-        "question": "The main function of the cardiovascular system is to:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Transmit electrical signals between neurons"
-          },
-          {
-            "id": "b",
-            "text": "Transport blood to and from organs to deliver oxygen/nutrients and remove waste"
-          },
-          {
-            "id": "c",
-            "text": "Produce sweat for thermoregulation"
-          },
-          {
-            "id": "d",
-            "text": "Generate EEG rhythms"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "Transport blood; deliver oxygen/nutrients, remove waste; regulate temperature etc. Ref: Part 6.1 Cardiovascular system, slide 2."
-      },
-      {
-        "id": "psy-06-1-cardiovascular-system-q2",
-        "question": "Arteries generally carry blood:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Toward the heart"
-          },
-          {
-            "id": "b",
-            "text": "Away from the heart"
-          },
-          {
-            "id": "c",
-            "text": "Only within the lungs"
-          },
-          {
-            "id": "d",
-            "text": "Only in the brain"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "Arteries carry blood away from heart. Ref: Part 6.1, slide 4."
-      },
-      {
-        "id": "psy-06-1-cardiovascular-system-q3",
-        "question": "Veins generally carry blood:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Away from the heart"
-          },
-          {
-            "id": "b",
-            "text": "Toward the heart"
-          },
-          {
-            "id": "c",
-            "text": "Only oxygenated blood"
-          },
-          {
-            "id": "d",
-            "text": "Only deoxygenated blood"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "Veins carry blood toward heart. Ref: Part 6.1, slide 4."
-      },
-      {
-        "id": "psy-06-1-cardiovascular-system-q4",
-        "question": "Capillaries are important because:",
-        "options": [
-          {
-            "id": "a",
-            "text": "They generate the heart’s autorhythmicity"
-          },
-          {
-            "id": "b",
-            "text": "They allow exchange of oxygen, nutrients, and waste through their walls"
-          },
-          {
-            "id": "c",
-            "text": "They are the main pacemakers"
-          },
-          {
-            "id": "d",
-            "text": "They have only sympathetic innervation"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "Capillaries are microvessels enabling exchange. Ref: Part 6.1, slide 4."
-      },
-      {
-        "id": "psy-06-1-cardiovascular-system-q5",
-        "question": "Pacemaker cells are characterized by:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Stable resting potential that never depolarizes"
-          },
-          {
-            "id": "b",
-            "text": "Spontaneous depolarization over time (autorhythmicity)"
-          },
-          {
-            "id": "c",
-            "text": "Being controlled only by voluntary motor neurons"
-          },
-          {
-            "id": "d",
-            "text": "Lacking ion channels"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "Pacemaker cells depolarize spontaneously, causing autorhythmicity. Ref: Part 6.1, slide 12."
-      },
-      {
-        "id": "psy-06-1-cardiovascular-system-q6",
-        "question": "Cardiac muscle cells are connected via gap junctions mainly to:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Prevent any conduction between cells"
-          },
-          {
-            "id": "b",
-            "text": "Allow cardiac action potentials to conduct between cells"
-          },
-          {
-            "id": "c",
-            "text": "Increase skin conductance"
-          },
-          {
-            "id": "d",
-            "text": "Block Na⁺ entry"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "Gap junctions allow free conduction between cardiomyocytes. Ref: Part 6.1, slide 12."
-      },
-      {
-        "id": "psy-06-1-cardiovascular-system-q7",
-        "question": "The sinoatrial (SA) node is located:",
-        "options": [
-          {
-            "id": "a",
-            "text": "In the left ventricle"
-          },
-          {
-            "id": "b",
-            "text": "At the superior wall of the right atrium"
-          },
-          {
-            "id": "c",
-            "text": "In the medulla oblongata"
-          },
-          {
-            "id": "d",
-            "text": "In the spinal cord"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "SA node location: superior wall of right atrium. Ref: Part 6.1, slide 15."
-      },
-      {
-        "id": "psy-06-1-cardiovascular-system-q8",
-        "question": "In the cardiac conduction pathway, which structure delays the signal to allow atrial contraction?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Purkinje fibers"
-          },
-          {
-            "id": "b",
-            "text": "Atrioventricular (AV) node"
-          },
-          {
-            "id": "c",
-            "text": "Bundle of His"
-          },
-          {
-            "id": "d",
-            "text": "Coronary arteries"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "AV node delays the signal. Ref: Part 6.1, slide 15."
-      },
-      {
-        "id": "psy-06-1-cardiovascular-system-q9",
-        "question": "The SA node’s intrinsic rhythmicity is about:",
-        "options": [
-          {
-            "id": "a",
-            "text": "20 bpm"
-          },
-          {
-            "id": "b",
-            "text": "40–60 bpm"
-          },
-          {
-            "id": "c",
-            "text": "~100 bpm"
-          },
-          {
-            "id": "d",
-            "text": "~200 bpm"
-          }
-        ],
-        "correctOptionId": "c",
-        "explanation": "SA node intrinsic rhythm ~100 bpm. Ref: Part 6.1, slide 17."
-      },
-      {
-        "id": "psy-06-1-cardiovascular-system-q10",
-        "question": "A denervated heart would beat at around:",
-        "options": [
-          {
-            "id": "a",
-            "text": "0 bpm"
-          },
-          {
-            "id": "b",
-            "text": "~30 bpm"
-          },
-          {
-            "id": "c",
-            "text": "~100 bpm"
-          },
-          {
-            "id": "d",
-            "text": "~180 bpm"
-          }
-        ],
-        "correctOptionId": "c",
-        "explanation": "Without ANS modulation, heart beats ~100 bpm. Ref: Part 6.1, slide 17."
-      }
-    ]
-  },
-  {
-    "id": "psy-06-2-cardiovascular-measures",
-    "title": "Part 6.2: Cardiovascular measures",
-    "topic": "Blood pressure, PPG, ECG, heart rate and HRV metrics.",
-    "durationSeconds": 600,
-    "questions": [
-      {
-        "id": "psy-06-2-cardiovascular-measures-q1",
-        "question": "In medicine, blood pressure is commonly expressed in:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Pascal (N/m²)"
-          },
-          {
-            "id": "b",
-            "text": "Millimetres of mercury (mmHg)"
-          },
-          {
-            "id": "c",
-            "text": "Siemens (S)"
-          },
-          {
-            "id": "d",
-            "text": "Beats per minute (bpm)"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "Blood pressure commonly in mmHg rather than Pascal. Ref: Part 6.2 Cardiovascular measures, slide 3."
-      },
-      {
-        "id": "psy-06-2-cardiovascular-measures-q2",
-        "question": "Blood pressure in the systemic circulation varies between:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Alpha and beta peaks"
-          },
-          {
-            "id": "b",
-            "text": "Systolic maxima and diastolic minima"
-          },
-          {
-            "id": "c",
-            "text": "Delta and theta troughs"
-          },
-          {
-            "id": "d",
-            "text": "Conductance and resistance"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "BP varies between systolic and diastolic. Ref: Part 6.2, slide 10."
-      },
-      {
-        "id": "psy-06-2-cardiovascular-measures-q3",
-        "question": "The baroreflex response to increased blood pressure is:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Increase cardiac output"
-          },
-          {
-            "id": "b",
-            "text": "Decrease cardiac output"
-          },
-          {
-            "id": "c",
-            "text": "Increase sweating"
-          },
-          {
-            "id": "d",
-            "text": "Increase EEG alpha"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "Increased BP sensed → decreased cardiac output (and vice versa). Ref: Part 6.2, slide 5."
-      },
-      {
-        "id": "psy-06-2-cardiovascular-measures-q4",
-        "question": "Most blood vessels have which autonomic innervation (as described)?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Only parasympathetic"
-          },
-          {
-            "id": "b",
-            "text": "Only sympathetic, mostly causing vasoconstriction"
-          },
-          {
-            "id": "c",
-            "text": "Both equally"
-          },
-          {
-            "id": "d",
-            "text": "No autonomic innervation"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "Most vessels only sympathetic; mostly vasoconstriction. Ref: Part 6.2, slide 6."
-      },
-      {
-        "id": "psy-06-2-cardiovascular-measures-q5",
-        "question": "A key disadvantage of sphygmomanometry is that it is:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Fully continuous and unobtrusive"
-          },
-          {
-            "id": "b",
-            "text": "Not continuously measurable and temporarily deforms arteries"
-          },
-          {
-            "id": "c",
-            "text": "Perfectly accurate to 0.1 mmHg"
-          },
-          {
-            "id": "d",
-            "text": "Invasive by definition"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "Disadvantages: not continuous; deforms arteries; allow recovery. Ref: Part 6.2, slide 8."
-      },
-      {
-        "id": "psy-06-2-cardiovascular-measures-q6",
-        "question": "Continuous measurement of true blood pressure is only possible:",
-        "options": [
-          {
-            "id": "a",
-            "text": "With a webcam"
-          },
-          {
-            "id": "b",
-            "text": "Invasively using an arterial line"
-          },
-          {
-            "id": "c",
-            "text": "Using EEG electrodes"
-          },
-          {
-            "id": "d",
-            "text": "Using photoplethysmography alone"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "True continuous BP only invasive (arterial line). Ref: Part 6.2, slide 9."
-      },
-      {
-        "id": "psy-06-2-cardiovascular-measures-q7",
-        "question": "Peripheral blood volume is often measured at the finger because:",
-        "options": [
-          {
-            "id": "a",
-            "text": "It contains the largest skeletal muscles"
-          },
-          {
-            "id": "b",
-            "text": "Many vessels are close to the skin and it’s not complicated by skeletal muscles"
-          },
-          {
-            "id": "c",
-            "text": "It is electrically neutral"
-          },
-          {
-            "id": "d",
-            "text": "It is controlled by the parasympathetic system"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "Finger has many vessels near surface; minimal skeletal muscle interference. Ref: Part 6.2, slide 13."
-      },
-      {
-        "id": "psy-06-2-cardiovascular-measures-q8",
-        "question": "Vasomotor activity in the skin is described as being under:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Exclusively sympathetic control"
-          },
-          {
-            "id": "b",
-            "text": "Exclusively parasympathetic control"
-          },
-          {
-            "id": "c",
-            "text": "Somatic control"
-          },
-          {
-            "id": "d",
-            "text": "No neural control"
+            "text": "The complete inactivation of sodium-potassium pumps"
           }
         ],
         "correctOptionId": "a",
-        "explanation": "Skin vasomotor activity exclusively sympathetic. Ref: Part 6.2, slide 13."
+        "explanation": "Ref: Chapter1 — “Resting membrane potential” (p. 13) (page 1)"
       },
       {
-        "id": "psy-06-2-cardiovascular-measures-q9",
-        "question": "Photoplethysmography (PPG) uses ______ to detect changes in blood volume indirectly.",
+        "id": "ns-w25-q5",
+        "question": "Leak channels contribute to the resting membrane potential primarily by:",
         "options": [
           {
             "id": "a",
-            "text": "Ultraviolet light"
+            "text": "Actively transporting ions across the membrane"
           },
           {
             "id": "b",
-            "text": "Infrared light"
+            "text": "Allowing passive diffusion of ions based on their concentration gradients"
           },
           {
             "id": "c",
-            "text": "X-rays"
+            "text": "Generating action potentials when open"
           },
           {
             "id": "d",
-            "text": "Sound waves"
+            "text": "Blocking voltage-gated ion channels"
           }
         ],
         "correctOptionId": "b",
-        "explanation": "PPG uses infrared light; detects absorption/refraction changes. Ref: Part 6.2, slide 14."
+        "explanation": "Ref: Chapter1 — “Resting membrane potential” (p. 13) (page 1)"
       },
       {
-        "id": "psy-06-2-cardiovascular-measures-q10",
-        "question": "In an ECG, the R peaks are commonly used to compute:",
+        "id": "ns-w25-q6",
+        "question": "What is the major determinant of the absolute refractory period in a neuron?",
         "options": [
           {
             "id": "a",
-            "text": "Skin conductance responses"
+            "text": "The inactivation of sodium channels"
           },
           {
             "id": "b",
-            "text": "Heart rate (beats per minute)"
+            "text": "The hyperpolarization due to potassium outflow"
           },
           {
             "id": "c",
-            "text": "Respiration rate only"
+            "text": "The breakdown of neurotransmitters in the synaptic cleft"
           },
           {
             "id": "d",
-            "text": "Blood glucose"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "HR is operationalized as number of R peaks per minute. Ref: Part 6.2, slide 29."
-      }
-    ]
-  },
-  {
-    "id": "psy-07-eda",
-    "title": "Part 7: Electrodermal activity",
-    "topic": "Skin anatomy, eccrine glands, recording conductance, tonic/phasic analysis.",
-    "durationSeconds": 600,
-    "questions": [
-      {
-        "id": "psy-07-eda-q1",
-        "question": "Electrodermal activity (EDA) is most directly linked to activity of:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Apocrine sweat glands"
-          },
-          {
-            "id": "b",
-            "text": "Eccrine sweat glands"
-          },
-          {
-            "id": "c",
-            "text": "Sebaceous glands"
-          },
-          {
-            "id": "d",
-            "text": "Pancreatic glands"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "Eccrine sweat glands are the main factor in skin conductance. Ref: Part 7 EDA, slide 21."
-      },
-      {
-        "id": "psy-07-eda-q2",
-        "question": "Eccrine sweat glands are under ______ control (as stated).",
-        "options": [
-          {
-            "id": "a",
-            "text": "Exclusively sympathetic"
-          },
-          {
-            "id": "b",
-            "text": "Exclusively parasympathetic"
-          },
-          {
-            "id": "c",
-            "text": "Somatic"
-          },
-          {
-            "id": "d",
-            "text": "Endocrine only"
+            "text": "The release of calcium from intracellular stores"
           }
         ],
         "correctOptionId": "a",
-        "explanation": "Eccrine glands are exclusively sympathetic. Ref: Part 7, slide 22."
+        "explanation": "Ref: Chapter1 — “Action potential …” (p. 20) (page 1)"
       },
       {
-        "id": "psy-07-eda-q3",
-        "question": "For skin conductance recordings, which recording configuration is preferred?",
+        "id": "ns-w25-q7",
+        "question": "The falling phase of an action potential occurs because:",
         "options": [
           {
             "id": "a",
-            "text": "Unipolar"
+            "text": "Na+ channels remain open longer than expected"
           },
           {
             "id": "b",
-            "text": "Bipolar"
+            "text": "K+ channels open, allowing K+ to exit the cell"
           },
           {
             "id": "c",
-            "text": "No reference needed"
+            "text": "The membrane potential becomes more positive due to Na+ influx"
           },
           {
             "id": "d",
-            "text": "Intracranial"
+            "text": "The Na+/K+ pump reverses its function"
           }
         ],
         "correctOptionId": "b",
-        "explanation": "Bipolar preferred for conductance; unipolar for potential. Ref: Part 7, slide 27."
+        "explanation": "Ref: Chapter1 — “Action potential” (p. 19) (page 1)"
       },
       {
-        "id": "psy-07-eda-q4",
-        "question": "A common recording site for peripheral skin conductance is:",
+        "id": "ns-w25-q8",
+        "question": "Saltatory conduction occurs because:",
         "options": [
           {
             "id": "a",
-            "text": "Forehead"
+            "text": "The myelin sheath allows ions to flow through it"
           },
           {
             "id": "b",
-            "text": "Non-dominant hand/fingers"
+            "text": "Action potentials jump from one node of Ranvier to the next"
           },
           {
             "id": "c",
-            "text": "Lower back"
+            "text": "Dendrites conduct electrical impulses faster than axons"
           },
           {
             "id": "d",
-            "text": "Behind the knee"
+            "text": "The refractory period is shortened in unmyelinated axons"
           }
         ],
         "correctOptionId": "b",
-        "explanation": "Non-dominant hand often used; palms/fingers high eccrine density. Ref: Part 7, slide 28 and 21."
+        "explanation": "Ref: Chapter1 — “saltatory conduction” (p. 24) (page 2)"
       },
       {
-        "id": "psy-07-eda-q5",
-        "question": "In the lecture’s EDA analysis, tonic changes correspond to:",
+        "id": "ns-w25-q9",
+        "question": "What is the function of the inactivation gate in a voltage-gated Na+ channel?",
         "options": [
           {
             "id": "a",
-            "text": "Skin conductance response (SCR)"
+            "text": "It regulates neurotransmitter release"
           },
           {
             "id": "b",
-            "text": "Skin conductance level (SCL)"
+            "text": "It opens during repolarization to restore resting membrane potential"
           },
           {
             "id": "c",
-            "text": "Heart rate variability (HRV)"
+            "text": "It directly transports Na+ out of the cell"
           },
           {
             "id": "d",
-            "text": "Mu rhythm"
+            "text": "It opens during depolarization and prevents further Na+ entry after a brief delay"
+          }
+        ],
+        "correctOptionId": "d",
+        "explanation": "Ref: Chapter1 — “Allan Fletcher, Action potential: generation and propagation, Anaesthesia & Inte” (p. 15) (page 2)"
+      },
+      {
+        "id": "ns-w25-q10",
+        "question": "Temporal summation at a synapse means:",
+        "options": [
+          {
+            "id": "a",
+            "text": "The same neurotransmitter binds to multiple receptors"
+          },
+          {
+            "id": "b",
+            "text": "A single presynaptic neuron fires multiple action potentials in rapid succession"
+          },
+          {
+            "id": "c",
+            "text": "The postsynaptic neuron fires multiple action potentials in rapid succession"
+          },
+          {
+            "id": "d",
+            "text": "The postsynaptic neuron generates multiple neurotransmitters"
           }
         ],
         "correctOptionId": "b",
-        "explanation": "Tonic = SCL; phasic = SCR. Ref: Part 7, slide 31."
+        "explanation": "Ref: Chapter1 — “EPSP summation.” (p. 35) (page 2)"
       },
       {
-        "id": "psy-07-eda-q6",
-        "question": "Phasic EDA changes are typically called:",
+        "id": "ns-w25-q11",
+        "question": "Which of the following is NOT a characteristic of the all-or-none law of action potentials?",
         "options": [
           {
             "id": "a",
-            "text": "Skin conductance responses (SCR)"
+            "text": "The action potential occurs fully or not at all"
           },
           {
             "id": "b",
-            "text": "Skin conductance level (SCL)"
+            "text": "The strength of the action potential depends on the stimulus intensity"
           },
           {
             "id": "c",
-            "text": "Event-related potentials (ERP)"
+            "text": "The frequency of action potentials can vary with stimulus strength"
           },
           {
             "id": "d",
-            "text": "Inter-beat intervals (IBI)"
-          }
-        ],
-        "correctOptionId": "a",
-        "explanation": "Phasic = SCR. Ref: Part 7, slide 31."
-      },
-      {
-        "id": "psy-07-eda-q7",
-        "question": "Why is interpreting absolute SCL as 'general arousal level' considered wrong?",
-        "options": [
-          {
-            "id": "a",
-            "text": "SCL is identical across people"
-          },
-          {
-            "id": "b",
-            "text": "SCL varies greatly between individuals"
-          },
-          {
-            "id": "c",
-            "text": "SCL only measures temperature"
-          },
-          {
-            "id": "d",
-            "text": "SCL is not measurable"
+            "text": "Each action potential has a constant amplitude"
           }
         ],
         "correctOptionId": "b",
-        "explanation": "Tonic SCL varies greatly between individuals; absolute interpretation is wrong. Ref: Part 7, slide 33."
+        "explanation": "Ref: Chapter1 — “Approximately 1 ms after opening, the voltage-gated” (p. 16) (page 2)"
       },
       {
-        "id": "psy-07-eda-q8",
-        "question": "A non-specific fluctuation in EDA is defined as occurring, for example:",
+        "id": "ns-w25-q12",
+        "question": "Which dipole orientation is less likely to contribute the strongest signal to EEG recordings, according to the provided information?",
         "options": [
           {
             "id": "a",
-            "text": "Within 1 second of a stimulus"
+            "text": "Dipole (a)"
           },
           {
             "id": "b",
-            "text": "More than 5 seconds after any known stimulus"
+            "text": "Dipole (b)"
           },
           {
             "id": "c",
-            "text": "Only during sleep"
+            "text": "Dipole (c)"
           },
           {
             "id": "d",
-            "text": "Only during movement"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "Non-specific fluctuation defined e.g. >5 s after known stimulus. Ref: Part 7, slide 33."
-      },
-      {
-        "id": "psy-07-eda-q9",
-        "question": "Which factor is listed as a common EDA artefact source?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Temperature and humidity changes"
-          },
-          {
-            "id": "b",
-            "text": "Brodmann area differences"
-          },
-          {
-            "id": "c",
-            "text": "Myelin thickness"
-          },
-          {
-            "id": "d",
-            "text": "Thalamic nuclei"
-          }
-        ],
-        "correctOptionId": "a",
-        "explanation": "Artefacts: temperature, humidity, respiratory/cardiac cycle, etc. Ref: Part 7, slide 29."
-      },
-      {
-        "id": "psy-07-eda-q10",
-        "question": "The traditional non-SI unit equivalent to siemens mentioned for conductance is:",
-        "options": [
-          {
-            "id": "a",
-            "text": "mmHg"
-          },
-          {
-            "id": "b",
-            "text": "mho"
-          },
-          {
-            "id": "c",
-            "text": "bpm"
-          },
-          {
-            "id": "d",
-            "text": "Hz"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "mho is a traditional unit equivalent to siemens. Ref: Part 7, slide 26."
-      }
-    ]
-  },
-  {
-    "id": "psy-08-1-electrocortical-activity",
-    "title": "Part 8.1: Electrocortical activity",
-    "topic": "Physiological origins of EEG; volume conduction; comparison with MEG/fMRI/fNIRS/ECoG.",
-    "durationSeconds": 600,
-    "questions": [
-      {
-        "id": "psy-08-1-electrocortical-activity-q1",
-        "question": "EEG recorded at the scalp primarily reflects synchronous activity of:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Action potentials in single neurons"
-          },
-          {
-            "id": "b",
-            "text": "Postsynaptic potentials in large neuronal populations"
-          },
-          {
-            "id": "c",
-            "text": "Hormone release in the hypothalamus"
-          },
-          {
-            "id": "d",
-            "text": "Muscle fiber action potentials"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "Action potentials too fast; PSPs last longer and can summate. Ref: Part 8.1 Electrocortical activity, slide 18."
-      },
-      {
-        "id": "psy-08-1-electrocortical-activity-q2",
-        "question": "Why are action potentials usually not the main contributor to scalp EEG?",
-        "options": [
-          {
-            "id": "a",
-            "text": "They are too slow"
-          },
-          {
-            "id": "b",
-            "text": "They are too fast (1–2 ms) to be synchronous over large populations"
-          },
-          {
-            "id": "c",
-            "text": "They occur only in glia"
-          },
-          {
-            "id": "d",
-            "text": "They have no voltage change"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "APs are too fast to synchronise across large populations. Ref: Part 8.1, slide 18."
-      },
-      {
-        "id": "psy-08-1-electrocortical-activity-q3",
-        "question": "For scalp EEG to be measurable, synchronous activity must also have an appropriate spatial organization. This is typically true for:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Spinal motor neurons"
-          },
-          {
-            "id": "b",
-            "text": "Cortical pyramidal cells"
-          },
-          {
-            "id": "c",
-            "text": "Red blood cells"
-          },
-          {
-            "id": "d",
-            "text": "Eccrine sweat glands"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "Pyramidal cells have arrangement that avoids cancellation. Ref: Part 8.1, slides 18–21."
-      },
-      {
-        "id": "psy-08-1-electrocortical-activity-q4",
-        "question": "EEG has relatively low spatial resolution mainly because:",
-        "options": [
-          {
-            "id": "a",
-            "text": "It uses magnetic fields only"
-          },
-          {
-            "id": "b",
-            "text": "Each electrode records activity from millions of neurons and signals spread via volume conduction"
-          },
-          {
-            "id": "c",
-            "text": "It cannot be digitized"
-          },
-          {
-            "id": "d",
-            "text": "It is always invasive"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "One electrode reflects 10–1000 million neurons; volume conduction contributes. Ref: Part 8.1, slides 22–23."
-      },
-      {
-        "id": "psy-08-1-electrocortical-activity-q5",
-        "question": "Volume conduction implies that electric fields in EEG:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Propagate slowly and only locally"
-          },
-          {
-            "id": "b",
-            "text": "Spread instantaneously and reach the scalp broadly"
-          },
-          {
-            "id": "c",
-            "text": "Require the skull to be magnetically transparent"
-          },
-          {
-            "id": "d",
-            "text": "Depend only on the reference electrode being neutral"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "Spread is instantaneous and broad; no neutral reference. Ref: Part 8.1, slide 23."
-      },
-      {
-        "id": "psy-08-1-electrocortical-activity-q6",
-        "question": "Which is listed as an advantage of EEG compared to fMRI?",
-        "options": [
-          {
-            "id": "a",
-            "text": "High spatial resolution"
-          },
-          {
-            "id": "b",
-            "text": "High temporal resolution"
-          },
-          {
-            "id": "c",
-            "text": "Ability to measure deep brain structures"
-          },
-          {
-            "id": "d",
-            "text": "Reference-free recording"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "EEG: high temporal resolution. Ref: Part 8.1, slide 28."
-      },
-      {
-        "id": "psy-08-1-electrocortical-activity-q7",
-        "question": "MEG is described as being reference-free primarily because it measures:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Electric potentials"
-          },
-          {
-            "id": "b",
-            "text": "Magnetic fields produced by brain currents"
-          },
-          {
-            "id": "c",
-            "text": "Blood oxygenation"
-          },
-          {
-            "id": "d",
-            "text": "Skin conductance"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "MEG measures magnetic fields from electrical currents. Ref: Part 8.1, slides 29–30."
-      },
-      {
-        "id": "psy-08-1-electrocortical-activity-q8",
-        "question": "fMRI detects brain activity indirectly by measuring:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Skin impedance changes"
-          },
-          {
-            "id": "b",
-            "text": "Blood oxygenation changes (hemodynamic response)"
-          },
-          {
-            "id": "c",
-            "text": "Muscle action potentials"
-          },
-          {
-            "id": "d",
-            "text": "Neurotransmitter diffusion"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "fMRI: changes in blood oxygenation near active tissue. Ref: Part 8.1, slide 31."
-      },
-      {
-        "id": "psy-08-1-electrocortical-activity-q9",
-        "question": "ECoG differs from EEG because ECoG electrodes are placed:",
-        "options": [
-          {
-            "id": "a",
-            "text": "On the scalp"
-          },
-          {
-            "id": "b",
-            "text": "Directly on the cortical surface"
-          },
-          {
-            "id": "c",
-            "text": "In the finger"
-          },
-          {
-            "id": "d",
-            "text": "In the heart"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "ECoG uses electrodes on cortical surface (invasive). Ref: Part 8.1, slide 35."
-      },
-      {
-        "id": "psy-08-1-electrocortical-activity-q10",
-        "question": "The lecture states that physiological origins of EEG can be summarized as:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Synchronous action potentials at axon terminals"
-          },
-          {
-            "id": "b",
-            "text": "Synchronous postsynaptic potentials at apical dendrites of pyramidal cells on the cortical surface"
-          },
-          {
-            "id": "c",
-            "text": "Sympathetic activity at sweat glands"
-          },
-          {
-            "id": "d",
-            "text": "Mechanical movement of the skull"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "EEG originates from synchronous PSPs at apical dendrites of pyramidal cells in cortex. Ref: Part 8.1, slide 25."
-      }
-    ]
-  },
-  {
-    "id": "psy-08-2-electrocortical-measures",
-    "title": "Part 8.2: Electrocortical measures",
-    "topic": "EEG recording (10–20), rhythms, spectral and ERP analyses, time-frequency methods.",
-    "durationSeconds": 600,
-    "questions": [
-      {
-        "id": "psy-08-2-electrocortical-measures-q1",
-        "question": "The international 10–20 system uses fiducials including:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Cz, Pz, Fz"
-          },
-          {
-            "id": "b",
-            "text": "Nasion, pre-auricular points, and inion"
-          },
-          {
-            "id": "c",
-            "text": "Amygdala and hippocampus"
-          },
-          {
-            "id": "d",
-            "text": "SA node and AV node"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "10–20 system fiducials: nasion, pre-auricular points, inion. Ref: Part 8.2, slide 7."
-      },
-      {
-        "id": "psy-08-2-electrocortical-measures-q2",
-        "question": "In the 10–20 naming convention, odd numbers typically indicate electrodes on the:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Right side"
-          },
-          {
-            "id": "b",
-            "text": "Left side"
-          },
-          {
-            "id": "c",
-            "text": "Midline only"
-          },
-          {
-            "id": "d",
-            "text": "Back of the head only"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "Odd = left, even = right, z = midline. Ref: Part 8.2, slide 9."
-      },
-      {
-        "id": "psy-08-2-electrocortical-measures-q3",
-        "question": "Why is skin preparation and gel used when applying EEG electrodes?",
-        "options": [
-          {
-            "id": "a",
-            "text": "To increase impedance"
-          },
-          {
-            "id": "b",
-            "text": "To reduce impedance and stabilize the connection against movement"
-          },
-          {
-            "id": "c",
-            "text": "To induce alpha rhythm"
-          },
-          {
-            "id": "d",
-            "text": "To eliminate the need for a reference electrode"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "Cleaning/abrading + gel reduces impedance and increases stability. Ref: Part 8.2, slide 11."
-      },
-      {
-        "id": "psy-08-2-electrocortical-measures-q4",
-        "question": "To avoid aliasing when interested in EEG frequencies up to 100 Hz, the lecture suggests sampling at around:",
-        "options": [
-          {
-            "id": "a",
-            "text": "100 Hz"
-          },
-          {
-            "id": "b",
-            "text": "200 Hz"
-          },
-          {
-            "id": "c",
-            "text": "1000 Hz with low-pass at 500 Hz"
-          },
-          {
-            "id": "d",
-            "text": "50 Hz with notch at 50 Hz"
+            "text": "Dipole (d)"
           }
         ],
         "correctOptionId": "c",
-        "explanation": "Record 5–10× highest frequency; e.g., 1000 Hz with low-pass at 500 Hz. Ref: Part 8.2, slide 12."
+        "explanation": "Ref: Chapter 2 — “Origin of EEG …” (p. 14) (page 2)"
       },
       {
-        "id": "psy-08-2-electrocortical-measures-q5",
-        "question": "A prominent artefact source in EEG recordings is:",
+        "id": "ns-w25-q13",
+        "question": "Which EEG frequency band is most commonly associated with deep sleep?",
         "options": [
           {
             "id": "a",
-            "text": "Sweat gland activity only"
+            "text": "Alpha"
           },
           {
             "id": "b",
-            "text": "Eye movements and blinks via the corneo-retinal dipole"
+            "text": "Beta"
           },
           {
             "id": "c",
-            "text": "Blood pressure cuff inflation"
+            "text": "Theta"
           },
           {
             "id": "d",
-            "text": "Capillary exchange"
+            "text": "Delta"
+          }
+        ],
+        "correctOptionId": "d",
+        "explanation": "Ref: Chapter 9 — “State: Sleep, dreaming” (p. 11) (page 2)"
+      },
+      {
+        "id": "ns-w25-q14",
+        "question": "EEG signals are primarily generated by:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Action potentials in cortical neurons"
+          },
+          {
+            "id": "b",
+            "text": "Extracellular currents from synaptic activity"
+          },
+          {
+            "id": "c",
+            "text": "Changes in cerebrospinal fluid composition"
+          },
+          {
+            "id": "d",
+            "text": "Direct muscle contractions"
           }
         ],
         "correctOptionId": "b",
-        "explanation": "Eye movements/blinks are prominent due to corneo-retinal dipole. Ref: Part 8.2, slides 14–15."
+        "explanation": "Ref: Chapter 2 — “Origin of EEG” (p. 12) (page 2)"
       },
       {
-        "id": "psy-08-2-electrocortical-measures-q6",
-        "question": "Alpha rhythm is typically defined as:",
+        "id": "ns-w25-q15",
+        "question": "Which electrode placement system is standard in EEG recordings?",
         "options": [
           {
             "id": "a",
-            "text": "1–4 Hz"
+            "text": "10–20 system"
           },
           {
             "id": "b",
-            "text": "4–8 Hz"
+            "text": "Brodmann’s system"
           },
           {
             "id": "c",
-            "text": "8–12 Hz"
+            "text": "Neumann’s coordinates"
           },
           {
             "id": "d",
-            "text": "30+ Hz"
+            "text": "Laminar alignment method"
+          }
+        ],
+        "correctOptionId": "a",
+        "explanation": "Ref: Chapter 3 — “EEG ACQUISITION” (p. 9) (page 3)"
+      },
+      {
+        "id": "ns-w25-q16",
+        "question": "The Nyquist sampling theorem states that the sampling frequency should be at least:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Equal to the signal frequency"
+          },
+          {
+            "id": "b",
+            "text": "Twice the highest frequency of the signal"
+          },
+          {
+            "id": "c",
+            "text": "Half the lowest frequency of the signal"
+          },
+          {
+            "id": "d",
+            "text": "One-quarter of the signal frequency"
+          }
+        ],
+        "correctOptionId": "b",
+        "explanation": "Ref: Chapter 3 — “Analogue to digital conversion…” (p. 7) (page 3)"
+      },
+      {
+        "id": "ns-w25-q17",
+        "question": "Which of the following methods is used to remove high-frequency noise in EEG signals?",
+        "options": [
+          {
+            "id": "a",
+            "text": "High-pass filtering"
+          },
+          {
+            "id": "b",
+            "text": "Notch filtering"
+          },
+          {
+            "id": "c",
+            "text": "Low-pass filtering"
+          },
+          {
+            "id": "d",
+            "text": "Fourier transformation"
           }
         ],
         "correctOptionId": "c",
-        "explanation": "Alpha is 8–12 Hz. Ref: Part 8.2, slide 22."
+        "explanation": "Ref: Chapter 3 — “Data Acquisition” (p. 2) (page 3)"
       },
       {
-        "id": "psy-08-2-electrocortical-measures-q7",
-        "question": "Alpha desynchronization (reduced alpha) is associated with:",
+        "id": "ns-w25-q18",
+        "question": "In EEG spectral analysis, what does a power spectrum represent?",
         "options": [
           {
             "id": "a",
-            "text": "Deep sleep"
+            "text": "The temporal variation of EEG signals"
           },
           {
             "id": "b",
-            "text": "Attention and cognitive work"
+            "text": "The distribution of signal energy across different frequency components"
           },
           {
             "id": "c",
-            "text": "Respiratory sinus arrhythmia"
+            "text": "The phase shift between two EEG channels"
           },
           {
             "id": "d",
-            "text": "Skin conductance responses"
+            "text": "The correlation between EEG and EMG signals"
           }
         ],
         "correctOptionId": "b",
-        "explanation": "Reduced alpha associated with attention/cognitive work; often with increased theta. Ref: Part 8.2, slide 22."
+        "explanation": "Ref: Chapter 4 — “different types of Fourier analysis” (p. 3) (page 3)"
       },
       {
-        "id": "psy-08-2-electrocortical-measures-q8",
-        "question": "The event-related potential (ERP) is:",
+        "id": "ns-w25-q19",
+        "question": "Which spectral component is dominant in the EEG power spectrum of an awake, resting person with eyes closed?",
         "options": [
           {
             "id": "a",
-            "text": "A power spectrum of ongoing EEG"
+            "text": "Delta"
           },
           {
             "id": "b",
-            "text": "A segment of EEG investigated relative to a specific event"
+            "text": "Theta"
           },
           {
             "id": "c",
-            "text": "A measure of peripheral blood volume"
+            "text": "Alpha"
           },
           {
             "id": "d",
-            "text": "A skin conductance level"
+            "text": "Beta"
           }
         ],
-        "correctOptionId": "b",
-        "explanation": "ERP = EEG segment time-locked to event. Ref: Part 8.2, slide 43."
+        "correctOptionId": "c",
+        "explanation": "Ref: Chapter 9 — “Alpha (8-13 Hz)” (p. 10) (page 3)"
       },
       {
-        "id": "psy-08-2-electrocortical-measures-q9",
-        "question": "Why are multiple epochs averaged in ERP analysis?",
+        "id": "ns-w25-q20",
+        "question": "What is the primary disadvantage of using a rectangular window in EEG spectral analysis?",
         "options": [
           {
             "id": "a",
-            "text": "To increase line noise"
+            "text": "It completely removes low-frequency components"
           },
           {
             "id": "b",
-            "text": "Single-trial ERPs are too noisy; averaging cancels non-systematic activity"
+            "text": "It introduces spectral leakage in the frequency domain"
           },
           {
             "id": "c",
-            "text": "To remove all brain activity"
+            "text": "It significantly distorts the amplitude of high-frequency signals"
           },
           {
             "id": "d",
-            "text": "Because EEG is discrete rather than continuous"
+            "text": "It enhances temporal resolution but at the cost of frequency resolution"
           }
         ],
         "correctOptionId": "b",
-        "explanation": "Averaging across epochs cancels activity not systematically related to event/baseline. Ref: Part 8.2, slides 44–45."
+        "explanation": "Ref: Chapter 6 — “It can be seen that these” (p. 5) (page 3)"
       },
       {
-        "id": "psy-08-2-electrocortical-measures-q10",
-        "question": "A difference wave is created by:",
+        "id": "ns-w25-q21",
+        "question": "What is the primary reason for performing windowing before applying a Fourier transform to EEG data?",
         "options": [
           {
             "id": "a",
-            "text": "Adding ERPs from two conditions"
+            "text": "To increase the Nyquist frequency"
           },
           {
             "id": "b",
-            "text": "Subtracting one condition’s ERP from another at each time sample"
+            "text": "To minimize edge effects and reduce spectral leakage"
           },
           {
             "id": "c",
-            "text": "Rectifying the EEG"
+            "text": "To eliminate artifacts caused by brain wave harmonics"
           },
           {
             "id": "d",
-            "text": "Sorting trials by electrode impedance"
+            "text": "To increase the signal-to-noise ratio in all frequency bands"
           }
         ],
         "correctOptionId": "b",
-        "explanation": "Difference wave subtracts ERP amplitudes sample-by-sample. Ref: Part 8.2, slide 49."
+        "explanation": "Ref: Chapter 6 — “An example of spectral analysis of an electroencephalography trace recorded” (p. 4) (page 3)"
+      },
+      {
+        "id": "ns-w25-q22",
+        "question": "What is the key advantage of using the Fast Fourier Transform (FFT) over the standard",
+        "options": [
+          {
+            "id": "a",
+            "text": "FFT is more accurate in detecting low-frequency signals"
+          },
+          {
+            "id": "b",
+            "text": "FFT can be used only for non-stationary signals"
+          },
+          {
+            "id": "c",
+            "text": "FFT provides higher temporal resolution compared to DFT"
+          },
+          {
+            "id": "d",
+            "text": "FFT requires fewer computations, reducing processing time significantly"
+          }
+        ],
+        "correctOptionId": "d",
+        "explanation": "Ref: Chapter 5 — “Fast Fourier Transform (FFT)” (p. 8) (page 4)"
+      },
+      {
+        "id": "ns-w25-q23",
+        "question": "Which of the following mathematical expressions best represents the continuous Fourier Transform (CFT)?",
+        "options": [
+          {
+            "id": "a",
+            "text": "F(k) = Σ_{n=0}^{N−1} x(n) e^{−j2πkn/N}"
+          },
+          {
+            "id": "b",
+            "text": "F(ω) = ∫_{−∞}^{∞} x(t) e^{−jωt} dt"
+          },
+          {
+            "id": "c",
+            "text": "F(n) = Σ_{k=0}^{N−1} X(k) e^{j2πkn/N}"
+          },
+          {
+            "id": "d",
+            "text": "F(ω) = ∫_{0}^{T} x(t) e^{−j2πft} dt"
+          }
+        ],
+        "correctOptionId": "b",
+        "explanation": "Ref: Chapter 5 — “Inverse DFT” (p. 5) (page 4)"
+      },
+      {
+        "id": "ns-w25-q24",
+        "question": "Which signal characteristic is lost when applying the magnitude-only Fourier Transform?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Frequency information"
+          },
+          {
+            "id": "b",
+            "text": "Power spectral density"
+          },
+          {
+            "id": "c",
+            "text": "Phase information"
+          },
+          {
+            "id": "d",
+            "text": "Bandwidth"
+          }
+        ],
+        "correctOptionId": "c",
+        "explanation": "Ref: Chapter 6 — “Amplitude spectrum and phase” (p. 2) (page 4)"
+      },
+      {
+        "id": "ns-w25-q25",
+        "question": "In Discrete Fourier Transform (DFT), the resolution in the frequency domain is determined by:",
+        "options": [
+          {
+            "id": "a",
+            "text": "The length of the time window used for analysis"
+          },
+          {
+            "id": "b",
+            "text": "The amplitude of the EEG signal"
+          },
+          {
+            "id": "c",
+            "text": "The presence of noise in the recording"
+          },
+          {
+            "id": "d",
+            "text": "The number of electrodes used in EEG acquisition"
+          }
+        ],
+        "correctOptionId": "a",
+        "explanation": "Ref: Chapter 6 — “relationships between the epoch length and sample rate with” (p. 3) (page 4)"
+      },
+      {
+        "id": "ns-w25-q26",
+        "question": "Which of the following describes the main function of an anti-aliasing filter in EEG acquisition?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Removes power-line interference (50/60 Hz)"
+          },
+          {
+            "id": "b",
+            "text": "Prevents frequencies higher than the Nyquist limit from being digitized incorrectly"
+          },
+          {
+            "id": "c",
+            "text": "Increases the resolution of EEG recordings"
+          },
+          {
+            "id": "d",
+            "text": "Reduces the amplitude of low-frequency EEG components"
+          }
+        ],
+        "correctOptionId": "b",
+        "explanation": "Ref: Chapter 3 — “Analogue to digital conversion…” (p. 7) (page 4)"
+      },
+      {
+        "id": "ns-w25-q27",
+        "question": "What is the purpose of notch filtering in EEG signal processing?",
+        "options": [
+          {
+            "id": "a",
+            "text": "To enhance high-frequency oscillations in the EEG"
+          },
+          {
+            "id": "b",
+            "text": "To improve the spatial resolution of EEG recordings"
+          },
+          {
+            "id": "c",
+            "text": "To increase the sampling rate of the EEG signal"
+          },
+          {
+            "id": "d",
+            "text": "To remove specific frequencies such as power-line noise (50/60 Hz)"
+          }
+        ],
+        "correctOptionId": "d",
+        "explanation": "Ref: Chapter 3 — “Data Acquisition” (p. 2) (page 4)"
+      },
+      {
+        "id": "ns-w25-q28",
+        "question": "Why is it essential to consider the trade-off between temporal and frequency resolution in EEG analysis?",
+        "options": [
+          {
+            "id": "a",
+            "text": "High temporal resolution reduces EEG signal amplitude"
+          },
+          {
+            "id": "b",
+            "text": "Temporal resolution is only important for detecting slow-wave oscillations"
+          },
+          {
+            "id": "c",
+            "text": "Increasing frequency resolution often reduces temporal resolution and vice versa"
+          },
+          {
+            "id": "d",
+            "text": "Frequency resolution does not depend on the length of the EEG recording"
+          }
+        ],
+        "correctOptionId": "c",
+        "explanation": "Ref: Chapter 6 — “relationships between the epoch length and sample rate with” (p. 3) (page 4)"
+      },
+      {
+        "id": "ns-w25-q29",
+        "question": "A band-pass filter is commonly used in EEG signal processing to:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Isolate specific frequency bands, such as alpha or beta waves"
+          },
+          {
+            "id": "b",
+            "text": "Eliminate baseline drift and slow artifacts"
+          },
+          {
+            "id": "c",
+            "text": "Convert EEG signals into discrete data points"
+          },
+          {
+            "id": "d",
+            "text": "Enhance the spatial resolution of EEG data"
+          }
+        ],
+        "correctOptionId": "a",
+        "explanation": "Ref: Chapter 3 — “Data Acquisition” (p. 2) (page 5)"
+      },
+      {
+        "id": "ns-w25-q30",
+        "question": "What is the precision and maximum frequency for a EEG signal recorded over a 20-second interval and sampled at an interval of 1 millisecond ?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Precision: 0.1 Hz , Maximum frequency: 1000 Hz"
+          },
+          {
+            "id": "b",
+            "text": "Precision: 0.1Hz , Maximum frequency: 2000 Hz"
+          },
+          {
+            "id": "c",
+            "text": "Precision: 0.05 Hz , Maximum frequency: 2000 Hz"
+          },
+          {
+            "id": "d",
+            "text": "Precision: 0.05 Hz , Maximum frequency: 1000 Hz"
+          }
+        ],
+        "correctOptionId": "d",
+        "explanation": "Ref: Chapter 6 — “relationships between the epoch length and sample rate with” (p. 3); Chapter 3 — “Analogue to digital (page 5)"
+      },
+      {
+        "id": "ns-w25-q31",
+        "question": "What kind of artifact is more detectable in the following figure:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Eye blinks"
+          },
+          {
+            "id": "b",
+            "text": "Cardiobalistic artifact"
+          },
+          {
+            "id": "c",
+            "text": "Lateral eye movements"
+          },
+          {
+            "id": "d",
+            "text": "EEG pop artifacts"
+          }
+        ],
+        "correctOptionId": "a",
+        "explanation": "Ref: Chapter 8 — “Figure 1. (a) Five normal brain rhythms, from low to high frequencies. Delta, th” (p. 9) (page 5)"
       }
     ]
   }
