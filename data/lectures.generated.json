@@ -1,8 +1,8 @@
 [
   {
     "id": "ns-paper-1",
-    "title": "ns_paper_1.pdf",
-    "topic": "MCQ set generated from ns_paper_1.pdf",
+    "title": "ns-winter-2024.pdf",
+    "topic": "MCQ set generated from ns-w24.pdf",
     "durationSeconds": 900,
     "questions": [
       {
@@ -729,8 +729,8 @@
   },
   {
     "id": "ns-paper-2",
-    "title": "ns_paper_2.pdf",
-    "topic": "MCQ set generated from ns_paper_2.pdf",
+    "title": "ns-summer-2024.pdf",
+    "topic": "MCQ set generated from ns-s24.pdf",
     "durationSeconds": 900,
     "questions": [
       {
@@ -1456,712 +1456,8 @@
     ]
   },
   {
-    "id": "ns-s25",
-    "title": "ns-s25.pdf",
-    "topic": "MCQ set generated from ns-s25.pdf",
-    "durationSeconds": 870,
-    "questions": [
-      {
-        "id": "ns-s25-q1",
-        "question": "What is the primary role of glial cells in neural tissue?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Transmitting signals long-distance"
-          },
-          {
-            "id": "b",
-            "text": "Supporting and maintaining neural signaling"
-          },
-          {
-            "id": "c",
-            "text": "Initiating synaptic transmission"
-          },
-          {
-            "id": "d",
-            "text": "Generating action potentials"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "Lecture: Chapter 1 – Introduction to neural signal analysis, Slide 5. (page 1)"
-      },
-      {
-        "id": "ns-s25-q2",
-        "question": "The electrical potential difference that balances an ionic concentration gradient is called:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Resting potential"
-          },
-          {
-            "id": "b",
-            "text": "Threshold potential"
-          },
-          {
-            "id": "c",
-            "text": "Ionic equilibrium potential"
-          },
-          {
-            "id": "d",
-            "text": "Action potential"
-          }
-        ],
-        "correctOptionId": "c",
-        "explanation": "Lecture: Chapter 1, Slide 11. (page 1)"
-      },
-      {
-        "id": "ns-s25-q3",
-        "question": "Which ion's permeability primarily determines the resting membrane potential?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Ca2+"
-          },
-          {
-            "id": "b",
-            "text": "K+"
-          },
-          {
-            "id": "c",
-            "text": "Cl−"
-          },
-          {
-            "id": "d",
-            "text": "Na+"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "Lecture: Chapter 1, Slide 13. (page 1)"
-      },
-      {
-        "id": "ns-s25-q4",
-        "question": "Voltage-gated sodium channels during the action potential rapidly close due to:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Hyperpolarization"
-          },
-          {
-            "id": "b",
-            "text": "Depletion of sodium ions"
-          },
-          {
-            "id": "c",
-            "text": "Inactivation gates"
-          },
-          {
-            "id": "d",
-            "text": "Repolarization triggered by potassium channels"
-          }
-        ],
-        "correctOptionId": "c",
-        "explanation": "Lecture: Chapter 1, Slide 15. (page 1)"
-      },
-      {
-        "id": "ns-s25-q5",
-        "question": "Saltatory conduction occurs due to:",
-        "options": [
-          {
-            "id": "a",
-            "text": "High concentrations of sodium channels along the axon"
-          },
-          {
-            "id": "b",
-            "text": "Myelinated segments separated by nodes of Ranvier"
-          },
-          {
-            "id": "c",
-            "text": "Continuous depolarization along the entire axon"
-          },
-          {
-            "id": "d",
-            "text": "Calcium influx at synapses"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "Lecture: Chapter 1, Slides 24–25. (page 1)"
-      },
-      {
-        "id": "ns-s25-q6",
-        "question": "The summation of inhibitory and excitatory postsynaptic potentials determines:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Synaptic vesicle release rate"
-          },
-          {
-            "id": "b",
-            "text": "Axon myelination status"
-          },
-          {
-            "id": "c",
-            "text": "The generation of an action potential"
-          },
-          {
-            "id": "d",
-            "text": "Membrane lipid composition"
-          }
-        ],
-        "correctOptionId": "c",
-        "explanation": "Lecture: Chapter 1, Slide 34. (page 1)"
-      },
-      {
-        "id": "ns-s25-q7",
-        "question": "Electroencephalography (EEG) primarily records…… and are primarily generated by……:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Intracellular currents, randomly oriented neurons"
-          },
-          {
-            "id": "b",
-            "text": "Synaptic activity, randomly oriented neurons"
-          },
-          {
-            "id": "c",
-            "text": "Synaptic activity, pyramidal neurons oriented perpendicularly to the cortex"
-          },
-          {
-            "id": "d",
-            "text": "Neurotransmitter concentrations, peripheral sensory neurons"
-          }
-        ],
-        "correctOptionId": "c",
-        "explanation": "Lecture: Chapter 2 – Origin of EEG, Slide 12. (page 1)"
-      },
-      {
-        "id": "ns-s25-q8",
-        "question": "EEG signals are strongest when dipoles are oriented:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Parallel to the skull surface"
-          },
-          {
-            "id": "b",
-            "text": "Radially away from the skull"
-          },
-          {
-            "id": "c",
-            "text": "Perpendicular to the skull surface"
-          },
-          {
-            "id": "d",
-            "text": "Randomly"
-          }
-        ],
-        "correctOptionId": "c",
-        "explanation": "Lecture: Chapter 2, Slide 14. (page 2)"
-      },
-      {
-        "id": "ns-s25-q9",
-        "question": "Synchronous neuronal activation primarily leads to:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Increased amplitude of EEG signals"
-          },
-          {
-            "id": "b",
-            "text": "Decreased EEG resolution"
-          },
-          {
-            "id": "c",
-            "text": "Cancellation of EEG signals"
-          },
-          {
-            "id": "d",
-            "text": "Increased frequency of EEG oscillations"
-          }
-        ],
-        "correctOptionId": "a",
-        "explanation": "Lecture: Chapter 2, Slide 15. (page 2)"
-      },
-      {
-        "id": "ns-s25-q10",
-        "question": "EEG acquisition commonly uses a differential amplifier primarily to:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Increase voltage"
-          },
-          {
-            "id": "b",
-            "text": "Generate ion gradients"
-          },
-          {
-            "id": "c",
-            "text": "Reduce common noise"
-          },
-          {
-            "id": "d",
-            "text": "Generate action potentials"
-          }
-        ],
-        "correctOptionId": "c",
-        "explanation": "Lecture: Chapter 3 – EEG recording, Slide 62. (page 2)"
-      },
-      {
-        "id": "ns-s25-q11",
-        "question": "The minimum sampling rate to avoid aliasing in digitized EEG signals is known as:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Fourier limit"
-          },
-          {
-            "id": "b",
-            "text": "Nyquist frequency"
-          },
-          {
-            "id": "c",
-            "text": "Sampling threshold"
-          },
-          {
-            "id": "d",
-            "text": "Dirac frequency"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "Lecture: Chapter 3, Slide 60. (page 2)"
-      },
-      {
-        "id": "ns-s25-q12",
-        "question": "The International 10–20 system refers specifically to:",
-        "options": [
-          {
-            "id": "a",
-            "text": "EEG electrode materials"
-          },
-          {
-            "id": "b",
-            "text": "EEG electrode placement"
-          },
-          {
-            "id": "c",
-            "text": "EEG recording software"
-          },
-          {
-            "id": "d",
-            "text": "EEG amplifier type"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "Lecture: Chapter 3, Slide 61. (page 2)"
-      },
-      {
-        "id": "ns-s25-q13",
-        "question": "To prevent frequency aliasing in EEG digitization, the sample rate must be:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Equal to the highest frequency present"
-          },
-          {
-            "id": "b",
-            "text": "At least twice the lowest frequency present"
-          },
-          {
-            "id": "c",
-            "text": "Less than twice the highest frequency present"
-          },
-          {
-            "id": "d",
-            "text": "Exactly the mean frequency of the EEG signal"
-          }
-        ],
-        "correctOptionId": "c",
-        "explanation": "Lecture: Chapter 3, Slide 60 (Nyquist condition). (page 2)"
-      },
-      {
-        "id": "ns-s25-q14",
-        "question": "EEG artifacts from muscle activity primarily occur in which frequency range?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Delta (0.5–4 Hz)"
-          },
-          {
-            "id": "b",
-            "text": "Alpha (8–13 Hz)"
-          },
-          {
-            "id": "c",
-            "text": "Beta/Gamma (>13 Hz)"
-          },
-          {
-            "id": "d",
-            "text": "Theta (4–8 Hz)"
-          }
-        ],
-        "correctOptionId": "c",
-        "explanation": "Lecture: Chapter 9 – Time and Spectral Analysis, Slide 8 (bands). (page 2)"
-      },
-      {
-        "id": "ns-s25-q15",
-        "question": "Which statement is correct about electrical synapses?",
-        "options": [
-          {
-            "id": "a",
-            "text": "They are slower than chemical synapses."
-          },
-          {
-            "id": "b",
-            "text": "They use neurotransmitters for communication."
-          },
-          {
-            "id": "c",
-            "text": "They allow bidirectional current flow via gap junctions."
-          },
-          {
-            "id": "d",
-            "text": "They are only excitatory."
-          }
-        ],
-        "correctOptionId": "c",
-        "explanation": "Lecture: Chapter 1, Slide 29. (page 2)"
-      },
-      {
-        "id": "ns-s25-q16",
-        "question": "Which EEG rhythm is typically associated with a relaxed but awake state?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Beta (13–32 Hz)"
-          },
-          {
-            "id": "b",
-            "text": "Gamma (>32 Hz)"
-          },
-          {
-            "id": "c",
-            "text": "Alpha (8–13 Hz)"
-          },
-          {
-            "id": "d",
-            "text": "Delta (0.5–4 Hz)"
-          }
-        ],
-        "correctOptionId": "c",
-        "explanation": "Lecture: Chapter 9, Slide 8. (page 3)"
-      },
-      {
-        "id": "ns-s25-q17",
-        "question": "Which artifact primarily results from eye movements in EEG recordings?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Cardioballistic artifact"
-          },
-          {
-            "id": "b",
-            "text": "Muscle artifact"
-          },
-          {
-            "id": "c",
-            "text": "Ocular artifact"
-          },
-          {
-            "id": "d",
-            "text": "Sweat artifact"
-          }
-        ],
-        "correctOptionId": "c",
-        "explanation": "Lecture: Chapter 8 – Signal Averaging, Slide 8 (artifact types). (page 3)"
-      },
-      {
-        "id": "ns-s25-q18",
-        "question": "Common average referencing (CAR) in EEG signal processing is particularly vulnerable to:",
-        "options": [
-          {
-            "id": "a",
-            "text": "High-frequency noise"
-          },
-          {
-            "id": "b",
-            "text": "Low electrode impedance"
-          },
-          {
-            "id": "c",
-            "text": "Outlier channels"
-          },
-          {
-            "id": "d",
-            "text": "Environmental noise"
-          }
-        ],
-        "correctOptionId": "c",
-        "explanation": "Lecture: Chapter 8, Slide 14 (CAR + outliers). (page 3)"
-      },
-      {
-        "id": "ns-s25-q19",
-        "question": "Which electrode configuration in EEG recording involves using a single reference electrode for multiple channels?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Unipolar referencing"
-          },
-          {
-            "id": "b",
-            "text": "Bipolar referencing"
-          },
-          {
-            "id": "c",
-            "text": "Common average referencing"
-          },
-          {
-            "id": "d",
-            "text": "Laplacian referencing"
-          }
-        ],
-        "correctOptionId": "a",
-        "explanation": "Lecture: Chapter 3, Slide 63 (derivation methods incl. unipolar). (page 3)"
-      },
-      {
-        "id": "ns-s25-q20",
-        "question": "The relative refractory period during an action potential occurs because:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Potassium channels remain open longer than sodium channels"
-          },
-          {
-            "id": "b",
-            "text": "Sodium channels are completely inactivated"
-          },
-          {
-            "id": "c",
-            "text": "Calcium channels are activated late"
-          },
-          {
-            "id": "d",
-            "text": "Synaptic vesicles are depleted temporarily"
-          }
-        ],
-        "correctOptionId": "a",
-        "explanation": "Lecture: Chapter 1, Slide 16 (relative refractory). (page 3)"
-      },
-      {
-        "id": "ns-s25-q21",
-        "question": "Aliasing occurs when:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Sampling rate is less than twice the highest signal frequency"
-          },
-          {
-            "id": "b",
-            "text": "Sampling rate equals Nyquist frequency"
-          },
-          {
-            "id": "c",
-            "text": "Sampling rate is greater than Nyquist frequency"
-          },
-          {
-            "id": "d",
-            "text": "Signal amplitude is too low"
-          }
-        ],
-        "correctOptionId": "a",
-        "explanation": "Lecture: Chapter 3, Slide 60 (aliasing/overlap). (page 3)"
-      },
-      {
-        "id": "ns-s25-q22",
-        "question": "What is the main advantage of the FFT algorithm compared to standard DFT?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Higher accuracy"
-          },
-          {
-            "id": "b",
-            "text": "Reduced aliasing"
-          },
-          {
-            "id": "c",
-            "text": "Enhanced frequency resolution"
-          },
-          {
-            "id": "d",
-            "text": "Fewer multiplications required (computational efficiency)"
-          }
-        ],
-        "correctOptionId": "d",
-        "explanation": "Lecture: Chapter 5 – FFT, Slide 7. (page 3)"
-      },
-      {
-        "id": "ns-s25-q23",
-        "question": "The spectral ripples seen in frequency domain analyses are primarily caused by:",
-        "options": [
-          {
-            "id": "a",
-            "text": "EEG artifacts"
-          },
-          {
-            "id": "b",
-            "text": "Electrode impedance"
-          },
-          {
-            "id": "c",
-            "text": "ADC precision"
-          },
-          {
-            "id": "d",
-            "text": "Windowing effects"
-          }
-        ],
-        "correctOptionId": "d",
-        "explanation": "Lecture: Chapter 6 – Fourier Transform Applications, Slide 5. (page 3)"
-      },
-      {
-        "id": "ns-s25-q24",
-        "question": "The power spectrum of EEG signals typically follows:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Gaussian distribution"
-          },
-          {
-            "id": "b",
-            "text": "Power law distribution"
-          },
-          {
-            "id": "c",
-            "text": "Linear trend"
-          },
-          {
-            "id": "d",
-            "text": "Uniform distribution"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "Lecture: Chapter 8, Slide 8 (PSD follows a power law). (page 4)"
-      },
-      {
-        "id": "ns-s25-q25",
-        "question": "Ocular EEG artifacts typically present as:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Low-amplitude, high-frequency noise"
-          },
-          {
-            "id": "b",
-            "text": "High-amplitude frontal signals"
-          },
-          {
-            "id": "c",
-            "text": "Periodic, slow oscillations"
-          },
-          {
-            "id": "d",
-            "text": "Symmetric occipital signals"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "Lecture: Chapter 8, Slide 8 (ocular artifacts). (page 4)"
-      },
-      {
-        "id": "ns-s25-q26",
-        "question": "Cardioballistic EEG artifacts originate from:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Brainstem cardiac rhythms"
-          },
-          {
-            "id": "b",
-            "text": "Electrode movement due to arterial pulsations"
-          },
-          {
-            "id": "c",
-            "text": "High-frequency muscle contractions"
-          },
-          {
-            "id": "d",
-            "text": "Eye movements"
-          }
-        ],
-        "correctOptionId": "b",
-        "explanation": "Lecture: Chapter 8, Slide 8 (cardiac artifacts). (page 4)"
-      },
-      {
-        "id": "ns-s25-q27",
-        "question": "EEG sweat artifacts typically occur at which frequency range?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Gamma range (>32 Hz)"
-          },
-          {
-            "id": "b",
-            "text": "Alpha range (8–13 Hz)"
-          },
-          {
-            "id": "c",
-            "text": "Beta range (13–32 Hz)"
-          },
-          {
-            "id": "d",
-            "text": "<0.5 Hz (very slow)"
-          }
-        ],
-        "correctOptionId": "d",
-        "explanation": "Lecture: Chapter 8, Slide 8 (sweat artifact; slow drift). (page 4)"
-      },
-      {
-        "id": "ns-s25-q28",
-        "question": "Chewing EEG artifacts predominantly appear as:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Sustained low-frequency waves"
-          },
-          {
-            "id": "b",
-            "text": "Uniform alpha oscillations"
-          },
-          {
-            "id": "c",
-            "text": "Periodic spikes"
-          },
-          {
-            "id": "d",
-            "text": "Intermittent bursts of generalized fast activity"
-          }
-        ],
-        "correctOptionId": "d",
-        "explanation": "Lecture: Chapter 8, Slide 8 (muscular) + Chapter 9, Slide 8 (beta/gamma). (page 4)"
-      },
-      {
-        "id": "ns-s25-q29",
-        "question": "Bootstrap averaging as a noise estimation technique works by:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Increasing the stimulus interval"
-          },
-          {
-            "id": "b",
-            "text": "Reversing electrode polarities"
-          },
-          {
-            "id": "c",
-            "text": "Filtering high-frequency artifacts"
-          },
-          {
-            "id": "d",
-            "text": "Randomizing epoch alignment"
-          }
-        ],
-        "correctOptionId": "d",
-        "explanation": "Lecture: Chapter 8, Slide 5 (bootstrap). (page 4)"
-      }
-    ]
-  },
-  {
     "id": "ns-w25",
-    "title": "ns-w25.pdf",
+    "title": "ns-winter-2025.pdf",
     "topic": "MCQ set generated from ns-w25.pdf",
     "durationSeconds": 930,
     "questions": [
@@ -2908,6 +2204,710 @@
         ],
         "correctOptionId": "a",
         "explanation": "Ref: Chapter 8 — “Figure 1. (a) Five normal brain rhythms, from low to high frequencies. Delta, th” (p. 9) (page 5)"
+      }
+    ]
+  },
+  {
+    "id": "ns-s25",
+    "title": "ns-sommer-2025.pdf",
+    "topic": "MCQ set generated from ns-s25.pdf",
+    "durationSeconds": 870,
+    "questions": [
+      {
+        "id": "ns-s25-q1",
+        "question": "What is the primary role of glial cells in neural tissue?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Transmitting signals long-distance"
+          },
+          {
+            "id": "b",
+            "text": "Supporting and maintaining neural signaling"
+          },
+          {
+            "id": "c",
+            "text": "Initiating synaptic transmission"
+          },
+          {
+            "id": "d",
+            "text": "Generating action potentials"
+          }
+        ],
+        "correctOptionId": "b",
+        "explanation": "Lecture: Chapter 1 – Introduction to neural signal analysis, Slide 5. (page 1)"
+      },
+      {
+        "id": "ns-s25-q2",
+        "question": "The electrical potential difference that balances an ionic concentration gradient is called:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Resting potential"
+          },
+          {
+            "id": "b",
+            "text": "Threshold potential"
+          },
+          {
+            "id": "c",
+            "text": "Ionic equilibrium potential"
+          },
+          {
+            "id": "d",
+            "text": "Action potential"
+          }
+        ],
+        "correctOptionId": "c",
+        "explanation": "Lecture: Chapter 1, Slide 11. (page 1)"
+      },
+      {
+        "id": "ns-s25-q3",
+        "question": "Which ion's permeability primarily determines the resting membrane potential?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Ca2+"
+          },
+          {
+            "id": "b",
+            "text": "K+"
+          },
+          {
+            "id": "c",
+            "text": "Cl−"
+          },
+          {
+            "id": "d",
+            "text": "Na+"
+          }
+        ],
+        "correctOptionId": "b",
+        "explanation": "Lecture: Chapter 1, Slide 13. (page 1)"
+      },
+      {
+        "id": "ns-s25-q4",
+        "question": "Voltage-gated sodium channels during the action potential rapidly close due to:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Hyperpolarization"
+          },
+          {
+            "id": "b",
+            "text": "Depletion of sodium ions"
+          },
+          {
+            "id": "c",
+            "text": "Inactivation gates"
+          },
+          {
+            "id": "d",
+            "text": "Repolarization triggered by potassium channels"
+          }
+        ],
+        "correctOptionId": "c",
+        "explanation": "Lecture: Chapter 1, Slide 15. (page 1)"
+      },
+      {
+        "id": "ns-s25-q5",
+        "question": "Saltatory conduction occurs due to:",
+        "options": [
+          {
+            "id": "a",
+            "text": "High concentrations of sodium channels along the axon"
+          },
+          {
+            "id": "b",
+            "text": "Myelinated segments separated by nodes of Ranvier"
+          },
+          {
+            "id": "c",
+            "text": "Continuous depolarization along the entire axon"
+          },
+          {
+            "id": "d",
+            "text": "Calcium influx at synapses"
+          }
+        ],
+        "correctOptionId": "b",
+        "explanation": "Lecture: Chapter 1, Slides 24–25. (page 1)"
+      },
+      {
+        "id": "ns-s25-q6",
+        "question": "The summation of inhibitory and excitatory postsynaptic potentials determines:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Synaptic vesicle release rate"
+          },
+          {
+            "id": "b",
+            "text": "Axon myelination status"
+          },
+          {
+            "id": "c",
+            "text": "The generation of an action potential"
+          },
+          {
+            "id": "d",
+            "text": "Membrane lipid composition"
+          }
+        ],
+        "correctOptionId": "c",
+        "explanation": "Lecture: Chapter 1, Slide 34. (page 1)"
+      },
+      {
+        "id": "ns-s25-q7",
+        "question": "Electroencephalography (EEG) primarily records…… and are primarily generated by……:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Intracellular currents, randomly oriented neurons"
+          },
+          {
+            "id": "b",
+            "text": "Synaptic activity, randomly oriented neurons"
+          },
+          {
+            "id": "c",
+            "text": "Synaptic activity, pyramidal neurons oriented perpendicularly to the cortex"
+          },
+          {
+            "id": "d",
+            "text": "Neurotransmitter concentrations, peripheral sensory neurons"
+          }
+        ],
+        "correctOptionId": "c",
+        "explanation": "Lecture: Chapter 2 – Origin of EEG, Slide 12. (page 1)"
+      },
+      {
+        "id": "ns-s25-q8",
+        "question": "EEG signals are strongest when dipoles are oriented:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Parallel to the skull surface"
+          },
+          {
+            "id": "b",
+            "text": "Radially away from the skull"
+          },
+          {
+            "id": "c",
+            "text": "Perpendicular to the skull surface"
+          },
+          {
+            "id": "d",
+            "text": "Randomly"
+          }
+        ],
+        "correctOptionId": "c",
+        "explanation": "Lecture: Chapter 2, Slide 14. (page 2)"
+      },
+      {
+        "id": "ns-s25-q9",
+        "question": "Synchronous neuronal activation primarily leads to:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Increased amplitude of EEG signals"
+          },
+          {
+            "id": "b",
+            "text": "Decreased EEG resolution"
+          },
+          {
+            "id": "c",
+            "text": "Cancellation of EEG signals"
+          },
+          {
+            "id": "d",
+            "text": "Increased frequency of EEG oscillations"
+          }
+        ],
+        "correctOptionId": "a",
+        "explanation": "Lecture: Chapter 2, Slide 15. (page 2)"
+      },
+      {
+        "id": "ns-s25-q10",
+        "question": "EEG acquisition commonly uses a differential amplifier primarily to:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Increase voltage"
+          },
+          {
+            "id": "b",
+            "text": "Generate ion gradients"
+          },
+          {
+            "id": "c",
+            "text": "Reduce common noise"
+          },
+          {
+            "id": "d",
+            "text": "Generate action potentials"
+          }
+        ],
+        "correctOptionId": "c",
+        "explanation": "Lecture: Chapter 3 – EEG recording, Slide 62. (page 2)"
+      },
+      {
+        "id": "ns-s25-q11",
+        "question": "The minimum sampling rate to avoid aliasing in digitized EEG signals is known as:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Fourier limit"
+          },
+          {
+            "id": "b",
+            "text": "Nyquist frequency"
+          },
+          {
+            "id": "c",
+            "text": "Sampling threshold"
+          },
+          {
+            "id": "d",
+            "text": "Dirac frequency"
+          }
+        ],
+        "correctOptionId": "b",
+        "explanation": "Lecture: Chapter 3, Slide 60. (page 2)"
+      },
+      {
+        "id": "ns-s25-q12",
+        "question": "The International 10–20 system refers specifically to:",
+        "options": [
+          {
+            "id": "a",
+            "text": "EEG electrode materials"
+          },
+          {
+            "id": "b",
+            "text": "EEG electrode placement"
+          },
+          {
+            "id": "c",
+            "text": "EEG recording software"
+          },
+          {
+            "id": "d",
+            "text": "EEG amplifier type"
+          }
+        ],
+        "correctOptionId": "b",
+        "explanation": "Lecture: Chapter 3, Slide 61. (page 2)"
+      },
+      {
+        "id": "ns-s25-q13",
+        "question": "To prevent frequency aliasing in EEG digitization, the sample rate must be:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Equal to the highest frequency present"
+          },
+          {
+            "id": "b",
+            "text": "At least twice the lowest frequency present"
+          },
+          {
+            "id": "c",
+            "text": "Less than twice the highest frequency present"
+          },
+          {
+            "id": "d",
+            "text": "Exactly the mean frequency of the EEG signal"
+          }
+        ],
+        "correctOptionId": "c",
+        "explanation": "Lecture: Chapter 3, Slide 60 (Nyquist condition). (page 2)"
+      },
+      {
+        "id": "ns-s25-q14",
+        "question": "EEG artifacts from muscle activity primarily occur in which frequency range?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Delta (0.5–4 Hz)"
+          },
+          {
+            "id": "b",
+            "text": "Alpha (8–13 Hz)"
+          },
+          {
+            "id": "c",
+            "text": "Beta/Gamma (>13 Hz)"
+          },
+          {
+            "id": "d",
+            "text": "Theta (4–8 Hz)"
+          }
+        ],
+        "correctOptionId": "c",
+        "explanation": "Lecture: Chapter 9 – Time and Spectral Analysis, Slide 8 (bands). (page 2)"
+      },
+      {
+        "id": "ns-s25-q15",
+        "question": "Which statement is correct about electrical synapses?",
+        "options": [
+          {
+            "id": "a",
+            "text": "They are slower than chemical synapses."
+          },
+          {
+            "id": "b",
+            "text": "They use neurotransmitters for communication."
+          },
+          {
+            "id": "c",
+            "text": "They allow bidirectional current flow via gap junctions."
+          },
+          {
+            "id": "d",
+            "text": "They are only excitatory."
+          }
+        ],
+        "correctOptionId": "c",
+        "explanation": "Lecture: Chapter 1, Slide 29. (page 2)"
+      },
+      {
+        "id": "ns-s25-q16",
+        "question": "Which EEG rhythm is typically associated with a relaxed but awake state?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Beta (13–32 Hz)"
+          },
+          {
+            "id": "b",
+            "text": "Gamma (>32 Hz)"
+          },
+          {
+            "id": "c",
+            "text": "Alpha (8–13 Hz)"
+          },
+          {
+            "id": "d",
+            "text": "Delta (0.5–4 Hz)"
+          }
+        ],
+        "correctOptionId": "c",
+        "explanation": "Lecture: Chapter 9, Slide 8. (page 3)"
+      },
+      {
+        "id": "ns-s25-q17",
+        "question": "Which artifact primarily results from eye movements in EEG recordings?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Cardioballistic artifact"
+          },
+          {
+            "id": "b",
+            "text": "Muscle artifact"
+          },
+          {
+            "id": "c",
+            "text": "Ocular artifact"
+          },
+          {
+            "id": "d",
+            "text": "Sweat artifact"
+          }
+        ],
+        "correctOptionId": "c",
+        "explanation": "Lecture: Chapter 8 – Signal Averaging, Slide 8 (artifact types). (page 3)"
+      },
+      {
+        "id": "ns-s25-q18",
+        "question": "Common average referencing (CAR) in EEG signal processing is particularly vulnerable to:",
+        "options": [
+          {
+            "id": "a",
+            "text": "High-frequency noise"
+          },
+          {
+            "id": "b",
+            "text": "Low electrode impedance"
+          },
+          {
+            "id": "c",
+            "text": "Outlier channels"
+          },
+          {
+            "id": "d",
+            "text": "Environmental noise"
+          }
+        ],
+        "correctOptionId": "c",
+        "explanation": "Lecture: Chapter 8, Slide 14 (CAR + outliers). (page 3)"
+      },
+      {
+        "id": "ns-s25-q19",
+        "question": "Which electrode configuration in EEG recording involves using a single reference electrode for multiple channels?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Unipolar referencing"
+          },
+          {
+            "id": "b",
+            "text": "Bipolar referencing"
+          },
+          {
+            "id": "c",
+            "text": "Common average referencing"
+          },
+          {
+            "id": "d",
+            "text": "Laplacian referencing"
+          }
+        ],
+        "correctOptionId": "a",
+        "explanation": "Lecture: Chapter 3, Slide 63 (derivation methods incl. unipolar). (page 3)"
+      },
+      {
+        "id": "ns-s25-q20",
+        "question": "The relative refractory period during an action potential occurs because:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Potassium channels remain open longer than sodium channels"
+          },
+          {
+            "id": "b",
+            "text": "Sodium channels are completely inactivated"
+          },
+          {
+            "id": "c",
+            "text": "Calcium channels are activated late"
+          },
+          {
+            "id": "d",
+            "text": "Synaptic vesicles are depleted temporarily"
+          }
+        ],
+        "correctOptionId": "a",
+        "explanation": "Lecture: Chapter 1, Slide 16 (relative refractory). (page 3)"
+      },
+      {
+        "id": "ns-s25-q21",
+        "question": "Aliasing occurs when:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Sampling rate is less than twice the highest signal frequency"
+          },
+          {
+            "id": "b",
+            "text": "Sampling rate equals Nyquist frequency"
+          },
+          {
+            "id": "c",
+            "text": "Sampling rate is greater than Nyquist frequency"
+          },
+          {
+            "id": "d",
+            "text": "Signal amplitude is too low"
+          }
+        ],
+        "correctOptionId": "a",
+        "explanation": "Lecture: Chapter 3, Slide 60 (aliasing/overlap). (page 3)"
+      },
+      {
+        "id": "ns-s25-q22",
+        "question": "What is the main advantage of the FFT algorithm compared to standard DFT?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Higher accuracy"
+          },
+          {
+            "id": "b",
+            "text": "Reduced aliasing"
+          },
+          {
+            "id": "c",
+            "text": "Enhanced frequency resolution"
+          },
+          {
+            "id": "d",
+            "text": "Fewer multiplications required (computational efficiency)"
+          }
+        ],
+        "correctOptionId": "d",
+        "explanation": "Lecture: Chapter 5 – FFT, Slide 7. (page 3)"
+      },
+      {
+        "id": "ns-s25-q23",
+        "question": "The spectral ripples seen in frequency domain analyses are primarily caused by:",
+        "options": [
+          {
+            "id": "a",
+            "text": "EEG artifacts"
+          },
+          {
+            "id": "b",
+            "text": "Electrode impedance"
+          },
+          {
+            "id": "c",
+            "text": "ADC precision"
+          },
+          {
+            "id": "d",
+            "text": "Windowing effects"
+          }
+        ],
+        "correctOptionId": "d",
+        "explanation": "Lecture: Chapter 6 – Fourier Transform Applications, Slide 5. (page 3)"
+      },
+      {
+        "id": "ns-s25-q24",
+        "question": "The power spectrum of EEG signals typically follows:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Gaussian distribution"
+          },
+          {
+            "id": "b",
+            "text": "Power law distribution"
+          },
+          {
+            "id": "c",
+            "text": "Linear trend"
+          },
+          {
+            "id": "d",
+            "text": "Uniform distribution"
+          }
+        ],
+        "correctOptionId": "b",
+        "explanation": "Lecture: Chapter 8, Slide 8 (PSD follows a power law). (page 4)"
+      },
+      {
+        "id": "ns-s25-q25",
+        "question": "Ocular EEG artifacts typically present as:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Low-amplitude, high-frequency noise"
+          },
+          {
+            "id": "b",
+            "text": "High-amplitude frontal signals"
+          },
+          {
+            "id": "c",
+            "text": "Periodic, slow oscillations"
+          },
+          {
+            "id": "d",
+            "text": "Symmetric occipital signals"
+          }
+        ],
+        "correctOptionId": "b",
+        "explanation": "Lecture: Chapter 8, Slide 8 (ocular artifacts). (page 4)"
+      },
+      {
+        "id": "ns-s25-q26",
+        "question": "Cardioballistic EEG artifacts originate from:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Brainstem cardiac rhythms"
+          },
+          {
+            "id": "b",
+            "text": "Electrode movement due to arterial pulsations"
+          },
+          {
+            "id": "c",
+            "text": "High-frequency muscle contractions"
+          },
+          {
+            "id": "d",
+            "text": "Eye movements"
+          }
+        ],
+        "correctOptionId": "b",
+        "explanation": "Lecture: Chapter 8, Slide 8 (cardiac artifacts). (page 4)"
+      },
+      {
+        "id": "ns-s25-q27",
+        "question": "EEG sweat artifacts typically occur at which frequency range?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Gamma range (>32 Hz)"
+          },
+          {
+            "id": "b",
+            "text": "Alpha range (8–13 Hz)"
+          },
+          {
+            "id": "c",
+            "text": "Beta range (13–32 Hz)"
+          },
+          {
+            "id": "d",
+            "text": "<0.5 Hz (very slow)"
+          }
+        ],
+        "correctOptionId": "d",
+        "explanation": "Lecture: Chapter 8, Slide 8 (sweat artifact; slow drift). (page 4)"
+      },
+      {
+        "id": "ns-s25-q28",
+        "question": "Chewing EEG artifacts predominantly appear as:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Sustained low-frequency waves"
+          },
+          {
+            "id": "b",
+            "text": "Uniform alpha oscillations"
+          },
+          {
+            "id": "c",
+            "text": "Periodic spikes"
+          },
+          {
+            "id": "d",
+            "text": "Intermittent bursts of generalized fast activity"
+          }
+        ],
+        "correctOptionId": "d",
+        "explanation": "Lecture: Chapter 8, Slide 8 (muscular) + Chapter 9, Slide 8 (beta/gamma). (page 4)"
+      },
+      {
+        "id": "ns-s25-q29",
+        "question": "Bootstrap averaging as a noise estimation technique works by:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Increasing the stimulus interval"
+          },
+          {
+            "id": "b",
+            "text": "Reversing electrode polarities"
+          },
+          {
+            "id": "c",
+            "text": "Filtering high-frequency artifacts"
+          },
+          {
+            "id": "d",
+            "text": "Randomizing epoch alignment"
+          }
+        ],
+        "correctOptionId": "d",
+        "explanation": "Lecture: Chapter 8, Slide 5 (bootstrap). (page 4)"
       }
     ]
   }
