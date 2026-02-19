@@ -7,8 +7,10 @@ The project has one runtime responsibility:
 1. Web App (Next.js)
 - Loads MCQ JSON data from local files in `data/`.
 - Renders quiz UI, timer/boosts, scoring, answer review, and option-level stats.
+- Shows a sticky disclaimer banner and a first-visit welcome modal.
 - Uses in-app confirmation dialogs for destructive actions (switch/submit/restart).
-- Persists quiz snapshot and theme preference in browser localStorage.
+- Runs a client-side confetti celebration effect for key milestones.
+- Persists quiz snapshot, theme preference, and welcome-modal preference in browser localStorage.
 
 MCQ generation is out of scope for this repository.
 Data is expected to be prepared by an external process and dropped into the expected JSON file(s).
@@ -41,10 +43,14 @@ Data is expected to be prepared by an external process and dropped into the expe
 4. On mount, `QuizApp` hydrates:
    - theme mode from `theme-mode`
    - quiz snapshot from `mcq-hub-quiz-state-v1`
+   - welcome-modal preference from `mcq-hub-hide-welcome-v1`
 5. Hydrated quiz snapshot is sanitized against the current lecture/question/option graph and numeric values are clamped.
 6. After hydration, quiz state changes are re-persisted continuously.
 7. Timer, submission, keyboard navigation (left/right), scoring, stats view, and review run on top of hydrated in-memory state.
-8. Confirmation actions are mediated through a client-side modal (not native browser confirm).
+8. Confetti is generated in-app (no external animation library) when:
+   - the welcome modal is closed with `Start Quiz`
+   - the quiz is submitted manually
+9. Confirmation actions are mediated through a client-side modal (not native browser confirm).
 
 ## 4. Data Contract
 

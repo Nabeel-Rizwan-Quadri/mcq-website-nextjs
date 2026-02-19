@@ -26,6 +26,9 @@ Maintain a simple Next.js MCQ website that consumes externally prepared MCQ JSON
 14. Local git hook support for automatic patch-version bump on commit (`.githooks/pre-commit`).
 15. Responsive styling and working build/lint setup.
 16. Next route types reference aligned in `next-env.d.ts` (`.next/types/routes.d.ts`).
+17. Sticky disclaimer banner in root layout for answer quality caution.
+18. Welcome modal with `Do not show this again` persistence (`mcq-hub-hide-welcome-v1`).
+19. In-app confetti celebration effect on welcome close and quiz submission.
 
 ### Data Input Model (Completed)
 
@@ -44,5 +47,6 @@ Maintain a simple Next.js MCQ website that consumes externally prepared MCQ JSON
 
 1. Add runtime schema validation for loaded JSON before app usage.
 2. Add automated tests for persistence/hydration, timer/boost behavior, keyboard shortcuts, and confirmation flows.
-3. Add a lightweight data lint command to validate external MCQ files against the required schema.
-4. Add an in-app "clear saved progress" action for troubleshooting or manual reset.
+3. Add automated tests for welcome modal persistence and confetti trigger points.
+4. Add a lightweight data lint command to validate external MCQ files against the required schema.
+5. Add an in-app "clear saved progress" action for troubleshooting or manual reset.

@@ -4,6 +4,8 @@ Simple MCQ website for showing and evaluating pre-made lecture MCQs.
 
 ## Website Features
 
+- Sticky disclaimer banner reminding users to verify answer explanations with lecture material.
+- Welcome popup on first load with `Do not show this again` preference.
 - Collapsible top controls (`Show Controls` / `Hide Controls`) for reduced distraction while solving.
 - Lecture set selector with previous/next set navigation.
 - Per-set timer with auto-submit when time runs out.
@@ -21,6 +23,9 @@ Simple MCQ website for showing and evaluating pre-made lecture MCQs.
   - switching set with unsaved progress
   - submitting with unanswered questions
   - restarting a set
+- Confetti celebration effect:
+  - when user closes the welcome popup
+  - when user submits a quiz
 - Theme toggle (dark/light), persisted in localStorage.
 - App version display pulled directly from `package.json`.
 
@@ -28,6 +33,7 @@ Simple MCQ website for showing and evaluating pre-made lecture MCQs.
 
 - Quiz snapshot key: `mcq-hub-quiz-state-v1`
 - Theme preference key: `theme-mode`
+- Welcome popup preference key: `mcq-hub-hide-welcome-v1`
 - Persisted quiz values include:
   - selected set
   - active question index
