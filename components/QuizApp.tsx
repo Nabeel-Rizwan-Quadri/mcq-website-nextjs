@@ -8,6 +8,7 @@ type QuizAppProps = {
 };
 type ThemeMode = "dark" | "light";
 const QUIZ_STATE_STORAGE_KEY = "mcq-hub-quiz-state-v1";
+const EXTRA_TIME_SECONDS = 5 * 60;
 
 type PersistedQuizState = {
   selectedLectureId: string;
@@ -17,6 +18,7 @@ type PersistedQuizState = {
   submitted: boolean;
   autoSubmitted: boolean;
   timeLeft: number;
+  timeBoostUsed: boolean;
 };
 
 function formatTime(totalSeconds: number): string {
@@ -89,6 +91,7 @@ export default function QuizApp({ lectures }: QuizAppProps) {
   const [submitted, setSubmitted] = useState(false);
   const [autoSubmitted, setAutoSubmitted] = useState(false);
   const [timeLeft, setTimeLeft] = useState(lectures[0]?.durationSeconds ?? 0);
+  const [timeBoostUsed, setTimeBoostUsed] = useState(false);
   const [themeMode, setThemeMode] = useState<ThemeMode>("dark");
 
   const selectedLecture = useMemo(
@@ -141,6 +144,7 @@ export default function QuizApp({ lectures }: QuizAppProps) {
       submitted: false,
       autoSubmitted: false,
       timeLeft: 0,
+      timeBoostUsed: false,
     };
 
     if (lectures.length > 0) {
@@ -153,6 +157,7 @@ export default function QuizApp({ lectures }: QuizAppProps) {
         submitted: false,
         autoSubmitted: false,
         timeLeft: defaultLecture.durationSeconds,
+        timeBoostUsed: false,
       };
 
       const persistedState = window.localStorage.getItem(QUIZ_STATE_STORAGE_KEY);
@@ -172,9 +177,11 @@ export default function QuizApp({ lectures }: QuizAppProps) {
 
           const submitted = parsedState.submitted === true;
           const autoSubmitted = submitted && parsedState.autoSubmitted === true;
+          const timeBoostUsed = parsedState.timeBoostUsed === true;
+          const maxTimeLeft = lectureFromStorage.durationSeconds + (timeBoostUsed ? EXTRA_TIME_SECONDS : 0);
           const timeLeft =
             typeof parsedState.timeLeft === "number"
-              ? clamp(Math.floor(parsedState.timeLeft), 0, lectureFromStorage.durationSeconds)
+              ? clamp(Math.floor(parsedState.timeLeft), 0, maxTimeLeft)
               : lectureFromStorage.durationSeconds;
 
           nextState = {
@@ -185,6 +192,7 @@ export default function QuizApp({ lectures }: QuizAppProps) {
             submitted,
             autoSubmitted,
             timeLeft,
+            timeBoostUsed,
           };
         } catch {
           window.localStorage.removeItem(QUIZ_STATE_STORAGE_KEY);
@@ -200,6 +208,7 @@ export default function QuizApp({ lectures }: QuizAppProps) {
       setSubmitted(nextState.submitted);
       setAutoSubmitted(nextState.autoSubmitted);
       setTimeLeft(nextState.timeLeft);
+      setTimeBoostUsed(nextState.timeBoostUsed);
       setHasHydratedQuizState(true);
     });
 
@@ -224,6 +233,7 @@ export default function QuizApp({ lectures }: QuizAppProps) {
       submitted,
       autoSubmitted,
       timeLeft,
+      timeBoostUsed,
     };
 
     window.localStorage.setItem(QUIZ_STATE_STORAGE_KEY, JSON.stringify(snapshot));
@@ -237,6 +247,7 @@ export default function QuizApp({ lectures }: QuizAppProps) {
     submitted,
     autoSubmitted,
     timeLeft,
+    timeBoostUsed,
   ]);
 
   function resetQuizForLecture(lecture: LectureQuiz): void {
@@ -246,6 +257,7 @@ export default function QuizApp({ lectures }: QuizAppProps) {
     setSubmitted(false);
     setAutoSubmitted(false);
     setTimeLeft(lecture.durationSeconds);
+    setTimeBoostUsed(false);
   }
 
   function hasProgressInLecture(lecture: LectureQuiz): boolean {
@@ -383,6 +395,15 @@ export default function QuizApp({ lectures }: QuizAppProps) {
     setAutoSubmitted(false);
   }
 
+  function addFiveMoreMinutes(): void {
+    if (submitted || timeBoostUsed) {
+      return;
+    }
+
+    setTimeLeft((previous) => previous + EXTRA_TIME_SECONDS);
+    setTimeBoostUsed(true);
+  }
+
   function restartCurrentLecture(): void {
     if (!selectedLecture) {
       return;
@@ -486,6 +507,9 @@ export default function QuizApp({ lectures }: QuizAppProps) {
             Answered: {answeredCount}/{selectedLecture.questions.length}
           </span>
           <span className="chip">{submitted ? "Submitted" : "In Progress"}</span>
+          <button className="btn" onClick={addFiveMoreMinutes} disabled={submitted || timeBoostUsed}>
+            {timeBoostUsed ? "Extra 5 Minutes Used" : "Add 5 More Minutes"}
+          </button>
         </div>
       </section>
 
