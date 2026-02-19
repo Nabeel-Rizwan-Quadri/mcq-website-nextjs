@@ -1,6 +1,6 @@
 {
   "name": "mcq-website-nextjs",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Simple lecture-wise MCQ website that consumes externally prepared MCQ JSON.",
   "scripts": {
     "dev": "next dev",

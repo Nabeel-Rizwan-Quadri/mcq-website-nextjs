@@ -395,7 +395,7 @@ export default function QuizApp({ lectures, appVersion }: QuizAppProps) {
     timeBoostTenUsed,
   ]);
 
-  function launchConfetti(pieceCount = 160): void {
+  function launchConfetti(pieceCount = 320): void {
     setConfettiPieces(buildConfettiPieces(pieceCount));
 
     if (confettiTimeoutRef.current !== null) {
@@ -416,7 +416,7 @@ export default function QuizApp({ lectures, appVersion }: QuizAppProps) {
     }
 
     setShowWelcomeModal(false);
-    launchConfetti(150);
+    launchConfetti(500);
   }
 
   function resetQuizForLecture(lecture: LectureQuiz): void {
@@ -662,7 +662,7 @@ export default function QuizApp({ lectures, appVersion }: QuizAppProps) {
       setSubmitted(true);
       setAutoSubmitted(false);
       setShowStats(false);
-      launchConfetti(220);
+      launchConfetti(500);
     };
 
     const unansweredCount = selectedLecture.questions.length - answeredCount;
