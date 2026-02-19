@@ -407,6 +407,28 @@ export default function QuizApp({ lectures }: QuizAppProps) {
                   <h3>
                     Q{index + 1}. {question.question}
                   </h3>
+                  <div className="options review-options">
+                    {question.options.map((option) => {
+                      const isSelected = selectedOptionId === option.id;
+                      const isCorrectOption = option.id === question.correctOptionId;
+                      const optionClassName = [
+                        "option-btn",
+                        "option-btn-static",
+                        isSelected ? "selected" : "",
+                        isCorrectOption ? "correct" : "",
+                        isSelected && !isCorrectOption ? "wrong" : "",
+                      ]
+                        .filter(Boolean)
+                        .join(" ");
+
+                      return (
+                        <div key={option.id} className={optionClassName}>
+                          <strong>{option.id.toUpperCase()}.</strong>
+                          {option.text}
+                        </div>
+                      );
+                    })}
+                  </div>
                   <p>
                     <strong>Your answer:</strong> {findOptionText(question, selectedOptionId)}
                   </p>

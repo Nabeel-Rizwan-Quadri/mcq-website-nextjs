@@ -318,6 +318,10 @@ p {
   background: var(--review-wrong-bg);
 }
 
+.option-btn.option-btn-static {
+  cursor: default;
+}
+
 .answer-feedback {
   margin-top: 12px;
   border: 1px solid var(--line);
@@ -419,6 +423,10 @@ button {
 
 .review-card h3 {
   font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.review-options {
   margin-bottom: 8px;
 }
 
