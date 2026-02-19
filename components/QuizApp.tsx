@@ -115,6 +115,7 @@ export default function QuizApp({ lectures }: QuizAppProps) {
   const [timeLeft, setTimeLeft] = useState(lectures[0]?.durationSeconds ?? 0);
   const [timeBoostFiveUsed, setTimeBoostFiveUsed] = useState(false);
   const [timeBoostTenUsed, setTimeBoostTenUsed] = useState(false);
+  const [showStats, setShowStats] = useState(false);
   const [themeMode, setThemeMode] = useState<ThemeMode>("dark");
 
   const selectedLecture = useMemo(
@@ -301,6 +302,7 @@ export default function QuizApp({ lectures }: QuizAppProps) {
     setTimeLeft(lecture.durationSeconds);
     setTimeBoostFiveUsed(false);
     setTimeBoostTenUsed(false);
+    setShowStats(false);
   }
 
   function hasProgressInLecture(lecture: LectureQuiz): boolean {
@@ -391,6 +393,65 @@ export default function QuizApp({ lectures }: QuizAppProps) {
 
   const percentage = score.total > 0 ? Math.round((score.correct / score.total) * 100) : 0;
 
+  const optionStats = useMemo(() => {
+    if (!selectedLecture) {
+      return [];
+    }
+
+    const optionIdSet = new Set<string>();
+    for (const question of selectedLecture.questions) {
+      for (const option of question.options) {
+        optionIdSet.add(option.id);
+      }
+
+      optionIdSet.add(question.correctOptionId);
+      const selectedOptionId = answers[question.id];
+      if (selectedOptionId) {
+        optionIdSet.add(selectedOptionId);
+      }
+    }
+
+    const orderedOptionIds = [...optionIdSet].sort((left, right) =>
+      left.localeCompare(right, undefined, { sensitivity: "base" }),
+    );
+
+    return orderedOptionIds.map((optionId) => {
+      let keyCorrectCount = 0;
+      let userChosenCount = 0;
+
+      for (const question of selectedLecture.questions) {
+        if (question.correctOptionId === optionId) {
+          keyCorrectCount += 1;
+        }
+        if (answers[question.id] === optionId) {
+          userChosenCount += 1;
+        }
+      }
+
+      return {
+        optionId,
+        keyCorrectCount,
+        userChosenCount,
+      };
+    });
+  }, [answers, selectedLecture]);
+
+  const mostChosenStat = useMemo(() => {
+    if (optionStats.length === 0) {
+      return null;
+    }
+
+    const maxChosen = Math.max(...optionStats.map((item) => item.userChosenCount));
+    if (maxChosen <= 0) {
+      return null;
+    }
+
+    return {
+      count: maxChosen,
+      optionIds: optionStats.filter((item) => item.userChosenCount === maxChosen).map((item) => item.optionId),
+    };
+  }, [optionStats]);
+
   const timeChipClassName =
     timeLeft <= 60 ? "chip chip-time danger" : timeLeft <= 180 ? "chip chip-time warn" : "chip chip-time";
 
@@ -464,6 +525,7 @@ export default function QuizApp({ lectures }: QuizAppProps) {
 
     setSubmitted(true);
     setAutoSubmitted(false);
+    setShowStats(false);
   }
 
   function addFiveMoreMinutes(): void {
@@ -567,13 +629,26 @@ export default function QuizApp({ lectures }: QuizAppProps) {
           </label>
 
           <div className="lecture-switch">
-            <button className="btn" onClick={() => moveLecture(-1)} disabled={selectedLectureIndex <= 0}>
+            <button className="btn btn-with-icon" onClick={() => moveLecture(-1)} disabled={selectedLectureIndex <= 0}>
+              <span className="btn-icon" aria-hidden="true">
+                {"\u2190"}
+              </span>
               Previous Set
             </button>
-            <button className="btn" onClick={() => moveLecture(1)} disabled={selectedLectureIndex >= lectures.length - 1}>
+            <button
+              className="btn btn-with-icon"
+              onClick={() => moveLecture(1)}
+              disabled={selectedLectureIndex >= lectures.length - 1}
+            >
               Next Set
+              <span className="btn-icon" aria-hidden="true">
+                {"\u2192"}
+              </span>
             </button>
-            <button className="btn btn-danger" onClick={restartCurrentLecture}>
+            <button className="btn btn-danger btn-with-icon" onClick={restartCurrentLecture}>
+              <span className="btn-icon" aria-hidden="true">
+                {"\u21bb"}
+              </span>
               Restart This Set
             </button>
           </div>
@@ -642,7 +717,19 @@ export default function QuizApp({ lectures }: QuizAppProps) {
 
           {currentQuestion && (
             <>
-              <h3 className="question-title">{currentQuestion.question}</h3>
+              <div className="question-title-row">
+                <h3 className="question-title">{currentQuestion.question}</h3>
+                <button
+                  className={`btn btn-with-icon btn-question-flag ${currentQuestionFlagged ? "btn-flag-active" : "btn-flag"}`}
+                  onClick={() => toggleFlaggedQuestion(currentQuestion.id)}
+                  disabled={submitted}
+                >
+                  <span className="btn-icon" aria-hidden="true">
+                    {"\u2691"}
+                  </span>
+                  {currentQuestionFlagged ? "Unflag Question" : "Flag for Review"}
+                </button>
+              </div>
               <div className="options">
                 {currentQuestion.options.map((option) => {
                   const isSelected = currentSelectedOptionId === option.id;
@@ -689,17 +776,15 @@ export default function QuizApp({ lectures }: QuizAppProps) {
           )}
 
           <div className="row-actions">
-            <button className="btn" onClick={() => setActiveQuestionIndex((prev) => Math.max(prev - 1, 0))} disabled={activeQuestionIndex === 0}>
-              Previous Question
-            </button>
             <button
-              className="btn"
-              onClick={() =>
-                setActiveQuestionIndex((prev) => Math.min(prev + 1, selectedLecture.questions.length - 1))
-              }
-              disabled={activeQuestionIndex >= selectedLecture.questions.length - 1}
+              className="btn btn-with-icon btn-question-nav"
+              onClick={() => setActiveQuestionIndex((prev) => Math.max(prev - 1, 0))}
+              disabled={activeQuestionIndex === 0}
             >
-              Next Question
+              <span className="btn-icon" aria-hidden="true">
+                {"\u2190"}
+              </span>
+              Previous Question
             </button>
             <button
               className="btn btn-check"
@@ -709,13 +794,21 @@ export default function QuizApp({ lectures }: QuizAppProps) {
               Check Answer
             </button>
             <button
-              className={`btn ${currentQuestionFlagged ? "btn-flag-active" : "btn-flag"}`}
-              onClick={() => currentQuestion && toggleFlaggedQuestion(currentQuestion.id)}
-              disabled={!currentQuestion || submitted}
+              className="btn btn-question-nav btn-with-icon"
+              onClick={() =>
+                setActiveQuestionIndex((prev) => Math.min(prev + 1, selectedLecture.questions.length - 1))
+              }
+              disabled={activeQuestionIndex >= selectedLecture.questions.length - 1}
             >
-              {currentQuestionFlagged ? "Unflag Question" : "Flag for Review"}
+              Next Question
+              <span className="btn-icon" aria-hidden="true">
+                {"\u2192"}
+              </span>
             </button>
-            <button className="btn btn-primary btn-submit" onClick={submitQuiz}>
+            <button className="btn btn-primary btn-submit btn-with-icon btn-right-start" onClick={submitQuiz}>
+              <span className="btn-icon" aria-hidden="true">
+                {"\u2713"}
+              </span>
               Submit Quiz
             </button>
           </div>
@@ -734,9 +827,62 @@ export default function QuizApp({ lectures }: QuizAppProps) {
               <p className="autoflag">Time is up. The quiz was auto-submitted.</p>
             ) : null}
           </div>
-          <button className="btn btn-danger" onClick={restartCurrentLecture}>
-            Retake This Set
-          </button>
+          <div className="result-actions">
+            <button className="btn btn-danger btn-with-icon" onClick={restartCurrentLecture}>
+              <span className="btn-icon" aria-hidden="true">
+                {"\u21bb"}
+              </span>
+              Retake This Set
+            </button>
+            <button className="btn btn-with-icon" onClick={() => setShowStats((previous) => !previous)}>
+              <span className="btn-icon" aria-hidden="true">
+                {"\u2263"}
+              </span>
+              {showStats ? "Hide Stats" : "See Stats"}
+            </button>
+          </div>
+
+          {showStats ? (
+            <section className="stats-panel" aria-label="Set statistics">
+              <h3>Set Statistics</h3>
+              <p className="stats-meta">
+                Answered by you: {answeredCount}/{selectedLecture.questions.length} | Unanswered:{" "}
+                {selectedLecture.questions.length - answeredCount}
+              </p>
+              <p className="stats-meta">
+                {mostChosenStat
+                  ? `Most chosen by you: ${mostChosenStat.optionIds
+                      .map((optionId) => optionId.toUpperCase())
+                      .join(", ")} (${mostChosenStat.count} time${mostChosenStat.count === 1 ? "" : "s"}).`
+                  : "Most chosen by you: No selections yet."}
+              </p>
+              <div className="stats-table-wrap">
+                <table className="stats-table">
+                  <thead>
+                    <tr>
+                      <th>Option</th>
+                      <th>Correct In Answer Key</th>
+                      <th>You Chose</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {optionStats.map((stat) => {
+                      const isMostChosen = mostChosenStat ? stat.userChosenCount === mostChosenStat.count : false;
+                      return (
+                        <tr key={stat.optionId} className={isMostChosen ? "most-selected" : ""}>
+                          <td>
+                            <strong>{stat.optionId.toUpperCase()}</strong>
+                          </td>
+                          <td>{stat.keyCorrectCount}</td>
+                          <td>{stat.userChosenCount}</td>
+                        </tr>
+                      );
+                    })}
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          ) : null}
 
           <div className="review-list">
             {selectedLecture.questions.map((question, index) => {
