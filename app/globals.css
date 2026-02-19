@@ -211,9 +211,21 @@ p {
   gap: 12px;
 }
 
+.hero-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .hero-subtitle {
   margin-top: 8px;
   color: var(--muted);
+}
+
+.build-meta {
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 0.85rem;
 }
 
 .theme-switch {
@@ -301,6 +313,10 @@ p {
   flex-wrap: wrap;
   align-items: center;
   gap: 10px;
+}
+
+.status-row.compact {
+  margin-top: 10px;
 }
 
 .chip {
@@ -480,6 +496,21 @@ p {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+}
+
+.panel-quiz {
+  min-height: clamp(640px, 78vh, 920px);
+  display: flex;
+  flex-direction: column;
+}
+
+.quiz-main {
+  min-height: clamp(430px, 56vh, 680px);
+}
+
+.panel-quiz .row-actions {
+  margin-top: auto;
+  padding-top: 14px;
 }
 
 button {
@@ -714,6 +745,78 @@ button {
   margin-top: 4px;
 }
 
+.confirm-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  background: rgba(5, 10, 16, 0.66);
+  backdrop-filter: blur(2px);
+}
+
+.confirm-overlay[data-state="open"] {
+  animation: confirm-fade-in 160ms ease;
+}
+
+.confirm-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 81;
+  width: min(460px, calc(100vw - 24px));
+  transform: translate(-50%, -50%);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 16px;
+  background: var(--panel);
+  box-shadow: 0 28px 56px -30px var(--shadow);
+  display: grid;
+  gap: 12px;
+}
+
+.confirm-content[data-state="open"] {
+  animation: confirm-pop-in 170ms cubic-bezier(0.2, 0.9, 0.2, 1);
+}
+
+.confirm-content:focus {
+  outline: none;
+}
+
+.confirm-title {
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+}
+
+.confirm-description {
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.confirm-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+@keyframes confirm-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes confirm-pop-in {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -46%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
 @media (max-width: 760px) {
   .site-disclaimer-banner {
     padding: 8px 10px;
@@ -732,5 +835,23 @@ button {
 
   .hero-header {
     align-items: center;
+  }
+
+  .hero-actions {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .panel-quiz {
+    min-height: 0;
+  }
+
+  .quiz-main {
+    min-height: 360px;
+  }
+
+  .confirm-content {
+    width: min(460px, calc(100vw - 20px));
+    padding: 14px;
   }
 }

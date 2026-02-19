@@ -2,6 +2,7 @@ import { readFile } from "node:fs/promises";
 import path from "node:path";
 import QuizApp from "@/components/QuizApp";
 import type { LectureQuiz } from "@/lib/types";
+import packageJson from "@/package.json";
 
 async function loadLectures(): Promise<LectureQuiz[]> {
   const candidateFiles = [
@@ -26,5 +27,5 @@ async function loadLectures(): Promise<LectureQuiz[]> {
 
 export default async function Home() {
   const lectures = await loadLectures();
-  return <QuizApp lectures={lectures} />;
+  return <QuizApp lectures={lectures} appVersion={packageJson.version} />;
 }

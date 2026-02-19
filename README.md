@@ -40,6 +40,30 @@ npm run dev
 
 Then open `http://localhost:3000`.
 
+## Versioning
+
+- The app now shows the current version directly from `package.json` in the UI.
+- Commit-time version bump automation is available via a git hook.
+
+### Enable auto version bump on commit
+
+Run once in this repo:
+
+```bash
+npm run hooks:install
+```
+
+After this, every commit automatically bumps patch version and stages:
+
+- `package.json`
+- `package-lock.json`
+
+Manual bump (if needed):
+
+```bash
+npm run version:bump:patch
+```
+
 ## Provide MCQ Data (External Workflow)
 
 This project does not convert lecture files to MCQs.

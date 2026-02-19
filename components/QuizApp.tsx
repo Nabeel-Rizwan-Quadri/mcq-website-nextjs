@@ -1,10 +1,12 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import * as AlertDialog from "@radix-ui/react-alert-dialog";
 import type { LectureQuiz, MCQQuestion } from "@/lib/types";
 
 type QuizAppProps = {
   lectures: LectureQuiz[];
+  appVersion: string;
 };
 type ThemeMode = "dark" | "light";
 const QUIZ_STATE_STORAGE_KEY = "mcq-hub-quiz-state-v1";
@@ -25,6 +27,15 @@ type PersistedQuizState = {
   timeBoostUsed?: boolean;
 };
 
+type ConfirmationDialogState = {
+  title: string;
+  description: string;
+  confirmLabel: string;
+  cancelLabel: string;
+  intent: "default" | "danger";
+  onConfirm: () => void;
+};
+
 function formatTime(totalSeconds: number): string {
   const safeSeconds = Math.max(totalSeconds, 0);
   const minutes = Math.floor(safeSeconds / 60);
@@ -43,6 +54,18 @@ function findOptionText(question: MCQQuestion, optionId: string | undefined): st
 
   const found = question.options.find((option) => option.id === optionId);
   return found ? found.text : "Not answered";
+}
+
+function shouldIgnoreQuestionHotkeys(target: EventTarget | null): boolean {
+  if (!(target instanceof HTMLElement)) {
+    return false;
+  }
+
+  if (target.isContentEditable) {
+    return true;
+  }
+
+  return Boolean(target.closest("input, textarea, select, [contenteditable='true']"));
 }
 
 function sanitizeAnswers(lecture: LectureQuiz, candidate: unknown): Record<string, string> {
@@ -102,7 +125,7 @@ function sanitizeFlaggedQuestions(lecture: LectureQuiz, candidate: unknown): Rec
   return nextFlaggedQuestions;
 }
 
-export default function QuizApp({ lectures }: QuizAppProps) {
+export default function QuizApp({ lectures, appVersion }: QuizAppProps) {
   const [hasMounted, setHasMounted] = useState(false);
   const [hasHydratedQuizState, setHasHydratedQuizState] = useState(false);
   const [selectedLectureId, setSelectedLectureId] = useState(lectures[0]?.id ?? "");
@@ -116,6 +139,8 @@ export default function QuizApp({ lectures }: QuizAppProps) {
   const [timeBoostFiveUsed, setTimeBoostFiveUsed] = useState(false);
   const [timeBoostTenUsed, setTimeBoostTenUsed] = useState(false);
   const [showStats, setShowStats] = useState(false);
+  const [showHeaderDetails, setShowHeaderDetails] = useState(false);
+  const [confirmationDialog, setConfirmationDialog] = useState<ConfirmationDialogState | null>(null);
   const [themeMode, setThemeMode] = useState<ThemeMode>("dark");
 
   const selectedLecture = useMemo(
@@ -324,18 +349,24 @@ export default function QuizApp({ lectures }: QuizAppProps) {
       return;
     }
 
-    if (selectedLecture && hasProgressInLecture(selectedLecture)) {
-      const shouldSwitch = window.confirm(
-        "Switching sets will discard your current progress. Do you want to continue?",
-      );
+    const applyLectureSwitch = (): void => {
+      setSelectedLectureId(lectureId);
+      resetQuizForLecture(lecture);
+    };
 
-      if (!shouldSwitch) {
-        return;
-      }
+    if (selectedLecture && hasProgressInLecture(selectedLecture)) {
+      setConfirmationDialog({
+        title: "Switch set?",
+        description: "Switching sets will discard your current progress for this set.",
+        confirmLabel: "Switch Set",
+        cancelLabel: "Stay Here",
+        intent: "danger",
+        onConfirm: applyLectureSwitch,
+      });
+      return;
     }
 
-    setSelectedLectureId(lectureId);
-    resetQuizForLecture(lecture);
+    applyLectureSwitch();
   }
 
   useEffect(() => {
@@ -463,6 +494,18 @@ export default function QuizApp({ lectures }: QuizAppProps) {
     switchLecture(lectures[nextIndex].id);
   }
 
+  function moveToPreviousQuestion(): void {
+    setActiveQuestionIndex((previous) => Math.max(previous - 1, 0));
+  }
+
+  function moveToNextQuestion(): void {
+    if (!selectedLecture) {
+      return;
+    }
+
+    setActiveQuestionIndex((previous) => Math.min(previous + 1, selectedLecture.questions.length - 1));
+  }
+
   function selectAnswer(questionId: string, optionId: string): void {
     if (submitted || checkedAnswers[questionId]) {
       return;
@@ -513,19 +556,26 @@ export default function QuizApp({ lectures }: QuizAppProps) {
       return;
     }
 
+    const completeSubmission = (): void => {
+      setSubmitted(true);
+      setAutoSubmitted(false);
+      setShowStats(false);
+    };
+
     const unansweredCount = selectedLecture.questions.length - answeredCount;
     if (unansweredCount > 0) {
-      const shouldSubmit = window.confirm(
-        `You still have ${unansweredCount} unanswered question${unansweredCount === 1 ? "" : "s"}. Submit anyway?`,
-      );
-      if (!shouldSubmit) {
-        return;
-      }
+      setConfirmationDialog({
+        title: "Submit quiz?",
+        description: `You still have ${unansweredCount} unanswered question${unansweredCount === 1 ? "" : "s"}.`,
+        confirmLabel: "Submit Anyway",
+        cancelLabel: "Keep Answering",
+        intent: "danger",
+        onConfirm: completeSubmission,
+      });
+      return;
     }
 
-    setSubmitted(true);
-    setAutoSubmitted(false);
-    setShowStats(false);
+    completeSubmission();
   }
 
   function addFiveMoreMinutes(): void {
@@ -551,24 +601,82 @@ export default function QuizApp({ lectures }: QuizAppProps) {
       return;
     }
 
-    const shouldRestart = window.confirm("Restart this set? All current progress will be lost.");
-    if (!shouldRestart) {
-      return;
-    }
-
-    resetQuizForLecture(selectedLecture);
+    setConfirmationDialog({
+      title: "Restart this set?",
+      description: "All current progress for this set will be lost.",
+      confirmLabel: "Restart Set",
+      cancelLabel: "Cancel",
+      intent: "danger",
+      onConfirm: () => resetQuizForLecture(selectedLecture),
+    });
   }
 
   function toggleThemeMode(): void {
     setThemeMode((previous) => (previous === "dark" ? "light" : "dark"));
   }
 
+  function handleConfirmationOpenChange(open: boolean): void {
+    if (!open) {
+      setConfirmationDialog(null);
+    }
+  }
+
+  function handleConfirmationAction(): void {
+    if (!confirmationDialog) {
+      return;
+    }
+
+    const action = confirmationDialog.onConfirm;
+    setConfirmationDialog(null);
+    action();
+  }
+
+  useEffect(() => {
+    if (!selectedLecture || submitted) {
+      return;
+    }
+
+    const handleKeyDown = (event: KeyboardEvent): void => {
+      if (event.defaultPrevented) {
+        return;
+      }
+
+      if (event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) {
+        return;
+      }
+
+      if (confirmationDialog) {
+        return;
+      }
+
+      if (shouldIgnoreQuestionHotkeys(event.target)) {
+        return;
+      }
+
+      if (event.key === "ArrowLeft") {
+        event.preventDefault();
+        setActiveQuestionIndex((previous) => Math.max(previous - 1, 0));
+        return;
+      }
+
+      if (event.key === "ArrowRight") {
+        event.preventDefault();
+        setActiveQuestionIndex((previous) =>
+          Math.min(previous + 1, selectedLecture.questions.length - 1),
+        );
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [selectedLecture, submitted, confirmationDialog]);
+
   if (!hasMounted || !hasHydratedQuizState) {
     return null;
   }
 
   if (!selectedLecture) {
-    return (
+      return (
       <main className="page-shell">
         <section className="panel">
           <div className="hero-header">
@@ -586,6 +694,7 @@ export default function QuizApp({ lectures }: QuizAppProps) {
               </span>
             </button>
           </div>
+          <p className="build-meta">Version v{appVersion}</p>
           <p className="hero-subtitle">No quiz data is available yet.</p>
         </section>
       </main>
@@ -597,188 +706,211 @@ export default function QuizApp({ lectures }: QuizAppProps) {
       <section className="panel">
         <div className="hero-header">
           <h1 className="hero-title">MCQ Hub</h1>
-          <button
-            className="theme-switch"
-            role="switch"
-            aria-checked={themeMode === "dark"}
-            aria-label={`Switch to ${themeMode === "dark" ? "light" : "dark"} mode`}
-            onClick={toggleThemeMode}
-          >
-            <span className="theme-switch-label">{themeMode === "dark" ? "Dark" : "Light"}</span>
-            <span className={`theme-switch-track ${themeMode === "dark" ? "on" : ""}`}>
-              <span className="theme-switch-thumb" />
-            </span>
-          </button>
-        </div>
-        <p className="hero-subtitle">Pick a set, answer all MCQs, and review exactly where you went right or wrong.</p>
-
-        <div className="control-grid">
-          <label className="control-label">
-            <span>Choose Set</span>
-            <select
-              className="lecture-select"
-              value={selectedLectureId}
-              onChange={(event) => switchLecture(event.target.value)}
-            >
-              {lectures.map((lecture) => (
-                <option key={lecture.id} value={lecture.id}>
-                  {lecture.title}
-                </option>
-              ))}
-            </select>
-          </label>
-
-          <div className="lecture-switch">
-            <button className="btn btn-with-icon" onClick={() => moveLecture(-1)} disabled={selectedLectureIndex <= 0}>
+          <div className="hero-actions">
+            <button className="btn btn-with-icon" onClick={() => setShowHeaderDetails((previous) => !previous)}>
               <span className="btn-icon" aria-hidden="true">
-                {"\u2190"}
+                {showHeaderDetails ? "\u25b2" : "\u25bc"}
               </span>
-              Previous Set
+              {showHeaderDetails ? "Hide Controls" : "Show Controls"}
             </button>
             <button
-              className="btn btn-with-icon"
-              onClick={() => moveLecture(1)}
-              disabled={selectedLectureIndex >= lectures.length - 1}
+              className="theme-switch"
+              role="switch"
+              aria-checked={themeMode === "dark"}
+              aria-label={`Switch to ${themeMode === "dark" ? "light" : "dark"} mode`}
+              onClick={toggleThemeMode}
             >
-              Next Set
-              <span className="btn-icon" aria-hidden="true">
-                {"\u2192"}
+              <span className="theme-switch-label">{themeMode === "dark" ? "Dark" : "Light"}</span>
+              <span className={`theme-switch-track ${themeMode === "dark" ? "on" : ""}`}>
+                <span className="theme-switch-thumb" />
               </span>
-            </button>
-            <button className="btn btn-danger btn-with-icon" onClick={restartCurrentLecture}>
-              <span className="btn-icon" aria-hidden="true">
-                {"\u21bb"}
-              </span>
-              Restart This Set
             </button>
           </div>
         </div>
+        <p className="build-meta">Version v{appVersion}</p>
+        {showHeaderDetails ? (
+          <>
+            <p className="hero-subtitle">Pick a set, answer all MCQs, and review exactly where you went right or wrong.</p>
 
-        <p className="lecture-topic">{selectedLecture.topic}</p>
+            <div className="control-grid">
+              <label className="control-label">
+                <span>Choose Set</span>
+                <select
+                  className="lecture-select"
+                  value={selectedLectureId}
+                  onChange={(event) => switchLecture(event.target.value)}
+                >
+                  {lectures.map((lecture) => (
+                    <option key={lecture.id} value={lecture.id}>
+                      {lecture.title}
+                    </option>
+                  ))}
+                </select>
+              </label>
 
-        <div className="status-row">
+              <div className="lecture-switch">
+                <button
+                  className="btn btn-with-icon"
+                  onClick={() => moveLecture(-1)}
+                  disabled={selectedLectureIndex <= 0}
+                >
+                  <span className="btn-icon" aria-hidden="true">
+                    {"\u2190"}
+                  </span>
+                  Previous Set
+                </button>
+                <button
+                  className="btn btn-with-icon"
+                  onClick={() => moveLecture(1)}
+                  disabled={selectedLectureIndex >= lectures.length - 1}
+                >
+                  Next Set
+                  <span className="btn-icon" aria-hidden="true">
+                    {"\u2192"}
+                  </span>
+                </button>
+                <button className="btn btn-danger btn-with-icon" onClick={restartCurrentLecture}>
+                  <span className="btn-icon" aria-hidden="true">
+                    {"\u21bb"}
+                  </span>
+                  Restart This Set
+                </button>
+              </div>
+            </div>
+
+            <p className="lecture-topic">{selectedLecture.topic}</p>
+          </>
+        ) : null}
+
+        <div className={`status-row ${showHeaderDetails ? "" : "compact"}`}>
           <span className={timeChipClassName}>Time Left: {formatTime(timeLeft)}</span>
           <span className="chip">
             Answered: {answeredCount}/{selectedLecture.questions.length}
           </span>
           <span className="chip chip-flag">Flagged: {flaggedCount}</span>
           <span className="chip">{submitted ? "Submitted" : "In Progress"}</span>
-          <button className="btn" onClick={addFiveMoreMinutes} disabled={submitted || timeBoostFiveUsed}>
-            {timeBoostFiveUsed ? "Extra 5 Minutes Used" : "Add 5 More Minutes"}
-          </button>
-          <button className="btn" onClick={addTenMoreMinutes} disabled={submitted || timeBoostTenUsed}>
-            {timeBoostTenUsed ? "Extra 10 Minutes Used" : "Add 10 More Minutes"}
-          </button>
+          {showHeaderDetails ? (
+            <>
+              <button className="btn" onClick={addFiveMoreMinutes} disabled={submitted || timeBoostFiveUsed}>
+                {timeBoostFiveUsed ? "Extra 5 Minutes Used" : "Add 5 More Minutes"}
+              </button>
+              <button className="btn" onClick={addTenMoreMinutes} disabled={submitted || timeBoostTenUsed}>
+                {timeBoostTenUsed ? "Extra 10 Minutes Used" : "Add 10 More Minutes"}
+              </button>
+            </>
+          ) : null}
         </div>
       </section>
 
       {!submitted ? (
-        <section className="panel">
-          <div className="question-head">
-            <h2>
-              Question {activeQuestionIndex + 1} / {selectedLecture.questions.length}
-            </h2>
-            {currentQuestionFlagged ? <span className="chip chip-flag">Flagged for review</span> : null}
-          </div>
+        <section className="panel panel-quiz">
+          <div className="quiz-main">
+            <div className="question-head">
+              <h2>
+                Question {activeQuestionIndex + 1} / {selectedLecture.questions.length}
+              </h2>
+              {currentQuestionFlagged ? <span className="chip chip-flag">Flagged for review</span> : null}
+            </div>
 
-          <div className="question-grid">
-            {selectedLecture.questions.map((question, index) => {
-              const selectedOptionId = answers[question.id];
-              const answerChecked = Boolean(checkedAnswers[question.id]);
-              const answerIsCorrect = selectedOptionId === question.correctOptionId;
-              const isFlagged = Boolean(flaggedQuestions[question.id]);
-              const questionDotClassName = [
-                "question-dot",
-                index === activeQuestionIndex ? "current" : "",
-                isFlagged ? "flagged" : "",
-                selectedOptionId
-                  ? answerChecked
-                    ? answerIsCorrect
-                      ? "checked-correct"
-                      : "checked-wrong"
-                    : "attempted"
-                  : "",
-              ]
-                .filter(Boolean)
-                .join(" ");
+            <div className="question-grid">
+              {selectedLecture.questions.map((question, index) => {
+                const selectedOptionId = answers[question.id];
+                const answerChecked = Boolean(checkedAnswers[question.id]);
+                const answerIsCorrect = selectedOptionId === question.correctOptionId;
+                const isFlagged = Boolean(flaggedQuestions[question.id]);
+                const questionDotClassName = [
+                  "question-dot",
+                  index === activeQuestionIndex ? "current" : "",
+                  isFlagged ? "flagged" : "",
+                  selectedOptionId
+                    ? answerChecked
+                      ? answerIsCorrect
+                        ? "checked-correct"
+                        : "checked-wrong"
+                      : "attempted"
+                    : "",
+                ]
+                  .filter(Boolean)
+                  .join(" ");
 
-              return (
-                <button
-                  key={question.id}
-                  className={questionDotClassName}
-                  onClick={() => setActiveQuestionIndex(index)}
-                  title={isFlagged ? "Flagged for review" : undefined}
-                >
-                  {index + 1}
-                </button>
-              );
-            })}
-          </div>
+                return (
+                  <button
+                    key={question.id}
+                    className={questionDotClassName}
+                    onClick={() => setActiveQuestionIndex(index)}
+                    title={isFlagged ? "Flagged for review" : undefined}
+                  >
+                    {index + 1}
+                  </button>
+                );
+              })}
+            </div>
 
-          {currentQuestion && (
-            <>
-              <div className="question-title-row">
-                <h3 className="question-title">{currentQuestion.question}</h3>
-                <button
-                  className={`btn btn-with-icon btn-question-flag ${currentQuestionFlagged ? "btn-flag-active" : "btn-flag"}`}
-                  onClick={() => toggleFlaggedQuestion(currentQuestion.id)}
-                  disabled={submitted}
-                >
-                  <span className="btn-icon" aria-hidden="true">
-                    {"\u2691"}
-                  </span>
-                  {currentQuestionFlagged ? "Unflag Question" : "Flag for Review"}
-                </button>
-              </div>
-              <div className="options">
-                {currentQuestion.options.map((option) => {
-                  const isSelected = currentSelectedOptionId === option.id;
-                  const isCorrectOption = option.id === currentQuestion.correctOptionId;
-                  const optionClassName = [
-                    "option-btn",
-                    isSelected ? "selected" : "",
-                    currentAnswerChecked && isCorrectOption ? "correct" : "",
-                    currentAnswerChecked && isSelected && !isCorrectOption ? "wrong" : "",
-                  ]
-                    .filter(Boolean)
-                    .join(" ");
-
-                  return (
-                    <button
-                      key={option.id}
-                      className={optionClassName}
-                      onClick={() => selectAnswer(currentQuestion.id, option.id)}
-                      disabled={submitted || currentAnswerChecked}
-                    >
-                      <strong>{option.id.toUpperCase()}.</strong>
-                      {option.text}
-                    </button>
-                  );
-                })}
-              </div>
-              {currentAnswerChecked ? (
-                <div className={`answer-feedback ${currentAnswerIsCorrect ? "correct" : "wrong"}`}>
-                  <p>
-                    <strong>{currentAnswerIsCorrect ? "Correct." : "Incorrect."}</strong> Your answer:{" "}
-                    {findOptionText(currentQuestion, currentSelectedOptionId)}
-                  </p>
-                  <p>
-                    <strong>Correct answer:</strong> {findOptionText(currentQuestion, currentQuestion.correctOptionId)}
-                  </p>
-                  {currentQuestion.explanation ? (
-                    <p>
-                      <strong>Why:</strong> {currentQuestion.explanation}
-                    </p>
-                  ) : null}
+            {currentQuestion && (
+              <>
+                <div className="question-title-row">
+                  <h3 className="question-title">{currentQuestion.question}</h3>
+                  <button
+                    className={`btn btn-with-icon btn-question-flag ${currentQuestionFlagged ? "btn-flag-active" : "btn-flag"}`}
+                    onClick={() => toggleFlaggedQuestion(currentQuestion.id)}
+                    disabled={submitted}
+                  >
+                    <span className="btn-icon" aria-hidden="true">
+                      {"\u2691"}
+                    </span>
+                    {currentQuestionFlagged ? "Unflag Question" : "Flag for Review"}
+                  </button>
                 </div>
-              ) : null}
-            </>
-          )}
+                <div className="options">
+                  {currentQuestion.options.map((option) => {
+                    const isSelected = currentSelectedOptionId === option.id;
+                    const isCorrectOption = option.id === currentQuestion.correctOptionId;
+                    const optionClassName = [
+                      "option-btn",
+                      isSelected ? "selected" : "",
+                      currentAnswerChecked && isCorrectOption ? "correct" : "",
+                      currentAnswerChecked && isSelected && !isCorrectOption ? "wrong" : "",
+                    ]
+                      .filter(Boolean)
+                      .join(" ");
+
+                    return (
+                      <button
+                        key={option.id}
+                        className={optionClassName}
+                        onClick={() => selectAnswer(currentQuestion.id, option.id)}
+                        disabled={submitted || currentAnswerChecked}
+                      >
+                        <strong>{option.id.toUpperCase()}.</strong>
+                        {option.text}
+                      </button>
+                    );
+                  })}
+                </div>
+                {currentAnswerChecked ? (
+                  <div className={`answer-feedback ${currentAnswerIsCorrect ? "correct" : "wrong"}`}>
+                    <p>
+                      <strong>{currentAnswerIsCorrect ? "Correct." : "Incorrect."}</strong> Your answer:{" "}
+                      {findOptionText(currentQuestion, currentSelectedOptionId)}
+                    </p>
+                    <p>
+                      <strong>Correct answer:</strong> {findOptionText(currentQuestion, currentQuestion.correctOptionId)}
+                    </p>
+                    {currentQuestion.explanation ? (
+                      <p>
+                        <strong>Why:</strong> {currentQuestion.explanation}
+                      </p>
+                    ) : null}
+                  </div>
+                ) : null}
+              </>
+            )}
+          </div>
 
           <div className="row-actions">
             <button
               className="btn btn-with-icon btn-question-nav"
-              onClick={() => setActiveQuestionIndex((prev) => Math.max(prev - 1, 0))}
+              onClick={moveToPreviousQuestion}
               disabled={activeQuestionIndex === 0}
             >
               <span className="btn-icon" aria-hidden="true">
@@ -795,9 +927,7 @@ export default function QuizApp({ lectures }: QuizAppProps) {
             </button>
             <button
               className="btn btn-question-nav btn-with-icon"
-              onClick={() =>
-                setActiveQuestionIndex((prev) => Math.min(prev + 1, selectedLecture.questions.length - 1))
-              }
+              onClick={moveToNextQuestion}
               disabled={activeQuestionIndex >= selectedLecture.questions.length - 1}
             >
               Next Question
@@ -936,6 +1066,35 @@ export default function QuizApp({ lectures }: QuizAppProps) {
           </div>
         </section>
       )}
+      <AlertDialog.Root open={Boolean(confirmationDialog)} onOpenChange={handleConfirmationOpenChange}>
+        <AlertDialog.Portal>
+          <AlertDialog.Overlay className="confirm-overlay" />
+          <AlertDialog.Content className="confirm-content">
+            <AlertDialog.Title className="confirm-title">{confirmationDialog?.title}</AlertDialog.Title>
+            <AlertDialog.Description className="confirm-description">
+              {confirmationDialog?.description}
+            </AlertDialog.Description>
+            <div className="confirm-actions">
+              <AlertDialog.Cancel asChild>
+                <button className="btn">{confirmationDialog?.cancelLabel ?? "Cancel"}</button>
+              </AlertDialog.Cancel>
+              <AlertDialog.Action asChild>
+                <button
+                  className={`btn ${
+                    confirmationDialog?.intent === "danger" ? "btn-danger" : "btn-primary"
+                  } btn-with-icon`}
+                  onClick={handleConfirmationAction}
+                >
+                  <span className="btn-icon" aria-hidden="true">
+                    {"\u2713"}
+                  </span>
+                  {confirmationDialog?.confirmLabel ?? "Confirm"}
+                </button>
+              </AlertDialog.Action>
+            </div>
+          </AlertDialog.Content>
+        </AlertDialog.Portal>
+      </AlertDialog.Root>
     </main>
   );
 }

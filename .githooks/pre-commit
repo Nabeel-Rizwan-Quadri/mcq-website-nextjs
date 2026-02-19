@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+set -e
+
+npm run version:bump:patch --silent
+git add package.json package-lock.json
