@@ -7,12 +7,27 @@ type QuizAppProps = {
   lectures: LectureQuiz[];
 };
 type ThemeMode = "dark" | "light";
+const QUIZ_STATE_STORAGE_KEY = "mcq-hub-quiz-state-v1";
+
+type PersistedQuizState = {
+  selectedLectureId: string;
+  activeQuestionIndex: number;
+  answers: Record<string, string>;
+  checkedAnswers: Record<string, boolean>;
+  submitted: boolean;
+  autoSubmitted: boolean;
+  timeLeft: number;
+};
 
 function formatTime(totalSeconds: number): string {
   const safeSeconds = Math.max(totalSeconds, 0);
   const minutes = Math.floor(safeSeconds / 60);
   const seconds = safeSeconds % 60;
   return `${minutes}:${seconds.toString().padStart(2, "0")}`;
+}
+
+function clamp(value: number, min: number, max: number): number {
+  return Math.min(Math.max(value, min), max);
 }
 
 function findOptionText(question: MCQQuestion, optionId: string | undefined): string {
@@ -24,8 +39,49 @@ function findOptionText(question: MCQQuestion, optionId: string | undefined): st
   return found ? found.text : "Not answered";
 }
 
+function sanitizeAnswers(lecture: LectureQuiz, candidate: unknown): Record<string, string> {
+  if (!candidate || typeof candidate !== "object") {
+    return {};
+  }
+
+  const answerRecord = candidate as Record<string, unknown>;
+  const nextAnswers: Record<string, string> = {};
+
+  for (const question of lecture.questions) {
+    const answerId = answerRecord[question.id];
+    if (typeof answerId !== "string") {
+      continue;
+    }
+
+    const isValidOption = question.options.some((option) => option.id === answerId);
+    if (isValidOption) {
+      nextAnswers[question.id] = answerId;
+    }
+  }
+
+  return nextAnswers;
+}
+
+function sanitizeCheckedAnswers(lecture: LectureQuiz, candidate: unknown): Record<string, boolean> {
+  if (!candidate || typeof candidate !== "object") {
+    return {};
+  }
+
+  const checkedRecord = candidate as Record<string, unknown>;
+  const nextCheckedAnswers: Record<string, boolean> = {};
+
+  for (const question of lecture.questions) {
+    if (checkedRecord[question.id] === true) {
+      nextCheckedAnswers[question.id] = true;
+    }
+  }
+
+  return nextCheckedAnswers;
+}
+
 export default function QuizApp({ lectures }: QuizAppProps) {
   const [hasMounted, setHasMounted] = useState(false);
+  const [hasHydratedQuizState, setHasHydratedQuizState] = useState(false);
   const [selectedLectureId, setSelectedLectureId] = useState(lectures[0]?.id ?? "");
   const [activeQuestionIndex, setActiveQuestionIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<string, string>>({});
@@ -76,13 +132,114 @@ export default function QuizApp({ lectures }: QuizAppProps) {
     window.localStorage.setItem("theme-mode", themeMode);
   }, [themeMode]);
 
-  function switchLecture(lectureId: string): void {
-    const lecture = lectures.find((item) => item.id === lectureId);
-    if (!lecture) {
+  useEffect(() => {
+    let nextState: PersistedQuizState = {
+      selectedLectureId: "",
+      activeQuestionIndex: 0,
+      answers: {},
+      checkedAnswers: {},
+      submitted: false,
+      autoSubmitted: false,
+      timeLeft: 0,
+    };
+
+    if (lectures.length > 0) {
+      const defaultLecture = lectures[0];
+      nextState = {
+        selectedLectureId: defaultLecture.id,
+        activeQuestionIndex: 0,
+        answers: {},
+        checkedAnswers: {},
+        submitted: false,
+        autoSubmitted: false,
+        timeLeft: defaultLecture.durationSeconds,
+      };
+
+      const persistedState = window.localStorage.getItem(QUIZ_STATE_STORAGE_KEY);
+      if (persistedState) {
+        try {
+          const parsedState = JSON.parse(persistedState) as Partial<PersistedQuizState>;
+          const lectureFromStorage =
+            typeof parsedState.selectedLectureId === "string"
+              ? lectures.find((lecture) => lecture.id === parsedState.selectedLectureId) ?? defaultLecture
+              : defaultLecture;
+
+          const maxQuestionIndex = Math.max(lectureFromStorage.questions.length - 1, 0);
+          const activeQuestionIndex =
+            typeof parsedState.activeQuestionIndex === "number"
+              ? clamp(Math.floor(parsedState.activeQuestionIndex), 0, maxQuestionIndex)
+              : 0;
+
+          const submitted = parsedState.submitted === true;
+          const autoSubmitted = submitted && parsedState.autoSubmitted === true;
+          const timeLeft =
+            typeof parsedState.timeLeft === "number"
+              ? clamp(Math.floor(parsedState.timeLeft), 0, lectureFromStorage.durationSeconds)
+              : lectureFromStorage.durationSeconds;
+
+          nextState = {
+            selectedLectureId: lectureFromStorage.id,
+            activeQuestionIndex,
+            answers: sanitizeAnswers(lectureFromStorage, parsedState.answers),
+            checkedAnswers: sanitizeCheckedAnswers(lectureFromStorage, parsedState.checkedAnswers),
+            submitted,
+            autoSubmitted,
+            timeLeft,
+          };
+        } catch {
+          window.localStorage.removeItem(QUIZ_STATE_STORAGE_KEY);
+        }
+      }
+    }
+
+    const frameId = window.requestAnimationFrame(() => {
+      setSelectedLectureId(nextState.selectedLectureId);
+      setActiveQuestionIndex(nextState.activeQuestionIndex);
+      setAnswers(nextState.answers);
+      setCheckedAnswers(nextState.checkedAnswers);
+      setSubmitted(nextState.submitted);
+      setAutoSubmitted(nextState.autoSubmitted);
+      setTimeLeft(nextState.timeLeft);
+      setHasHydratedQuizState(true);
+    });
+
+    return () => window.cancelAnimationFrame(frameId);
+  }, [lectures]);
+
+  useEffect(() => {
+    if (!hasHydratedQuizState) {
       return;
     }
 
-    setSelectedLectureId(lectureId);
+    if (!selectedLecture) {
+      window.localStorage.removeItem(QUIZ_STATE_STORAGE_KEY);
+      return;
+    }
+
+    const snapshot: PersistedQuizState = {
+      selectedLectureId,
+      activeQuestionIndex,
+      answers,
+      checkedAnswers,
+      submitted,
+      autoSubmitted,
+      timeLeft,
+    };
+
+    window.localStorage.setItem(QUIZ_STATE_STORAGE_KEY, JSON.stringify(snapshot));
+  }, [
+    hasHydratedQuizState,
+    selectedLecture,
+    selectedLectureId,
+    activeQuestionIndex,
+    answers,
+    checkedAnswers,
+    submitted,
+    autoSubmitted,
+    timeLeft,
+  ]);
+
+  function resetQuizForLecture(lecture: LectureQuiz): void {
     setActiveQuestionIndex(0);
     setAnswers({});
     setCheckedAnswers({});
@@ -91,8 +248,45 @@ export default function QuizApp({ lectures }: QuizAppProps) {
     setTimeLeft(lecture.durationSeconds);
   }
 
+  function hasProgressInLecture(lecture: LectureQuiz): boolean {
+    const hasAnswers = lecture.questions.some((question) => Boolean(answers[question.id]));
+    const hasChecked = lecture.questions.some((question) => Boolean(checkedAnswers[question.id]));
+    return (
+      hasAnswers ||
+      hasChecked ||
+      activeQuestionIndex > 0 ||
+      submitted ||
+      autoSubmitted ||
+      timeLeft < lecture.durationSeconds
+    );
+  }
+
+  function switchLecture(lectureId: string): void {
+    const lecture = lectures.find((item) => item.id === lectureId);
+    if (!lecture) {
+      return;
+    }
+
+    if (lecture.id === selectedLectureId) {
+      return;
+    }
+
+    if (selectedLecture && hasProgressInLecture(selectedLecture)) {
+      const shouldSwitch = window.confirm(
+        "Switching sets will discard your current progress. Do you want to continue?",
+      );
+
+      if (!shouldSwitch) {
+        return;
+      }
+    }
+
+    setSelectedLectureId(lectureId);
+    resetQuizForLecture(lecture);
+  }
+
   useEffect(() => {
-    if (!selectedLecture || submitted) {
+    if (!hasHydratedQuizState || !selectedLecture || submitted) {
       return;
     }
 
@@ -108,7 +302,7 @@ export default function QuizApp({ lectures }: QuizAppProps) {
     }, 1000);
 
     return () => window.clearInterval(timerId);
-  }, [selectedLecture, submitted]);
+  }, [hasHydratedQuizState, selectedLecture, submitted]);
 
   const answeredCount = useMemo(() => {
     if (!selectedLecture) {
@@ -189,24 +383,24 @@ export default function QuizApp({ lectures }: QuizAppProps) {
     setAutoSubmitted(false);
   }
 
-  function retakeLecture(): void {
+  function restartCurrentLecture(): void {
     if (!selectedLecture) {
       return;
     }
 
-    setAnswers({});
-    setCheckedAnswers({});
-    setSubmitted(false);
-    setAutoSubmitted(false);
-    setActiveQuestionIndex(0);
-    setTimeLeft(selectedLecture.durationSeconds);
+    const shouldRestart = window.confirm("Restart this set? All current progress will be lost.");
+    if (!shouldRestart) {
+      return;
+    }
+
+    resetQuizForLecture(selectedLecture);
   }
 
   function toggleThemeMode(): void {
     setThemeMode((previous) => (previous === "dark" ? "light" : "dark"));
   }
 
-  if (!hasMounted) {
+  if (!hasMounted || !hasHydratedQuizState) {
     return null;
   }
 
@@ -390,6 +584,9 @@ export default function QuizApp({ lectures }: QuizAppProps) {
             >
               Check Answer
             </button>
+            <button className="btn" onClick={restartCurrentLecture}>
+              Restart This Set
+            </button>
             <button className="btn btn-primary" onClick={submitQuiz}>
               Submit Quiz
             </button>
@@ -409,7 +606,7 @@ export default function QuizApp({ lectures }: QuizAppProps) {
               <p className="autoflag">Time is up. The quiz was auto-submitted.</p>
             ) : null}
           </div>
-          <button className="btn btn-primary" onClick={retakeLecture}>
+          <button className="btn btn-primary" onClick={restartCurrentLecture}>
             Retake This Set
           </button>
 
