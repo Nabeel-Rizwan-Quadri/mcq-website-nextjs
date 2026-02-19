@@ -19,12 +19,15 @@
   --chip-warn-bg: #3a2e1e;
   --chip-danger-border: #c47463;
   --chip-danger-bg: #3d2320;
+  --chip-flag-border: #a37be7;
+  --chip-flag-bg: #2b1f42;
   --question-attempted-border: #bf934f;
   --question-attempted-bg: #3a2e1e;
   --question-correct-border: #4f9878;
   --question-correct-bg: #162f2a;
   --question-wrong-border: #b56d5f;
   --question-wrong-bg: #2d1c1b;
+  --question-flag-dot: #d0b1ff;
   --current-border: #e3bb62;
   --option-hover-border: #61798b;
   --option-selected-border: #54a985;
@@ -33,10 +36,21 @@
   --review-correct-bg: #112920;
   --review-wrong-border: #b56d5f;
   --review-wrong-bg: #2d1c1b;
+  --flag-badge-border: #9f79dd;
+  --flag-badge-bg: #33244b;
+  --flag-badge-ink: #f2eaff;
   --btn-check-border: #e3bb62;
   --btn-check-bg: #d2a44f;
   --btn-check-hover: #bd9141;
   --btn-check-ink: #ffffff;
+  --btn-flag-border: #8f6bce;
+  --btn-flag-bg: #3a2a58;
+  --btn-flag-hover: #4a346f;
+  --btn-flag-ink: #f4efff;
+  --btn-flag-active-border: #bf9df5;
+  --btn-flag-active-bg: #5a3f89;
+  --btn-flag-active-hover: #6a4aa0;
+  --btn-flag-active-ink: #ffffff;
   --btn-danger-border: #c96161;
   --btn-danger-bg: #b94747;
   --btn-danger-hover: #a43d3d;
@@ -64,12 +78,15 @@
   --chip-warn-bg: #fff3e6;
   --chip-danger-border: #e29b8a;
   --chip-danger-bg: #ffeae5;
+  --chip-flag-border: #c4acef;
+  --chip-flag-bg: #f4ecff;
   --question-attempted-border: #d89a68;
   --question-attempted-bg: #fff3e6;
   --question-correct-border: #8cc5ad;
   --question-correct-bg: #f0f9f4;
   --question-wrong-border: #e6b6aa;
   --question-wrong-bg: #fff4f1;
+  --question-flag-dot: #8b69c2;
   --current-border: #e4ba5f;
   --option-hover-border: #95afaa;
   --option-selected-border: #74a58f;
@@ -78,10 +95,21 @@
   --review-correct-bg: #f2fbf6;
   --review-wrong-border: #e6b6aa;
   --review-wrong-bg: #fff4f1;
+  --flag-badge-border: #c5afea;
+  --flag-badge-bg: #f3ebff;
+  --flag-badge-ink: #4d3678;
   --btn-check-border: #e4ba5f;
   --btn-check-bg: #f6d27d;
   --btn-check-hover: #edc15f;
   --btn-check-ink: #ffffff;
+  --btn-flag-border: #c2abe8;
+  --btn-flag-bg: #f1e9ff;
+  --btn-flag-hover: #e4d8fa;
+  --btn-flag-ink: #513a7e;
+  --btn-flag-active-border: #a682de;
+  --btn-flag-active-bg: #b99ded;
+  --btn-flag-active-hover: #a887df;
+  --btn-flag-active-ink: #ffffff;
   --btn-danger-border: #dc7a70;
   --btn-danger-bg: #cb5648;
   --btn-danger-hover: #b7483b;
@@ -281,6 +309,11 @@ p {
   background: var(--chip-danger-bg);
 }
 
+.chip-flag {
+  border-color: var(--chip-flag-border);
+  background: var(--chip-flag-bg);
+}
+
 .question-head {
   display: flex;
   justify-content: space-between;
@@ -304,6 +337,21 @@ p {
   cursor: pointer;
   font-weight: 600;
   color: var(--ink);
+}
+
+.question-dot.flagged {
+  position: relative;
+}
+
+.question-dot.flagged::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--question-flag-dot);
 }
 
 .question-dot.attempted {
@@ -429,6 +477,28 @@ button {
   background: var(--btn-check-hover);
 }
 
+.btn-flag {
+  border-color: var(--btn-flag-border);
+  background: var(--btn-flag-bg);
+  color: var(--btn-flag-ink);
+}
+
+.btn-flag:hover {
+  border-color: var(--btn-flag-hover);
+  background: var(--btn-flag-hover);
+}
+
+.btn-flag-active {
+  border-color: var(--btn-flag-active-border);
+  background: var(--btn-flag-active-bg);
+  color: var(--btn-flag-active-ink);
+}
+
+.btn-flag-active:hover {
+  border-color: var(--btn-flag-active-hover);
+  background: var(--btn-flag-active-hover);
+}
+
 .btn-danger {
   border-color: var(--btn-danger-border);
   background: var(--btn-danger-bg);
@@ -498,10 +568,24 @@ button {
 .review-card h3 {
   font-size: 1rem;
   margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
 }
 
 .review-card p + p {
   margin-top: 6px;
+}
+
+.flag-badge {
+  border: 1px solid var(--flag-badge-border);
+  border-radius: 999px;
+  padding: 2px 8px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  background: var(--flag-badge-bg);
+  color: var(--flag-badge-ink);
 }
 
 .lecture-topic {

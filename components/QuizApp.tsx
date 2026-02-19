@@ -15,6 +15,7 @@ type PersistedQuizState = {
   activeQuestionIndex: number;
   answers: Record<string, string>;
   checkedAnswers: Record<string, boolean>;
+  flaggedQuestions: Record<string, boolean>;
   submitted: boolean;
   autoSubmitted: boolean;
   timeLeft: number;
@@ -81,6 +82,23 @@ function sanitizeCheckedAnswers(lecture: LectureQuiz, candidate: unknown): Recor
   return nextCheckedAnswers;
 }
 
+function sanitizeFlaggedQuestions(lecture: LectureQuiz, candidate: unknown): Record<string, boolean> {
+  if (!candidate || typeof candidate !== "object") {
+    return {};
+  }
+
+  const flaggedRecord = candidate as Record<string, unknown>;
+  const nextFlaggedQuestions: Record<string, boolean> = {};
+
+  for (const question of lecture.questions) {
+    if (flaggedRecord[question.id] === true) {
+      nextFlaggedQuestions[question.id] = true;
+    }
+  }
+
+  return nextFlaggedQuestions;
+}
+
 export default function QuizApp({ lectures }: QuizAppProps) {
   const [hasMounted, setHasMounted] = useState(false);
   const [hasHydratedQuizState, setHasHydratedQuizState] = useState(false);
@@ -88,6 +106,7 @@ export default function QuizApp({ lectures }: QuizAppProps) {
   const [activeQuestionIndex, setActiveQuestionIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [checkedAnswers, setCheckedAnswers] = useState<Record<string, boolean>>({});
+  const [flaggedQuestions, setFlaggedQuestions] = useState<Record<string, boolean>>({});
   const [submitted, setSubmitted] = useState(false);
   const [autoSubmitted, setAutoSubmitted] = useState(false);
   const [timeLeft, setTimeLeft] = useState(lectures[0]?.durationSeconds ?? 0);
@@ -104,6 +123,7 @@ export default function QuizApp({ lectures }: QuizAppProps) {
   const currentQuestion = selectedLecture?.questions[activeQuestionIndex];
   const currentSelectedOptionId = currentQuestion ? answers[currentQuestion.id] : undefined;
   const currentAnswerChecked = currentQuestion ? Boolean(checkedAnswers[currentQuestion.id]) : false;
+  const currentQuestionFlagged = currentQuestion ? Boolean(flaggedQuestions[currentQuestion.id]) : false;
   const currentAnswerIsCorrect =
     currentQuestion && currentSelectedOptionId
       ? currentSelectedOptionId === currentQuestion.correctOptionId
@@ -141,6 +161,7 @@ export default function QuizApp({ lectures }: QuizAppProps) {
       activeQuestionIndex: 0,
       answers: {},
       checkedAnswers: {},
+      flaggedQuestions: {},
       submitted: false,
       autoSubmitted: false,
       timeLeft: 0,
@@ -154,6 +175,7 @@ export default function QuizApp({ lectures }: QuizAppProps) {
         activeQuestionIndex: 0,
         answers: {},
         checkedAnswers: {},
+        flaggedQuestions: {},
         submitted: false,
         autoSubmitted: false,
         timeLeft: defaultLecture.durationSeconds,
@@ -189,6 +211,7 @@ export default function QuizApp({ lectures }: QuizAppProps) {
             activeQuestionIndex,
             answers: sanitizeAnswers(lectureFromStorage, parsedState.answers),
             checkedAnswers: sanitizeCheckedAnswers(lectureFromStorage, parsedState.checkedAnswers),
+            flaggedQuestions: sanitizeFlaggedQuestions(lectureFromStorage, parsedState.flaggedQuestions),
             submitted,
             autoSubmitted,
             timeLeft,
@@ -205,6 +228,7 @@ export default function QuizApp({ lectures }: QuizAppProps) {
       setActiveQuestionIndex(nextState.activeQuestionIndex);
       setAnswers(nextState.answers);
       setCheckedAnswers(nextState.checkedAnswers);
+      setFlaggedQuestions(nextState.flaggedQuestions);
       setSubmitted(nextState.submitted);
       setAutoSubmitted(nextState.autoSubmitted);
       setTimeLeft(nextState.timeLeft);
@@ -230,6 +254,7 @@ export default function QuizApp({ lectures }: QuizAppProps) {
       activeQuestionIndex,
       answers,
       checkedAnswers,
+      flaggedQuestions,
       submitted,
       autoSubmitted,
       timeLeft,
@@ -244,6 +269,7 @@ export default function QuizApp({ lectures }: QuizAppProps) {
     activeQuestionIndex,
     answers,
     checkedAnswers,
+    flaggedQuestions,
     submitted,
     autoSubmitted,
     timeLeft,
@@ -254,6 +280,7 @@ export default function QuizApp({ lectures }: QuizAppProps) {
     setActiveQuestionIndex(0);
     setAnswers({});
     setCheckedAnswers({});
+    setFlaggedQuestions({});
     setSubmitted(false);
     setAutoSubmitted(false);
     setTimeLeft(lecture.durationSeconds);
@@ -265,7 +292,8 @@ export default function QuizApp({ lectures }: QuizAppProps) {
     const hasChecked = lecture.questions.some(
       (question) => Boolean(checkedAnswers[question.id]) && Boolean(answers[question.id]),
     );
-    return hasAnswers || hasChecked;
+    const hasFlags = lecture.questions.some((question) => Boolean(flaggedQuestions[question.id]));
+    return hasAnswers || hasChecked || hasFlags;
   }
 
   function switchLecture(lectureId: string): void {
@@ -318,6 +346,14 @@ export default function QuizApp({ lectures }: QuizAppProps) {
 
     return selectedLecture.questions.filter((question) => answers[question.id]).length;
   }, [answers, selectedLecture]);
+
+  const flaggedCount = useMemo(() => {
+    if (!selectedLecture) {
+      return 0;
+    }
+
+    return selectedLecture.questions.filter((question) => flaggedQuestions[question.id]).length;
+  }, [flaggedQuestions, selectedLecture]);
 
   const score = useMemo(() => {
     if (!selectedLecture) {
@@ -374,6 +410,25 @@ export default function QuizApp({ lectures }: QuizAppProps) {
       ...previous,
       [currentQuestion.id]: true,
     }));
+  }
+
+  function toggleFlaggedQuestion(questionId: string): void {
+    if (submitted) {
+      return;
+    }
+
+    setFlaggedQuestions((previous) => {
+      if (previous[questionId]) {
+        const nextFlags = { ...previous };
+        delete nextFlags[questionId];
+        return nextFlags;
+      }
+
+      return {
+        ...previous,
+        [questionId]: true,
+      };
+    });
   }
 
   function submitQuiz(): void {
@@ -506,6 +561,7 @@ export default function QuizApp({ lectures }: QuizAppProps) {
           <span className="chip">
             Answered: {answeredCount}/{selectedLecture.questions.length}
           </span>
+          <span className="chip chip-flag">Flagged: {flaggedCount}</span>
           <span className="chip">{submitted ? "Submitted" : "In Progress"}</span>
           <button className="btn" onClick={addFiveMoreMinutes} disabled={submitted || timeBoostUsed}>
             {timeBoostUsed ? "Extra 5 Minutes Used" : "Add 5 More Minutes"}
@@ -519,6 +575,7 @@ export default function QuizApp({ lectures }: QuizAppProps) {
             <h2>
               Question {activeQuestionIndex + 1} / {selectedLecture.questions.length}
             </h2>
+            {currentQuestionFlagged ? <span className="chip chip-flag">Flagged for review</span> : null}
           </div>
 
           <div className="question-grid">
@@ -526,9 +583,11 @@ export default function QuizApp({ lectures }: QuizAppProps) {
               const selectedOptionId = answers[question.id];
               const answerChecked = Boolean(checkedAnswers[question.id]);
               const answerIsCorrect = selectedOptionId === question.correctOptionId;
+              const isFlagged = Boolean(flaggedQuestions[question.id]);
               const questionDotClassName = [
                 "question-dot",
                 index === activeQuestionIndex ? "current" : "",
+                isFlagged ? "flagged" : "",
                 selectedOptionId
                   ? answerChecked
                     ? answerIsCorrect
@@ -541,7 +600,12 @@ export default function QuizApp({ lectures }: QuizAppProps) {
                 .join(" ");
 
               return (
-                <button key={question.id} className={questionDotClassName} onClick={() => setActiveQuestionIndex(index)}>
+                <button
+                  key={question.id}
+                  className={questionDotClassName}
+                  onClick={() => setActiveQuestionIndex(index)}
+                  title={isFlagged ? "Flagged for review" : undefined}
+                >
                   {index + 1}
                 </button>
               );
@@ -616,6 +680,13 @@ export default function QuizApp({ lectures }: QuizAppProps) {
             >
               Check Answer
             </button>
+            <button
+              className={`btn ${currentQuestionFlagged ? "btn-flag-active" : "btn-flag"}`}
+              onClick={() => currentQuestion && toggleFlaggedQuestion(currentQuestion.id)}
+              disabled={!currentQuestion || submitted}
+            >
+              {currentQuestionFlagged ? "Unflag Question" : "Flag for Review"}
+            </button>
             <button className="btn btn-primary" onClick={submitQuiz}>
               Submit Quiz
             </button>
@@ -643,10 +714,12 @@ export default function QuizApp({ lectures }: QuizAppProps) {
             {selectedLecture.questions.map((question, index) => {
               const selectedOptionId = answers[question.id];
               const isCorrect = selectedOptionId === question.correctOptionId;
+              const isFlagged = Boolean(flaggedQuestions[question.id]);
               return (
                 <article key={question.id} className={`review-card ${isCorrect ? "correct" : "wrong"}`}>
                   <h3>
                     Q{index + 1}. {question.question}
+                    {isFlagged ? <span className="flag-badge">Flagged</span> : null}
                   </h3>
                   <div className="options">
                     {question.options.map((option) => {
