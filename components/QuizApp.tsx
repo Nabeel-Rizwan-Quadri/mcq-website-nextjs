@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState, type CSSProperties } from "react";
 import * as AlertDialog from "@radix-ui/react-alert-dialog";
 import type { LectureQuiz, MCQQuestion } from "@/lib/types";
 
@@ -10,8 +10,12 @@ type QuizAppProps = {
 };
 type ThemeMode = "dark" | "light";
 const QUIZ_STATE_STORAGE_KEY = "mcq-hub-quiz-state-v1";
+const WELCOME_MODAL_STORAGE_KEY = "mcq-hub-hide-welcome-v1";
+const HIDE_WELCOME_STORAGE_VALUE = "1";
 const EXTRA_TIME_SECONDS_FIVE = 5 * 60;
 const EXTRA_TIME_SECONDS_TEN = 10 * 60;
+const CONFETTI_CLEANUP_MS = 6200;
+const CONFETTI_COLORS = ["#34c18a", "#e3bb62", "#ff8f74", "#69a7ff", "#c7a4ff", "#ffffff"];
 
 type PersistedQuizState = {
   selectedLectureId: string;
@@ -34,6 +38,18 @@ type ConfirmationDialogState = {
   cancelLabel: string;
   intent: "default" | "danger";
   onConfirm: () => void;
+};
+
+type ConfettiPiece = {
+  id: string;
+  leftPercent: number;
+  driftPx: number;
+  rotationDeg: number;
+  durationMs: number;
+  delayMs: number;
+  color: string;
+  widthPx: number;
+  heightPx: number;
 };
 
 function formatTime(totalSeconds: number): string {
@@ -125,6 +141,37 @@ function sanitizeFlaggedQuestions(lecture: LectureQuiz, candidate: unknown): Rec
   return nextFlaggedQuestions;
 }
 
+function buildConfettiPieces(count: number): ConfettiPiece[] {
+  const now = Date.now();
+  return Array.from({ length: count }, (_, index) => {
+    const widthPx = 6 + Math.random() * 6;
+    return {
+      id: `${now}-${index}`,
+      leftPercent: Math.random() * 100,
+      driftPx: -90 + Math.random() * 180,
+      rotationDeg: -540 + Math.random() * 1080,
+      durationMs: 3000 + Math.round(Math.random() * 2200),
+      delayMs: Math.round(Math.random() * 420),
+      color: CONFETTI_COLORS[Math.floor(Math.random() * CONFETTI_COLORS.length)],
+      widthPx,
+      heightPx: Math.max(4, Math.round(widthPx * 0.52)),
+    };
+  });
+}
+
+function getConfettiPieceStyle(piece: ConfettiPiece): CSSProperties {
+  return {
+    left: `${piece.leftPercent}%`,
+    width: `${piece.widthPx}px`,
+    height: `${piece.heightPx}px`,
+    backgroundColor: piece.color,
+    animationDuration: `${piece.durationMs}ms`,
+    animationDelay: `${piece.delayMs}ms`,
+    ["--confetti-drift" as `--${string}`]: `${piece.driftPx}px`,
+    ["--confetti-rotation" as `--${string}`]: `${piece.rotationDeg}deg`,
+  };
+}
+
 export default function QuizApp({ lectures, appVersion }: QuizAppProps) {
   const [hasMounted, setHasMounted] = useState(false);
   const [hasHydratedQuizState, setHasHydratedQuizState] = useState(false);
@@ -142,6 +189,10 @@ export default function QuizApp({ lectures, appVersion }: QuizAppProps) {
   const [showHeaderDetails, setShowHeaderDetails] = useState(false);
   const [confirmationDialog, setConfirmationDialog] = useState<ConfirmationDialogState | null>(null);
   const [themeMode, setThemeMode] = useState<ThemeMode>("dark");
+  const [showWelcomeModal, setShowWelcomeModal] = useState(false);
+  const [hideWelcomeOnNextVisit, setHideWelcomeOnNextVisit] = useState(false);
+  const [confettiPieces, setConfettiPieces] = useState<ConfettiPiece[]>([]);
+  const confettiTimeoutRef = useRef<number | null>(null);
 
   const selectedLecture = useMemo(
     () => lectures.find((lecture) => lecture.id === selectedLectureId),
@@ -184,6 +235,33 @@ export default function QuizApp({ lectures, appVersion }: QuizAppProps) {
     document.documentElement.setAttribute("data-theme", themeMode);
     window.localStorage.setItem("theme-mode", themeMode);
   }, [themeMode]);
+
+  useEffect(() => {
+    if (!hasMounted) {
+      return;
+    }
+
+    const hideWelcome =
+      window.localStorage.getItem(WELCOME_MODAL_STORAGE_KEY) === HIDE_WELCOME_STORAGE_VALUE;
+
+    if (hideWelcome) {
+      return;
+    }
+
+    const frameId = window.requestAnimationFrame(() => {
+      setShowWelcomeModal(true);
+    });
+
+    return () => window.cancelAnimationFrame(frameId);
+  }, [hasMounted]);
+
+  useEffect(() => {
+    return () => {
+      if (confettiTimeoutRef.current !== null) {
+        window.clearTimeout(confettiTimeoutRef.current);
+      }
+    };
+  }, []);
 
   useEffect(() => {
     let nextState: PersistedQuizState = {
@@ -316,6 +394,30 @@ export default function QuizApp({ lectures, appVersion }: QuizAppProps) {
     timeBoostFiveUsed,
     timeBoostTenUsed,
   ]);
+
+  function launchConfetti(pieceCount = 160): void {
+    setConfettiPieces(buildConfettiPieces(pieceCount));
+
+    if (confettiTimeoutRef.current !== null) {
+      window.clearTimeout(confettiTimeoutRef.current);
+    }
+
+    confettiTimeoutRef.current = window.setTimeout(() => {
+      setConfettiPieces([]);
+      confettiTimeoutRef.current = null;
+    }, CONFETTI_CLEANUP_MS);
+  }
+
+  function closeWelcomeModal(): void {
+    if (hideWelcomeOnNextVisit) {
+      window.localStorage.setItem(WELCOME_MODAL_STORAGE_KEY, HIDE_WELCOME_STORAGE_VALUE);
+    } else {
+      window.localStorage.removeItem(WELCOME_MODAL_STORAGE_KEY);
+    }
+
+    setShowWelcomeModal(false);
+    launchConfetti(150);
+  }
 
   function resetQuizForLecture(lecture: LectureQuiz): void {
     setActiveQuestionIndex(0);
@@ -560,6 +662,7 @@ export default function QuizApp({ lectures, appVersion }: QuizAppProps) {
       setSubmitted(true);
       setAutoSubmitted(false);
       setShowStats(false);
+      launchConfetti(220);
     };
 
     const unansweredCount = selectedLecture.questions.length - answeredCount;
@@ -671,12 +774,48 @@ export default function QuizApp({ lectures, appVersion }: QuizAppProps) {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [selectedLecture, submitted, confirmationDialog]);
 
+  const confettiLayer =
+    confettiPieces.length > 0 ? (
+      <div className="confetti-layer" aria-hidden="true">
+        {confettiPieces.map((piece) => (
+          <span key={piece.id} className="confetti-piece" style={getConfettiPieceStyle(piece)} />
+        ))}
+      </div>
+    ) : null;
+
+  const welcomeModal = showWelcomeModal ? (
+    <div className="welcome-overlay" role="presentation">
+      <section className="welcome-modal" role="dialog" aria-modal="true" aria-labelledby="welcome-modal-title">
+        <h2 id="welcome-modal-title">Welcome to MCQ Hub</h2>
+        <p className="welcome-copy">
+          Practice lecture-wise MCQs, check answers instantly, and review clear explanations for every question.
+        </p>
+        <label className="welcome-checkbox">
+          <input
+            type="checkbox"
+            checked={hideWelcomeOnNextVisit}
+            onChange={(event) => setHideWelcomeOnNextVisit(event.target.checked)}
+          />
+          <span>Do not show this again</span>
+        </label>
+        <div className="welcome-actions">
+          <button className="btn btn-primary btn-with-icon" onClick={closeWelcomeModal}>
+            <span className="btn-icon" aria-hidden="true">
+              {"\u2728"}
+            </span>
+            Start Quiz
+          </button>
+        </div>
+      </section>
+    </div>
+  ) : null;
+
   if (!hasMounted || !hasHydratedQuizState) {
     return null;
   }
 
   if (!selectedLecture) {
-      return (
+    return (
       <main className="page-shell">
         <section className="panel">
           <div className="hero-header">
@@ -697,6 +836,8 @@ export default function QuizApp({ lectures, appVersion }: QuizAppProps) {
           <p className="build-meta">Version v{appVersion}</p>
           <p className="hero-subtitle">No quiz data is available yet.</p>
         </section>
+        {confettiLayer}
+        {welcomeModal}
       </main>
     );
   }
@@ -1066,6 +1207,8 @@ export default function QuizApp({ lectures, appVersion }: QuizAppProps) {
           </div>
         </section>
       )}
+      {confettiLayer}
+      {welcomeModal}
       <AlertDialog.Root open={Boolean(confirmationDialog)} onOpenChange={handleConfirmationOpenChange}>
         <AlertDialog.Portal>
           <AlertDialog.Overlay className="confirm-overlay" />
