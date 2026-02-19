@@ -308,6 +308,36 @@ p {
   background: var(--option-selected-bg);
 }
 
+.option-btn.correct {
+  border-color: var(--review-correct-border);
+  background: var(--review-correct-bg);
+}
+
+.option-btn.wrong {
+  border-color: var(--review-wrong-border);
+  background: var(--review-wrong-bg);
+}
+
+.answer-feedback {
+  margin-top: 12px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 12px;
+  background: var(--surface-soft);
+  display: grid;
+  gap: 6px;
+}
+
+.answer-feedback.correct {
+  border-color: var(--review-correct-border);
+  background: var(--review-correct-bg);
+}
+
+.answer-feedback.wrong {
+  border-color: var(--review-wrong-border);
+  background: var(--review-wrong-bg);
+}
+
 .row-actions {
   margin-top: 14px;
   display: flex;

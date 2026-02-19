@@ -29,6 +29,7 @@ export default function QuizApp({ lectures }: QuizAppProps) {
   const [selectedLectureId, setSelectedLectureId] = useState(lectures[0]?.id ?? "");
   const [activeQuestionIndex, setActiveQuestionIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<string, string>>({});
+  const [checkedAnswers, setCheckedAnswers] = useState<Record<string, boolean>>({});
   const [submitted, setSubmitted] = useState(false);
   const [autoSubmitted, setAutoSubmitted] = useState(false);
   const [timeLeft, setTimeLeft] = useState(lectures[0]?.durationSeconds ?? 0);
@@ -42,6 +43,12 @@ export default function QuizApp({ lectures }: QuizAppProps) {
   const selectedLectureIndex = lectures.findIndex((lecture) => lecture.id === selectedLectureId);
 
   const currentQuestion = selectedLecture?.questions[activeQuestionIndex];
+  const currentSelectedOptionId = currentQuestion ? answers[currentQuestion.id] : undefined;
+  const currentAnswerChecked = currentQuestion ? Boolean(checkedAnswers[currentQuestion.id]) : false;
+  const currentAnswerIsCorrect =
+    currentQuestion && currentSelectedOptionId
+      ? currentSelectedOptionId === currentQuestion.correctOptionId
+      : false;
 
   useEffect(() => {
     const frameId = window.requestAnimationFrame(() => {
@@ -78,6 +85,7 @@ export default function QuizApp({ lectures }: QuizAppProps) {
     setSelectedLectureId(lectureId);
     setActiveQuestionIndex(0);
     setAnswers({});
+    setCheckedAnswers({});
     setSubmitted(false);
     setAutoSubmitted(false);
     setTimeLeft(lecture.durationSeconds);
@@ -150,6 +158,30 @@ export default function QuizApp({ lectures }: QuizAppProps) {
       ...previous,
       [questionId]: optionId,
     }));
+    setCheckedAnswers((previous) => {
+      if (!previous[questionId]) {
+        return previous;
+      }
+
+      const next = { ...previous };
+      delete next[questionId];
+      return next;
+    });
+  }
+
+  function checkCurrentAnswer(): void {
+    if (!currentQuestion || submitted) {
+      return;
+    }
+
+    if (!answers[currentQuestion.id]) {
+      return;
+    }
+
+    setCheckedAnswers((previous) => ({
+      ...previous,
+      [currentQuestion.id]: true,
+    }));
   }
 
   function submitQuiz(): void {
@@ -163,6 +195,7 @@ export default function QuizApp({ lectures }: QuizAppProps) {
     }
 
     setAnswers({});
+    setCheckedAnswers({});
     setSubmitted(false);
     setAutoSubmitted(false);
     setActiveQuestionIndex(0);
@@ -283,17 +316,42 @@ export default function QuizApp({ lectures }: QuizAppProps) {
             <>
               <h3 className="question-title">{currentQuestion.question}</h3>
               <div className="options">
-                {currentQuestion.options.map((option) => (
-                  <button
-                    key={option.id}
-                    className={`option-btn ${answers[currentQuestion.id] === option.id ? "selected" : ""}`}
-                    onClick={() => selectAnswer(currentQuestion.id, option.id)}
-                  >
-                    <strong>{option.id.toUpperCase()}.</strong>
-                    {option.text}
-                  </button>
-                ))}
+                {currentQuestion.options.map((option) => {
+                  const isSelected = currentSelectedOptionId === option.id;
+                  const isCorrectOption = option.id === currentQuestion.correctOptionId;
+                  const optionClassName = [
+                    "option-btn",
+                    isSelected ? "selected" : "",
+                    currentAnswerChecked && isCorrectOption ? "correct" : "",
+                    currentAnswerChecked && isSelected && !isCorrectOption ? "wrong" : "",
+                  ]
+                    .filter(Boolean)
+                    .join(" ");
+
+                  return (
+                    <button key={option.id} className={optionClassName} onClick={() => selectAnswer(currentQuestion.id, option.id)}>
+                      <strong>{option.id.toUpperCase()}.</strong>
+                      {option.text}
+                    </button>
+                  );
+                })}
               </div>
+              {currentAnswerChecked ? (
+                <div className={`answer-feedback ${currentAnswerIsCorrect ? "correct" : "wrong"}`}>
+                  <p>
+                    <strong>{currentAnswerIsCorrect ? "Correct." : "Incorrect."}</strong> Your answer:{" "}
+                    {findOptionText(currentQuestion, currentSelectedOptionId)}
+                  </p>
+                  <p>
+                    <strong>Correct answer:</strong> {findOptionText(currentQuestion, currentQuestion.correctOptionId)}
+                  </p>
+                  {currentQuestion.explanation ? (
+                    <p>
+                      <strong>Why:</strong> {currentQuestion.explanation}
+                    </p>
+                  ) : null}
+                </div>
+              ) : null}
             </>
           )}
 
@@ -309,6 +367,13 @@ export default function QuizApp({ lectures }: QuizAppProps) {
               disabled={activeQuestionIndex >= selectedLecture.questions.length - 1}
             >
               Next Question
+            </button>
+            <button
+              className="btn"
+              onClick={checkCurrentAnswer}
+              disabled={!currentQuestion || !currentSelectedOptionId}
+            >
+              Check Answer
             </button>
             <button className="btn btn-primary" onClick={submitQuiz}>
               Submit Quiz
